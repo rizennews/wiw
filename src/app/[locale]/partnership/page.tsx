@@ -2,6 +2,13 @@ import React from 'react';
 import { ActionLink } from "@/components/ActionLink";
 import { ArrowRight } from "lucide-react";
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Partnership Opportunities',
+  description: 'Partner with Women-in-WACREN to scale our impact. Explore opportunities to fund cohorts, host workshops, or volunteer as a mentor.',
+};
+
 export default function PartnershipPage() {
   return (
     <div className="flex flex-col w-full min-h-screen bg-white">

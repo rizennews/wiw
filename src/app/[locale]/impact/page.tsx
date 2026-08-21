@@ -3,6 +3,13 @@ import { ActionLink } from '@/components/ActionLink';
 import { ImpactCard } from '@/components/ImpactCard';
 import { Network, Users, BookOpen, Lightbulb, ArrowRight } from 'lucide-react';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Our Impact',
+  description: 'Explore the real-world impact of the Women-in-WACREN programme through data, success stories, and our growing network.',
+};
+
 export default async function ImpactPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);

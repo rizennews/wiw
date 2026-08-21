@@ -1,6 +1,13 @@
 import { setRequestLocale } from 'next-intl/server';
 import { DocumentLibrary } from '@/components/DocumentLibrary';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Document Library',
+  description: 'Access official publications, reports, strategic plans, and resources from Women-in-WACREN.',
+};
+
 export default async function DocumentsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);

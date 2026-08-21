@@ -1,4 +1,11 @@
 import { ProgrammeTabs } from '@/components/ProgrammeTabs';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Programme & Network',
+  description: 'Join the Women-in-WACREN Network. Explore our open calls, register for upcoming training programmes, and access our learning hub.',
+};
+
 export default function ProgrammePage() {
   return (
     <div className="flex flex-col w-full">

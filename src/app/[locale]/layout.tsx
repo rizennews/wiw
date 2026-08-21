@@ -19,8 +19,33 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Women in WACREN",
+  title: {
+    template: '%s | Women in WACREN',
+    default: 'Women in WACREN',
+  },
   description: "Connecting, training, and funding women in STEM across the WACREN region.",
+  openGraph: {
+    title: 'Women in WACREN',
+    description: 'Connecting, training, and funding women in STEM across the WACREN region.',
+    url: 'https://wiw.wacren.net',
+    siteName: 'Women in WACREN',
+    images: [
+      {
+        url: '/Women in WACREN logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Women in WACREN',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Women in WACREN',
+    description: 'Connecting, training, and funding women in STEM across the WACREN region.',
+    images: ['/Women in WACREN logo.png'],
+  },
 };
 
 export default async function RootLayout({

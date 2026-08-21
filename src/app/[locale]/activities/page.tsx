@@ -1,5 +1,12 @@
 import { setRequestLocale } from 'next-intl/server';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Activities',
+  description: 'Discover the latest activities, workshops, and events hosted by the Women-in-WACREN community.',
+};
+
 export default async function ActivitiesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);

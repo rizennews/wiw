@@ -7,6 +7,12 @@ import { Countdown } from "@/components/Countdown";
 import { ActionLink } from "@/components/ActionLink";
 import { getAllPostsSorted } from "@/lib/blog-data";
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  description: 'Empowering women in STEM across West and Central Africa through education, training, and strategic partnerships.',
+};
+
 export default function Home() {
   const latestPosts = getAllPostsSorted().slice(0, 3);
 

@@ -1,6 +1,13 @@
 import { setRequestLocale } from 'next-intl/server';
 import { BlogFeed } from '@/components/BlogFeed';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blog & Updates',
+  description: 'Read the latest news, updates, and community stories from the Women-in-WACREN network.',
+};
+
 export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);

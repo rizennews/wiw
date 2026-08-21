@@ -1,5 +1,11 @@
 import { setRequestLocale } from 'next-intl/server';
 import { Timeline } from '@/components/Timeline';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description: 'Learn about the Women-in-WACREN journey, our mission to close the gender gap in STEM, and our track record of empowering over 2000 women.',
+};
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
