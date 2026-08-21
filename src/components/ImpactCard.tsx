@@ -9,13 +9,13 @@ interface ImpactCardProps {
 
 export function ImpactCard({ icon: Icon, title, description }: ImpactCardProps) {
   return (
-    <div className="flex gap-4 items-start p-6 rounded-2xl bg-slate-50 hover:bg-white border border-slate-100 shadow-sm transition-colors duration-300">
-      <div className="flex-shrink-0 w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-        <Icon className="w-6 h-6" />
+    <div className="flex gap-4 items-start p-6 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm transition-all duration-300">
+      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-slate-200/60 flex items-center justify-center text-slate-700 mt-0.5">
+        <Icon className="w-5 h-5" strokeWidth={2} />
       </div>
-      <div className="flex flex-col gap-2 pt-1">
-        <h3 className="font-heading font-semibold text-xl text-foreground">{title}</h3>
-        <p className="text-muted-foreground leading-relaxed text-[15px]">
+      <div className="flex flex-col gap-1.5 flex-1">
+        <h3 className="font-heading font-semibold text-lg text-slate-900 leading-tight">{title}</h3>
+        <p className="text-slate-600 leading-relaxed text-sm font-light">
           {description}
         </p>
       </div>

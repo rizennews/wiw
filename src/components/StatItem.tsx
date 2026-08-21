@@ -10,7 +10,7 @@ interface StatItemProps {
 export function StatItem({ value, label, className }: StatItemProps) {
   return (
     <div className={cn("flex flex-col items-center lg:items-start text-center lg:text-left", className)}>
-      <span className="text-5xl md:text-6xl lg:text-7xl font-heading font-semibold mb-3">{value}</span>
+      <span className="text-3xl md:text-4xl lg:text-5xl font-heading font-semibold mb-2">{value}</span>
       <span className="text-sm font-medium text-white/80 uppercase tracking-[0.2em] leading-relaxed">{label}</span>
     </div>
   );

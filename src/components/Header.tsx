@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import ReactCountryFlag from "react-country-flag";
 import { Link, usePathname, useRouter } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
+import { getAllPostsSorted } from "@/lib/blog-data";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -31,19 +32,19 @@ import { cn } from "@/lib/utils";
 
 const aboutItems = [
   { title: "Women-In-WACREN Journey", href: "/about" },
-  { title: "Women-In-WACREN Network", href: "/about/network" },
-  { title: "Activities", href: "/about/activities" },
-  { title: "Impact", href: "/about/impact" },
+  { title: "Women-In-WACREN Network", href: "/programme" },
+  { title: "Activities", href: "/activities" },
+  { title: "Impact", href: "/impact" },
 ];
 
 const resourceItems = [
-  { title: "Videos", href: "/resources/videos" },
-  { title: "Photos", href: "/resources/photos" },
-  { title: "Documents", href: "/resources/documents" },
+  { title: "Documents", href: "/documents" },
+  { title: "Photos", href: "https://photos.wacren.net/index.php?/category/120" },
+  { title: "Videos", href: "https://video.wacren.net/channel/Women-In-WACREN/721046" },
 ];
 
 const getInvolvedItems = [
-  { title: "Partnership and Collaboration Opportunities", href: "/get-involved/partnership", isExternal: false },
+  { title: "Partnership and Collaboration Opportunities", href: "/partnership", isExternal: false },
   { title: "Call for Facilitators", href: "https://indico.wacren.net", isExternal: true },
   { title: "Call for Mentors", href: "https://indico.wacren.net", isExternal: true },
   { title: "Contact Us", href: "/contact", isExternal: false },
@@ -58,6 +59,7 @@ const languages = [
 
 export function Header() {
   const t = useTranslations('Header');
+  const latestPost = getAllPostsSorted()[0];
   const locale = useLocale();
   const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -156,7 +158,12 @@ export function Header() {
             <div className="absolute top-[40px] left-1/2 z-50 -translate-x-1/2 w-[280px] rounded-2xl bg-card shadow-md border border-border animate-in fade-in zoom-in-95 duration-200 p-6">
               <ul className="flex flex-col gap-2">
                 {resourceItems.map((item) => (
-                  <ListItem key={item.title} title={item.title} href={item.href} />
+                  <ListItem 
+                    key={item.title} 
+                    title={item.title} 
+                    href={item.href} 
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                  />
                 ))}
               </ul>
             </div>
@@ -190,7 +197,7 @@ export function Header() {
                     <div>
                       <h4 className="mb-6 text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Opportunities</h4>
                       <ul className="flex flex-col gap-2">
-                        <ListItem title="Partnership and Collaboration Opportunities" href="/get-involved/partnership" />
+                        <ListItem title="Partnership and Collaboration Opportunities" href="/partnership" />
                         <ListItem title="Call for Facilitators" href="https://indico.wacren.net" target="_blank" />
                         <ListItem title="Call for Mentors" href="https://indico.wacren.net" target="_blank" />
                       </ul>
@@ -208,21 +215,22 @@ export function Header() {
                     <div>
                       <h4 className="mb-6 text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Socials</h4>
                       <ul className="flex flex-col gap-2">
-                        <ListItem title="LinkedIn" href="/socials" icon={<FaLinkedin className="h-5 w-5 text-[#0a66c2]" />} />
-                        <ListItem title="X (Twitter)" href="/socials" icon={<FaXTwitter className="h-5 w-5 text-black" />} />
-                        <ListItem title="Facebook" href="/socials" icon={<FaFacebook className="h-5 w-5 text-[#1877F2]" />} />
-                        <ListItem title="Mastodon" href="/socials" icon={<FaMastodon className="h-5 w-5 text-[#5c4bdf]" />} />
-                        <ListItem title="Bluesky" href="/socials" icon={<SiBluesky className="h-5 w-5 text-[#0085ff]" />} />
+                        <ListItem title="LinkedIn" href="https://www.linkedin.com/company/west-and-central-african-research-and-education-network/" target="_blank" icon={<FaLinkedin className="h-5 w-5 text-[#0a66c2]" />} />
+                        <ListItem title="X (Twitter)" href="https://twitter.com/wacren" target="_blank" icon={<FaXTwitter className="h-5 w-5 text-black dark:text-white" />} />
+                        <ListItem title="Facebook" href="https://www.facebook.com/WACRENinfo" target="_blank" icon={<FaFacebook className="h-5 w-5 text-[#1877F2]" />} />
+                        <ListItem title="Mastodon" href="https://mastodon.social/@WACREN" target="_blank" icon={<FaMastodon className="h-5 w-5 text-[#5c4bdf]" />} />
+                        <ListItem title="Bluesky" href="https://bsky.app/profile/wacren.bsky.social" target="_blank" icon={<SiBluesky className="h-5 w-5 text-[#0085ff]" />} />
                       </ul>
                     </div>
 
                     {/* Column 4 - Featured Image */}
                     <div className="flex flex-col">
                       <FeaturedBlogCard 
-                        title="WACREN 2024: Empowering Women in Tech" 
-                        tag="Event"
-                        imageSrc="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=600&auto=format&fit=crop"
-                        href="/blog/wacren-2024"
+                        title={latestPost.title} 
+                        tag={latestPost.category}
+                        imageSrc={latestPost.image || "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=600&auto=format&fit=crop"}
+                        href={`/blog/${latestPost.slug}`}
+                        date={latestPost.date}
                       />
                     </div>
                   </div>
@@ -272,11 +280,11 @@ export function Header() {
       <div className="fixed inset-0 top-[76px] z-40 bg-card lg:hidden overflow-y-auto animate-in fade-in slide-in-from-top-4 duration-200 h-[calc(100vh-76px)] w-full">
         <div className="flex flex-col p-8 gap-8 pb-32">
           
-          <Link href="/" className="text-2xl font-heading font-semibold text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-          <Link href="/blog" className="text-2xl font-heading font-semibold text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
+          <Link href="/" className="text-xl font-heading font-semibold text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+          <Link href="/blog" className="text-xl font-heading font-semibold text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
           
           <div className="flex flex-col gap-4">
-            <span className="text-xl font-heading font-semibold text-muted-foreground">About</span>
+            <span className="text-lg font-heading font-semibold text-muted-foreground">About</span>
             <div className="flex flex-col gap-4 pl-4 border-l-2 border-muted">
               {aboutItems.map((item, i) => (
                 <Link key={i} href={item.href as any} className="text-[17px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>{item.title}</Link>
@@ -285,21 +293,25 @@ export function Header() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <span className="text-xl font-heading font-semibold text-muted-foreground">Resources</span>
+            <span className="text-lg font-heading font-semibold text-muted-foreground">Resources</span>
             <div className="flex flex-col gap-4 pl-4 border-l-2 border-muted">
               {resourceItems.map((item, i) => (
-                <Link key={i} href={item.href as any} className="text-[17px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>{item.title}</Link>
+                item.href.startsWith("http") ? (
+                  <a key={i} href={item.href} target="_blank" rel="noopener noreferrer" className="text-[17px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>{item.title}</a>
+                ) : (
+                  <Link key={i} href={item.href as any} className="text-[17px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>{item.title}</Link>
+                )
               ))}
             </div>
           </div>
 
           <div className="flex flex-col gap-4">
-            <span className="text-xl font-heading font-semibold text-muted-foreground">Get Involved</span>
+            <span className="text-lg font-heading font-semibold text-muted-foreground">Get Involved</span>
             <div className="flex flex-col gap-8 pl-4 border-l-2 border-muted py-2">
               
               <div className="flex flex-col gap-3">
                 <h4 className="text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Opportunities</h4>
-                <Link href="/get-involved/partnership" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Partnership and Collaboration</Link>
+                <Link href="/partnership" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Partnership and Collaboration</Link>
                 <a href="https://indico.wacren.net" target="_blank" rel="noopener noreferrer" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Call for Facilitators</a>
                 <a href="https://indico.wacren.net" target="_blank" rel="noopener noreferrer" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Call for Mentors</a>
               </div>
@@ -383,17 +395,20 @@ const ListItem = React.forwardRef<
 });
 ListItem.displayName = "ListItem";
 
-const FeaturedBlogCard = ({ title, tag, imageSrc, href }: { title: string, tag: string, imageSrc: string, href: string }) => (
-  <Link href={href as any} className="group relative flex h-full min-h-[160px] w-full flex-col overflow-hidden rounded-2xl bg-neutral-900 shadow-md">
+const FeaturedBlogCard = ({ title, tag, imageSrc, href, date }: { title: string, tag: string, imageSrc: string, href: string, date: string }) => (
+  <Link href={href as any} className="group relative flex h-full min-h-[220px] w-full flex-col overflow-hidden rounded-2xl bg-neutral-900 shadow-md">
     <img 
       src={imageSrc} 
       alt={title} 
       className="absolute inset-0 h-full w-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-80" 
     />
-    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent transition-opacity duration-300 group-hover:opacity-80" />
+    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent transition-opacity duration-300 group-hover:opacity-80" />
     <div className="relative mt-auto flex flex-col p-6 text-white">
-      <span className="mb-2 text-[10px] font-bold tracking-widest text-neutral-300 uppercase font-sans">{tag}</span>
-      <h3 className="font-heading text-[17px] font-semibold leading-[1.3] text-white">{title}</h3>
+      <div className="flex items-center gap-2 mb-3">
+        <span className="text-[10px] font-bold tracking-widest text-blue-300 uppercase font-sans bg-blue-900/40 px-2 py-0.5 rounded backdrop-blur-sm">{tag}</span>
+        <span className="text-[10px] text-neutral-300 font-sans uppercase tracking-widest">{date}</span>
+      </div>
+      <h3 className="font-heading text-[15px] md:text-[16px] font-semibold leading-snug text-white line-clamp-3" title={title}>{title}</h3>
     </div>
   </Link>
 );

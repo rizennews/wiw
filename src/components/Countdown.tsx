@@ -63,7 +63,7 @@ export function Countdown({ targetDate, endDate }: CountdownProps) {
     return (
       <div className="flex flex-col items-center lg:items-start w-full">
         <div className="flex flex-col items-center lg:items-start p-8 md:p-10 bg-white border border-slate-200 rounded-3xl shadow-sm w-full">
-          <h4 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-3">This event has concluded.</h4>
+          <h4 className="text-xl md:text-2xl font-heading font-bold text-primary mb-3">This event has concluded.</h4>
           <p className="text-slate-600 text-center lg:text-left mb-8 leading-relaxed">
             Thank you to everyone who participated! The recording and resources will be available soon.
           </p>
@@ -79,7 +79,7 @@ export function Countdown({ targetDate, endDate }: CountdownProps) {
     return (
       <div className="flex flex-col items-center lg:items-start w-full">
         <div className="flex flex-col items-center lg:items-start p-8 md:p-10 bg-white border border-slate-200 rounded-3xl shadow-sm w-full">
-          <h4 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-3">The event is happening today!</h4>
+          <h4 className="text-xl md:text-2xl font-heading font-bold text-primary mb-3">The event is happening today!</h4>
           <p className="text-slate-600 text-center lg:text-left mb-8 leading-relaxed">
             Registration has closed, but you can still join the Zoom meeting or watch the recording later.
           </p>
@@ -96,28 +96,28 @@ export function Countdown({ targetDate, endDate }: CountdownProps) {
       <div className="flex gap-6 sm:gap-10 justify-start w-full">
         
         <div className="flex flex-col items-start">
-          <span className="text-4xl sm:text-5xl font-heading font-semibold text-foreground tracking-tight">{timeLeft.days.toString().padStart(2, '0')}</span>
+          <span className="text-3xl sm:text-4xl font-heading font-semibold text-foreground tracking-tight">{timeLeft.days.toString().padStart(2, '0')}</span>
           <span className="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mt-2">Days</span>
         </div>
         
-        <div className="text-3xl sm:text-4xl font-heading font-light text-slate-300 mt-1">:</div>
+        <div className="text-2xl sm:text-3xl font-heading font-light text-slate-300 mt-1">:</div>
         
         <div className="flex flex-col items-start">
-          <span className="text-4xl sm:text-5xl font-heading font-semibold text-foreground tracking-tight">{timeLeft.hours.toString().padStart(2, '0')}</span>
+          <span className="text-3xl sm:text-4xl font-heading font-semibold text-foreground tracking-tight">{timeLeft.hours.toString().padStart(2, '0')}</span>
           <span className="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mt-2">Hrs</span>
         </div>
         
-        <div className="text-3xl sm:text-4xl font-heading font-light text-slate-300 mt-1">:</div>
+        <div className="text-2xl sm:text-3xl font-heading font-light text-slate-300 mt-1">:</div>
 
         <div className="flex flex-col items-start">
-          <span className="text-4xl sm:text-5xl font-heading font-semibold text-foreground tracking-tight">{timeLeft.minutes.toString().padStart(2, '0')}</span>
+          <span className="text-3xl sm:text-4xl font-heading font-semibold text-foreground tracking-tight">{timeLeft.minutes.toString().padStart(2, '0')}</span>
           <span className="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mt-2">Min</span>
         </div>
 
-        <div className="text-3xl sm:text-4xl font-heading font-light text-slate-300 mt-1">:</div>
+        <div className="text-2xl sm:text-3xl font-heading font-light text-slate-300 mt-1">:</div>
 
         <div className="flex flex-col items-start">
-          <span className="text-4xl sm:text-5xl font-heading font-semibold text-primary tracking-tight">{timeLeft.seconds.toString().padStart(2, '0')}</span>
+          <span className="text-3xl sm:text-4xl font-heading font-semibold text-primary tracking-tight">{timeLeft.seconds.toString().padStart(2, '0')}</span>
           <span className="text-xs font-bold text-primary/60 uppercase tracking-[0.2em] mt-2">Sec</span>
         </div>
 

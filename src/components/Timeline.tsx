@@ -47,8 +47,8 @@ export function Timeline() {
         
         {/* Header */}
         <div className="text-center mb-20 flex flex-col items-center">
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-4">Our story</h2>
-          <p className="text-xl md:text-2xl text-slate-500 font-light">Eight years of delivery.</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">Our story</h2>
+          <p className="text-lg md:text-xl text-slate-700 font-light">Eight years of delivery.</p>
         </div>
 
         {/* Timeline Container */}
@@ -86,9 +86,9 @@ export function Timeline() {
                       transition={{ duration: 0.6, delay: 0.2 }}
                       className="py-4 group"
                     >
-                      <span className="inline-block text-primary font-heading text-2xl md:text-3xl font-bold mb-3">{item.year}</span>
-                      <h3 className="font-heading text-xl md:text-2xl font-semibold text-slate-900 mb-4 leading-tight group-hover:text-primary transition-colors">{item.title}</h3>
-                      <p className="text-slate-600 font-light leading-relaxed text-lg">{item.description}</p>
+                      <span className="inline-block text-primary font-heading text-xl md:text-2xl font-bold mb-3">{item.year}</span>
+                      <h3 className="font-heading text-lg md:text-xl font-semibold text-slate-900 mb-4 leading-tight group-hover:text-primary transition-colors">{item.title}</h3>
+                      <p className="text-slate-700 font-light leading-relaxed text-base">{item.description}</p>
                     </motion.div>
                   </div>
                 </div>

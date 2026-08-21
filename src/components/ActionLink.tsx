@@ -18,7 +18,7 @@ export function ActionLink({
   className,
   variant = 'primary' 
 }: ActionLinkProps) {
-  const baseStyles = "inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-full transition-colors duration-200 group";
+  const baseStyles = "inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-full transition-colors duration-200 group";
   const variants = {
     primary: "text-white bg-primary hover:bg-primary/90",
     secondary: "text-primary bg-slate-100 hover:bg-slate-200",

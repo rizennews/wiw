@@ -1,5 +1,7 @@
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
+import { FaLinkedin, FaXTwitter, FaFacebook, FaMastodon } from "react-icons/fa6";
+import { SiBluesky } from "react-icons/si";
 
 export function Footer() {
   return (
@@ -18,9 +20,28 @@ export function Footer() {
                 className="w-full h-auto object-contain" 
               />
             </div>
-            <p className="text-white/80 leading-relaxed text-base font-light">
+            <p className="text-white/80 leading-relaxed text-base font-light mb-6">
               Educating, equipping and empowering women in STEM across West and Central Africa since 2018.
             </p>
+            
+            {/* Social Links */}
+            <div className="flex items-center gap-5">
+              <a href="https://twitter.com/wacren" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="X (Twitter)">
+                <FaXTwitter className="w-5 h-5" />
+              </a>
+              <a href="https://bsky.app/profile/wacren.bsky.social" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="Bluesky">
+                <SiBluesky className="w-5 h-5" />
+              </a>
+              <a href="https://www.linkedin.com/company/west-and-central-african-research-and-education-network/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="LinkedIn">
+                <FaLinkedin className="w-5 h-5" />
+              </a>
+              <a href="https://www.facebook.com/WACRENinfo" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="Facebook">
+                <FaFacebook className="w-5 h-5" />
+              </a>
+              <a href="https://mastodon.social/@WACREN" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="Mastodon">
+                <FaMastodon className="w-5 h-5" />
+              </a>
+            </div>
           </div>
 
           {/* Explore Links (spans 3 cols) */}

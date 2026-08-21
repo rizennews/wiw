@@ -27,7 +27,7 @@ export function BlogCard({ title, excerpt, date, category, imageSrc, href }: Blo
         <span className="text-slate-300">&middot;</span>
         <span className="text-slate-500">{date}</span>
       </div>
-      <h3 className="font-heading text-xl lg:text-2xl font-semibold leading-[1.3] text-foreground mb-3 group-hover:text-primary transition-colors">
+      <h3 className="font-heading text-lg lg:text-xl font-semibold leading-[1.3] text-foreground mb-3 group-hover:text-primary transition-colors">
         {title}
       </h3>
       <p className="text-slate-600 text-base leading-relaxed line-clamp-3">
