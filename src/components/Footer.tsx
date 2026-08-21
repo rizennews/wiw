@@ -49,9 +49,9 @@ export function Footer() {
             <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-white/60 mb-4">Explore</h4>
             <ul className="flex flex-col gap-3">
               <li><Link href={"/about" as any} className="text-white/90 hover:text-white transition-colors duration-200">About</Link></li>
-              <li><Link href={"/programmes" as any} className="text-white/90 hover:text-white transition-colors duration-200">Programmes</Link></li>
-              <li><Link href={"/community" as any} className="text-white/90 hover:text-white transition-colors duration-200">Community & Impact</Link></li>
-              <li><Link href={"/get-involved" as any} className="text-white/90 hover:text-white transition-colors duration-200">Get Involved</Link></li>
+              <li><Link href={"/programme" as any} className="text-white/90 hover:text-white transition-colors duration-200">Programme</Link></li>
+              <li><Link href={"/impact" as any} className="text-white/90 hover:text-white transition-colors duration-200">Impact</Link></li>
+              <li><Link href={"/partnership" as any} className="text-white/90 hover:text-white transition-colors duration-200">Get Involved</Link></li>
             </ul>
           </div>
 

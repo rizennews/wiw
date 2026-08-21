@@ -39,7 +39,7 @@ export default function Home() {
                 Join community of practice
               </ActionLink>
               
-              <ActionLink href="#" variant="outline-inverted">
+              <ActionLink href="/partnership" variant="outline-inverted">
                 Partner with us
               </ActionLink>
             </div>

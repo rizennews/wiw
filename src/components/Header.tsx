@@ -73,6 +73,10 @@ export function Header() {
     router.replace(pathname as any, { locale: newLocale });
   };
 
+  React.useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [pathname]);
+
   const navItemClass = "group inline-flex h-10 w-max items-center justify-center bg-transparent px-4 py-2 text-sm font-medium font-heading tracking-wide text-neutral-700 transition-colors hover:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=open]:text-primary";
 
   return (
@@ -280,14 +284,13 @@ export function Header() {
       <div className="fixed inset-0 top-[76px] z-40 bg-card lg:hidden overflow-y-auto animate-in fade-in slide-in-from-top-4 duration-200 h-[calc(100vh-76px)] w-full">
         <div className="flex flex-col p-8 gap-8 pb-32">
           
-          <Link href="/" className="text-xl font-heading font-semibold text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-          <Link href="/blog" className="text-xl font-heading font-semibold text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
+          <Link href="/" className="text-xl font-heading font-semibold text-foreground">Home</Link>
           
           <div className="flex flex-col gap-4">
             <span className="text-lg font-heading font-semibold text-muted-foreground">About</span>
             <div className="flex flex-col gap-4 pl-4 border-l-2 border-muted">
               {aboutItems.map((item, i) => (
-                <Link key={i} href={item.href as any} className="text-[17px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>{item.title}</Link>
+                <Link key={i} href={item.href as any} className="text-[17px] font-medium text-foreground">{item.title}</Link>
               ))}
             </div>
           </div>
@@ -299,11 +302,13 @@ export function Header() {
                 item.href.startsWith("http") ? (
                   <a key={i} href={item.href} target="_blank" rel="noopener noreferrer" className="text-[17px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>{item.title}</a>
                 ) : (
-                  <Link key={i} href={item.href as any} className="text-[17px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>{item.title}</Link>
+                  <Link key={i} href={item.href as any} className="text-[17px] font-medium text-foreground">{item.title}</Link>
                 )
               ))}
             </div>
           </div>
+
+          <Link href="/blog" className="text-xl font-heading font-semibold text-foreground">Blog & Updates</Link>
 
           <div className="flex flex-col gap-4">
             <span className="text-lg font-heading font-semibold text-muted-foreground">Get Involved</span>
@@ -311,23 +316,23 @@ export function Header() {
               
               <div className="flex flex-col gap-3">
                 <h4 className="text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Opportunities</h4>
-                <Link href="/partnership" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Partnership and Collaboration</Link>
+                <Link href="/partnership" className="text-[16px] font-medium text-foreground">Partnership and Collaboration</Link>
                 <a href="https://indico.wacren.net" target="_blank" rel="noopener noreferrer" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Call for Facilitators</a>
                 <a href="https://indico.wacren.net" target="_blank" rel="noopener noreferrer" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Call for Mentors</a>
               </div>
 
               <div className="flex flex-col gap-3">
                 <h4 className="text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Connect</h4>
-                <Link href="/contact" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
+                <Link href="/contact" className="text-[16px] font-medium text-foreground">Contact Us</Link>
               </div>
 
               <div className="flex flex-col gap-3">
                 <h4 className="text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Socials</h4>
-                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}><FaLinkedin className="text-[#0a66c2] h-5 w-5" /> LinkedIn</Link>
-                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}><FaXTwitter className="text-black h-5 w-5" /> X (Twitter)</Link>
-                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}><FaFacebook className="text-[#1877F2] h-5 w-5" /> Facebook</Link>
-                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}><FaMastodon className="text-[#5c4bdf] h-5 w-5" /> Mastodon</Link>
-                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}><SiBluesky className="text-[#0085ff] h-5 w-5" /> Bluesky</Link>
+                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><FaLinkedin className="text-[#0a66c2] h-5 w-5" /> LinkedIn</Link>
+                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><FaXTwitter className="text-black h-5 w-5" /> X (Twitter)</Link>
+                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><FaFacebook className="text-[#1877F2] h-5 w-5" /> Facebook</Link>
+                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><FaMastodon className="text-[#5c4bdf] h-5 w-5" /> Mastodon</Link>
+                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><SiBluesky className="text-[#0085ff] h-5 w-5" /> Bluesky</Link>
               </div>
 
             </div>

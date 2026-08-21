@@ -38,7 +38,7 @@ export function BlogFeed() {
         <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
           
           {/* Category Tabs */}
-          <div className="flex items-center overflow-x-auto hide-scrollbar border border-slate-200 rounded-sm bg-slate-50 w-max">
+          <div className="flex items-center overflow-x-auto hide-scrollbar border border-slate-200 rounded-sm bg-slate-50 w-full md:w-max max-w-full min-w-0">
             {CATEGORIES.map((category, index) => (
               <button 
                 key={category}
