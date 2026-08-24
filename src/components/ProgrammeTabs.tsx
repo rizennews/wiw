@@ -20,8 +20,8 @@ const OPEN_NOW_DATA = [
   },
   {
     badge: "Registration open",
-    title: "Community of Practice launch",
-    description: "A 75-minute virtual session introducing WiW, the Community of Practice and the Climate Innovation Lab, with time for questions and networking.",
+    title: "Women-In-WACREN Network launch",
+    description: "A 75-minute virtual session introducing WiW, the Women-In-WACREN Network and the Climate Innovation Lab, with time for questions and networking.",
     metadata: "25 August 2026 • Virtual • Free",
     buttonText: "Register",
     href: "#"

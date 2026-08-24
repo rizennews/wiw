@@ -23,7 +23,7 @@ const timelineData = [
   {
     year: "2026",
     title: "A community, not just a course",
-    description: "WiW establishes its Community of Practice and introduces the Climate Innovation Lab, moving from episodic training to a continuous platform for collaboration, mentorship and solution-building.",
+    description: "WiW establishes its Women-In-WACREN Network and introduces the Climate Innovation Lab, moving from episodic training to a continuous platform for collaboration, mentorship and solution-building.",
   }
 ];
 

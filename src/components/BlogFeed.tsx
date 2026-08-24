@@ -5,7 +5,7 @@ import { Search } from 'lucide-react';
 import { Link } from '@/i18n/routing';
 import { getAllPostsSorted, type BlogPost } from '@/lib/blog-data';
 
-const CATEGORIES = ["All", "Community", "Research", "News", "Events"];
+const CATEGORIES = ["All", "News", "Blog", "Event"];
 
 export function BlogFeed() {
   const [searchQuery, setSearchQuery] = useState("");

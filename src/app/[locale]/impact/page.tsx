@@ -38,7 +38,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
           </h2>
           <div className="text-base md:text-lg text-slate-700 font-light leading-relaxed space-y-6">
             <p>
-              The Community of Practice is where women connect, exchange knowledge and experience, access mentorship and learning, collaborate across disciplines, and develop solutions to challenges affecting their communities &mdash; beyond any single programme.
+              The Women-In-WACREN Network is where women connect, exchange knowledge and experience, access mentorship and learning, collaborate across disciplines, and develop solutions to challenges affecting their communities &mdash; beyond any single programme.
             </p>
           </div>
 
@@ -69,7 +69,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
           {/* Call to Action Button */}
           <div className="mt-12 flex justify-start">
             <ActionLink href="#" variant="primary" icon={ArrowRight}>
-              Join the Community of Practice
+              Join the Women-In-WACREN Network
             </ActionLink>
           </div>
         </div>

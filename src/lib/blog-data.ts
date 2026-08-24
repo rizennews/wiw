@@ -18,7 +18,7 @@ export const POSTS: BlogPost[] = [
     slug: 'call-for-volunteers-2020',
     title: 'Call for Volunteers - Women-in-WACREN',
     excerpt: 'WACREN is seeking collaborators from the NREN community for the implementation of its Women-in-WACREN program.',
-    category: 'Community',
+    category: 'News',
     date: 'Aug 31, 2020',
     author: {
       name: 'Padmore Aning',
@@ -260,7 +260,7 @@ export const POSTS: BlogPost[] = [
     slug: 'wiw-python-workshop-2024',
     title: 'Women-in-WACREN 2024 - Python for Weather and Climate Data Analysis',
     excerpt: 'The WiW 2024 Event will focus on training in Python for weather and climate data analysis. Apply now!',
-    category: 'Events',
+    category: 'Event',
     date: 'Jul 19, 2024',
     author: {
       name: 'Padmore Aning',
@@ -317,7 +317,7 @@ export const POSTS: BlogPost[] = [
     slug: 'wiw-francophone-workshop-2024',
     title: 'Women-in-WACREN Francophone Workshop',
     excerpt: 'The WiW 2024 Francophone event will focus on practically using the Python programme for weather and climate data analysis. Apply now!',
-    category: 'Events',
+    category: 'Event',
     date: 'Oct 25, 2024',
     author: {
       name: 'Padmore Aning',
@@ -374,7 +374,7 @@ export const POSTS: BlogPost[] = [
     slug: 'wiw-network-climate-innovation-lab-launch',
     title: "Women-in-WACREN to launch a new forum and a lab to enhance women's contribution to climate innovation in Africa",
     excerpt: 'Join us for the virtual launch of the Women-in-WACREN Network and the introduction of the Climate Innovation Lab 2026 on August 25, 2026.',
-    category: 'Events',
+    category: 'Event',
     date: 'Aug 18, 2026',
     author: {
       name: 'Padmore Aning',

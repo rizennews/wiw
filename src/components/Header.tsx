@@ -175,7 +175,7 @@ export function Header() {
         </div>
 
         <Link href="/blog" className={navItemClass}>
-          Blog & Updates
+          Updates
         </Link>
 
             <div 
@@ -308,7 +308,7 @@ export function Header() {
             </div>
           </div>
 
-          <Link href="/blog" className="text-xl font-heading font-semibold text-foreground">Blog & Updates</Link>
+          <Link href="/blog" className="text-xl font-heading font-semibold text-foreground">Updates</Link>
 
           <div className="flex flex-col gap-4">
             <span className="text-lg font-heading font-semibold text-muted-foreground">Get Involved</span>
