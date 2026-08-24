@@ -136,7 +136,7 @@ export default function Home() {
         {/* Opportunities Section */}
         <div className="w-full bg-white text-foreground">
           <section className="w-full max-w-[1400px] mx-auto px-4 md:px-8 pt-10 md:pt-16 pb-4 md:pb-8">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
 
               {/* Card 3: Launch of the Network */}
               <div className="flex flex-col items-start p-10 md:p-12 bg-slate-900 text-white rounded-[32px] hover:bg-slate-800 transition-colors duration-300">
@@ -180,8 +180,24 @@ export default function Home() {
                   Women and allies working in STEM, research and industry are invited to mentor a cohort or co-facilitate a technical session.
                 </p>
                 <div className="mt-auto">
-                  <ActionLink href="#" variant="primary" icon={ArrowRight}>
+                  <ActionLink href="https://indico.wacren.net/event/283/" variant="primary" icon={ArrowRight}>
                     Become a mentor
+                  </ActionLink>
+                </div>
+              </div>
+
+              {/* Card 4: Call for Facilitators */}
+              <div className="flex flex-col items-start p-10 md:p-12 bg-slate-50 rounded-[32px] hover:bg-slate-100 transition-colors duration-300">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-5">Open call</span>
+                <h3 className="font-heading text-2xl lg:text-3xl font-semibold leading-tight mb-5 text-slate-900">
+                  Call for Facilitators
+                </h3>
+                <p className="text-base text-slate-700 leading-relaxed mb-10 font-light">
+                  Seeking facilitators for the Climate Innovation Lab 2026 to guide multidisciplinary teams building digital solutions to climate challenges.
+                </p>
+                <div className="mt-auto">
+                  <ActionLink href="https://indico.wacren.net/event/282/" variant="primary" icon={ArrowRight}>
+                    Apply
                   </ActionLink>
                 </div>
               </div>
