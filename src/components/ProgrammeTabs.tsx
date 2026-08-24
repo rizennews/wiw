@@ -30,34 +30,34 @@ const OPEN_NOW_DATA = [
 
 const PAST_WORKSHOPS_DATA = [
   {
-    badge: "2024",
-    title: "Python for Weather & Climate Data Analysis",
-    description: "Intensive practical sessions on Python for weather and climate data, for women researchers, recent graduates and early-career professionals. Supported by AfricaConnect3."
+    badge: "04 Nov - 06 Nov 2024",
+    title: "Women in WACREN Workshop",
+    description: "The French-language edition of the WiW 2024 workshop, hosted at the Virtual University of Côte d'Ivoire (UVCI). An intensively practical workshop focusing on the use of Python for meteorological and climatic data analysis.",
+    href: "https://indico.wacren.net/event/236/"
   },
   {
-    badge: "2024",
-    title: "Francophone workshop",
-    description: "A dedicated French-language edition of the climate data training, extending the programme across the region's language zones."
+    badge: "27 Aug - 30 Aug 2024",
+    title: "Women-in-WACREN 2024 - Python for Weather and Climate Data Analysis",
+    description: "An intensive, hands-on workshop providing a deep understanding of Python programming and its applications in weather and climate data analysis. Designed for women researchers, students, and early-career professionals in STEM.",
+    href: "https://indico.wacren.net/event/207/"
   },
   {
-    badge: "2018",
-    title: "Physical Computing with Python",
-    description: "The first WiW event: 30 women from 5 countries at the University of Lagos, followed by a ten-week online programme. Co-sponsored by Eko-Konnect, UNILAG and AfricaConnect2."
+    badge: "22 Jan - 26 Jan 2018",
+    title: "Women in WACREN - Physical Computing with Python",
+    description: "A hands-on training introducing the fundamentals of physical computing with the Raspberry Pi, sensors, and Python. Held in collaboration with Eko-Konnect, NgREN, UNILAG, and AfricaConnect2 to support female students and staff in STEM.",
+    href: "https://indico.wacren.net/event/61/"
   },
   {
-    badge: "Ongoing",
-    title: "Programming, Git and DevOps",
-    description: "Foundational software skills for research computing, including version control and collaborative development practice."
+    badge: "25 Nov 2017",
+    title: "Women in WACREN - Community Day organized by Senchix",
+    description: "A community day featuring networking sessions with local tech hubs, inspiring talks highlighting remarkable careers of women across various sectors, and personal development workshops.",
+    href: "https://indico.wacren.net/event/56/"
   },
   {
-    badge: "Ongoing",
-    title: "Embedded systems, sensors and IoT",
-    description: "Raspberry Pi, sensors and connected devices — the skills behind environmental monitoring deployments."
-  },
-  {
-    badge: "Ongoing",
-    title: "AI and open science",
-    description: "Emerging technologies and open research practice for women building scientific computing careers."
+    badge: "20 Nov - 24 Nov 2017",
+    title: "Women in WACREN - Physical Computing with Python",
+    description: "The inaugural Women in WACREN training event, teaching Python through hands-on exercises with Raspberry Pi and sensors. Organized in collaboration with SenChix, snRER, UCAD, and AfricaConnect2 to enhance STEM skills for women.",
+    href: "https://indico.wacren.net/event/55/"
   }
 ];
 
@@ -65,17 +65,17 @@ const RESOURCES_DATA = [
   {
     title: "Workshop materials",
     description: "Slides, notebooks and exercises from past cohorts, hosted on the WACREN Indico conference server.",
-    href: "#"
+    href: ""
   },
   {
     title: "Code repositories",
     description: "Training code and participant projects in the Women in WACREN GitLab group.",
-    href: "#"
+    href: ""
   },
   {
     title: "Reports and publications",
     description: "Event reports and programme documentation, available through the WACREN media centre and repository.",
-    href: "#"
+    href: "https://baobab.wacren.net/communities/wiw/records?q=&l=list&p=1&s=10&sort=newest"
   }
 ];
 
@@ -156,19 +156,48 @@ export function ProgrammeTabs() {
               transition={{ duration: 0.3 }}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full"
             >
-              {PAST_WORKSHOPS_DATA.map((item, idx) => (
-                <div key={idx} className="flex flex-col items-start p-6 md:p-8 bg-slate-50 rounded-2xl hover:bg-slate-100 transition-colors duration-300">
-                  <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary mb-4">
-                    {item.badge}
-                  </span>
-                  <h3 className="font-heading text-xl lg:text-2xl font-semibold leading-tight mb-3 text-slate-900">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm md:text-[15px] text-slate-700 leading-relaxed font-light">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
+              {PAST_WORKSHOPS_DATA.map((item, idx) => {
+                if (item.href) {
+                  return (
+                    <a 
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      key={idx} 
+                      className="group flex flex-col items-start p-6 md:p-8 bg-slate-50 rounded-2xl hover:bg-slate-100 transition-colors duration-300 cursor-pointer"
+                    >
+                      <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary mb-4 group-hover:text-primary/80 transition-colors">
+                        {item.badge}
+                      </span>
+                      <div className="flex items-start justify-between w-full mb-3 gap-4">
+                        <h3 className="font-heading text-xl lg:text-2xl font-semibold leading-tight text-slate-900 group-hover:text-primary transition-colors">
+                          {item.title}
+                        </h3>
+                        <div className="w-8 h-8 shrink-0 rounded-full bg-slate-100 flex items-center justify-center group-hover:bg-primary/10 group-hover:text-primary transition-colors text-slate-400 mt-1">
+                          <ArrowRight className="w-4 h-4 -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
+                        </div>
+                      </div>
+                      <p className="text-sm md:text-[15px] text-slate-700 leading-relaxed font-light">
+                        {item.description}
+                      </p>
+                    </a>
+                  );
+                }
+
+                return (
+                  <div key={idx} className="flex flex-col items-start p-6 md:p-8 bg-slate-50 rounded-2xl transition-colors duration-300">
+                    <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary mb-4">
+                      {item.badge}
+                    </span>
+                    <h3 className="font-heading text-xl lg:text-2xl font-semibold leading-tight mb-3 text-slate-900">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm md:text-[15px] text-slate-700 leading-relaxed font-light">
+                      {item.description}
+                    </p>
+                  </div>
+                );
+              })}
             </motion.div>
           )}
 
@@ -181,25 +210,47 @@ export function ProgrammeTabs() {
               transition={{ duration: 0.3 }}
               className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 w-full"
             >
-              {RESOURCES_DATA.map((item, idx) => (
-                <a 
-                  href={item.href} 
-                  key={idx} 
-                  className="group flex flex-col items-start p-6 md:p-8 bg-slate-50 rounded-2xl hover:bg-slate-100 transition-colors duration-300"
-                >
-                  <div className="flex items-center justify-between w-full mb-4">
-                    <h3 className="font-heading text-xl lg:text-2xl font-semibold leading-tight text-slate-900 group-hover:text-primary transition-colors">
-                      {item.title}
-                    </h3>
-                    <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center group-hover:bg-primary/10 group-hover:text-primary transition-colors text-slate-400">
-                      <ArrowRight className="w-4 h-4 -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
+              {RESOURCES_DATA.map((item, idx) => {
+                if (item.href) {
+                  return (
+                    <a 
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      key={idx} 
+                      className="group flex flex-col items-start p-6 md:p-8 bg-slate-50 rounded-2xl transition-colors duration-300 hover:bg-slate-100 cursor-pointer"
+                    >
+                      <div className="flex items-center justify-between w-full mb-4">
+                        <h3 className="font-heading text-xl lg:text-2xl font-semibold leading-tight text-slate-900 transition-colors group-hover:text-primary">
+                          {item.title}
+                        </h3>
+                        <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center group-hover:bg-primary/10 group-hover:text-primary transition-colors text-slate-400">
+                          <ArrowRight className="w-4 h-4 -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
+                        </div>
+                      </div>
+                      <p className="text-sm md:text-[15px] text-slate-700 leading-relaxed font-light mt-2">
+                        {item.description}
+                      </p>
+                    </a>
+                  );
+                }
+
+                return (
+                  <div 
+                    key={idx} 
+                    className="flex flex-col items-start p-6 md:p-8 bg-slate-50 rounded-2xl transition-colors duration-300"
+                  >
+                    <div className="flex items-center justify-between w-full mb-4">
+                      <h3 className="font-heading text-xl lg:text-2xl font-semibold leading-tight text-slate-900 transition-colors">
+                        {item.title}
+                      </h3>
                     </div>
+                    <p className="text-sm md:text-[15px] text-slate-700 leading-relaxed font-light mt-2">
+                      {item.description}
+                    </p>
                   </div>
-                  <p className="text-sm md:text-[15px] text-slate-700 leading-relaxed font-light mt-2">
-                    {item.description}
-                  </p>
-                </a>
-              ))}
+                );
+              })}
             </motion.div>
           )}
         </AnimatePresence>
