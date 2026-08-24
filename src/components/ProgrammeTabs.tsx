@@ -11,6 +11,14 @@ const TABS = ["Open now", "Past workshops", "Resources & learning hub"];
 
 const OPEN_NOW_DATA = [
   {
+    badge: "Registration open",
+    title: "Women-In-WACREN Network launch",
+    description: "A virtual session introducing WiW, the Women-In-WACREN Network and the Climate Innovation Lab, with time for questions and networking.",
+    metadata: "25 August 2026 • Virtual • Free",
+    buttonText: "Register",
+    href: "#"
+  },
+  {
     badge: "Applications opening",
     title: "Climate Innovation Lab 2026",
     description: "A structured innovation programme strengthening women's capacity to collaboratively develop digital solutions to climate challenges. Teams progress from learning and problem identification through prototype development, with mentorship continuing afterwards.",
@@ -19,11 +27,19 @@ const OPEN_NOW_DATA = [
     href: "#"
   },
   {
-    badge: "Registration open",
-    title: "Women-In-WACREN Network launch",
-    description: "A 75-minute virtual session introducing WiW, the Women-In-WACREN Network and the Climate Innovation Lab, with time for questions and networking.",
-    metadata: "25 August 2026 • Virtual • Free",
-    buttonText: "Register",
+    badge: "Call for Mentors",
+    title: "Women-In-WACREN Call for Mentors",
+    description: "Support teams in the Climate Innovation Lab 2026 as they build digital solutions to climate challenges in West and Central Africa. Mentors contribute during the Lab and/or the six-month post-Lab mentorship programme.",
+    metadata: "Deadline: 15 Sept 2026 • Volunteer Role",
+    buttonText: "Apply",
+    href: "#"
+  },
+  {
+    badge: "Call for Facilitators",
+    title: "Women-In-WACREN Call for Facilitators",
+    description: "Seeking facilitators for the Climate Innovation Lab 2026, a four-day intensive program where multidisciplinary teams build digital solutions to climate challenges facing West and Central Africa.",
+    metadata: "Deadline: 15 Sept 2026 • Volunteer Role",
+    buttonText: "Apply",
     href: "#"
   }
 ];
