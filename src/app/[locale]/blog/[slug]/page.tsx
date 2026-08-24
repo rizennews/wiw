@@ -30,7 +30,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
             <span className="text-slate-900">{POST.category}</span>
           </div>
 
-          <h1 className="font-heading text-4xl md:text-5xl font-medium text-slate-900 leading-[1.2] mb-12">
+          <h1 className="font-heading text-4xl md:text-5xl font-medium text-slate-900 leading-[1.2] mb-12 break-words">
             {POST.title}
           </h1>
 
@@ -87,10 +87,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
         <TableOfContents toc={POST.toc} />
 
         {/* Right Column: Article Content */}
-        <article className="w-full lg:w-[70%] max-w-[800px]">
+        <article className="w-full lg:w-[70%] max-w-[800px] overflow-hidden">
           {/* We use dangerouslySetInnerHTML here for the mock content. In production, this would be a markdown parser or portable text renderer */}
           <div 
-            className="prose prose-slate max-w-none"
+            className="prose prose-slate max-w-none break-words"
             dangerouslySetInnerHTML={{ __html: POST.content }}
           />
         </article>

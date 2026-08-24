@@ -15,7 +15,7 @@ export default async function ActivitiesPage({ params }: { params: Promise<{ loc
     <div className="w-full flex flex-col min-h-screen">
       {/* Short Hero Section (Matching Homepage Style, No Image) */}
       <section className="relative w-full bg-primary pt-32 pb-12 md:pt-40 md:pb-16 overflow-hidden">
-        
+
         {/* Subtle abstract glow effects to replace the image */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-[100px] translate-x-1/2 -translate-y-1/2 pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-white/5 rounded-full blur-[100px] -translate-x-1/3 translate-y-1/3 pointer-events-none" />

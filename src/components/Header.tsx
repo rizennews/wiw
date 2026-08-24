@@ -328,11 +328,11 @@ export function Header() {
 
               <div className="flex flex-col gap-3">
                 <h4 className="text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Socials</h4>
-                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><FaLinkedin className="text-[#0a66c2] h-5 w-5" /> LinkedIn</Link>
-                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><FaXTwitter className="text-black h-5 w-5" /> X (Twitter)</Link>
-                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><FaFacebook className="text-[#1877F2] h-5 w-5" /> Facebook</Link>
-                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><FaMastodon className="text-[#5c4bdf] h-5 w-5" /> Mastodon</Link>
-                <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><SiBluesky className="text-[#0085ff] h-5 w-5" /> Bluesky</Link>
+                <a href="https://www.linkedin.com/company/west-and-central-african-research-and-education-network/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><FaLinkedin className="text-[#0a66c2] h-5 w-5" /> LinkedIn</a>
+                <a href="https://twitter.com/wacren" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><FaXTwitter className="text-black h-5 w-5" /> X (Twitter)</a>
+                <a href="https://www.facebook.com/WACRENinfo" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><FaFacebook className="text-[#1877F2] h-5 w-5" /> Facebook</a>
+                <a href="https://mastodon.social/@WACREN" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><FaMastodon className="text-[#5c4bdf] h-5 w-5" /> Mastodon</a>
+                <a href="https://bsky.app/profile/wacren.bsky.social" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[16px] font-medium text-foreground"><SiBluesky className="text-[#0085ff] h-5 w-5" /> Bluesky</a>
               </div>
 
             </div>
