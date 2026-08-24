@@ -24,7 +24,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
             Updates
           </h1>
           <p className="text-lg md:text-xl text-white/80 font-light max-w-2xl">
-            Stories, insights, and announcements from the Women in WACREN community.
+            Read exciting updates from our activities in blogs, news articles and events.
           </p>
         </div>
       </section>
