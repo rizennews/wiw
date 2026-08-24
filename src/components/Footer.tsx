@@ -85,7 +85,7 @@ export function Footer() {
                 alt="WACREN Logo" 
                 width={300} 
                 height={150} 
-                className="h-10 md:h-12 w-auto object-contain" 
+                className="h-10 md:h-12 w-auto object-contain bg-white p-2 rounded-lg" 
               />
             </div>
           </div>
