@@ -38,10 +38,6 @@ export default function Home() {
                 <ActionLink href="#" variant="inverted">
                   Join the Women-In-WACREN Network
                 </ActionLink>
-
-                <ActionLink href="/partnership" variant="outline-inverted">
-                  Partner with us
-                </ActionLink>
               </div>
             </div>
 
