@@ -32,7 +32,7 @@ const OPEN_NOW_DATA = [
     description: "Support teams in the Climate Innovation Lab 2026 as they build digital solutions to climate challenges in West and Central Africa. Mentors contribute during the Lab and/or the six-month post-Lab mentorship programme.",
     metadata: "Deadline: 15 Sept 2026 • Volunteer Role",
     buttonText: "Apply",
-    href: "#"
+    href: "https://indico.wacren.net/event/283/"
   },
   {
     badge: "Call for Facilitators",
@@ -40,7 +40,7 @@ const OPEN_NOW_DATA = [
     description: "Seeking facilitators for the Climate Innovation Lab 2026, a four-day intensive program where multidisciplinary teams build digital solutions to climate challenges facing West and Central Africa.",
     metadata: "Deadline: 15 Sept 2026 • Volunteer Role",
     buttonText: "Apply",
-    href: "#"
+    href: "https://indico.wacren.net/event/282/"
   }
 ];
 

@@ -85,7 +85,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             
             {/* Testimonial 1 */}
-            <div className="flex flex-col p-8 bg-white border border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] transition-all duration-300">
+            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;Placeholder quote &mdash; replace with a real participant testimonial collected with consent, ideally naming a concrete outcome: <mark className="bg-pink-200/60 px-1 py-0.5 rounded-sm">a job, a paper, a grant</mark>, a device deployed.&rdquo;
               </p>
@@ -100,7 +100,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             </div>
 
             {/* Testimonial 2 */}
-            <div className="flex flex-col p-8 bg-white border border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] transition-all duration-300">
+            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;Placeholder quote &mdash; a mentor or partner institution perspective works well as the second slot, <mark className="bg-emerald-200/60 px-1 py-0.5 rounded-sm">showing the programme from the supply side.</mark>&rdquo;
               </p>
@@ -115,7 +115,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             </div>
 
             {/* Testimonial 3 */}
-            <div className="flex flex-col p-8 bg-white border border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] transition-all duration-300">
+            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;This is a third placeholder. It shows how the layout looks when filled out completely. It proves that the programme is <mark className="bg-blue-200/60 px-1 py-0.5 rounded-sm">highly effective and scalable</mark>.&rdquo;
               </p>
@@ -130,7 +130,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             </div>
 
             {/* Testimonial 4 */}
-            <div className="flex flex-col p-8 bg-white border border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] transition-all duration-300">
+            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;Fourth placeholder. The community is incredibly supportive. I was able to <mark className="bg-yellow-200/60 px-1 py-0.5 rounded-sm">expand my network</mark> across multiple borders effortlessly.&rdquo;
               </p>
@@ -145,7 +145,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             </div>
 
             {/* Testimonial 5 */}
-            <div className="flex flex-col p-8 bg-white border border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] transition-all duration-300">
+            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;Fifth placeholder. Finding mentors who look like me and understand the context has been <mark className="bg-purple-200/60 px-1 py-0.5 rounded-sm">a total game changer</mark> for my career trajectory.&rdquo;
               </p>
@@ -160,7 +160,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             </div>
 
             {/* Testimonial 6 */}
-            <div className="flex flex-col p-8 bg-white border border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] transition-all duration-300">
+            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;Sixth and final placeholder. The technical clinics alone provided insights that helped our institution <mark className="bg-orange-200/60 px-1 py-0.5 rounded-sm">secure critical funding</mark> for the year.&rdquo;
               </p>

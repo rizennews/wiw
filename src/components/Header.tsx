@@ -31,8 +31,8 @@ import { cn } from "@/lib/utils";
 // --- Data for Mega Menu ---
 
 const aboutItems = [
-  { title: "Women-In-WACREN Journey", href: "/about" },
-  { title: "Women-In-WACREN Network", href: "/programme" },
+  { title: "Women-In-WACREN Journey", href: "/women-in-wacren-journey" },
+  { title: "Women-In-WACREN Network", href: "/women-in-wacren-network" },
   { title: "Activities", href: "/activities" },
   { title: "Impact", href: "/impact" },
 ];
@@ -45,8 +45,8 @@ const resourceItems = [
 
 const getInvolvedItems = [
   { title: "Partnership and Collaboration Opportunities", href: "/partnership", isExternal: false },
-  { title: "Call for Facilitators", href: "https://indico.wacren.net", isExternal: true },
-  { title: "Call for Mentors", href: "https://indico.wacren.net", isExternal: true },
+  { title: "Call for Facilitators", href: "https://indico.wacren.net/event/282/", isExternal: true },
+  { title: "Call for Mentors", href: "https://indico.wacren.net/event/283/", isExternal: true },
   { title: "Contact Us", href: "/contact", isExternal: false },
   { title: "Socials", href: "/socials", isExternal: false },
 ];
@@ -202,8 +202,8 @@ export function Header() {
                       <h4 className="mb-6 text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Opportunities</h4>
                       <ul className="flex flex-col gap-2">
                         <ListItem title="Partnership and Collaboration Opportunities" href="/partnership" />
-                        <ListItem title="Call for Facilitators" href="https://indico.wacren.net" target="_blank" />
-                        <ListItem title="Call for Mentors" href="https://indico.wacren.net" target="_blank" />
+                        <ListItem title="Call for Facilitators" href="https://indico.wacren.net/event/282/" target="_blank" />
+                        <ListItem title="Call for Mentors" href="https://indico.wacren.net/event/283/" target="_blank" />
                       </ul>
                     </div>
 
@@ -317,8 +317,8 @@ export function Header() {
               <div className="flex flex-col gap-3">
                 <h4 className="text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Opportunities</h4>
                 <Link href="/partnership" className="text-[16px] font-medium text-foreground">Partnership and Collaboration</Link>
-                <a href="https://indico.wacren.net" target="_blank" rel="noopener noreferrer" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Call for Facilitators</a>
-                <a href="https://indico.wacren.net" target="_blank" rel="noopener noreferrer" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Call for Mentors</a>
+                <a href="https://indico.wacren.net/event/282/" target="_blank" rel="noopener noreferrer" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Call for Facilitators</a>
+                <a href="https://indico.wacren.net/event/283/" target="_blank" rel="noopener noreferrer" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Call for Mentors</a>
               </div>
 
               <div className="flex flex-col gap-3">
@@ -376,9 +376,12 @@ const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a"> & { href: string; icon?: React.ReactNode }
 >(({ className, title, href, target, icon, ...props }, ref) => {
+  const isExternal = href.startsWith('http');
+  const LinkComponent = isExternal ? 'a' : Link;
+
   return (
     <li>
-      <Link
+      <LinkComponent
         href={href as any}
         target={target}
         rel={target === "_blank" ? "noopener noreferrer" : undefined}
@@ -394,7 +397,7 @@ const ListItem = React.forwardRef<
           </div>
         )}
         <div className="text-[15px] font-heading font-medium text-neutral-700 transition-colors group-hover:text-primary">{title}</div>
-      </Link>
+      </LinkComponent>
     </li>
   );
 });

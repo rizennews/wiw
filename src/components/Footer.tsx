@@ -48,8 +48,8 @@ export function Footer() {
           <div className="lg:col-span-3 flex flex-col items-start lg:pl-8">
             <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-white/60 mb-4">Explore</h4>
             <ul className="flex flex-col gap-3">
-              <li><Link href={"/about" as any} className="text-white/90 hover:text-white transition-colors duration-200">About</Link></li>
-              <li><Link href={"/programme" as any} className="text-white/90 hover:text-white transition-colors duration-200">Programme</Link></li>
+              <li><Link href={"/women-in-wacren-journey" as any} className="text-white/90 hover:text-white transition-colors duration-200">About</Link></li>
+              <li><Link href={"/women-in-wacren-network" as any} className="text-white/90 hover:text-white transition-colors duration-200">Programme</Link></li>
               <li><Link href={"/impact" as any} className="text-white/90 hover:text-white transition-colors duration-200">Impact</Link></li>
               <li><Link href={"/partnership" as any} className="text-white/90 hover:text-white transition-colors duration-200">Get Involved</Link></li>
             </ul>

@@ -80,7 +80,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="mt-4">
-                  <ActionLink href="/about" icon={ArrowRight}>
+                  <ActionLink href="/women-in-wacren-journey" icon={ArrowRight}>
                     Learn more about our work
                   </ActionLink>
                 </div>
