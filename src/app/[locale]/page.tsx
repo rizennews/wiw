@@ -49,7 +49,7 @@ export default function Home() {
             <div className="relative w-full h-[250px] md:h-[350px] lg:h-[400px] rounded-[24px] overflow-hidden shadow-2xl transition-transform duration-500">
               <div className="absolute inset-0 bg-black/10 z-10 pointer-events-none mix-blend-overlay"></div>
               <Image
-                src="/hero-image.jpg"
+                src="/hero.jpg"
                 alt="Women-In-WACREN innovators"
                 fill
                 priority
