@@ -11,7 +11,7 @@ export function Footer() {
           
           {/* Brand & Description (spans 4 cols) */}
           <div className="lg:col-span-4 flex flex-col items-start pr-8">
-            <div className="relative w-32 md:w-40 mb-6 block">
+            <div className="relative w-32 md:w-40 mb-6 block bg-white p-3 rounded-xl shadow-sm">
               <Image 
                 src="/Women in WACREN logo.png" 
                 alt="Women in WACREN" 
@@ -59,7 +59,7 @@ export function Footer() {
           <div className="lg:col-span-5 flex flex-col items-start">
             <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-white/60 mb-4">Funded by</h4>
             <p className="text-white/80 leading-relaxed text-sm font-light mb-6 max-w-md">
-              Activities under AfricaConnect4, co-funded by the European Union. Insert the required EU funding statement and emblem here.
+              The European Commission through the AfricaConnect projected under the Global Gateway Programme.
             </p>
             
             {/* Logos */}
@@ -69,7 +69,7 @@ export function Footer() {
                 alt="Global Gateway Logo" 
                 width={300} 
                 height={150} 
-                className="h-10 md:h-12 w-auto object-contain" 
+                className="h-14 md:h-16 w-auto object-contain" 
               />
               
               <Image 

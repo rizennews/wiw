@@ -174,7 +174,7 @@ export default function Home() {
               <div className="flex flex-col items-start p-10 md:p-12 bg-primary/5 rounded-[32px] hover:bg-primary/10 transition-colors duration-300">
                 <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-5">Open call</span>
                 <h3 className="font-heading text-2xl lg:text-3xl font-semibold leading-tight mb-5 text-slate-900">
-                  Mentors and trainers
+                  Call for Mentors
                 </h3>
                 <p className="text-base text-slate-700 leading-relaxed mb-10 font-light">
                   Women and allies working in STEM, research and industry are invited to mentor a cohort or co-facilitate a technical session.
