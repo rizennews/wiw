@@ -73,27 +73,25 @@ export const POSTS: BlogPost[] = [
       name: 'Padmore Aning',
       avatar: '/authors/PAD.png',
     },
+    image: '/blog/Wiw photo.jpg',
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        The West and Central African Research and Education Network (WACREN) demonstrated its commitment to opening windows of opportunities for women, historically underrepresented in STEM fields, as it launched its first Women in WACREN event under the theme “Physical Computing with Python.”
+        The West and Central African Research and Education Network (WACREN) demonstrated its commitment to opening windows of opportunity for women, historically underrepresented in STEM fields, by launching its first Women in WACREN event, themed “Physical Computing with Python.”
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        In addition to providing an opportunity for women to enhance programming skills, the conference forged strategic partnerships with women and organizations committed to addressing the underrepresentation of women in the field and served as a model for member NRENs.
+        In addition to providing an opportunity for women to enhance programming skills, the conference forged strategic partnerships with women and organisations committed to addressing the underrepresentation of women in the field and served as a model for member NRENs.
       </p>
 
       <blockquote class="flex gap-4 my-10 items-start">
         <span class="text-primary text-5xl font-serif leading-none pt-1 select-none" aria-hidden="true">&ldquo;</span>
         <div class="flex-1">
           <p class="text-lg md:text-[20px] font-bold text-slate-900 leading-relaxed mb-4">
-            The workshop exceeded our expectations as it served as a platform for training, networking, and building strategic partnerships with women and organizations that share our commitment to increasing participation of women in all NREN initiatives. We hope to replicate the training for women at WACREN member institutions.
+            The workshop exceeded our expectations as it served as a platform for training, networking, and building strategic partnerships with women and organisations that share our commitment to increasing participation of women in all NREN initiatives. We hope to replicate the training for women at WACREN member institutions.
           </p>
           <p class="text-[16px] text-slate-600 font-medium">— Omo Oaiya, WACREN’s Chief Technology Officer</p>
         </div>
       </blockquote>
 
-      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        The workshop introduced content for a 10-week training experience which will continue online. A total of 30 women representing 5 countries participated in the workshop co-sponsored by Eko-Konnect, the University of Lagos (UNILAG,) and AfricaConnect2, and held at the University of Lagos, Entrepreneurship and Skill Development Center, January 22-26.
-      </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         The workshop was followed by the Eko-Konnect ICT for Girls community day, an initiative to enhance opportunities for girls at the secondary and tertiary levels by improving their readiness to enter STEM fields. The event featured presentations by women in ICT who shared words of encouragement, strategies for success, and research affirming the need for more women in STEM fields.
       </p>
@@ -103,29 +101,33 @@ export const POSTS: BlogPost[] = [
         In a presentation titled “Cultural Factors Influencing Female Participation in Software Development,” Mandeep Saini, the Head of Software Development at GEANT, outlined root causes of the underrepresentation of women in STEM fields, addressing unconscious bias and cultural norms that affect women’s preparation and experiences in the field.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        Saini cited research evidence that demonstrates the business case for including women in the field.
+        Saini cited research demonstrating the business case for including women in the field.
       </p>
 
       <blockquote class="flex gap-4 my-10 items-start">
         <span class="text-primary text-5xl font-serif leading-none pt-1 select-none" aria-hidden="true">&ldquo;</span>
         <div class="flex-1">
           <p class="text-lg md:text-[20px] font-bold text-slate-900 leading-relaxed mb-4">
-            Groups with greater diversity solve complex problems better and faster than homogeneous groups. Tech companies led by women delivered higher revenues using less capital and were more likely to survive the transition from startup to established company.
+            Groups with greater diversity solve complex problems better and faster than homogeneous groups.
           </p>
           <p class="text-[16px] text-slate-600 font-medium">— Mandeep Saini, Head of Software Development at GEANT</p>
         </div>
       </blockquote>
+
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Women can be further encouraged by existing research, as she cited findings that assert: “Tech companies led by women delivered higher revenues using less capital and were more likely to survive the transition from startup to established company.”
+      </p>
     `,
     toc: [
       { id: 'cultural-factors', title: 'Addressing Cultural Norms', active: false },
     ]
   },
   {
-    slug: 'empowering-women-in-western-africa-in-the-field',
-    title: 'Empowering women in Western Africa - In The Field Blog article on WACREN',
-    excerpt: 'More than 2,000 young women in Western Africa have received a jump-start for pursuing a career in STEM by joining courses provided by WACREN.',
+    slug: 'empowering-women-in-stem-from-learning-to-innovation',
+    title: 'Empowering Women in STEM: From Learning to Innovation',
+    excerpt: 'More than 2,000 young women across West Africa have taken important steps towards careers in science, technology, engineering and mathematics (STEM) through courses, workshops and hands-on activities organised by WACREN.',
     category: 'News',
-    date: 'Jul 21, 2021',
+    date: 'Jul 21, 2018',
     author: {
       name: 'Padmore Aning',
       avatar: '/authors/PAD.png',
@@ -133,16 +135,78 @@ export const POSTS: BlogPost[] = [
     image: '/blog/shutterstock_671507512-itf-1140x680-1.jpg',
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        More than 2,000 young women in Western Africa have received a jump-start for pursuing a career in science, technology, engineering and math (STEM) by joining courses and workshops provided by the regional research and education network WACREN.
+        More than 2,000 young women across West Africa have taken important steps towards careers in science, technology, engineering and mathematics (STEM) through courses, workshops and hands-on activities organised by the West and Central African Research and Education Network (WACREN).
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        The program, known as Women-in-WACREN, was initiated in 2018. The regional network launched a five-day workshop offering knowledge and experience on basic programming (Python), application of Git and DevOps and introduction to embedded systems (Raspberry Pi) and sensors.
+        Through its Women-in-WACREN programme, WACREN has created opportunities for women to gain practical technology skills, explore new areas of innovation and develop solutions to real-world challenges.
       </p>
-      <p class="mb-6 text-[17px] leading-relaxed text-slate-700 font-bold">
-        Read <a href="https://www.inthefieldstories.net/empowering-women-in-western-africa/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">more here</a>.
+
+      <h2 id="building-skills" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Building STEM Skills from the Ground Up</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Launched in 2018, Women-in-WACREN began with a five-day workshop designed to introduce participants to essential technology and programming skills. The programme covered Python programming, Git and DevOps, as well as an introduction to embedded systems, Raspberry Pi and sensors. The goal was not only to introduce women to STEM concepts but also to equip them with practical skills they could build on throughout their academic and professional journeys.
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Over the years, the initiative has continued to evolve, expanding its reach and introducing new opportunities for participants to learn, experiment and innovate.
+      </p>
+
+      <h2 id="taking-learning-online" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Taking Learning Online</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        One of the programme's key activities is the annual online course “Physical Computing with Python.” Developed in collaboration with Eko-Konnect, Nigeria's national research and education network (NREN), and volunteers from the University of Cape Coast in Ghana, the free 10-week course gives participants an introduction to both programming and physical computing.
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Participants learn about the Linux Command-Line Interface, Python programming, the DevOps lifecycle, Git, embedded systems, sensors and other electronic components.
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        The online format enables women from different locations to participate and acquire foundational skills before moving on to more advanced, hands-on activities.
+      </p>
+
+      <h2 id="classroom-to-hackathon" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">From the Classroom to the Hackathon</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        For participants who successfully complete the online course, the next step is often an in-person hackathon. These hackathons provide an opportunity to turn knowledge into practical solutions. Working with hardware, sensors, and embedded devices, participants develop prototypes that address real-world problems.
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        More than 300 women have participated in these hackathons, gaining experience in coding, problem-solving, electronics and hardware development.
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        The most recent hackathon, hosted by Eko-Konnect at Covenant University in Nigeria, challenged participants to develop interactive physical-computing projects using affordable sensors and embedded devices.
+      </p>
+
+      <h2 id="turning-technology-real-world" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Turning Technology into Real-World Solutions</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        One of the challenges focused on developing a data-logging Internet of Things (IoT) weather station. Participants built a prototype capable of collecting weather data and transmitting it for storage, analysis, and visualisation. The stations were deployed at several institutions, with the broader goal of contributing to an NREN weather map that could bring together weather data from different locations on a single IoT platform.
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        For participants, the experience demonstrated how the skills learned during the programme can be applied to practical challenges.
+      </p>
+
+      <blockquote class="flex gap-4 my-10 items-start">
+        <span class="text-primary text-5xl font-serif leading-none pt-1 select-none" aria-hidden="true">&ldquo;</span>
+        <div class="flex-1">
+          <p class="text-lg md:text-[20px] font-bold text-slate-900 leading-relaxed mb-4">
+            Amazing experience! We set up a weather station. Despite the challenges, we configured the Raspberry Pi, got the wind speed of our anemometer working...
+          </p>
+          <p class="text-[16px] text-slate-600 font-medium">— Eletta Adeola, a Nigerian participant and co-innovator</p>
+        </div>
+      </blockquote>
+
+      <h2 id="creating-opportunities-next-gen" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Creating Opportunities for the Next Generation</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Women-in-WACREN demonstrates how access to practical training, mentorship and collaborative learning can help more women explore opportunities in STEM. By combining online learning with hands-on experimentation, the programme is helping participants move beyond learning technology to using technology to create solutions.
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        WACREN plans to expand the programme further, with activities designed to attract even wider participation from across Africa and potentially offer opportunities in multiple languages.
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        The ambition is clear: to give more young women the skills, confidence and opportunities they need to participate actively in Africa's growing technology and innovation ecosystem.
       </p>
     `,
-    toc: []
+    toc: [
+      { id: 'building-skills', title: 'Building STEM Skills from the Ground Up', active: false },
+      { id: 'taking-learning-online', title: 'Taking Learning Online', active: false },
+      { id: 'classroom-to-hackathon', title: 'From the Classroom to the Hackathon', active: false },
+      { id: 'turning-technology-real-world', title: 'Turning Technology into Real-World Solutions', active: false },
+      { id: 'creating-opportunities-next-gen', title: 'Creating Opportunities for the Next Generation', active: false },
+    ]
   },
   {
     slug: 'wiw-physical-computing-python-dakar',

@@ -87,14 +87,14 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             {/* Testimonial 1 */}
             <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                &ldquo;Placeholder quote &mdash; replace with a real participant testimonial collected with consent, ideally naming a concrete outcome: <mark className="bg-pink-200/60 px-1 py-0.5 rounded-sm">a job, a paper, a grant</mark>, a device deployed.&rdquo;
+                &ldquo;The WiW initiative not only <mark className="bg-pink-200/60 px-1 py-0.5 rounded-sm">built my capacity in quantitative analysis</mark> using Python but was also very inspiring - to have women who have accomplished great feats in the same room with you, teaching and sharing their experiences with you, is priceless!&rdquo;
               </p>
               <hr className="border-slate-900 mb-6" />
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">AB</div>
+                <img src="/impact/Henrietta Ampofo.jpg" alt="Henrietta Ampofo" className="w-10 h-10 rounded-full object-cover shrink-0" />
                 <div className="flex flex-col">
-                  <h4 className="font-semibold text-slate-900 text-sm">Participant name</h4>
-                  <span className="text-xs text-slate-500">Role &middot; Country</span>
+                  <h4 className="font-semibold text-slate-900 text-sm">Henrietta Ampofo</h4>
+                  <span className="text-xs text-slate-500">Ghana</span>
                 </div>
               </div>
             </div>
@@ -102,14 +102,14 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             {/* Testimonial 2 */}
             <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                &ldquo;Placeholder quote &mdash; a mentor or partner institution perspective works well as the second slot, <mark className="bg-emerald-200/60 px-1 py-0.5 rounded-sm">showing the programme from the supply side.</mark>&rdquo;
+                &ldquo;Amazing experience &hellip; We set up a weather station. Despite the challenges, we configured the raspberry pi, <mark className="bg-emerald-200/60 px-1 py-0.5 rounded-sm">got the wind speed of our anemometer working</mark>.&rdquo;
               </p>
               <hr className="border-slate-900 mb-6" />
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">CD</div>
+                <img src="/impact/Eletta Adeola.jpg" alt="Eletta Adeola" className="w-10 h-10 rounded-full object-cover shrink-0" />
                 <div className="flex flex-col">
-                  <h4 className="font-semibold text-slate-900 text-sm">Mentor name</h4>
-                  <span className="text-xs text-slate-500">Institution &middot; Country</span>
+                  <h4 className="font-semibold text-slate-900 text-sm">Eletta Adeola</h4>
+                  <span className="text-xs text-slate-500">Nigeria</span>
                 </div>
               </div>
             </div>
