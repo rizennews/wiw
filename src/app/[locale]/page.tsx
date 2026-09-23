@@ -149,7 +149,7 @@ export default function Home() {
                 </p>
                 
                 <div className="w-full pt-10 border-t border-slate-200">
-                  <ActionLink href="https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg" target="_blank">
+                  <ActionLink href="https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg">
                     Register on Zoom
                   </ActionLink>
                 </div>
