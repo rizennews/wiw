@@ -38,7 +38,6 @@ const aboutItems = [
 ];
 
 const resourceItems = [
-  { title: "Documents", href: "/documents" },
   { title: "Photos", href: "https://photos.wacren.net/index.php?/category/120" },
   { title: "Videos", href: "https://video.wacren.net/channel/Women-In-WACREN/721046" },
 ];
