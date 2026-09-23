@@ -134,22 +134,24 @@ export default function Home() {
               {/* Left Column: Title & Date (spans 5 cols) */}
               <div className="lg:col-span-5 flex flex-col gap-6">
                 <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold leading-[1.1] text-slate-900 tracking-tight">
-                  Launch of the WiW Community of Practice
+                  WiW Webinar - Mentorship, Sponsorship and Networks: What Actually Moves Women Forward in STEM?
                 </h2>
                 <div className="flex items-start gap-3 text-base font-medium text-slate-500 mt-2">
                   <Calendar className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>25 August 2026 &middot; Open to women 18+ across West & Central Africa</span>
+                  <span>30 Sept 2026, 13:00 &rarr; 1 Oct 2026, 14:00 Africa/Accra</span>
                 </div>
               </div>
 
               {/* Right Column: Text & Countdown (spans 7 cols) */}
               <div className="lg:col-span-7 flex flex-col gap-10 lg:pl-10">
                 <p className="text-base md:text-lg text-slate-700 leading-relaxed font-light">
-                  Connecting women and building solutions. We formally launch the regional Community of Practice and introduce the Climate Innovation Lab 2026 — its structure, eligibility, application process and what participants gain.
+                  This webinar will explore how mentorship, sponsorship and professional networks can help women in STEM gain visibility, access opportunities, build confidence and advance their careers. It will also highlight how these relationships support women across technology, research, academia, innovation and emerging fields such as climate technology.
                 </p>
                 
                 <div className="w-full pt-10 border-t border-slate-200">
-                  <Countdown targetDate="2026-08-25T10:00:00Z" />
+                  <ActionLink href="https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg" target="_blank">
+                    Register on Zoom
+                  </ActionLink>
                 </div>
               </div>
 
