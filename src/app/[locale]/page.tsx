@@ -69,7 +69,7 @@ export default function Home() {
               {/* Left Column: Text */}
               <div className="flex flex-col gap-6">
                 <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-slate-900">
-                  A regional response to the gender gap in STEM.
+                  A regional response to the gender gap in STEM
                 </h2>
                 <div className="flex flex-col gap-4 text-base md:text-lg text-slate-700 leading-relaxed">
                   <p>
@@ -116,11 +116,10 @@ export default function Home() {
         {/* Statistics Section */}
         <div className="w-full bg-primary text-white">
           <section className="w-full max-w-[1400px] mx-auto px-4 md:px-8 py-10 md:py-12">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-8 lg:divide-x divide-white/20">
-              <StatItem value="2,000+" label="Women trained since 2018" className="lg:pl-0 lg:pr-8" />
-              <StatItem value="16" label="Countries reached" className="lg:px-8" />
-              <StatItem value="20+" label="Workshops & bootcamps" className="lg:px-8" />
-              <StatItem value="30+" label="Partner institutions" className="lg:pl-8" />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-8 md:divide-x divide-white/20">
+              <StatItem value="2,000+" label="Women trained since 2018" className="md:pl-0 md:pr-8" />
+              <StatItem value="4" label="Countries reached" className="md:px-8" />
+              <StatItem value="20+" label="Workshops & bootcamps" className="md:px-8" />
             </div>
           </section>
         </div>
