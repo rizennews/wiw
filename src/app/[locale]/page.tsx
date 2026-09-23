@@ -124,48 +124,33 @@ export default function Home() {
           </section>
         </div>
 
-        {/* Event Promo Section */}
-        <div className="w-full bg-white text-foreground border-b border-slate-100">
+        {/* Upcoming Events Section */}
+        <div className="w-full bg-white text-foreground">
           <section className="w-full max-w-[1400px] mx-auto px-4 md:px-8 py-10 md:py-16">
-            
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-10 text-slate-900">
+              Upcoming events
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               
-              {/* Left Column: Title & Date (spans 5 cols) */}
-              <div className="lg:col-span-5 flex flex-col gap-6">
-                <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold leading-[1.1] text-slate-900 tracking-tight">
+              {/* Card 1: WiW Webinar */}
+              <div className="flex flex-col items-start p-10 md:p-12 bg-slate-50 rounded-[32px] hover:bg-slate-100 transition-colors duration-300">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-5">Webinar</span>
+                <h3 className="font-heading text-2xl lg:text-3xl font-semibold leading-tight mb-5 text-slate-900">
                   WiW Webinar - Mentorship, Sponsorship and Networks: What Actually Moves Women Forward in STEM?
-                </h2>
-                <div className="flex items-start gap-3 text-base font-medium text-slate-500 mt-2">
-                  <Calendar className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>30 Sept 2026, 13:00 &rarr; 1 Oct 2026, 14:00 Africa/Accra</span>
-                </div>
-              </div>
-
-              {/* Right Column: Text & Countdown (spans 7 cols) */}
-              <div className="lg:col-span-7 flex flex-col gap-10 lg:pl-10">
-                <p className="text-base md:text-lg text-slate-700 leading-relaxed font-light">
-                  This webinar will explore how mentorship, sponsorship and professional networks can help women in STEM gain visibility, access opportunities, build confidence and advance their careers. It will also highlight how these relationships support women across technology, research, academia, innovation and emerging fields such as climate technology.
+                </h3>
+                <p className="text-base text-slate-700 leading-relaxed mb-10 font-light">
+                  This webinar will explore how mentorship, sponsorship and professional networks can help women in STEM gain visibility, access opportunities, build confidence and advance their careers.
                 </p>
-                
-                <div className="w-full pt-10 border-t border-slate-200">
-                  <ActionLink href="https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg">
-                    Register on Zoom
+                <div className="mt-auto">
+                  <ActionLink href="https://indico.wacren.net/event/287/" variant="primary" icon={ArrowRight}>
+                    Register on Indico
                   </ActionLink>
                 </div>
               </div>
 
-            </div>
-          </section>
-        </div>
-
-        {/* Opportunities Section */}
-        <div className="w-full bg-white text-foreground">
-          <section className="w-full max-w-[1400px] mx-auto px-4 md:px-8 pt-10 md:pt-16 pb-4 md:pb-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-              
-              {/* Card 1: Climate Innovation Lab */}
-              <div className="flex flex-col items-start p-10 md:p-12 bg-slate-50 rounded-[32px] hover:bg-slate-100 transition-colors duration-300">
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-5">Applications opening</span>
+              {/* Card 2: Climate Innovation Lab */}
+              <div className="flex flex-col items-start p-10 md:p-12 bg-primary/5 rounded-[32px] hover:bg-primary/10 transition-colors duration-300">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-5">Innovation Lab</span>
                 <h3 className="font-heading text-2xl lg:text-3xl font-semibold leading-tight mb-5 text-slate-900">
                   Climate Innovation Lab 2026
                 </h3>
@@ -173,24 +158,8 @@ export default function Home() {
                   Teams of women move from problem identification to working prototype, with mentorship throughout — building digital solutions to climate challenges in the region.
                 </p>
                 <div className="mt-auto">
-                  <ActionLink href="#" variant="primary" icon={ArrowRight}>
-                    Learn more
-                  </ActionLink>
-                </div>
-              </div>
-
-              {/* Card 2: Mentors and trainers */}
-              <div className="flex flex-col items-start p-10 md:p-12 bg-primary/5 rounded-[32px] hover:bg-primary/10 transition-colors duration-300">
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-5">Open call</span>
-                <h3 className="font-heading text-2xl lg:text-3xl font-semibold leading-tight mb-5 text-slate-900">
-                  Mentors and trainers
-                </h3>
-                <p className="text-base text-slate-700 leading-relaxed mb-10 font-light">
-                  Women and allies working in STEM, research and industry are invited to mentor a cohort or co-facilitate a technical session.
-                </p>
-                <div className="mt-auto">
-                  <ActionLink href="#" variant="secondary" icon={ArrowRight}>
-                    Become a mentor
+                  <ActionLink href="https://indico.wacren.net/event/279/" variant="secondary" icon={ArrowRight}>
+                    Register on Indico
                   </ActionLink>
                 </div>
               </div>
