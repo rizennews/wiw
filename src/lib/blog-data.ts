@@ -15,6 +15,82 @@ export interface BlogPost {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: 'wiw-call-for-facilitators-2026',
+    title: 'Women-In-WACREN Call for Facilitators',
+    excerpt: 'Women-in-WACREN is seeking volunteer facilitators for the Climate Innovation Lab 2026 to guide multidisciplinary teams in building digital climate solutions.',
+    category: 'News',
+    date: 'Aug 25, 2026',
+    author: {
+      name: 'Padmore Aning',
+      avatar: '/authors/PAD.png',
+    },
+    image: '/blog/call-for-facilitators copy 2.jpg',
+    content: `
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Women-in-WACREN is seeking volunteer facilitators (men & women) for the Climate Innovation Lab 2026, scheduled for October 12–15. This four-day intensive program brings together multidisciplinary teams to design and build digital solutions addressing climate challenges across West and Central Africa.
+      </p>
+
+      <h2 id="expertise" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Expertise we need</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Facilitators should have hands-on experience in one or more of these areas:
+      </p>
+      <ul class="list-disc pl-5 mb-6 text-[17px] leading-relaxed text-slate-700 space-y-2">
+        <li><strong>Climate & environment</strong> — adaptation, mitigation, environmental sustainability, resilience, or related African climate challenges.</li>
+        <li><strong>Digital technologies for climate action</strong> — applying AI, data science, GIS, Earth observation, IoT, digital platforms or other emerging tech to climate and environmental problems.</li>
+        <li><strong>Human-centred design</strong> — problem definition, user and stakeholder research, needs analysis, translating real-world challenges into solution requirements.</li>
+        <li><strong>Design thinking & ideation</strong> — running collaborative ideation, weighing approaches, helping teams sharpen ideas into viable concepts.</li>
+        <li><strong>Testing, documentation & iteration</strong> — user testing, interpreting feedback, refining solutions, producing the documentation teams need.</li>
+        <li><strong>Pitching & Adoption</strong> — helping teams articulate the problem, the solution, the expected impact, potential funding, partnerships, prepare a strong demo and what it takes to carry a promising prototype beyond the Lab.</li>
+      </ul>
+
+      <h2 id="who" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Who we're looking for</h2>
+      <ul class="list-disc pl-5 mb-6 text-[17px] leading-relaxed text-slate-700 space-y-2">
+        <li>Practical experience in at least one area above, not just familiarity with it.</li>
+        <li>Comfortable facilitating and mentoring, not lecturing.</li>
+        <li>At ease with multidisciplinary teams spanning different levels of technical skill.</li>
+        <li>Skilled at helping teams turn broad challenges into specific, achievable solutions.</li>
+        <li>Familiar with African research, education, innovation, climate or technology environments, ideally through direct experience.</li>
+        <li>Able to give honest, constructive feedback while leaving teams ownership of their ideas.</li>
+        <li>Open to working alongside other facilitators whose strengths complement their own.</li>
+      </ul>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Facilitators can come from universities, research institutions, NRENs, innovation hubs, government, industry, civil society or development organisations.
+      </p>
+
+      <h2 id="role" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Role during the Lab</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Facilitators guide teams through the full arc: climate challenge, problem definition, user needs, ideation, solution design, prototype, testing, demonstration, roadmap.
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        This is learning by doing. Most of a facilitator's time goes into working directly with teams: asking questions, challenging assumptions, offering specialist input, and helping participants make real progress rather than sitting in on theory.
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Selected facilitators may also be invited into the programme's post-Lab Community of Practice and ongoing solution mentorship.
+      </p>
+
+      <h2 id="benefits" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">What’s in it for you</h2>
+      <ul class="list-disc pl-5 mb-6 text-[17px] leading-relaxed text-slate-700 space-y-2">
+        <li>Visibility and Recognition</li>
+        <li>Expanded Professional Network</li>
+        <li>Leadership Development</li>
+        <li>Certificate/Formal Acknowledgment</li>
+        <li>Sponsorship for in-person participation at the innovation lab</li>
+      </ul>
+
+      <p class="my-10 text-[18px] md:text-[20px] font-bold text-slate-900 leading-relaxed">
+        <span class="text-primary">Key Dates:</span><br/>
+        Application Deadline: September 15, 2026<br/>
+        Selection Notification: September 21, 2026
+      </p>
+    `,
+    toc: [
+      { id: 'expertise', title: 'Expertise we need', active: false },
+      { id: 'who', title: 'Who we\'re looking for', active: false },
+      { id: 'role', title: 'Role during the Lab', active: false },
+      { id: 'benefits', title: 'What’s in it for you', active: false },
+    ]
+  },
+  {
     slug: 'wiw-call-for-mentors-2026',
     title: 'Women-In-WACREN Call for Mentors',
     excerpt: 'Women-in-WACREN is looking for mentors (men & women) to volunteer to support teams in the Climate Innovation Lab 2026 as they build digital solutions to climate challenges.',
