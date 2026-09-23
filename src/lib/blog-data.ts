@@ -15,6 +15,89 @@ export interface BlogPost {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: 'wiw-call-for-mentors-2026',
+    title: 'Women-In-WACREN Call for Mentors',
+    excerpt: 'Women-in-WACREN is looking for mentors (men & women) to volunteer to support teams in the Climate Innovation Lab 2026 as they build digital solutions to climate challenges.',
+    category: 'News',
+    date: 'Aug 25, 2026',
+    author: {
+      name: 'Padmore Aning',
+      avatar: '/authors/PAD.png',
+    },
+    image: '/blog/call-for-MENTORS copy.jpg',
+    content: `
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Women-in-WACREN is looking for mentors (men & women) to volunteer to support teams in the Climate Innovation Lab 2026 as they build and refine digital solutions to climate challenges in West and Central Africa.
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Mentors contribute during the Lab itself and/or through the six-month post-Lab Community of Practice and Solution Mentorship programme.
+      </p>
+
+      <h2 id="expertise" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Areas of expertise</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        We're looking for practical experience in one or more of these:
+      </p>
+      <ul class="list-disc pl-5 mb-6 text-[17px] leading-relaxed text-slate-700 space-y-2">
+        <li>Climate change, environmental science, adaptation or mitigation</li>
+        <li>Software development and solution architecture</li>
+        <li>Artificial intelligence and data science</li>
+        <li>GIS and Earth observation</li>
+        <li>IoT, sensors and environmental monitoring</li>
+        <li>User experience and human-centred design</li>
+        <li>Entrepreneurship, business models and sustainability</li>
+        <li>Product development and deployment</li>
+        <li>Institutional adoption and partnerships</li>
+        <li>Monitoring, evaluation and impact</li>
+      </ul>
+
+      <h2 id="role" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">What mentors will do</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        This varies by team, but mentors can expect to:
+      </p>
+      <ul class="list-disc pl-5 mb-6 text-[17px] leading-relaxed text-slate-700 space-y-2">
+        <li>Give specialist technical or domain advice.</li>
+        <li>Review solution concepts and prototypes.</li>
+        <li>Help teams spot technical or implementation challenges early.</li>
+        <li>Connect teams to useful tools, data, expertise or networks.</li>
+        <li>Advise on testing, deployment and adoption.</li>
+        <li>Help teams build realistic technical and implementation roadmaps.</li>
+        <li>Check in periodically as solutions develop after the Lab.</li>
+      </ul>
+
+      <h2 id="benefits" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">What’s in it for you</h2>
+      <ul class="list-disc pl-5 mb-6 text-[17px] leading-relaxed text-slate-700 space-y-2">
+        <li>Visibility and Recognition</li>
+        <li>Expanded Professional Network</li>
+        <li>Leadership Development</li>
+        <li>Certificate/Formal Acknowledgment</li>
+        <li>Sponsorship for in-person participation at the innovation lab</li>
+      </ul>
+
+      <h2 id="who" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Who we're looking for</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Mentors can come from universities, research institutions, NRENs, government, industry, innovation hubs, civil society or development organisations.
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        What matters most is relevant, practical experience, ease working across multidisciplinary teams, and the ability to give honest guidance while letting participants keep ownership of their solutions.
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Mentors don't need to be trainers or facilitators. The point is to make the right expertise available to teams exactly when they need it.
+      </p>
+
+      <p class="my-10 text-[18px] md:text-[20px] font-bold text-slate-900 leading-relaxed">
+        <span class="text-primary">Key Dates:</span><br/>
+        Application Deadline: September 15, 2026<br/>
+        Selection Notification: September 21, 2026
+      </p>
+    `,
+    toc: [
+      { id: 'expertise', title: 'Areas of expertise', active: false },
+      { id: 'role', title: 'What mentors will do', active: false },
+      { id: 'benefits', title: 'What’s in it for you', active: false },
+      { id: 'who', title: 'Who we\'re looking for', active: false },
+    ]
+  },
+  {
     slug: 'call-for-volunteers-2020',
     title: 'Call for Volunteers - Women-in-WACREN',
     excerpt: 'WACREN is seeking collaborators from the NREN community for the implementation of its Women-in-WACREN program.',
