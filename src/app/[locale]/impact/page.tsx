@@ -1,7 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import { ActionLink } from '@/components/ActionLink';
 import { ImpactCard } from '@/components/ImpactCard';
-import { Network, Users, BookOpen, Lightbulb, ArrowRight, PlayCircle } from 'lucide-react';
+import { Network, Users, BookOpen, Lightbulb, ArrowRight } from 'lucide-react';
 
 import { Metadata } from 'next';
 
@@ -16,6 +16,38 @@ const videoTestimonials = [
   { entryId: '0_x2j4oe0b', wid: '0_9h7q1yj1', name: 'Attiogbe Afi', label: 'WiW Togo', title: 'Attiogbe Afi - WiW Togo' },
   { entryId: '0_b01xci0p', wid: '0_13ku5lrj', name: 'Matilda Owusu', label: 'WiW Ghana', title: 'Women-In-WACREN 2024 - Interview with Matilda Owusu (Ghana)' },
 ];
+
+function VideoTestimonialCard({ video, index }: { video: (typeof videoTestimonials)[number]; index: number }) {
+  const initials = video.name
+    .split(' ')
+    .map((part) => part[0])
+    .join('');
+  return (
+    <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
+      <div className="relative w-full aspect-video bg-slate-900 overflow-hidden mb-8">
+        <iframe
+          id={`kaltura_player_${index}`}
+          src={`${KALTURA_EMBED_BASE}${video.entryId}${KALTURA_EMBED_TAIL}${video.wid}`}
+          title={video.title}
+          className="absolute inset-0 w-full h-full"
+          allow="autoplay *; fullscreen *; encrypted-media *"
+          allowFullScreen
+          sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
+          loading="lazy"
+          frameBorder="0"
+        />
+      </div>
+      <hr className="border-slate-900 mb-6 mt-auto" />
+      <div className="flex items-center gap-4">
+        <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">{initials}</div>
+        <div className="flex flex-col">
+          <h4 className="font-semibold text-slate-900 text-sm">{video.name}</h4>
+          <span className="text-xs text-slate-500">{video.label}</span>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export const metadata: Metadata = {
   title: 'Our Impact',
@@ -87,7 +119,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Testimonials Section (text + video testimonials combined) */}
       <section className="w-full bg-slate-50 py-16 md:py-24">
         <div className="w-full max-w-[1400px] mx-auto px-4 md:px-8">
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 mb-12">
@@ -97,7 +129,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             
             {/* Testimonial 1 */}
-            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;The WiW initiative not only <mark className="bg-pink-200/60 px-1 py-0.5 rounded-sm">built my capacity in quantitative analysis</mark> using Python but was also very inspiring - to have women who have accomplished great feats in the same room with you, teaching and sharing their experiences with you, is priceless!&rdquo;
               </p>
@@ -111,8 +143,11 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               </div>
             </div>
 
+            {/* Video Testimonial 1: Rose Gohoue (WiW Benin) */}
+            <VideoTestimonialCard video={videoTestimonials[0]} index={0} />
+
             {/* Testimonial 2 */}
-            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;Amazing experience &hellip; We set up a weather station. Despite the challenges, we configured the raspberry pi, <mark className="bg-emerald-200/60 px-1 py-0.5 rounded-sm">got the wind speed of our anemometer working</mark>.&rdquo;
               </p>
@@ -127,7 +162,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             </div>
 
             {/* Testimonial 3 */}
-            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;This is a third placeholder. It shows how the layout looks when filled out completely. It proves that the programme is <mark className="bg-blue-200/60 px-1 py-0.5 rounded-sm">highly effective and scalable</mark>.&rdquo;
               </p>
@@ -141,8 +176,11 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               </div>
             </div>
 
+            {/* Video Testimonial 2: Zeinabou Bagayoko (WiW Mali) */}
+            <VideoTestimonialCard video={videoTestimonials[1]} index={1} />
+
             {/* Testimonial 4 */}
-            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;Fourth placeholder. The community is incredibly supportive. I was able to <mark className="bg-yellow-200/60 px-1 py-0.5 rounded-sm">expand my network</mark> across multiple borders effortlessly.&rdquo;
               </p>
@@ -157,7 +195,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             </div>
 
             {/* Testimonial 5 */}
-            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;Fifth placeholder. Finding mentors who look like me and understand the context has been <mark className="bg-purple-200/60 px-1 py-0.5 rounded-sm">a total game changer</mark> for my career trajectory.&rdquo;
               </p>
@@ -171,8 +209,11 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               </div>
             </div>
 
+            {/* Video Testimonial 3: Rasmata Simpore (WiW Burkina Faso) */}
+            <VideoTestimonialCard video={videoTestimonials[2]} index={2} />
+
             {/* Testimonial 6 */}
-            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;Sixth and final placeholder. The technical clinics alone provided insights that helped our institution <mark className="bg-orange-200/60 px-1 py-0.5 rounded-sm">secure critical funding</mark> for the year.&rdquo;
               </p>
@@ -186,56 +227,16 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               </div>
             </div>
 
+            {/* Video Testimonial 4: Attiogbe Afi (WiW Togo) */}
+            <VideoTestimonialCard video={videoTestimonials[3]} index={3} />
+
+            {/* Video Testimonial 5: Matilda Owusu (WiW Ghana) */}
+            <VideoTestimonialCard video={videoTestimonials[4]} index={4} />
+
           </div>
         </div>
       </section>
 
-      {/* Video Testimonials Section */}
-      <section className="w-full bg-white py-16 md:py-24">
-        <div className="w-full max-w-[1400px] mx-auto px-4 md:px-8">
-          {/* Section header (matching reference design: eyebrow + centered heading) */}
-          <div className="flex flex-col items-center text-center mb-12">
-            <span className="inline-flex items-center gap-2 text-primary text-sm font-semibold uppercase tracking-widest mb-4">
-              <PlayCircle className="w-4 h-4" />
-              Video testimonials
-            </span>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900">
-              Hear it from the network, in their own words.
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
-            {videoTestimonials.map((video, index) => (
-              <div
-                key={video.entryId}
-                className={`flex flex-col ${index === 0 ? 'md:col-span-2' : ''}`}
-              >
-                <div
-                  className={`relative w-full aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-sm border border-slate-200 ${
-                    index === 1 ? 'lg:aspect-auto lg:flex-1 lg:min-h-[300px]' : ''
-                  }`}
-                >
-                  <iframe
-                    id={`kaltura_player_${index}`}
-                    src={`${KALTURA_EMBED_BASE}${video.entryId}${KALTURA_EMBED_TAIL}${video.wid}`}
-                    title={video.title}
-                    className="absolute inset-0 w-full h-full"
-                    allow="autoplay *; fullscreen *; encrypted-media *"
-                    allowFullScreen
-                    sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
-                    loading="lazy"
-                    frameBorder="0"
-                  />
-                </div>
-                <div className="mt-4 shrink-0">
-                  <h3 className="text-base font-semibold text-slate-900">{video.name}</h3>
-                  <p className="text-sm text-slate-500">{video.label}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
