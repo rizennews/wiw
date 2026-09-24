@@ -19,22 +19,39 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://wiw.wacren.net'),
   title: {
     template: '%s | Women in WACREN',
-    default: 'Women in WACREN',
+    default: 'Women in WACREN - Empowering Women in STEM Across West & Central Africa',
   },
-  description: "Connecting, training, and funding women in STEM across the WACREN region.",
+  description: "Women-in-WACREN connects, trains, and funds women in STEM across West and Central Africa. Turning students, researchers, and early-career professionals into tech leaders.",
+  keywords: [
+    "Women in STEM",
+    "WACREN",
+    "Technology Africa",
+    "Women in Tech",
+    "STEM Education",
+    "West Africa Tech",
+    "Central Africa Tech",
+    "Digital Innovation",
+    "Women Empowerment",
+    "WACREN",
+    "Women in WACREN"
+  ],
+  authors: [{ name: "WACREN" }],
+  creator: "WACREN",
+  publisher: "WACREN",
   openGraph: {
-    title: 'Women in WACREN',
-    description: 'Connecting, training, and funding women in STEM across the WACREN region.',
+    title: 'Women in WACREN - Empowering Women in STEM',
+    description: 'Connecting, training, and funding women in STEM across West and Central Africa.',
     url: 'https://wiw.wacren.net',
     siteName: 'Women in WACREN',
     images: [
       {
-        url: '/Women in WACREN logo.png',
+        url: '/hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Women in WACREN',
+        alt: 'Women in WACREN - Building the scientific and digital future of West and Central Africa',
       },
     ],
     locale: 'en_US',
@@ -42,9 +59,20 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Women in WACREN',
-    description: 'Connecting, training, and funding women in STEM across the WACREN region.',
-    images: ['/Women in WACREN logo.png'],
+    title: 'Women in WACREN - Empowering Women in STEM',
+    description: 'Connecting, training, and funding women in STEM across West and Central Africa.',
+    images: ['/hero.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 

@@ -49,7 +49,7 @@ export default function Home() {
           <div className="relative w-full h-[250px] md:h-[350px] lg:h-[400px] rounded-[24px] overflow-hidden shadow-2xl transition-transform duration-500">
             <div className="absolute inset-0 bg-black/10 z-10 pointer-events-none mix-blend-overlay"></div>
             <Image
-              src="/hero-image.jpg"
+              src="/HERO.jpg"
               alt="Women-In-WACREN innovators"
               fill
               priority
@@ -134,6 +134,16 @@ export default function Home() {
               
               {/* Card 1: WiW Webinar */}
               <div className="flex flex-col items-start p-10 md:p-12 bg-slate-50 rounded-[32px] hover:bg-slate-100 transition-colors duration-300">
+                {/* Feature Image */}
+                <div className="relative w-full aspect-[16/9] rounded-[20px] overflow-hidden bg-slate-100 mb-7">
+                  <Image
+                    src="/wiw_fire side chat .jpg"
+                    alt="Women-in-WACREN fire side chat"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
                 <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-5">Webinar</span>
                 <h3 className="font-heading text-2xl lg:text-3xl font-semibold leading-tight mb-5 text-slate-900">
                   WiW Webinar - Mentorship, Sponsorship and Networks: What Actually Moves Women Forward in STEM?
@@ -150,6 +160,16 @@ export default function Home() {
 
               {/* Card 2: Climate Innovation Lab */}
               <div className="flex flex-col items-start p-10 md:p-12 bg-primary/5 rounded-[32px] hover:bg-primary/10 transition-colors duration-300">
+                {/* Feature Image */}
+                <div className="relative w-full aspect-[16/9] rounded-[20px] overflow-hidden bg-slate-100 mb-7">
+                  <Image
+                    src="/call-for-applications-final copy.jpg"
+                    alt="Climate Innovation Lab 2026 call for applications"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
                 <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-5">Innovation Lab</span>
                 <h3 className="font-heading text-2xl lg:text-3xl font-semibold leading-tight mb-5 text-slate-900">
                   Climate Innovation Lab 2026
