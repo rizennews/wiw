@@ -38,7 +38,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
           </h2>
           <div className="text-base md:text-lg text-slate-700 font-light leading-relaxed space-y-6">
             <p>
-              The Community of Practice is where women connect, exchange knowledge and experience, access mentorship and learning, collaborate across disciplines, and develop solutions to challenges affecting their communities &mdash; beyond any single programme.
+              The Women-In-WACREN Network is where women connect, exchange knowledge and experience, access mentorship and learning, collaborate across disciplines, and develop solutions to challenges affecting their communities &mdash; beyond any single programme.
             </p>
           </div>
 
@@ -69,7 +69,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
           {/* Call to Action Button */}
           <div className="mt-12 flex justify-start">
             <ActionLink href="#" variant="primary" icon={ArrowRight}>
-              Join the Community of Practice
+              Join the Women-In-WACREN Network
             </ActionLink>
           </div>
         </div>
@@ -85,37 +85,37 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             
             {/* Testimonial 1 */}
-            <div className="flex flex-col p-8 bg-white border border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] transition-all duration-300">
+            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                &ldquo;Placeholder quote &mdash; replace with a real participant testimonial collected with consent, ideally naming a concrete outcome: <mark className="bg-pink-200/60 px-1 py-0.5 rounded-sm">a job, a paper, a grant</mark>, a device deployed.&rdquo;
+                &ldquo;The WiW initiative not only <mark className="bg-pink-200/60 px-1 py-0.5 rounded-sm">built my capacity in quantitative analysis</mark> using Python but was also very inspiring - to have women who have accomplished great feats in the same room with you, teaching and sharing their experiences with you, is priceless!&rdquo;
               </p>
               <hr className="border-slate-900 mb-6" />
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">AB</div>
+                <img src="/impact/Henrietta Ampofo.jpg" alt="Henrietta Ampofo" className="w-10 h-10 rounded-full object-cover shrink-0" />
                 <div className="flex flex-col">
-                  <h4 className="font-semibold text-slate-900 text-sm">Participant name</h4>
-                  <span className="text-xs text-slate-500">Role &middot; Country</span>
+                  <h4 className="font-semibold text-slate-900 text-sm">Henrietta Ampofo</h4>
+                  <span className="text-xs text-slate-500">Ghana</span>
                 </div>
               </div>
             </div>
 
             {/* Testimonial 2 */}
-            <div className="flex flex-col p-8 bg-white border border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] transition-all duration-300">
+            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                &ldquo;Placeholder quote &mdash; a mentor or partner institution perspective works well as the second slot, <mark className="bg-emerald-200/60 px-1 py-0.5 rounded-sm">showing the programme from the supply side.</mark>&rdquo;
+                &ldquo;Amazing experience &hellip; We set up a weather station. Despite the challenges, we configured the raspberry pi, <mark className="bg-emerald-200/60 px-1 py-0.5 rounded-sm">got the wind speed of our anemometer working</mark>.&rdquo;
               </p>
               <hr className="border-slate-900 mb-6" />
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">CD</div>
+                <img src="/impact/Eletta Adeola.jpg" alt="Eletta Adeola" className="w-10 h-10 rounded-full object-cover shrink-0" />
                 <div className="flex flex-col">
-                  <h4 className="font-semibold text-slate-900 text-sm">Mentor name</h4>
-                  <span className="text-xs text-slate-500">Institution &middot; Country</span>
+                  <h4 className="font-semibold text-slate-900 text-sm">Eletta Adeola</h4>
+                  <span className="text-xs text-slate-500">Nigeria</span>
                 </div>
               </div>
             </div>
 
             {/* Testimonial 3 */}
-            <div className="flex flex-col p-8 bg-white border border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] transition-all duration-300">
+            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;This is a third placeholder. It shows how the layout looks when filled out completely. It proves that the programme is <mark className="bg-blue-200/60 px-1 py-0.5 rounded-sm">highly effective and scalable</mark>.&rdquo;
               </p>
@@ -130,7 +130,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             </div>
 
             {/* Testimonial 4 */}
-            <div className="flex flex-col p-8 bg-white border border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] transition-all duration-300">
+            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;Fourth placeholder. The community is incredibly supportive. I was able to <mark className="bg-yellow-200/60 px-1 py-0.5 rounded-sm">expand my network</mark> across multiple borders effortlessly.&rdquo;
               </p>
@@ -145,7 +145,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             </div>
 
             {/* Testimonial 5 */}
-            <div className="flex flex-col p-8 bg-white border border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] transition-all duration-300">
+            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;Fifth placeholder. Finding mentors who look like me and understand the context has been <mark className="bg-purple-200/60 px-1 py-0.5 rounded-sm">a total game changer</mark> for my career trajectory.&rdquo;
               </p>
@@ -160,7 +160,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             </div>
 
             {/* Testimonial 6 */}
-            <div className="flex flex-col p-8 bg-white border border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] transition-all duration-300">
+            <div className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
                 &ldquo;Sixth and final placeholder. The technical clinics alone provided insights that helped our institution <mark className="bg-orange-200/60 px-1 py-0.5 rounded-sm">secure critical funding</mark> for the year.&rdquo;
               </p>
