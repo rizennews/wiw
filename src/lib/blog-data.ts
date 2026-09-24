@@ -35,13 +35,130 @@ export const POSTS: BlogPost[] = [
         This webinar will explore the practical differences between mentorship, sponsorship and networking and examine how each can contribute to the growth of women in STEM. The conversation will also consider how these relationships can support women working across technology, research, academia, innovation and emerging fields such as climate technology.
       </p>
 
+      <h2 id="details" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Event details</h2>
+      <div class="mb-6 border border-slate-200 rounded-lg divide-y divide-slate-200 text-[16px]">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Date</span>
+          <span class="text-slate-700">Thursday, 1 October 2026</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Time</span>
+          <span class="text-slate-700">13:00 &ndash; 14:00</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Format</span>
+          <span class="text-slate-700">Online webinar (Zoom)</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Organiser</span>
+          <span class="text-slate-700">Women-in-WACREN (WiW), WACREN</span>
+        </div>
+      </div>
+
+      <h2 id="agenda" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Agenda</h2>
+      <div class="mb-6 overflow-x-auto border border-slate-200 rounded-lg">
+        <table class="w-full text-left border-collapse text-[15px]">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200 whitespace-nowrap">Time</th>
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200">Session</th>
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200">Speaker</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">13:00 &ndash; 13:05</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Welcome &amp; Introduction</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Welcome participants, icebreaker and introduce the webinar and speakers</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Amina Ramallan (WACREN)
+                <span class="block text-slate-500 text-[13px] mt-1">Convener</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">13:05 &ndash; 13:10</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Setting the Context</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Why mentorship, sponsorship and networks matter for women in STEM</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Abigail Essel (WACREN)
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">13:10 &ndash; 13:25</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Women in STEM</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Career growth, mentorship, networking, visibility and access to opportunities</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Uchenna Stella Emeka-Obi (Nigeria)
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">13:25 &ndash; 13:40</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Women in Climate</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Career growth, mentorship, networking, visibility and access to opportunities</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Dr Naomi Kumi (University of Energy and Natural Resources &ndash; Ghana)
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">13:40 &ndash; 13:50</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Questions &amp; Answers</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Questions from participants and practical advice from speakers</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Amina Ramallan (WACREN)
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">13:50 &ndash; 13:55</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Key Takeaways</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Speakers share one or two practical actions participants can take</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Naomi Kumi (University of Energy and Natural Resources &ndash; Ghana), Uchenna Stella Emeka-Obi (Nigeria)
+                <span class="block text-slate-500 text-[13px] mt-1">Speakers</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">13:55 &ndash; 14:00</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Closing</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Closing remarks</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Amina Ramallan (WACREN)
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <h2 id="register" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Register</h2>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700 font-medium">
-        Register here: <a href="https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg</a>
+        Register to attend this webinar: <a href="https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg</a>
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        For questions, contact the WiW Anglophone Coordinator at <a href="mailto:wiw@wacren.net" class="text-primary hover:underline">wiw@wacren.net</a>.
       </p>
     `,
     toc: [
       { id: 'explore', title: 'What the webinar will explore', active: false },
+      { id: 'details', title: 'Event details', active: false },
+      { id: 'agenda', title: 'Agenda', active: false },
       { id: 'register', title: 'Register', active: false },
     ]
   },

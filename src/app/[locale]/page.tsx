@@ -135,12 +135,13 @@ export default function Home() {
               {/* Card 1: WiW Webinar */}
               <div className="group flex flex-col bg-[#fafafa] border border-slate-200 overflow-hidden hover:border-slate-300 transition-colors h-full rounded-sm">
                 {/* Image */}
-                <div className="relative h-[220px] w-full border-b border-slate-200 overflow-hidden bg-white">
+                <div className="w-full border-b border-slate-200 overflow-hidden bg-white">
                   <Image
                     src="/wiw_fire side chat .jpg"
                     alt="Women-in-WACREN fire side chat"
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-[1.02] opacity-90 group-hover:opacity-100"
+                    width={1920}
+                    height={1080}
+                    className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-500"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
@@ -148,12 +149,23 @@ export default function Home() {
                 {/* Content */}
                 <div className="flex flex-col flex-1 p-6 md:p-8">
                   <h3 className="font-heading text-lg md:text-xl font-medium text-slate-900 mb-4 leading-snug">
-                    WiW Webinar - Mentorship, Sponsorship and Networks: What Actually Moves Women Forward in STEM?
+                    <Link
+                      href="/blog/wiw-webinar-mentorship-sponsorship-networks"
+                      className="hover:text-primary transition-colors"
+                    >
+                      WiW Webinar - Mentorship, Sponsorship and Networks: What Actually Move Women Forward in STEM?
+                    </Link>
                   </h3>
 
-                  <p className="text-sm md:text-[15px] text-slate-500 font-light leading-relaxed mb-8 flex-1">
+                  <p className="text-sm md:text-[15px] text-slate-500 font-light leading-relaxed mb-6 flex-1">
                     This webinar will explore how mentorship, sponsorship and professional networks can help women in STEM gain visibility, access opportunities, build confidence and advance their careers.
                   </p>
+
+                  {/* Date & Time */}
+                  <div className="flex items-center gap-2 text-[13px] font-medium text-slate-600 mb-4">
+                    <Calendar className="w-4 h-4 text-primary" />
+                    <span>Thursday, 1 October 2026 &middot; 13:00 &ndash; 14:00</span>
+                  </div>
 
                   {/* Meta Footer */}
                   <div className="mt-auto flex items-center justify-between text-[13px] font-medium pt-2">
@@ -161,7 +173,7 @@ export default function Home() {
                       [Webinar]
                     </span>
                     <a
-                      href="https://indico.wacren.net/event/287/"
+                      href="https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary inline-flex items-center gap-1.5 hover:underline"
@@ -176,12 +188,13 @@ export default function Home() {
               {/* Card 2: Climate Innovation Lab */}
               <div className="group flex flex-col bg-[#fafafa] border border-slate-200 overflow-hidden hover:border-slate-300 transition-colors h-full rounded-sm">
                 {/* Image */}
-                <div className="relative h-[220px] w-full border-b border-slate-200 overflow-hidden bg-white">
+                <div className="w-full border-b border-slate-200 overflow-hidden bg-white">
                   <Image
                     src="/call-for-applications-final copy.jpg"
                     alt="Climate Innovation Lab 2026 call for applications"
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-[1.02] opacity-90 group-hover:opacity-100"
+                    width={1920}
+                    height={1080}
+                    className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-500"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
