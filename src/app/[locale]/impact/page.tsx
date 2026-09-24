@@ -1,9 +1,21 @@
 import { setRequestLocale } from 'next-intl/server';
 import { ActionLink } from '@/components/ActionLink';
 import { ImpactCard } from '@/components/ImpactCard';
-import { Network, Users, BookOpen, Lightbulb, ArrowRight } from 'lucide-react';
+import { Network, Users, BookOpen, Lightbulb, ArrowRight, PlayCircle } from 'lucide-react';
 
 import { Metadata } from 'next';
+
+// Kaltura video testimonials hosted on video.wacren.net (partner 384)
+const KALTURA_EMBED_BASE = 'https://api.kaltura.nordu.net/p/384/sp/38400/embedIframeJs/uiconf_id/23453416/partner_id/384?iframeembed=true&playerId=kaltura_player&entry_id=';
+const KALTURA_EMBED_TAIL = '&flashvars[streamerType]=auto&flashvars[localizationCode]=en&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[hotspots.plugin]=1&flashvars[Kaltura.addCrossoriginToIframe]=true&wid=';
+
+const videoTestimonials = [
+  { entryId: '0_u8fr9jbw', wid: '0_54uwc9cw', name: 'Rose Gohoue', label: 'WiW Benin', title: 'Rose Gohoue - WiW Benin' },
+  { entryId: '0_qovxjw3y', wid: '0_cufk7vpv', name: 'Zeinabou Bagayoko', label: 'WiW Mali', title: 'Zeinabou Bagayoko - WiW Mali' },
+  { entryId: '0_gnyqxfyt', wid: '0_ialpi6fq', name: 'Rasmata Simpore', label: 'WiW Burkina Faso', title: 'Rasmata Simpore - WiW Burkina Faso' },
+  { entryId: '0_x2j4oe0b', wid: '0_9h7q1yj1', name: 'Attiogbe Afi', label: 'WiW Togo', title: 'Attiogbe Afi - WiW Togo' },
+  { entryId: '0_b01xci0p', wid: '0_13ku5lrj', name: 'Matilda Owusu', label: 'WiW Ghana', title: 'Women-In-WACREN 2024 - Interview with Matilda Owusu (Ghana)' },
+];
 
 export const metadata: Metadata = {
   title: 'Our Impact',
@@ -174,6 +186,53 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* Video Testimonials Section */}
+      <section className="w-full bg-white py-16 md:py-24">
+        <div className="w-full max-w-[1400px] mx-auto px-4 md:px-8">
+          {/* Section header (matching reference design: eyebrow + centered heading) */}
+          <div className="flex flex-col items-center text-center mb-12">
+            <span className="inline-flex items-center gap-2 text-primary text-sm font-semibold uppercase tracking-widest mb-4">
+              <PlayCircle className="w-4 h-4" />
+              Video testimonials
+            </span>
+            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900">
+              Hear it from the network, in their own words.
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+            {videoTestimonials.map((video, index) => (
+              <div
+                key={video.entryId}
+                className={`flex flex-col ${index === 0 ? 'md:col-span-2' : ''}`}
+              >
+                <div
+                  className={`relative w-full aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-sm border border-slate-200 ${
+                    index === 1 ? 'lg:aspect-auto lg:flex-1 lg:min-h-[300px]' : ''
+                  }`}
+                >
+                  <iframe
+                    id={`kaltura_player_${index}`}
+                    src={`${KALTURA_EMBED_BASE}${video.entryId}${KALTURA_EMBED_TAIL}${video.wid}`}
+                    title={video.title}
+                    className="absolute inset-0 w-full h-full"
+                    allow="autoplay *; fullscreen *; encrypted-media *"
+                    allowFullScreen
+                    sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
+                    loading="lazy"
+                    frameBorder="0"
+                  />
+                </div>
+                <div className="mt-4 shrink-0">
+                  <h3 className="text-base font-semibold text-slate-900">{video.name}</h3>
+                  <p className="text-sm text-slate-500">{video.label}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
