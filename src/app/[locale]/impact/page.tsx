@@ -1,13 +1,10 @@
 import { setRequestLocale } from 'next-intl/server';
 import { ActionLink } from '@/components/ActionLink';
+import { VideoTestimonialCard } from '@/components/VideoTestimonialCard';
 import { ImpactCard } from '@/components/ImpactCard';
 import { Network, Users, BookOpen, Lightbulb, ArrowRight } from 'lucide-react';
 
 import { Metadata } from 'next';
-
-// Kaltura video testimonials hosted on video.wacren.net (partner 384)
-const KALTURA_EMBED_BASE = 'https://api.kaltura.nordu.net/p/384/sp/38400/embedIframeJs/uiconf_id/23453416/partner_id/384?iframeembed=true&playerId=kaltura_player&entry_id=';
-const KALTURA_EMBED_TAIL = '&flashvars[streamerType]=auto&flashvars[localizationCode]=en&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[hotspots.plugin]=1&flashvars[Kaltura.addCrossoriginToIframe]=true&wid=';
 
 const videoTestimonials = [
   { entryId: '0_u8fr9jbw', wid: '0_54uwc9cw', name: 'Rose Gohoue', label: 'WiW Benin', title: 'Rose Gohoue - WiW Benin' },
@@ -16,38 +13,6 @@ const videoTestimonials = [
   { entryId: '0_x2j4oe0b', wid: '0_9h7q1yj1', name: 'Attiogbe Afi', label: 'WiW Togo', title: 'Attiogbe Afi - WiW Togo' },
   { entryId: '0_b01xci0p', wid: '0_13ku5lrj', name: 'Matilda Owusu', label: 'WiW Ghana', title: 'Women-In-WACREN 2024 - Interview with Matilda Owusu (Ghana)' },
 ];
-
-function VideoTestimonialCard({ video, index }: { video: (typeof videoTestimonials)[number]; index: number }) {
-  const initials = video.name
-    .split(' ')
-    .map((part) => part[0])
-    .join('');
-  return (
-    <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
-      <div className="relative w-full aspect-video bg-slate-900 overflow-hidden mb-8">
-        <iframe
-          id={`kaltura_player_${index}`}
-          src={`${KALTURA_EMBED_BASE}${video.entryId}${KALTURA_EMBED_TAIL}${video.wid}`}
-          title={video.title}
-          className="absolute inset-0 w-full h-full"
-          allow="autoplay *; fullscreen *; encrypted-media *"
-          allowFullScreen
-          sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
-          loading="lazy"
-          frameBorder="0"
-        />
-      </div>
-      <hr className="border-slate-900 mb-6 mt-auto" />
-      <div className="flex items-center gap-4">
-        <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">{initials}</div>
-        <div className="flex flex-col">
-          <h4 className="font-semibold text-slate-900 text-sm">{video.name}</h4>
-          <span className="text-xs text-slate-500">{video.label}</span>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export const metadata: Metadata = {
   title: 'Our Impact',
