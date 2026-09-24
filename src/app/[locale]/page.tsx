@@ -127,60 +127,90 @@ export default function Home() {
         {/* Upcoming Events Section */}
         <div className="w-full bg-white text-foreground">
           <section className="w-full max-w-[1400px] mx-auto px-4 md:px-8 py-10 md:py-16">
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-10 text-slate-900">
+            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight tracking-tight text-slate-900 mb-10">
               Upcoming events
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               
               {/* Card 1: WiW Webinar */}
-              <div className="flex flex-col items-start p-10 md:p-12 bg-slate-50 rounded-[32px] hover:bg-slate-100 transition-colors duration-300">
-                {/* Feature Image */}
-                <div className="relative w-full aspect-[16/9] rounded-[20px] overflow-hidden bg-slate-100 mb-7">
+              <div className="group flex flex-col bg-[#fafafa] border border-slate-200 overflow-hidden hover:border-slate-300 transition-colors h-full rounded-sm">
+                {/* Image */}
+                <div className="relative h-[220px] w-full border-b border-slate-200 overflow-hidden bg-white">
                   <Image
                     src="/wiw_fire side chat .jpg"
                     alt="Women-in-WACREN fire side chat"
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-700 group-hover:scale-[1.02] opacity-90 group-hover:opacity-100"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-5">Webinar</span>
-                <h3 className="font-heading text-2xl lg:text-3xl font-semibold leading-tight mb-5 text-slate-900">
-                  WiW Webinar - Mentorship, Sponsorship and Networks: What Actually Moves Women Forward in STEM?
-                </h3>
-                <p className="text-base text-slate-700 leading-relaxed mb-10 font-light">
-                  This webinar will explore how mentorship, sponsorship and professional networks can help women in STEM gain visibility, access opportunities, build confidence and advance their careers.
-                </p>
-                <div className="mt-auto">
-                  <ActionLink href="https://indico.wacren.net/event/287/" variant="primary" icon={ArrowRight}>
-                    Register on Indico
-                  </ActionLink>
+
+                {/* Content */}
+                <div className="flex flex-col flex-1 p-6 md:p-8">
+                  <h3 className="font-heading text-lg md:text-xl font-medium text-slate-900 mb-4 leading-snug">
+                    WiW Webinar - Mentorship, Sponsorship and Networks: What Actually Moves Women Forward in STEM?
+                  </h3>
+
+                  <p className="text-sm md:text-[15px] text-slate-500 font-light leading-relaxed mb-8 flex-1">
+                    This webinar will explore how mentorship, sponsorship and professional networks can help women in STEM gain visibility, access opportunities, build confidence and advance their careers.
+                  </p>
+
+                  {/* Meta Footer */}
+                  <div className="mt-auto flex items-center justify-between text-[13px] font-medium pt-2">
+                    <span className="text-primary tracking-wide">
+                      [Webinar]
+                    </span>
+                    <a
+                      href="https://indico.wacren.net/event/287/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary inline-flex items-center gap-1.5 hover:underline"
+                    >
+                      Register
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </div>
                 </div>
               </div>
 
               {/* Card 2: Climate Innovation Lab */}
-              <div className="flex flex-col items-start p-10 md:p-12 bg-primary/5 rounded-[32px] hover:bg-primary/10 transition-colors duration-300">
-                {/* Feature Image */}
-                <div className="relative w-full aspect-[16/9] rounded-[20px] overflow-hidden bg-slate-100 mb-7">
+              <div className="group flex flex-col bg-[#fafafa] border border-slate-200 overflow-hidden hover:border-slate-300 transition-colors h-full rounded-sm">
+                {/* Image */}
+                <div className="relative h-[220px] w-full border-b border-slate-200 overflow-hidden bg-white">
                   <Image
                     src="/call-for-applications-final copy.jpg"
                     alt="Climate Innovation Lab 2026 call for applications"
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-700 group-hover:scale-[1.02] opacity-90 group-hover:opacity-100"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-5">Innovation Lab</span>
-                <h3 className="font-heading text-2xl lg:text-3xl font-semibold leading-tight mb-5 text-slate-900">
-                  Climate Innovation Lab 2026
-                </h3>
-                <p className="text-base text-slate-700 leading-relaxed mb-10 font-light">
-                  Teams of women move from problem identification to working prototype, with mentorship throughout — building digital solutions to climate challenges in the region.
-                </p>
-                <div className="mt-auto">
-                  <ActionLink href="https://indico.wacren.net/event/279/" variant="secondary" icon={ArrowRight}>
-                    Register on Indico
-                  </ActionLink>
+
+                {/* Content */}
+                <div className="flex flex-col flex-1 p-6 md:p-8">
+                  <h3 className="font-heading text-lg md:text-xl font-medium text-slate-900 mb-4 leading-snug">
+                    Climate Innovation Lab 2026
+                  </h3>
+
+                  <p className="text-sm md:text-[15px] text-slate-500 font-light leading-relaxed mb-8 flex-1">
+                    Teams of women move from problem identification to working prototype, with mentorship throughout — building digital solutions to climate challenges in the region.
+                  </p>
+
+                  {/* Meta Footer */}
+                  <div className="mt-auto flex items-center justify-between text-[13px] font-medium pt-2">
+                    <span className="text-primary tracking-wide">
+                      [Innovation Lab]
+                    </span>
+                    <a
+                      href="https://indico.wacren.net/event/279/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary inline-flex items-center gap-1.5 hover:underline"
+                    >
+                      Register
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </div>
                 </div>
               </div>
 
