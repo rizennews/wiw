@@ -15,6 +15,37 @@ export interface BlogPost {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: 'wiw-webinar-mentorship-sponsorship-networks',
+    title: 'Mentorship, Sponsorship and Networks: What Actually Move Women Forward in STEM?',
+    excerpt: 'This WiW webinar explores the practical differences between mentorship, sponsorship and networking — and how each can contribute to the growth of women in STEM.',
+    category: 'Events',
+    date: 'Sep 24, 2026',
+    author: {
+      name: 'Padmore Aning',
+      avatar: '/authors/PAD.png',
+    },
+    image: '/wiw_fire side chat .jpg',
+    content: `
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Women's participation in STEM has increased, but access to opportunities, career progression and leadership is not determined by technical skills alone. Mentorship, sponsorship and professional networks can play an important role in helping women gain visibility, access opportunities, develop confidence and progress in their careers.
+      </p>
+
+      <h2 id="explore" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">What the webinar will explore</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        This webinar will explore the practical differences between mentorship, sponsorship and networking and examine how each can contribute to the growth of women in STEM. The conversation will also consider how these relationships can support women working across technology, research, academia, innovation and emerging fields such as climate technology.
+      </p>
+
+      <h2 id="register" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Register</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700 font-medium">
+        Register here: <a href="https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg</a>
+      </p>
+    `,
+    toc: [
+      { id: 'explore', title: 'What the webinar will explore', active: false },
+      { id: 'register', title: 'Register', active: false },
+    ]
+  },
+  {
     slug: 'wiw-call-for-facilitators-2026',
     title: 'Women-In-WACREN Call for Facilitators',
     excerpt: 'Women-in-WACREN is seeking volunteer facilitators for the Climate Innovation Lab 2026 to guide multidisciplinary teams in building digital climate solutions.',
