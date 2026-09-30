@@ -19,11 +19,13 @@ export function DeveloperFootprint() {
         "       ●●●● ● ● ●  ●  ● ● ● ● ●●●",
         "       ●  ● ●  ●●  ●  ●  ●● ●   ●",
         "       ●  ● ●   ● ●●● ●   ●  ●●●●",
-      ].join("\n");
+      ].join(String.fromCharCode(10));
+
+      const nl = String.fromCharCode(10);
 
       console.log(
-        `%c\n${dottedBanner}\n`,
-        "color: #CBD5E1; font-family: 'Courier New', Courier, monospace; font-size: 12px; font-weight: bold; line-height: 1.25;"
+        `%c${nl}${dottedBanner}${nl}`,
+        "display: block; color: #CBD5E1; font-family: 'Courier New', Courier, monospace; font-size: 12px; font-weight: bold; line-height: 1.25; white-space: pre;"
       );
 
       console.log(
@@ -34,14 +36,14 @@ export function DeveloperFootprint() {
       );
 
       console.log(
-        "%c\n" +
-        "  Portfolio:  https://padmoreaning.com/\n" +
-        "  Contact:    hello@padmoreaning.com\n\n" +
-        "  [ATTRIBUTION NOTE]\n" +
-        "  Padmore Aning crafted and engineered this website platform.\n" +
-        "  The Women-in-WACREN programme is supported by the European Union\n" +
-        "  through the AfricaConnect project and managed by WACREN.\n",
-        "color: #94A3B8; font-family: monospace; font-size: 11px; line-height: 1.6;"
+        "%c" + nl +
+        "  Portfolio:  https://padmoreaning.com/" + nl +
+        "  Contact:    hello@padmoreaning.com" + nl + nl +
+        "  [ATTRIBUTION NOTE]" + nl +
+        "  Padmore Aning crafted and engineered this website platform." + nl +
+        "  The Women-in-WACREN programme is supported by the European Union" + nl +
+        "  through the AfricaConnect project and managed by WACREN." + nl,
+        "display: block; color: #94A3B8; font-family: monospace; font-size: 11px; line-height: 1.6; white-space: pre;"
       );
     }
   }, []);
