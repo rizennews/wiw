@@ -1,4 +1,4 @@
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import { ShareMenu } from '@/components/ShareMenu';
 import { TableOfContents } from '@/components/TableOfContents';
@@ -8,6 +8,8 @@ import { notFound } from 'next/navigation';
 export default async function BlogPostPage({ params }: { params: Promise<{ locale: string, slug: string }> }) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations('Blog');
+  const tBlogPage = await getTranslations('BlogPage');
 
   const POST = getPostBySlug(slug);
 
@@ -27,11 +29,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
           <div className="flex items-center gap-2 font-mono text-[13px] mb-8">
             <Link href="/blog" className="text-primary hover:underline">Blog</Link>
             <span className="text-slate-400">/</span>
-            <span className="text-slate-900">{POST.category}</span>
+            <span className="text-slate-900">
+              {tBlogPage.has(`categories.${POST.category}`) ? tBlogPage(`categories.${POST.category}`) : POST.category}
+            </span>
           </div>
 
           <h1 className="font-heading text-4xl md:text-5xl font-medium text-slate-900 leading-[1.2] mb-12">
-            {POST.title}
+            {t.has(`${POST.slug}.title`) ? t(`${POST.slug}.title`) : POST.title}
           </h1>
 
           {/* Author & Meta */}
@@ -50,7 +54,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
             </div>
             
             <ShareMenu 
-              title={POST.title} 
+              title={t.has(`${POST.slug}.title`) ? t(`${POST.slug}.title`) : POST.title} 
               url={`https://wacren.net/blog/${POST.slug}`} 
             />
           </div>
@@ -58,12 +62,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
 
         {/* Right Column: Hero Image */}
         <div className="w-full lg:w-[60%]">
-          <div className="w-full aspect-[16/9] md:aspect-[21/9] lg:aspect-auto lg:h-[450px] border border-slate-200 rounded-sm overflow-hidden bg-white">
+          <div className="w-full aspect-[16/9] md:aspect-[21/9] lg:aspect-auto lg:h-[450px] border border-slate-200 rounded-sm overflow-hidden bg-white flex items-center justify-center">
             {POST.image ? (
               <img 
                 src={POST.image} 
                 alt={POST.title}
-                className="w-full h-full object-cover opacity-95"
+                className="w-full h-full object-contain opacity-95"
               />
             ) : (
               <div className="w-full h-full flex items-center justify-center bg-slate-50">
@@ -84,14 +88,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
       <section className="w-full max-w-[1400px] mx-auto px-4 md:px-8 py-16 flex flex-col lg:flex-row gap-12 lg:gap-20">
         
         {/* Left Column: Table of Contents */}
-        <TableOfContents toc={POST.toc} />
+        <TableOfContents toc={POST.toc.map(item => ({
+          ...item,
+          title: t.has(`${POST.slug}.toc.${item.id}`) ? t(`${POST.slug}.toc.${item.id}`) : item.title
+        }))} />
 
         {/* Right Column: Article Content */}
         <article className="w-full lg:w-[70%] max-w-[800px]">
           {/* We use dangerouslySetInnerHTML here for the mock content. In production, this would be a markdown parser or portable text renderer */}
           <div 
             className="prose prose-slate max-w-none"
-            dangerouslySetInnerHTML={{ __html: POST.content }}
+            dangerouslySetInnerHTML={{ __html: t.has(`${POST.slug}.content`) ? t.raw(`${POST.slug}.content`) : POST.content }}
           />
         </article>
 

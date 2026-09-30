@@ -11,7 +11,10 @@ interface TableOfContentsProps {
   toc: TocItem[];
 }
 
+import { useTranslations } from 'next-intl';
+
 export function TableOfContents({ toc }: TableOfContentsProps) {
+  const t = useTranslations('TableOfContents');
   const [activeId, setActiveId] = useState<string>('');
 
   useEffect(() => {
@@ -72,7 +75,7 @@ export function TableOfContents({ toc }: TableOfContentsProps) {
     <aside className="w-full lg:w-[30%] shrink-0">
       <div className="sticky top-[120px]">
         <h3 className="font-mono text-[12px] font-bold text-slate-400 uppercase tracking-widest mb-6 border-b border-slate-200 pb-4">
-          Table of contents
+          {t('title')}
         </h3>
         <ul className="flex flex-col gap-4">
           {toc.map((item) => {

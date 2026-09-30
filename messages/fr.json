@@ -1,5 +1,501 @@
 {
-  "Index": {
-    "title": "Femmes dans WACREN"
+  "Header": {
+    "home": "Accueil",
+    "about": "À propos",
+    "resources": "Ressources",
+    "blog": "Blog & Mises à jour",
+    "getInvolved": "S'impliquer",
+    "opportunities": "Opportunités",
+    "connect": "Se connecter",
+    "socials": "Réseaux Sociaux",
+    "language": "Langue",
+    "megaMenu": {
+      "about": {
+        "journey": "Parcours Women-in-WACREN",
+        "network": "Réseau Women-in-WACREN",
+        "impact": "Impact"
+      },
+      "resources": {
+        "photos": "Photos",
+        "videos": "Vidéos"
+      },
+      "getInvolved": {
+        "partnership": "Opportunités de partenariat et de collaboration",
+        "facilitators": "Appel aux facilitateurs",
+        "mentors": "Appel aux mentors",
+        "contact": "Contactez-nous",
+        "socials": "Réseaux sociaux"
+      }
+    }
+  },
+  "Footer": {
+    "brandDescription": "Bâtir une communauté régionale de femmes en science et technologie. Géré par le Réseau de recherche et d'éducation d'Afrique de l'Ouest et du Centre (WACREN).",
+    "explore": "Explorer",
+    "about": "À propos de WiW",
+    "programmes": "Programmes",
+    "communityImpact": "Communauté et impact",
+    "getInvolved": "Impliquez-vous",
+    "fundedBy": "Financé par",
+    "fundedText": "Le programme Women-in-WACREN est soutenu par l’Union Européenne à travers le projet AfricaConnect.",
+    "allRightsReserved": "Tous droits réservés.",
+    "privacyPolicy": "politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation"
+  },
+  "Home": {
+    "heroTitle": "Les femmes construisent l'avenir scientifique et numérique de l'Afrique de l'Ouest et du Centre.",
+    "heroDesc": "Women-In-WACREN forme, connecte et finance les femmes dans les STEM à travers la région — transformant étudiantes, chercheuses et jeunes professionnelles en innovatrices, créatrices et leaders technologiques.",
+    "heroCta": "Rejoindre la communauté de pratique",
+    "heroSecondary": "Devenez partenaire",
+    "impactTitle": "Notre impact en chiffres",
+    "impactDesc": "Résultats concrets de nos initiatives à travers la région.",
+    "stat1Label": "Femmes Formées",
+    "stat2Label": "Pays Atteints",
+    "stat3Label": "Mentors Actifs",
+    "stat4Label": "Axé sur la communauté",
+    "eventsTitle": "Événements à venir",
+    "eventsDesc": "Rejoignez nos derniers ateliers, webinaires et laboratoires d'innovation conçus pour les femmes dans les STEM.",
+    "event1Title": "Mentorat, parrainage et réseaux : qu'est-ce qui fait vraiment avancer les femmes dans les STEM ?",
+    "event1Desc": "Ce webinaire explorera comment le mentorat, le parrainage et les réseaux professionnels peuvent aider les femmes dans les STEM à gagner en visibilité, accéder à des opportunités, renforcer leur confiance et faire avancer leur carrière.",
+    "event1Tag": "[Webinaire]",
+    "register": "S'inscrire",
+    "event2Title": "Laboratoire d'Innovation Climatique 2026",
+    "event2Desc": "Les équipes de femmes passent de l'identification du problème au prototype fonctionnel, avec un mentorat tout au long du processus — pour construire des solutions numériques aux défis climatiques de la région.",
+    "event2Tag": "[Laboratoire d'Innovation]",
+    "newsTitle": "Aperçus et Actualités",
+    "newsDesc": "Histoires de terrain, événements à venir et mises à jour de la communauté WiW à travers l'Afrique de l'Ouest et Centrale.",
+    "viewAll": "Voir toutes les histoires",
+    "missionTitle": "Une réponse régionale à l'écart entre les sexes dans les STEM",
+    "missionDesc1": "Lancée en 2018, Women-In-WACREN (WiW) est l'initiative du WACREN visant à lutter contre les inégalités entre les sexes et la sous-représentation des femmes dans les sciences, la technologie, l'ingénierie et les mathématiques en Afrique de l'Ouest et du Centre.",
+    "missionDesc2": "Nous travaillons par l'intermédiaire des Réseaux Nationaux de Recherche et d'Enseignement (NREN), des universités et des instituts de recherche — la même infrastructure qui achemine les données de recherche de l'Afrique — pour atteindre les femmes là où elles étudient et travaillent déjà.",
+    "learnMore": "En savoir plus sur notre travail",
+    "impact1Title": "Former",
+    "impact1Desc": "Ateliers techniques pratiques sur Python, l'informatique physique, l'IoT, l'IA, la science ouverte et l'analyse des données climatiques.",
+    "impact2Title": "Connecter",
+    "impact2Desc": "Une communauté de pratique régionale pour le mentorat, l'apprentissage entre pairs et la collaboration transfrontalière.",
+    "impact3Title": "Innover",
+    "impact3Desc": "Des laboratoires d'innovation structurés où les femmes construisent des solutions numériques pour leurs propres communautés.",
+    "stat1": "Femmes formées depuis 2018",
+    "stat2": "Pays atteints",
+    "stat3": "Ateliers et bootcamps",
+    "testimonialsTitle": "Voix de Women-in-WACREN",
+    "testimonialsDesc": "Écoutez les chercheuses, innovatrices et leaders qui ont participé à nos programmes.",
+    "posts": {
+      "wiw-webinar-mentorship-sponsorship-networks": {
+        "title": "Mentorat, parrainage et réseaux : qu'est-ce qui fait vraiment avancer les femmes dans les STEM ?",
+        "excerpt": "Ce webinaire WiW explore les différences pratiques entre le mentorat, le parrainage et le réseautage — et comment chacun peut contribuer à la croissance des femmes dans les STEM."
+      },
+      "wiw-call-for-facilitators-2026": {
+        "title": "Women-In-WACREN Appel aux facilitateurs",
+        "excerpt": "Women-in-WACREN recherche des facilitateurs bénévoles pour le Laboratoire d'Innovation Climatique 2026 afin de guider les équipes multidisciplinaires dans la création de solutions climatiques numériques."
+      },
+      "wiw-call-for-mentors-2026": {
+        "title": "Women-In-WACREN Appel aux mentors",
+        "excerpt": "Women-in-WACREN recherche des mentors (hommes et femmes) bénévoles pour soutenir les équipes du Laboratoire d'Innovation Climatique 2026 dans la création de solutions numériques aux défis climatiques."
+      }
+    }
+  },
+  "TestimonialMarquee": {
+    "t1_quoteStart": "L'initiative WiW n'a pas seulement ",
+    "t1_highlight": "renforcé mes capacités en analyse quantitative",
+    "t1_quoteEnd": " avec Python, mais a aussi été très inspirante - avoir des femmes qui ont accompli de grandes choses dans la même pièce que vous, enseignant et partageant leurs expériences, ça n'a pas de prix !",
+    "t2_quoteStart": "Expérience incroyable... Nous avons installé une station météorologique. Malgré les défis, nous avons configuré le Raspberry Pi, ",
+    "t2_highlight": "fait fonctionner la vitesse du vent de notre anémomètre",
+    "t2_quoteEnd": ".",
+    "t3_quoteStart": "Avant de rejoindre l'initiative WiW, j'avais du mal à trouver des mentors féminins dans mon domaine. Grâce à la Communauté de Pratique, je n'ai pas seulement trouvé des mentors, j'ai aussi ",
+    "t3_highlight": "noué des amitiés durables",
+    "t3_quoteEnd": " qui propulsent ma carrière.",
+    "t4_quoteStart": "Les cliniques techniques à elles seules ont fourni des informations qui ont aidé notre institution à ",
+    "t4_highlight": "sécuriser un financement essentiel",
+    "t4_quoteEnd": " pour l'année.",
+    "t5_quoteStart": "Trouver des mentors qui me ressemblent et qui comprennent le contexte a été ",
+    "t5_highlight": "un véritable tournant",
+    "t5_quoteEnd": " pour ma trajectoire professionnelle."
+  },
+  "ProgrammeTabs": {
+    "tabOpenNow": "Ouvert maintenant",
+    "tabPastWorkshops": "Ateliers passés",
+    "badgeOpen": "Ouverture des candidatures",
+    "titleClimate": "Laboratoire d'Innovation Climatique 2026",
+    "descClimate": "Un programme d'innovation structuré renforçant la capacité des femmes à développer en collaboration des solutions numériques aux défis climatiques. Les équipes progressent de l'apprentissage et l'identification des problèmes au développement de prototypes, avec un mentorat qui se poursuit par la suite.",
+    "metaClimate": "Format : en équipe • Éligibilité : femmes 18+ dans la région WACREN • Dates à confirmer",
+    "btnApply": "Postuler",
+    "badgeReg": "Inscriptions ouvertes",
+    "titleComm": "Lancement de la Communauté de Pratique",
+    "descComm": "Une session virtuelle de 75 minutes présentant WiW, la Communauté de Pratique et le Laboratoire d'Innovation Climatique, avec du temps pour les questions et le réseautage.",
+    "metaComm": "25 août 2026 • Virtuel • Gratuit",
+    "btnRegister": "S'inscrire",
+    "badge2024": "2024",
+    "badge2018": "2018",
+    "badgeOngoing": "En cours",
+    "titlePython1": "Python pour l'analyse des données météorologiques et climatiques",
+    "descPython1": "Sessions pratiques intensives sur Python pour les données météorologiques et climatiques, destinées aux chercheuses, aux jeunes diplômées et aux professionnelles en début de carrière. Soutenu par AfricaConnect3.",
+    "titlePython2": "Python pour l'analyse des données météorologiques et climatiques, Francophone",
+    "descPython2": "Une édition francophone dédiée de la formation sur les données climatiques, étendant le programme aux zones linguistiques de la région.",
+    "titlePhysical": "Informatique physique avec Python",
+    "descPhysical": "Le premier événement WiW : 30 femmes de 5 pays à l'Université de Lagos, suivi d'un programme en ligne de dix semaines. Coconçu par Eko-Konnect, UNILAG et AfricaConnect2.",
+    "titleGit": "Programmation, Git et DevOps",
+    "descGit": "Compétences logicielles fondamentales pour l'informatique de recherche, y compris le contrôle de version et la pratique du développement collaboratif.",
+    "titleIoT": "Systèmes embarqués, capteurs et IoT",
+    "descIoT": "Raspberry Pi, capteurs et appareils connectés – les compétences derrière les déploiements de surveillance environnementale.",
+    "titleAI": "IA et science ouverte",
+    "descAI": "Technologies émergentes et pratiques de recherche ouverte pour les femmes construisant des carrières en informatique scientifique."
+  },
+  "BlogPage": {
+    "title": "Blog et Mises à jour",
+    "description": "Lisez les dernières nouvelles, mises à jour et histoires de la communauté du réseau Women-in-WACREN.",
+    "search": "Rechercher des articles...",
+    "loadMore": "Charger plus d'articles",
+    "noResults": "Aucun article ne correspond à vos critères.",
+    "categories": {
+      "All": "Tous",
+      "Community": "Communauté",
+      "Research": "Recherche",
+      "News": "Actualités",
+      "Events": "Événements"
+    },
+    "clearFilters": "Effacer les filtres"
+  },
+  "Blog": {
+    "wiw-webinar-mentorship-sponsorship-networks": {
+      "title": "Mentorat, parrainage et réseaux : qu'est-ce qui fait réellement progresser les femmes dans les STEM ?",
+      "excerpt": "Ce webinaire WiW explore les différences pratiques entre le mentorat, le parrainage et le réseautage – et comment chacun peut contribuer à la croissance des femmes dans les STEM.",
+      "content": "<p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        La participation des femmes dans les domaines STEM a augmenté, mais l'accès aux opportunités, l'évolution de carrière et le leadership ne sont pas déterminés uniquement par les compétences techniques. Le mentorat, le parrainage et les réseaux professionnels peuvent jouer un rôle important en aidant les femmes à gagner en visibilité, à accéder à des opportunités, à développer leur confiance et à progresser dans leur carrière.\n      </p>\n\n      <h2 id=\"explore\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Ce que le webinaire explorera</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Ce webinaire explorera les différences pratiques entre le mentorat, le parrainage et le réseautage et examinera comment chacun peut contribuer à la croissance des femmes dans les STEM. La conversation examinera également comment ces relations peuvent soutenir les femmes travaillant dans les domaines de la technologie, de la recherche, du monde universitaire, de l’innovation et des domaines émergents tels que la technologie climatique.\n      </p>\n\n      <h2 id=\"details\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Détails de l'événement</h2>\n      <div class=\"mb-6 border border-slate-200 arrondi-lg diviser-y diviser-ardoise-200 texte-[16px]\">\n        <div class=\"flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4\">\n          <span class=\"font-semibold text-slate-900 sm:w-32 Shrink-0\">Date</span>\n          <span class=\"text-slate-700\">Mercredi 30 septembre 2026</span>\n        </div>\n        <div class=\"flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4\">\n          <span class=\"font-semibold text-slate-900 sm:w-32 Shrink-0\">Heure</span>\n          <span class=\"text-slate-700\">13h00 UTC</span>\n        </div>\n        <div class=\"flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4\">\n          <span class=\"font-semibold text-slate-900 sm:w-32 Shrink-0\">Format</span>\n          <span class=\"text-slate-700\">Webinaire en ligne (Zoom)</span>\n        </div>\n        <div class=\"flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4\">\n          <span class=\"font-semibold text-slate-900 sm:w-32 Shrink-0\">Organisateur</span>\n          <span class=\"text-slate-700\">Femmes-dans-WACREN (WiW), WACREN</span>\n        </div>\n      </div>\n\n      <h2 id=\"agenda\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Ordre du jour</h2>\n      <div class=\"mb-6 overflow-x-auto border border-slate-200 arrondi-lg\">\n        <table class=\"w-full text-left border-collapse text-[15px]\">\n          <tête>\n            <tr class=\"bg-slate-50\">\n              <th class=\"px-5 py-3 font-semibold text-slate-900 border-b border-slate-200 whitespace-nowrap\">Heure</th>\n              <th class=\"px-5 py-3 font-semibold text-slate-900 border-b border-slate-200\">Session</th>\n              <th class=\"px-5 py-3 font-semibold text-slate-900 border-b border-slate-200\">Haut-parleur</th>\n            </tr>\n          </tête>\n          <corps>\n            <tr class=\"align-top\">\n              <td class=\"px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]\">13h00 – 13h05</td>\n              <td class=\"px-5 py-4 border-b border-slate-100\">\n                <span class=\"block font-semibold text-slate-900\">Bienvenue et introduction</span>\n                <span class=\"block text-slate-600 text-[14px] mt-1\">Bienvenue aux participants, brise-glace et présentation du webinaire et des intervenants</span>\n              </td>\n              <td class=\"px-5 py-4 border-b border-slate-100 text-slate-700\">\n                Amina Ramallan (WACREN)\n                <span class=\"block text-slate-500 text-[13px] mt-1\">Organisateur</span>\n              </td>\n            </tr>\n            <tr class=\"align-top\">\n              <td class=\"px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]\">13:05 – 13:10</td>\n              <td class=\"px-5 py-4 border-b border-slate-100\">\n                <span class=\"block font-semibold text-slate-900\">Définition du contexte</span>\n                <span class=\"block text-slate-600 text-[14px] mt-1\">Pourquoi le mentorat, le parrainage et les réseaux sont importants pour les femmes dans les STEM</span>\n              </td>\n              <td class=\"px-5 py-4 border-b border-slate-100 text-slate-700\">\n                Abigail Essel (WACREN)\n                <span class=\"block text-slate-500 text-[13px] mt-1\">Haut-parleur</span>\n              </td>\n            </tr>\n            <tr class=\"align-top\">\n              <td class=\"px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]\">13:10 – 13:25</td>\n              <td class=\"px-5 py-4 border-b border-slate-100\">\n                <span class=\"block font-semibold text-slate-900\">Les femmes dans les STEM</span>\n                <span class=\"block text-slate-600 text-[14px] mt-1\">Évolution de carrière, mentorat, réseautage, visibilité et accès aux opportunités</span>\n              </td>\n              <td class=\"px-5 py-4 border-b border-slate-100 text-slate-700\">\n                Uchenna Stella Emeka-Obi (Nigéria)\n                <span class=\"block text-slate-500 text-[13px] mt-1\">Haut-parleur</span>\n              </td>\n            </tr>\n            <tr class=\"align-top\">\n              <td class=\"px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]\">13:25 – 13:40</td>\n              <td class=\"px-5 py-4 border-b border-slate-100\">\n                <span class=\"block font-semibold text-slate-900\">Les femmes et le climat</span>\n                <span class=\"block text-slate-600 text-[14px] mt-1\">Évolution de carrière, mentorat, réseautage, visibilité et accès aux opportunités</span>\n              </td>\n              <td class=\"px-5 py-4 border-b border-slate-100 text-slate-700\">\n                Dr Naomi Kumi (Université de l'énergie et des ressources naturelles – Ghana)\n                <span class=\"block text-slate-500 text-[13px] mt-1\">Haut-parleur</span>\n              </td>\n            </tr>\n            <tr class=\"align-top\">\n              <td class=\"px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]\">13h40 – 13h50</td>\n              <td class=\"px-5 py-4 border-b border-slate-100\">\n                <span class=\"block font-semibold text-slate-900\">Questions et réponses</span>\n                <span class=\"block text-slate-600 text-[14px] mt-1\">Questions des participants et conseils pratiques des intervenants</span>\n              </td>\n              <td class=\"px-5 py-4 border-b border-slate-100 text-slate-700\">\n                Amina Ramallan (WACREN)\n                <span class=\"block text-slate-500 text-[13px] mt-1\">Haut-parleur</span>\n              </td>\n            </tr>\n            <tr class=\"align-top\">\n              <td class=\"px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]\">13:50 – 13:55</td>\n              <td class=\"px-5 py-4 border-b border-slate-100\">\n                <span class=\"block font-semibold text-slate-900\">Principaux points à retenir</span>\n                <span class=\"block text-slate-600 text-[14px] mt-1\">Les intervenants partagent une ou deux actions pratiques que les participants peuvent entreprendre</span>\n              </td>\n              <td class=\"px-5 py-4 border-b border-slate-100 text-slate-700\">\n                Naomi Kumi (Université de l'énergie et des ressources naturelles – Ghana), Uchenna Stella Emeka-Obi (Nigéria)\n                <span class=\"block text-slate-500 text-[13px] mt-1\">Haut-parleurs</span>\n              </td>\n            </tr>\n            <tr class=\"align-top\">\n              <td class=\"px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]\">13h55 – 14h00</td>\n              <td class=\"px-5 py-4 border-b border-slate-100\">\n                <span class=\"block font-semibold text-slate-900\">Fermeture</span>\n                <span class=\"block text-slate-600 text-[14px] mt-1\">Remarques finales</span>\n              </td>\n              <td class=\"px-5 py-4 border-b border-slate-100 text-slate-700\">\n                Amina Ramallan (WACREN)\n                <span class=\"block text-slate-500 text-[13px] mt-1\">Haut-parleur</span>\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n\n      <h2 id=\"register\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">S'inscrire</h2>\n      <p class=\"mb-6 text-[17px] interligne-texte détendu-slate-700 font-medium\">\n        Inscrivez-vous pour assister à ce webinaire : <a href=\"https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary survolez:underline\">https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg</a>\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Pour toute question, contactez le coordinateur anglophone WiW à <a href=\"mailto:wiw@wacren.net\" class=\"text-primary hover:underline\">wiw@wacren.net</a>.\n      </p>",
+      "toc": {
+        "explore": "Ce que le webinaire explorera",
+        "details": "Détails de l'événement",
+        "agenda": "Ordre du jour",
+        "register": "Registre"
+      }
+    },
+    "wiw-call-for-facilitators-2026": {
+      "title": "Appel à facilitateurs Women-In-WACREN",
+      "excerpt": "Women-in-WACREN recherche des animatrices bénévoles pour le Climate Innovation Lab 2026 afin de guider les équipes multidisciplinaires dans la construction de solutions numériques pour le climat.",
+      "content": "<p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Women-in-WACREN recherche des animateurs bénévoles (hommes et femmes) pour le Climate Innovation Lab 2026, prévu du 12 au 15 octobre. Ce programme intensif de quatre jours rassemble des équipes multidisciplinaires pour concevoir et construire des solutions numériques répondant aux défis climatiques en Afrique de l'Ouest et du Centre.\n      </p>\n\n      <h2 id=\"expertise\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">L'expertise dont nous avons besoin</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Les animateurs doivent avoir une expérience pratique dans un ou plusieurs de ces domaines :\n      </p>\n      <ul class=\"list-disc pl-5 mb-6 text-[17px] leader-relaxed text-slate-700 space-y-2\">\n        <li><strong>Climat et environnement</strong> – adaptation, atténuation, durabilité environnementale, résilience ou défis climatiques africains connexes.</li>\n        <li><strong>Technologies numériques pour l'action climatique</strong> : application de l'IA, de la science des données, des SIG, de l'observation de la Terre, de l'IoT, des plates-formes numériques ou d'autres technologies émergentes aux problèmes climatiques et environnementaux.</li>\n        <li><strong>Conception centrée sur l'humain</strong> : définition des problèmes, recherche des utilisateurs et des parties prenantes, analyse des besoins, traduction des défis du monde réel en exigences de solutions.</li>\n        <li><strong>Design thinking et idéation</strong> : mener une idéation collaborative, évaluer les approches, aider les équipes à affiner leurs idées pour en faire des concepts viables.</li>\n        <li><strong>Tests, documentation et itération</strong> : tests utilisateurs, interprétation des commentaires, affinement des solutions, production de la documentation dont les équipes ont besoin.</li>\n        <li><strong>Pitching et adoption</strong> : aider les équipes à articuler le problème, la solution, l'impact attendu, le financement potentiel, les partenariats, à préparer une démo solide et ce qu'il faut pour transporter un prototype prometteur au-delà du laboratoire.</li>\n      </ul>\n\n      <h2 id=\"who\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Qui recherchons-nous</h2>\n      <ul class=\"list-disc pl-5 mb-6 text-[17px] leader-relaxed text-slate-700 space-y-2\">\n        <li>Expérience pratique dans au moins un domaine ci-dessus, pas seulement une connaissance de celui-ci.</li>\n        <li>Animation et mentorat confortables, pas de cours magistraux.</li>\n        <li>À l'aise avec des équipes multidisciplinaires couvrant différents niveaux de compétences techniques.</li>\n        <li>Compétence pour aider les équipes à transformer de vastes défis en solutions spécifiques et réalisables.</li>\n        <li>Familière avec les environnements africains de recherche, d'éducation, d'innovation, climatique ou technologique, idéalement grâce à une expérience directe.</li>\n        <li>Capable de donner des commentaires honnêtes et constructifs tout en laissant aux équipes la propriété de leurs idées.</li>\n        <li>Ouvert à travailler aux côtés d'autres animateurs dont les atouts complètent les leurs.</li>\n      </ul>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Les facilitateurs peuvent provenir d’universités, d’instituts de recherche, de NREN, de pôles d’innovation, du gouvernement, de l’industrie, de la société civile ou d’organisations de développement.\n      </p>\n\n      <h2 id=\"role\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Rôle pendant le laboratoire</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Les animateurs guident les équipes tout au long de l'arc : défi climatique, définition du problème, besoins des utilisateurs, idéation, conception de solution, prototype, tests, démonstration, feuille de route.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        C’est apprendre en faisant. La majeure partie du temps d'un animateur est consacrée à travailler directement avec les équipes : poser des questions, remettre en question des hypothèses, offrir l'avis d'un spécialiste et aider les participants à faire de réels progrès plutôt que de rester assis sur la théorie.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Les animateurs sélectionnés peuvent également être invités à rejoindre la communauté de pratique post-Lab du programme et le mentorat continu en matière de solutions.\n      </p>\n\n      <h2 id=\"benefits\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Qu'est-ce que cela vous apporte</h2>\n      <ul class=\"list-disc pl-5 mb-6 text-[17px] leader-relaxed text-slate-700 space-y-2\">\n        <li>Visibilité et reconnaissance</li>\n        <li>Réseau professionnel étendu</li>\n        <li>Développement du leadership</li>\n        <li>Certificat/Reconnaissance formelle</li>\n        <li>Parrainage pour une participation en personne au laboratoire d'innovation</li>\n      </ul>\n\n      <p class=\"my-10 text-[18px] md:text-[20px] font-bold text-slate-900 leader-relaxed\">\n        <span class=\"text-primary\">Dates clés :</span><br/>\n        Date limite de candidature : 15 septembre 2026<br/>\n        Avis de sélection : 21 septembre 2026\n      </p>",
+      "toc": {
+        "expertise": "L'expertise dont nous avons besoin",
+        "who": "Qui nous recherchons",
+        "role": "Rôle pendant le laboratoire",
+        "benefits": "Qu'est-ce que cela vous apporte"
+      }
+    },
+    "wiw-call-for-mentors-2026": {
+      "title": "Appel à mentors de Women-In-WACREN",
+      "excerpt": "Women-in-WACREN recherche des mentors (hommes et femmes) qui se porteront volontaires pour soutenir les équipes du Climate Innovation Lab 2026 alors qu'elles construisent des solutions numériques aux défis climatiques.",
+      "content": "<p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Women-in-WACREN recherche des mentors (hommes et femmes) qui se porteront volontaires pour soutenir les équipes du Climate Innovation Lab 2026 alors qu'elles construisent et affinent des solutions numériques aux défis climatiques en Afrique de l'Ouest et du Centre.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Les mentors contribuent pendant le laboratoire lui-même et/ou via le programme de communauté de pratique et de mentorat de solutions de six mois après le laboratoire.\n      </p>\n\n      <h2 id=\"expertise\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Domaines d'expertise</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Nous recherchons une expérience pratique dans un ou plusieurs de ces domaines :\n      </p>\n      <ul class=\"list-disc pl-5 mb-6 text-[17px] leader-relaxed text-slate-700 space-y-2\">\n        <li>Changement climatique, sciences de l'environnement, adaptation ou atténuation</li>\n        <li>Développement de logiciels et architecture de solutions</li>\n        <li>Intelligence artificielle et science des données</li>\n        <li>SIG et observation de la Terre</li>\n        <li>IoT, capteurs et surveillance environnementale</li>\n        <li>Expérience utilisateur et conception centrée sur l'humain</li>\n        <li>Entrepreneuriat, modèles économiques et développement durable</li>\n        <li>Développement et déploiement de produits</li>\n        <li>Adoption institutionnelle et partenariats</li>\n        <li>Suivi, évaluation et impact</li>\n      </ul>\n\n      <h2 id=\"role\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Ce que feront les mentors</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Cela varie selon l'équipe, mais les mentors peuvent s'attendre à :\n      </p>\n      <ul class=\"list-disc pl-5 mb-6 text-[17px] leader-relaxed text-slate-700 space-y-2\">\n        <li>Donner des conseils techniques ou spécialisés dans le domaine.</li>\n        <li>Examiner les concepts et prototypes de solutions.</li>\n        <li>Aidez les équipes à détecter rapidement les problèmes techniques ou de mise en œuvre.</li>\n        <li>Connectez les équipes à des outils, des données, une expertise ou des réseaux utiles.</li>\n        <li>Conseils sur les tests, le déploiement et l'adoption.</li>\n        <li>Aidez les équipes à élaborer des feuilles de route techniques et de mise en œuvre réalistes.</li>\n        <li>Rapportez-vous périodiquement au fur et à mesure que des solutions se développent après l'atelier.</li>\n      </ul>\n\n      <h2 id=\"benefits\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Qu'est-ce que cela vous apporte</h2>\n      <ul class=\"list-disc pl-5 mb-6 text-[17px] leader-relaxed text-slate-700 space-y-2\">\n        <li>Visibilité et reconnaissance</li>\n        <li>Réseau professionnel étendu</li>\n        <li>Développement du leadership</li>\n        <li>Certificat/Reconnaissance formelle</li>\n        <li>Parrainage pour une participation en personne au laboratoire d'innovation</li>\n      </ul>\n\n      <h2 id=\"who\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Qui recherchons-nous</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Les mentors peuvent provenir d’universités, d’instituts de recherche, de NREN, du gouvernement, de l’industrie, de pôles d’innovation, de la société civile ou d’organisations de développement.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Ce qui compte le plus, c'est une expérience pertinente et pratique, la facilité de travailler au sein d'équipes multidisciplinaires et la capacité de donner des conseils honnêtes tout en permettant aux participants de rester propriétaires de leurs solutions.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Les mentors n'ont pas besoin d'être des formateurs ou des facilitateurs. L’enjeu est de mettre la bonne expertise à disposition des équipes au moment précis où elles en ont besoin.\n      </p>\n\n      <p class=\"my-10 text-[18px] md:text-[20px] font-bold text-slate-900 leader-relaxed\">\n        <span class=\"text-primary\">Dates clés :</span><br/>\n        Date limite de candidature : 15 septembre 2026<br/>\n        Avis de sélection : 21 septembre 2026\n      </p>",
+      "toc": {
+        "expertise": "Domaines d'expertise",
+        "role": "Ce que feront les mentors",
+        "benefits": "Qu'est-ce que cela vous apporte",
+        "who": "Qui nous recherchons"
+      }
+    },
+    "call-for-volunteers-2020": {
+      "title": "Appel à Volontaires - Femmes-en-WACREN",
+      "excerpt": "WACREN recherche des collaborateurs de la communauté NREN pour la mise en œuvre de son programme Women-in-WACREN.",
+      "content": "<p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        WACREN recherche des collaborateurs de la communauté NREN pour la mise en œuvre de son programme Women-in-WACREN.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        L'initiative a développé une communauté de femmes dans les NREN africains promouvant les programmes STEM (sciences, technologies, ingénierie et mathématiques) et présentant les opportunités en matière de diversité et d'inclusion.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Suite aux succès des cours en ligne et des hackathons des années précédentes, le programme a été intégré au projet AfricaConnect3 pour accueillir davantage de participants à travers l'Afrique.\n      </p>\n\n      <h2 id=\"outcomes\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Résultats souhaités</h2>\n      <ul class=\"list-disc pl-5 mb-6 text-[17px] leader-relaxed text-slate-700 space-y-2\">\n        <li>Extension du cours et du hackathon \"Informatique physique avec Python\" existants pour inclure des modules sur la science des données et la robotique.</li>\n        <li>Création d'une plate-forme Internet des objets (IoT) basée sur le cloud et hébergée sur l'infrastructure REN de REN pour la collecte et l'analyse des données.</li>\n        <li>Partenariats stratégiques avec des organisations déterminées à lutter contre la sous-représentation des femmes dans les domaines STEM.</li>\n        <li>Lancer une version en français des différents cours et activités.</li>\n      </ul>\n\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        La mise en œuvre impliquera la modération de la liste de diffusion communautaire, l'organisation de cours en ligne et d'un hackathon et l'engagement d'autres femmes pour faire avancer les objectifs du programme.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Le programme se déroule sur une base annuelle et l'activité pour 2020 devrait se dérouler d'octobre à décembre.\n      </p>\n\n      <p class=\"my-10 text-[18px] md:text-[20px] font-bold text-slate-900 leader-relaxed\">\n        <span class=\"text-primary\">Remarque :</span> Bien qu'il s'agisse d'un appel au volontariat, WACREN est prêt à fournir des paiements symboliques pour couvrir certaines dépenses du volontaire.\n      </p>\n\n      <p class=\"mb-6 text-[17px] interligne-texte détendu-slate-700 font-medium\">\n        Les NREN, les organisations et les individus intéressés à collaborer avec WACREN pour remplir ce rôle doivent envoyer un e-mail à <a href=\"mailto:secretariat@wacren.net\" class=\"text-primary hover:underline\">secretariat@wacren.net</a> avec une brève description de leur intérêt, de leurs idées et de leurs éventuelles exigences avant le 25 septembre 2020.\n      </p>",
+      "toc": {
+        "outcomes": "Résultats souhaités"
+      }
+    },
+    "wacren-strategic-partnerships-women-ict-2018": {
+      "title": "WACREN noue des partenariats stratégiques pour soutenir les femmes dans les TIC",
+      "excerpt": "Le Réseau de recherche et d’éducation d’Afrique de l’Ouest et du Centre (WACREN) a démontré son engagement à ouvrir des fenêtres d’opportunités aux femmes.",
+      "content": "<p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Le Réseau de recherche et d’éducation d’Afrique de l’Ouest et du Centre (WACREN) a démontré son engagement à ouvrir des fenêtres d’opportunités aux femmes, historiquement sous-représentées dans les domaines STEM, en lançant son premier événement Women-in-WACREN sous le thème « Informatique physique avec Python ».\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        En plus d'offrir aux femmes l'opportunité d'améliorer leurs compétences en programmation, la conférence a forgé des partenariats stratégiques avec des femmes et des organisations engagées dans la lutte contre la sous-représentation des femmes dans ce domaine et a servi de modèle aux NREN membres.\n      </p>\n\n      <blockquote class=\"flex gap-4 mes-10 éléments-start\">\n        <span class=\"text-primary text-5xl font-serif leader-none pt-1 select-none\" aria-hidden=\"true\">“</span>\n        <div classe=\"flex-1\">\n          <p class=\"text-lg md:text-[20px] font-bold text-slate-900 leader-relaxed mb-4\">\n            L'atelier a dépassé nos attentes car il a servi de plate-forme de formation, de réseautage et d'établissement de partenariats stratégiques avec des femmes et des organisations qui partagent notre engagement à accroître la participation des femmes dans toutes les initiatives NREN. Nous espérons reproduire la formation destinée aux femmes dans les institutions membres de WACREN.\n          </p>\n          <p class=\"text-[16px] text-slate-600 font-medium\">— Omo Oaiya, directeur de la technologie de WACREN</p>\n        </div>\n      </blockquote>\n\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        L'atelier a présenté le contenu d'une expérience de formation de 10 semaines qui se poursuivra en ligne. Au total, 30 femmes représentant 5 pays ont participé à l'atelier co-parrainé par Eko-Konnect, l'Université de Lagos (UNILAG) et AfricaConnect2, et organisé au Centre d'entrepreneuriat et de développement des compétences de l'Université de Lagos, du 22 au 26 janvier.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        L'atelier a été suivi de la journée communautaire Eko-Konnect ICT for Girls, une initiative visant à améliorer les opportunités pour les filles aux niveaux secondaire et supérieur en améliorant leur préparation à entrer dans les domaines STEM. L'événement comprenait des présentations de femmes travaillant dans les TIC qui ont partagé des mots d'encouragement, des stratégies de réussite et des recherches affirmant la nécessité de davantage de femmes dans les domaines STEM.\n      </p>\n\n      <h2 id=\"cultural-factors\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Aborder les normes culturelles</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Dans une présentation intitulée « Facteurs culturels influençant la participation des femmes au développement de logiciels », Mandeep Saini, responsable du développement de logiciels chez GEANT, a décrit les causes profondes de la sous-représentation des femmes dans les domaines STEM, abordant les préjugés inconscients et les normes culturelles qui affectent la préparation et les expériences des femmes dans ce domaine.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Saini a cité des données de recherche démontrant l’intérêt commercial d’inclure les femmes dans ce domaine.\n      </p>\n\n      <blockquote class=\"flex gap-4 mes-10 éléments-start\">\n        <span class=\"text-primary text-5xl font-serif leader-none pt-1 select-none\" aria-hidden=\"true\">“</span>\n        <div classe=\"flex-1\">\n          <p class=\"text-lg md:text-[20px] font-bold text-slate-900 leader-relaxed mb-4\">\n            Les groupes plus diversifiés résolvent des problèmes complexes mieux et plus rapidement que les groupes homogènes. Les entreprises technologiques dirigées par des femmes ont généré des revenus plus élevés en utilisant moins de capital et étaient plus susceptibles de survivre à la transition d’une start-up à une entreprise établie.\n          </p>\n          <p class=\"text-[16px] text-slate-600 font-medium\">— Mandeep Saini, responsable du développement logiciel chez GEANT</p>\n        </div>\n      </blockquote>",
+      "toc": {
+        "cultural-factors": "Aborder les normes culturelles"
+      }
+    },
+    "empowering-women-in-western-africa-in-the-field": {
+      "title": "Autonomiser les femmes en Afrique de l’Ouest - Article du blog In The Field sur WACREN",
+      "excerpt": "Plus de 2 000 jeunes femmes d’Afrique de l’Ouest ont reçu un coup de pouce pour poursuivre une carrière dans les STEM en rejoignant les cours dispensés par WACREN.",
+      "content": "<p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Plus de 2 000 jeunes femmes d’Afrique de l’Ouest ont reçu un coup de pouce pour poursuivre une carrière dans les sciences, la technologie, l’ingénierie et les mathématiques (STEM) en participant aux cours et ateliers proposés par le réseau régional de recherche et d’éducation WACREN.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Le programme, connu sous le nom de Women-in-WACREN, a été lancé en 2018. Le réseau régional a lancé un atelier de cinq jours offrant des connaissances et une expérience sur la programmation de base (Python), l'application de Git et DevOps et une introduction aux systèmes embarqués (Raspberry Pi) et aux capteurs.\n      </p>\n      <p class=\"mb-6 text-[17px] interligne-texte détendu-slate-700 font-bold\">\n        Lisez <a href=\"https://www.inthefieldstories.net/empowering-women-in-western-africa/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">plus ici</a>.\n      </p>",
+      "toc": {}
+    },
+    "wiw-physical-computing-python-dakar": {
+      "title": "Women-in-WACREN - Calcul physique avec Python",
+      "excerpt": "Ce premier événement de formation et communautaire « Women-in-WACREN » est organisé en collaboration avec SenChix, UCAD et le projet AfricaConnect2.",
+      "content": "<p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Ce premier événement de formation et communautaire « Femmes dans le WACREN » est organisé en collaboration avec <a href=\"http://www.senchix.sn\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline font-medium\">SenChix</a>, un groupe de femmes dans la technologie hébergé par le snRER, le <a href=\"https://www.ucad.sn/index.php?option=com_content&view=article&id=1523&Itemid=354\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline font-medium\">Faculté des Sciences et Technologies</a> de l'Université Cheikh Anta Diop de Dakar (UCAD) et la <a Projet href=\"https://www.africaconnect2.net/Pages/Home.aspx\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline font-medium\">AfricaConnect2</a>.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Tirant parti d'une promotion plus large de la culture maker et des hackerspaces dans les NREN, l'événement lancera un programme visant à réduire les déséquilibres actuels en matière de participation des sexes. Il aidera les étudiantes et le personnel féminin à améliorer leurs compétences STEM en expérimentant des robots et de l'électronique et en apprenant à programmer ces appareils.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Les participantes se terminent à la fin de l'atelier de formation de 5 jours lors de la journée communautaire Senchix, une opportunité de réseautage ouverte aux professeurs et aux invités d'autres pôles technologiques pour femmes avec des représentants du gouvernement et de l'industrie.\n      </p>\n\n      <h2 id=\"workshop-goal\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Objectif de l'atelier</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Enseignez Python dans une série d'exercices pratiques qui présentent les principes fondamentaux de l'informatique physique avec le Raspberry Pi, la planche à pain GPIO et les capteurs.\n      </p>\n\n      <h2 id=\"audience\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Audience ciblée</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Étudiantes et personnel féminin en informatique, en ingénierie ou dans d'autres disciplines, possédant de bonnes compétences en informatique et un intérêt pour les environnements intelligents. Une formation en programmation et une connaissance de Linux ou d'un autre système d'exploitation UNIX sont utiles mais pas obligatoires.\n      </p>\n\n      <h2 id=\"outcomes\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Résultats attendus</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Au fil du temps, les participants seront capables de travailler seuls ou en petites équipes pour développer des projets électroniques ou robotiques à différents niveaux de complexité pour résoudre des problèmes.\n      </p>\n\n      <h2 id=\"logistics\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Langue et logistique</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Réalisé en français avec des formateurs bilingues.\n      </p>\n      <ul class=\"list-disc pl-5 mb-6 text-[17px] leader-relaxed text-slate-700 space-y-2\">\n        <li>Des déjeuners et des pauses-café seront proposés à tous les participants pendant toute la durée de l'atelier.</li>\n        <li>Les participants internationaux sélectionnés qui ne sont pas en mesure d'obtenir un parrainage total ou partiel de leur organisation pour assister à l'atelier peuvent bénéficier d'une aide pour leurs frais de voyage et/ou d'hébergement, sous réserve de la disponibilité des ressources.</li>\n      </ul>\n\n      <p class=\"mb-6 text-[17px] interligne-relaxed font-semibold text-slate-900\">\n        Inscrivez-vous sur <a href=\"https://indico.wacren.net/event/55/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">https://indico.wacren.net/event/55/</a> - La date limite de candidature est le 25 octobre 2017.\n      </p>",
+      "toc": {
+        "workshop-goal": "Objectif de l'atelier",
+        "audience": "Public ciblé",
+        "outcomes": "Résultats attendus",
+        "logistics": "Langue et logistique"
+      }
+    },
+    "wiw-physical-computing-python-lagos": {
+      "title": "Women-in-WACREN - Informatique physique avec Python - Édition Lagos",
+      "excerpt": "Cet événement de formation et communautaire « Women-in-WACREN » est organisé en collaboration avec l'Initiative de recherche et d'éducation Eko-Konnect et UNILAG.",
+      "content": "<p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Cette formation et cet événement communautaire « Femmes dans le WACREN » sont organisés en collaboration avec l'<a href=\"http://www.eko-konnect.org.ng\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline font-medium\">Initiative de recherche et d'éducation Eko-Konnect</a>, un cluster du NREN nigérian (<a href=\"http://www.ngren.edu.ng\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline font-medium\">NgREN</a>), le Centre d'entrepreneuriat et de développement des compétences et la Faculté d'ingénierie de l'<a href=\"http://www.unilag.edu.ng\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline font-medium\">Université de Lagos (UNILAG)</a>, et le projet <a href=\"http://www.africaconnect2.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline font-medium\">AfricaConnect2</a>.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Tirant parti d'une promotion plus large de la culture maker et des hackerspaces dans les NREN, l'événement fait partie d'un programme visant à réduire les déséquilibres actuels en matière de participation des sexes. Il aidera les étudiantes et le personnel féminin à améliorer leurs compétences STEM en expérimentant des robots et de l'électronique et en apprenant à programmer ces appareils.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Les participantes se terminent à la fin de l'atelier de formation de 5 jours lors de la journée communautaire « TIC pour les filles », une opportunité de réseautage ouverte aux professeurs et aux invités d'autres pôles technologiques pour femmes avec des représentants du gouvernement et de l'industrie.\n      </p>\n\n      <h2 id=\"workshop-goal\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Objectif de l'atelier</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Enseignez Python dans une série d'exercices pratiques qui présentent les principes fondamentaux de l'informatique physique avec le Raspberry Pi, la planche à pain GPIO et les capteurs.\n      </p>\n\n      <h2 id=\"audience\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Audience ciblée</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Étudiantes et personnel féminin en informatique, en ingénierie ou dans d'autres disciplines, possédant de bonnes compétences en informatique et un intérêt pour les environnements intelligents. Une formation en programmation et une connaissance de Linux ou d'un autre système d'exploitation UNIX sont utiles mais pas obligatoires.\n      </p>\n\n      <h2 id=\"outcomes\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Résultats attendus</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Au fil du temps, les participants seront capables de travailler seuls ou en petites équipes pour développer des projets électroniques ou robotiques à différents niveaux de complexité pour résoudre des problèmes.\n      </p>\n\n      <h2 id=\"logistics\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Langue et logistique</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Réalisé en anglais avec des formateurs bilingues.\n      </p>\n      <ul class=\"list-disc pl-5 mb-6 text-[17px] leader-relaxed text-slate-700 space-y-2\">\n        <li>Des déjeuners et des pauses-café seront proposés à tous les participants pendant toute la durée de l'atelier.</li>\n        <li>Les participants internationaux sélectionnés qui ne sont pas en mesure d'obtenir un parrainage total ou partiel de leur organisation pour assister à l'atelier peuvent bénéficier d'une aide pour leurs frais de voyage et/ou d'hébergement, sous réserve de la disponibilité des ressources.</li>\n      </ul>\n\n      <p class=\"mb-6 text-[17px] interligne-relaxed font-semibold text-slate-900\">\n        La date limite de candidature est le 10 janvier 2018 à <a href=\"https://indico.wacren.net/event/61/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">https://indico.wacren.net/event/61/</a>\n      </p>",
+      "toc": {
+        "workshop-goal": "Objectif de l'atelier",
+        "audience": "Public ciblé",
+        "outcomes": "Résultats attendus",
+        "logistics": "Langue et logistique"
+      }
+    },
+    "wiw-python-workshop-2024": {
+      "title": "Women-in-WACREN 2024 - Python pour l'analyse des données météorologiques et climatiques",
+      "excerpt": "L'événement WiW 2024 se concentrera sur la formation en Python pour l'analyse des données météorologiques et climatiques. Postulez maintenant !",
+      "content": "<p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Le programme <a href=\"https://wacren.net/en/programmes/women-in-wacren/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline font-medium\">Women-in-WACREN (WiW)</a> est l'initiative de WACREN visant à lutter contre l'inégalité entre les sexes et la sous-représentation des femmes dans les sciences, la technologie, l'ingénierie et les mathématiques (STEM). champs. Lancé en 2018, WiW vise à éduquer, équiper et donner aux femmes les compétences et la confiance nécessaires pour exceller dans les carrières STEM à prédominance masculine. Au fil des années, WiW a inspiré et transformé plus de 2 000 jeunes femmes en innovatrices, créatrices et entrepreneurs technologiques dans la région WACREN et au-delà.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        L'événement WiW 2024 se concentrera sur la formation en Python pour l'analyse des données météorologiques et climatiques. Cet atelier offre une opportunité unique aux femmes d'acquérir une expérience pratique et d'améliorer leurs compétences techniques dans ce domaine critique. Les participants participeront à une série de sessions pratiques intensives conçues pour fournir une compréhension approfondie de la programmation Python et de ses applications dans l'analyse des données météorologiques et climatiques. Des experts dans le domaine animeront l'atelier, permettant aux participants d'apprendre et de réseauter avec des professionnels et des pairs de premier plan.\n      </p>\n\n      <h2 id=\"partnerships\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Opportunités de partenariat et de collaboration</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        WACREN est ouvert aux partenariats avec les REN régionaux et nationaux à travers l'Afrique, les militantes de groupes de femmes, les donateurs internationaux, les agences gouvernementales et les organismes régionaux ; des partenariats pour étendre le programme afin de garantir que des investissements pertinents soient réalisés en faveur des jeunes femmes et des filles afin de permettre à leur potentiel de s'exprimer. L'événement 2024 est soutenu par le projet <a href=\"https://africaconnect3.net/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline font-medium\">AfricaConnect3</a> (cofinancé par la Commission européenne).\n      </p>\n\n      <h2 id=\"target\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Participants cibles</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Les participants cibles comprennent des femmes de pays africains qui s'intéressent à la science météorologique et climatique et aux technologies émergentes telles que l'IoT, l'IA et la science ouverte.\n      </p>\n\n      <h2 id=\"criteria\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Critères de sélection</h2>\n      <ul class=\"list-disc pl-5 mb-6 text-[17px] leader-relaxed text-slate-700 space-y-2\">\n        <li>Les participants doivent être des chercheuses dans le domaine des STEM, notamment des étudiantes, des jeunes diplômées et des professionnelles en début de carrière.</li>\n        <li>Ils devraient être intéressés par les technologies émergentes telles que l'IoT, la science ouverte, l'IA et le calcul scientifique, qui correspondent à leurs objectifs de carrière.</li>\n        <li>Des connaissances de base en programmation Python et en Gitlab peuvent être requises, avec une préférence pour les personnes expérimentées en analyse de données ou en calcul scientifique.</li>\n      </ul>\n\n      <p class=\"mb-6 text-[17px] interligne-relaxed font-semibold text-slate-900\">\n        Fin des inscriptions le 2 août 2024\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Le processus de sélection garantira la représentation régionale au sein de WACREN et donnera la priorité à l’inclusivité. Les participants sélectionnés seront informés avant le 9 août 2024.\n      </p>\n\n      <p class=\"my-10 text-[18px] md:text-[20px] font-bold text-slate-900 leader-relaxed\">\n        <span class=\"text-primary\">NB.</span> Veuillez noter que l'atelier sera dispensé en anglais.\n      </p>\n\n      <p class=\"mb-6 text-[17px] interligne-texte détendu-slate-700 font-bold\">\n        <a href=\"https://indico.wacren.net/event/207/registrations/149/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">Cliquez ici pour postuler</a>.\n      </p>",
+      "toc": {
+        "partnerships": "Partenariat et collaboration",
+        "target": "Participants cibles",
+        "criteria": "Critères de sélection"
+      }
+    },
+    "wiw-francophone-workshop-2024": {
+      "title": "Atelier Francophone Femmes-dans-WACREN",
+      "excerpt": "L’événement francophone WiW 2024 se concentrera sur l’utilisation pratique du programme Python pour l’analyse des données météorologiques et climatiques. Postulez maintenant !",
+      "content": "<p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Le programme <a href=\"https://wacren.net/en/programmes/women-in-wacren/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline font-medium\">Women-in-WACREN (WiW)</a> est l'initiative de WACREN visant à lutter contre l'inégalité entre les sexes et la sous-représentation des femmes dans les sciences, la technologie, l'ingénierie et les mathématiques (STEM). champs. Lancé en 2018, WiW vise à éduquer, équiper et donner aux femmes les compétences et la confiance nécessaires pour exceller dans les carrières STEM à prédominance masculine. Au fil des années, WiW a inspiré et transformé plus de 2 000 jeunes femmes en innovatrices, créatrices et entrepreneurs technologiques dans la région WACREN et au-delà.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        L’événement francophone WiW 2024 se concentrera sur l’utilisation pratique du programme Python pour l’analyse des données météorologiques et climatiques. Cet atelier offre une opportunité unique aux femmes d'acquérir une expérience pratique et d'améliorer leurs compétences techniques dans ce domaine critique. Les participants participeront à des sessions pratiques intensives conçues pour fournir une compréhension approfondie de la programmation Python et de ses applications dans l'analyse des données météorologiques et climatiques. Des experts dans le domaine animeront l'atelier, permettant aux participants d'apprendre et de réseauter avec des professionnels et des pairs de premier plan.\n      </p>\n\n      <h2 id=\"partnerships\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Opportunités de partenariat et de collaboration</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        WACREN est ouvert aux partenariats avec les REN régionaux et nationaux à travers l'Afrique, les militantes de groupes de femmes, les donateurs internationaux, les agences gouvernementales et les organismes régionaux ; des partenariats pour étendre le programme afin de garantir que des investissements pertinents soient réalisés en faveur des jeunes femmes et des filles afin de permettre à leur potentiel de s'exprimer. L'événement 2024 est soutenu par le projet <a href=\"https://africaconnect3.net/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline font-medium\">AfricaConnect3</a> (cofinancé par la Commission européenne).\n      </p>\n\n      <h2 id=\"target\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Participants cibles</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Les participants cibles comprennent des femmes de pays africains qui s'intéressent à la science météorologique et climatique et aux technologies émergentes telles que l'IoT, l'IA et la science ouverte.\n      </p>\n\n      <h2 id=\"criteria\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Critères de sélection</h2>\n      <ul class=\"list-disc pl-5 mb-6 text-[17px] leader-relaxed text-slate-700 space-y-2\">\n        <li>Les participants doivent être des chercheuses dans le domaine des STEM, notamment des étudiantes, des jeunes diplômées et des professionnelles en début de carrière.</li>\n        <li>Ils devraient être intéressés par les technologies émergentes telles que l'IoT, la science ouverte, l'IA et le calcul scientifique, qui correspondent à leurs objectifs de carrière.</li>\n        <li>Des connaissances de base en programmation Python et en Gitlab peuvent être requises, avec une préférence pour les personnes expérimentées en analyse de données ou en calcul scientifique.</li>\n      </ul>\n\n      <p class=\"mb-6 text-[17px] interligne-relaxed font-semibold text-slate-900\">\n        Fin des inscriptions le mardi 29 octobre 2024\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Le processus de sélection garantira la représentation régionale au sein de WACREN et donnera la priorité à l’inclusivité. Les participants sélectionnés seront informés d’ici le jeudi 31 octobre 2024.\n      </p>\n\n      <p class=\"my-10 text-[18px] md:text-[20px] font-bold text-slate-900 leader-relaxed\">\n        <span class=\"text-primary\">NB.</span> Veuillez noter que l'atelier sera dispensé en français uniquement.\n      </p>\n\n      <p class=\"mb-6 text-[17px] interligne-texte détendu-slate-700 font-bold\">\n        Postulez ici : <a href=\"https://indico.wacren.net/event/236/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">https://indico.wacren.net/event/236/</a>\n      </p>",
+      "toc": {
+        "partnerships": "Partenariat et collaboration",
+        "target": "Participants cibles",
+        "criteria": "Critères de sélection"
+      }
+    },
+    "wiw-network-climate-innovation-lab-launch": {
+      "title": "Women-in-WACREN va lancer un nouveau forum et un laboratoire pour renforcer la contribution des femmes à l'innovation climatique en Afrique",
+      "excerpt": "Rejoignez-nous pour le lancement virtuel du réseau Women-in-WACREN et l'introduction du Climate Innovation Lab 2026 le 25 août 2026.",
+      "content": "<p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        S'appuyant sur l'héritage des précédentes initiatives Women-in-WACREN (WiW), WACREN est heureux d'annoncer la prochaine étape majeure pour l'inclusion des femmes dans la science et l'innovation climatiques régionales : le réseau Women-in-WACREN.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Le lancement en ligne du réseau WiW prévu le 25 août 2026 portera sur le thème : « Connecter les femmes et construire des solutions ». Ce réseau dynamique s'appuie sur les jalons passés, créant une plateforme régionale durable où les femmes des domaines STEM, recherche et technologie peuvent se connecter, échanger des connaissances et accéder à un mentorat à long terme. Que les membres soient des étudiants, des chercheurs en début de carrière ou des entrepreneurs technologiques, ce forum est conçu pour combler les frontières disciplinaires et accélérer l'impact collectif en Afrique de l'Ouest et du Centre.\n      </p>\n\n      <h2 id=\"innovation-lab\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Laboratoire d'innovation climatique 2026</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Parallèlement au lancement du réseau, l'événement virtuel présentera officiellement le « Climate Innovation Lab 2026 » - un programme d'innovation structuré et collaboratif qui renforcerait les compétences techniques des femmes dans la conception de solutions numériques pratiques répondant aux défis climatiques régionaux urgents. Les participants apprendront comment le programme les guide depuis l’identification initiale du problème jusqu’au développement de prototypes jusqu’au mentorat continu.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Avec le soutien de la Commission européenne à travers AfricaConnect4, WACREN continue de libérer le potentiel des femmes dans la recherche et l'éducation. Rejoignez-nous pour ce lancement virtuel transformateur afin d'élargir votre réseau, d'élever vos compétences et de contribuer à façonner un avenir durable pour la science et la technologie africaines.\n      </p>\n\n      <p class=\"mb-6 text-[17px] interligne-texte détendu-slate-700 font-medium\">\n        Inscrivez-vous ici : <a href=\"https://wacren.zoom.us/meeting/register/FYmtU0JnSNy8138x8Zkluw\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">https://wacren.zoom.us/meeting/register/FYmtU0JnSNy8138x8Zkluw</a>\n      </p>",
+      "toc": {
+        "innovation-lab": "Laboratoire d'innovation climatique 2026"
+      }
+    },
+    "henrietta-ampofo-innovation-journey": {
+      "title": "De WiW à Wow ! Le parcours d'innovation inspirant d'Henrietta Ampofo",
+      "excerpt": "S'appuyant sur la confiance acquise grâce au programme WiW, Henrietta a créé une solution numérique innovante, Implementation Tracker, destinée à avoir un réel impact au Ghana.",
+      "content": "<p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Lorsqu'Henrietta Ampofo a rejoint la cohorte Women-in-WACREN (WiW) 2024 à Accra, au Ghana, pour le Python pour les données météorologiques et climatiques, elle s'est rapidement démarquée par sa passion, sa curiosité et sa participation active. L'initiative WiW, conçue pour autonomiser les femmes dans les domaines STEM en Afrique de l'Ouest et centrale, a inspiré des centaines de femmes à repousser les limites, et Henrietta est devenue l'un de ses brillants exemples.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Bien que sa dernière réalisation ne soit pas directement un projet WiW, elle incarne l'esprit WiW. S'appuyant sur la confiance et l'impulsion qu'elle a acquises grâce au programme, Henrietta a créé une solution numérique innovante, <strong>Implementation Tracker</strong>, qui devrait avoir un réel impact au Ghana.\n      </p>\n\n      <h2 id=\"the-tracker\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Le suivi de la mise en œuvre</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Considérez-le comme une plateforme d'information sur les projets pour les ONG et les OSC. Il s'agit d'une PowerApp sécurisée qui suit les projets et surveille la manière dont les fonds sont dépensés. Il capture toutes les informations importantes – détails du projet, sources de financement, délais et portée – dans différentes régions. Il met tout au même endroit, ce qui facilite la prise de décisions éclairées.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        De plus, il propose des processus d'approbation intégrés et des tableaux de bord Power BI qui aident à identifier les domaines qui nécessitent plus d'attention, à réduire les efforts en double et à garantir que les ressources sont allouées aux communautés qui en ont le plus besoin.\n      </p>\n\n      <h2 id=\"inspiration\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Inspiration et mentorat</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        L'idée est née de son expérience de travail dans le domaine de la santé publique lors de la bourse UNFPA Youth Leaders (YoLe), où elle a eu des discussions avec le représentant pays de l'UNFPA, le Dr David Ochan. Elle a pu constater à quel point il était difficile de suivre les projets. Sous le mentorat d'Amin Abuhammadi Ajado de Women in Power (Platform), elle a transformé un problème du monde réel en une innovation conviviale qui s'aligne sur les engagements mondiaux en faveur d'un développement équitable et des objectifs de développement durable.\n      </p>\n\n      <blockquote class=\"flex gap-4 mes-10 éléments-start\">\n        <span class=\"text-primary text-5xl font-serif leader-none pt-1 select-none\" aria-hidden=\"true\">“</span>\n        <p class=\"text-lg md:text-[20px] font-bold text-slate-900 leader-relaxed\">\n          L'initiative WiW a non seulement renforcé mes capacités en analyse quantitative à l'aide de Python, mais a également été très inspirante : avoir des femmes qui ont accompli de grands exploits dans la même pièce que vous, enseignant et partageant leurs expériences avec vous, n'a pas de prix !\n        </p>\n      </blockquote>\n\n      <h2 id=\"wiw-impact\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">La valeur d'investir dans les femmes</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Pour WACREN, des histoires comme celle d’Henrietta démontrent l’importance d’investir dans les femmes leaders. Si WiW dote les participants de compétences techniques et de réseaux, il suscite également la confiance nécessaire pour rêver, construire et diriger des solutions au-delà du programme lui-même. Le parcours d’Henrietta est la preuve que lorsque les femmes bénéficient d’un espace, d’un soutien et d’encouragements, elles peuvent traduire leurs idées en outils qui font la différence à grande échelle.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Alors que WACREN continue d’étendre le programme WiW, nous célébrons l’étape marquante d’Henrietta pour rappeler pourquoi c’est important : l’autonomisation des femmes ne change pas seulement la vie des individus, elle change les communautés.\n      </p>",
+      "toc": {
+        "the-tracker": "Le suivi de la mise en œuvre",
+        "inspiration": "Inspiration et mentorat",
+        "wiw-impact": "La valeur d’investir dans les femmes"
+      }
+    },
+    "smart-waste-management-burkina-faso": {
+      "title": "Un bénéficiaire de Women-In-WACREN développe une solution intelligente de gestion des déchets au Burkina Faso",
+      "excerpt": "WACREN est fier de mettre en lumière la réalisation remarquable de Rasmata Simporé, une jeune chercheuse burkinabé dont l'innovation est appelée à transformer la manière dont les déchets urbains sont gérés.",
+      "content": "<p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        WACREN est fier de mettre en lumière la réalisation remarquable de Rasmata Simporé, une jeune chercheuse du Burkina Faso, dont l'innovation est appelée à transformer la manière dont les déchets urbains sont gérés dans son pays. Son innovation en matière de gestion des déchets, l'application Trash, a été inspirée et façonnée en partie par sa participation à l'<a href=\"https://indico.wacren.net/event/236/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline font-medium\">atelier Women-in-WACREN (WiW)</a> organisé à Abidjan, en Côte d'Ivoire, en 2024.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Rasmata Simporé, alors étudiante à l'École Doctorale d'Informatique Appliquée aux Changements Climatiques de l'Université Joseph KI-ZERBO, a assisté à l'atelier avec une passion pour le développement de solutions répondant à la fois aux défis environnementaux et de santé publique. Inspiré par des exemples concrets et par le mentorat, Rasmata a commencé à développer un système intelligent de collecte des déchets qui intègre les technologies mobiles, Web et IoT pour améliorer la gestion des déchets et l'assainissement à Ouagadougou et au-delà.\n      </p>\n      \n      <h2 id=\"the-trash-app\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">L'innovation de l'application Trash</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Sa solution, Trash App, comprend une application mobile permettant aux citoyens de signaler des problèmes de déchets et de demander des services, un tableau de bord Web pour les décideurs et les opérateurs de gestion des déchets, ainsi que des capteurs intelligents installés dans les poubelles qui transmettent des données en temps réel sur l'emplacement des poubelles et les niveaux de remplissage, permettant ainsi d'optimiser les itinéraires de collecte des déchets. L'application améliore la communication entre les citoyens et les collecteurs de déchets, augmente la transparence et fournit aux décideurs politiques des données précieuses pour améliorer les stratégies d'assainissement urbain.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Cette innovation, développée dans le cadre de son mémoire de maîtrise, a été décrite comme un véritable écosystème de solutions intelligentes, ayant le potentiel de transformer les efforts d'assainissement et de permettre aux communautés de s'engager dans la préservation de l'environnement.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Le conseil municipal de Ouagadougou a également exprimé un vif intérêt pour le pilotage du projet dans certaines zones urbaines, ce qui témoigne de la promesse du projet dans la résolution des problèmes de santé liés à l'assainissement.\n      </p>\n\n      <h2 id=\"wacrens-impact\" class=\"text-2xl font-semibold text-slate-900 mt-12 mb-4\">Autonomiser les innovateurs régionaux</h2>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        À WACREN, l’histoire de Rasmata affirme la valeur des investissements intentionnels dans l’équité entre les sexes, le renforcement des capacités pratiques et la collaboration régionale. Grâce à Women-in-WACREN, <a href=\"https://video.wacren.net/channel/Women-In-WACREN/721046\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline font-medium\">WACREN continue de doter les femmes</a> de chercheuses et d'innovatrices des outils, des réseaux et de la confiance nécessaires pour mener le changement dans leurs domaines et leurs communautés.\n      </p>\n      <p class=\"mb-6 text-[17px] leader-relaxed text-slate-700\">\n        Le parcours de Rasmata est un brillant exemple de la manière dont les réseaux régionaux de recherche et d’éducation peuvent stimuler l’innovation, l’inclusion et l’impact grâce à l’autonomisation des femmes.\n      </p>",
+      "toc": {
+        "the-trash-app": "L'innovation de l'application Trash",
+        "wacrens-impact": "Donner du pouvoir aux innovateurs régionaux"
+      }
+    }
+  },
+  "TableOfContents": {
+    "title": "Table des matières"
+  },
+  "ShareMenu": {
+    "copyLink": "Copier le lien",
+    "copied": "Copié !",
+    "shareOnX": "Partager sur X",
+    "shareOnLinkedIn": "Partager sur LinkedIn",
+    "shareOnFacebook": "Partager sur Facebook",
+    "shareViaWhatsApp": "Partager via WhatsApp",
+    "sendViaEmail": "Envoyer par e-mail",
+    "share": "Partager"
+  },
+  "AboutPage": {
+    "heroTitle": "Parcours Women-In-WACREN",
+    "section1Title": "Pourquoi Women-in-WACREN existe.",
+    "section1P1": "Les femmes restent sous-représentées dans les études, la recherche et les carrières techniques STEM en Afrique de l’Ouest et du Centre. WiW a été créé en 2018 pour changer cela au sein de l'infrastructure de recherche et d'éducation de la région – avec de la formation, du mentorat, du plaidoyer et désormais une communauté permanente.",
+    "section1P2": "WACREN est le Réseau de recherche et d’éducation d’Afrique de l’Ouest et du Centre – l’organisme régional reliant les réseaux nationaux de recherche et d’éducation et leurs universités et instituts de recherche. WiW est l'un de ses programmes communautaires phares, c'est pourquoi il peut atteindre les femmes par le biais des NREN, des campus et des instituts de recherche plutôt que de repartir de zéro dans chaque pays.",
+    "ourFuture": "Notre avenir",
+    "visionTitle": "Vision",
+    "visionDesc": "Une communauté régionale de recherche et d’éducation dans laquelle les femmes sont représentées à parts égales en tant qu’ingénieures, chercheuses, innovatrices et dirigeantes.",
+    "ourPurpose": "Notre objectif",
+    "missionTitle": "Mission",
+    "missionDesc": "Éduquer, équiper et donner aux femmes les compétences, les réseaux et la confiance nécessaires pour exceller dans les carrières STEM – et les garder connectées longtemps après la fin de la formation.",
+    "whoTitle": "Avec qui nous avons travaillé.",
+    "whoDesc": "NREN membres, universités, communautés techniques, bailleurs de fonds et organismes régionaux."
+  },
+  "Timeline": {
+    "items": [
+      {
+        "year": "2018",
+        "title": "Le premier atelier",
+        "description": "WACREN lance son premier événement Women-in-WACREN, « Physical Computing with Python », au Centre d'entrepreneuriat et de développement des compétences de l'Université de Lagos. Trente femmes de cinq pays y participent, co-parrainées par Eko-Konnect, UNILAG et AfricaConnect2, avec une continuation en ligne de dix semaines."
+      },
+      {
+        "year": "2019–2023",
+        "title": "De l'atelier au programme",
+        "description": "La formation s'étend à la programmation de base, Git et DevOps, aux systèmes et capteurs embarqués, à l'IoT, à l'IA et à la science ouverte, touchant plus de 2 000 jeunes femmes et établissant des partenariats avec les NREN, les PyLadies et les organismes techniques de la région."
+      },
+      {
+        "year": "2024",
+        "title": "Des données climatiques, et une édition francophone",
+        "description": "Python pour l'analyse des données météorologiques et climatiques se déroulera en août, avec le soutien d'AfricaConnect3, suivi d'un atelier francophone dédié, étendant la portée du programme à toutes les zones linguistiques."
+      },
+      {
+        "year": "2026",
+        "title": "Une communauté, pas seulement un cours",
+        "description": "WiW établit sa communauté de pratique et présente le Climate Innovation Lab, passant d'une formation épisodique à une plate-forme continue de collaboration, de mentorat et de création de solutions."
+      }
+    ],
+    "title": "Notre histoire",
+    "desc": "Huit ans de livraison."
+  },
+  "ProgrammePage": {
+    "heroTitle": "Réseau Femmes-In-WACREN",
+    "title": "Pratique, technique et gratuit pour les participants.",
+    "desc": "WiW organise une formation pratique intensive sur les outils dont les femmes ont réellement besoin pour mener des carrières dans la recherche et dans le domaine technique – le matériel reste ouvert afin que tout le monde dans la région puisse les utiliser."
+  },
+  "ImpactPage": {
+    "heroTitle": "Impact",
+    "section1Title": "Connecter les femmes, construire des solutions.",
+    "section1Desc": "Le réseau Women-In-WACREN est l'endroit où les femmes se connectent, échangent des connaissances et des expériences, accèdent au mentorat et à l'apprentissage, collaborent entre disciplines et développent des solutions aux défis affectant leurs communautés - au-delà de tout programme unique.",
+    "impactNetworkTitle": "Réseautage",
+    "impactNetworkDesc": "Rencontrez des femmes travaillant dans le domaine STEM dans plus de seize pays et trois zones linguistiques.",
+    "impactMentorTitle": "Mentorat",
+    "impactMentorDesc": "Soyez jumelé à un mentor ou encadrez quelqu'un plus tôt dans sa carrière.",
+    "impactPeerTitle": "Apprentissage par les pairs",
+    "impactPeerDesc": "Groupes d'étude, cliniques techniques et résolution de problèmes partagée entre les cohortes.",
+    "impactOppTitle": "Opportunités",
+    "impactOppDesc": "Préavis précoce des appels, subventions, bourses et événements à travers le réseau.",
+    "joinButton": "Rejoignez le réseau Women-In-WACREN",
+    "testimonialTitle": "Ce que les participants ont fait ensuite.",
+    "test1": "“L'initiative WiW a non seulement <mark>renforcé mes capacités en analyse quantitative</mark> à l'aide de Python, mais a également été très inspirante. Avoir des femmes qui ont accompli de grandes choses dans la même pièce que vous, qui vous enseignent et partagent leurs expériences avec vous, n'a pas de prix !”",
+    "test1Mark": "renforcé mes capacités en analyse quantitative",
+    "test2": "“Expérience incroyable … Nous avons installé une station météorologique. Malgré les défis, nous avons configuré le raspberry pi, <mark>fait fonctionner la vitesse du vent de notre anémomètre</mark>.”",
+    "test2Mark": "La vitesse du vent de notre anémomètre fonctionne",
+    "test3": "“Ceci est un troisième espace réservé. Il montre à quoi ressemble la mise en page lorsqu'elle est entièrement remplie. Il prouve que le programme est <mark>très efficace et évolutif</mark>.”",
+    "test3Mark": "très efficace et évolutif",
+    "test4": "“Quatrième espace réservé. La communauté est incroyablement solidaire. J'ai pu <mark>élargir mon réseau</mark> à travers de multiples frontières sans effort.”",
+    "test4Mark": "élargir mon réseau",
+    "test5": "“Cinquième espace réservé. Trouver des mentors qui me ressemblent et comprennent le contexte a été <mark>un véritable tournant</mark> pour ma trajectoire professionnelle.”",
+    "test5Mark": "un changement total de jeu",
+    "test6": "“Sixième et dernier espace réservé. Les cliniques techniques ont à elles seules fourni des informations qui ont aidé notre institution à <mark>obtenir un financement essentiel</mark> pour l'année.”",
+    "test6Mark": "obtenir un financement essentiel"
+  },
+  "PartnershipPage": {
+    "heroTitle": "Partenariat et collaboration",
+    "heroDesc": "Joignez-vous à WACREN pour autonomiser les femmes dans les domaines STEM en Afrique de l’Ouest et du Centre.",
+    "pathwaysTitle": "Financez-le, enseignez-le ou rejoignez-le.",
+    "pathwaysDesc": "Il existe quatre manières d'accéder au programme. Choisissez celui qui correspond à qui vous êtes.",
+    "card1Title": "Financer une cohorte",
+    "card1Desc": "Pour les donateurs, les agences et les entreprises partenaires.",
+    "card1Btn": "Options de partenariat",
+    "card2Title": "Organiser un atelier",
+    "card2Desc": "Pour les NREN, les universités et les instituts de recherche.",
+    "card2Btn": "Parlez-nous",
+    "card3Title": "Mentor ou former",
+    "card3Desc": "Pour les femmes en STEM et les alliées ayant des compétences à partager.",
+    "card3Btn": "Bénévole",
+    "card4Title": "Rejoignez-nous en tant que participant",
+    "card4Desc": "Pour les étudiants, les chercheurs et les professionnels en début de carrière.",
+    "card4Btn": "Voir les appels ouverts",
+    "fundingTitle": "Ce que votre financement achète.",
+    "fundingDesc": "WACREN accueille favorablement les partenariats avec les REN régionaux et nationaux, les organisations de femmes, les donateurs internationaux, les agences gouvernementales et les organismes régionaux pour étendre le programme à l'ensemble de la région.",
+    "trackRecordTitle": "Bilan",
+    "trackRecordDesc": "Huit années de prestation continue depuis 2018, plus de 2 000 femmes formées et relations de cofinancement existantes via le programme AfricaConnect avec la Commission européenne.",
+    "deliveryCapacityTitle": "Capacité de livraison",
+    "deliveryCapacityDesc": "Les programmes sont exécutés à travers un réseau régional établi de NREN et d'universités, avec un secrétariat expérimenté à Accra qui gère la coordination, les finances et les rapports.",
+    "alignmentTitle": "Alignement",
+    "alignmentDesc": "Contribue directement à l’ODD 5 sur l’égalité des sexes et à l’ODD 4 sur l’éducation de qualité, aux côtés des priorités régionales en matière numérique et climatique."
+  },
+  "ContactPage": {
+    "heroTitle": "Entrer en contact.",
+    "formTitle": "Dites-nous lequel des quatre itinéraires ci-dessus s'applique et nous vous dirigerons vers la bonne personne.",
+    "nameLabel": "Votre nom",
+    "namePlaceholder": "Jane Doe",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "jane@exemple.com",
+    "roleLabel": "Je prends contact en tant que",
+    "roleSelect": "Sélectionnez une option...",
+    "roleFunder": "Un bailleur de fonds ou un partenaire potentiel",
+    "roleHost": "Une institution d’accueil ou NREN",
+    "roleMentor": "Un mentor ou un formateur",
+    "roleParticipant": "Un participant potentiel",
+    "roleMedia": "Médias",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Comment pouvons-nous vous aider ?",
+    "sendButton": "Envoyer un message",
+    "sendingButton": "Envoi...",
+    "successMessage": "Message envoyé avec succès. Nous vous répondrons bientôt.",
+    "errorMessage": "Quelque chose s'est mal passé.",
+    "officeTitle": "Secrétariat du WACREN",
+    "newsletterTitle": "Bulletin",
+    "newsletterDesc": "Appels ouverts, subventions et actualités communautaires — quelques fois par an, en anglais, français ou portugais.",
+    "emailAddressPlaceholder": "Adresse email",
+    "subscribeButton": "S'abonner"
+  },
+  "NetworkPage": {
+    "heroTitle": "Rejoignez le réseau Women-in-WACREN",
+    "description": "Demandez à faire partie du réseau WiW pour vous connecter avec d'autres femmes dans le domaine STEM et être ajoutée à notre groupe Google.",
+    "nameLabel": "Votre nom",
+    "namePlaceholder": "Jane Doe",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "jane@exemple.com",
+    "institutionLabel": "Institution",
+    "institutionPlaceholder": "Université / Organisation",
+    "submitButton": "Soumettre la demande",
+    "submittingButton": "Soumission...",
+    "successMessage": "Demande soumise avec succès. Nous vous contacterons.",
+    "errorMessage": "Quelque chose s'est mal passé."
+  },
+  "PrivacyPolicyPage": {
+    "title": "politique de confidentialité",
+    "h2_1": "1. Introduction",
+    "p_1": "Bienvenue sur le site Web de Women-in-WACREN. Nous nous engageons à protéger vos informations personnelles et votre droit à la vie privée. Si vous avez des questions ou des préoccupations concernant notre politique ou nos pratiques concernant vos informations personnelles, veuillez nous contacter à",
+    "h2_2": "2. Informations que nous collectons",
+    "p_2": "Nous collectons les informations personnelles que vous nous fournissez volontairement lorsque vous exprimez votre intérêt à obtenir des informations sur nous ou sur nos produits et services, lorsque vous participez à des activités sur le site Web ou lorsque vous nous contactez de toute autre manière.",
+    "li_2_1_strong": "Nom et coordonnées.",
+    "li_2_1": "Nous collectons votre prénom et votre nom, votre adresse e-mail, votre adresse postale, votre numéro de téléphone et d'autres données de contact similaires.",
+    "li_2_2_strong": "Informations d'identification.",
+    "li_2_2": "Nous collectons des mots de passe, des indices de mot de passe et des informations de sécurité similaires utilisées pour l'authentification et l'accès au compte.",
+    "h2_3": "3. Comment nous utilisons vos informations",
+    "p_3": "Nous utilisons les informations personnelles collectées via notre site Web à diverses fins commerciales décrites ci-dessous. Nous traitons vos informations personnelles à ces fins en nous appuyant sur nos intérêts commerciaux légitimes, afin de conclure ou d'exécuter un contrat avec vous, avec votre consentement, et/ou pour nous conformer à nos obligations légales.",
+    "h2_4": "4. Vos informations seront-elles partagées avec qui que ce soit ?",
+    "p_4": "Nous partageons des informations uniquement avec votre consentement, pour nous conformer aux lois, pour vous fournir des services, pour protéger vos droits ou pour remplir nos obligations commerciales.",
+    "h2_5": "5. Combien de temps conservons-nous vos informations ?",
+    "p_5": "Nous ne conserverons vos informations personnelles que le temps nécessaire aux fins énoncées dans la présente politique de confidentialité, à moins qu'une période de conservation plus longue ne soit requise ou autorisée par la loi (telle que la fiscalité, la comptabilité ou d'autres exigences légales).",
+    "lastUpdated": "Dernière mise à jour : 30 septembre 2026"
+  },
+  "TermsPage": {
+    "title": "Conditions d'utilisation",
+    "h2_1": "1. Accord sur les conditions",
+    "p_1": "Ces conditions d'utilisation constituent un accord juridiquement contraignant conclu entre vous, que ce soit personnellement ou au nom d'une entité (« vous ») et Women-in-WACREN (« nous », « notre » ou « notre »), concernant votre accès et votre utilisation du site Web ainsi que de toute autre forme médiatique, canal médiatique, site Web mobile ou application mobile lié, lié ou autrement connecté à celui-ci.",
+    "h2_2": "2. Droits de propriété intellectuelle",
+    "p_2": "Sauf indication contraire, le Site est notre propriété exclusive et tous les codes sources, bases de données, fonctionnalités, logiciels, conceptions de sites Web, audio, vidéo, textes, photographies et graphiques du Site (collectivement, le « Contenu ») ainsi que les marques commerciales, marques de service et logos qui y sont contenus (les « Marques ») sont détenus ou contrôlés par nous ou nous sont concédés sous licence.",
+    "h2_3": "3. Représentations des utilisateurs",
+    "p_3": "En utilisant le Site, vous déclarez et garantissez que : (1) toutes les informations d'inscription que vous soumettez seront vraies, exactes, à jour et complètes ; (2) vous maintenirez l’exactitude de ces informations et mettrez à jour rapidement ces informations d’inscription si nécessaire.",
+    "h2_4": "4. Activités interdites",
+    "p_4": "Vous ne pouvez pas accéder ou utiliser le Site à des fins autres que celles pour lesquelles nous mettons le Site à disposition. Le Site ne peut pas être utilisé dans le cadre d'activités commerciales, à l'exception de celles spécifiquement approuvées par nous.",
+    "h2_5": "5. Contactez-nous",
+    "p_5": "Afin de résoudre une plainte concernant le Site ou de recevoir de plus amples informations concernant l'utilisation du Site, veuillez nous contacter à :",
+    "lastUpdated": "Dernière mise à jour : 30 septembre 2026"
+  },
+  "NotFoundPage": {
+    "title": "Page introuvable",
+    "description": "Ce lien n'est pas disponible. Rentrez chez vous pour continuer à explorer le réseau, les programmes et l’impact de Women-in-WACREN.",
+    "goHome": "Rentre chez toi"
+  },
+  "ActivitiesPage": {
+    "title": "Activités",
+    "h2": "Nos activités",
+    "p": "Les détails de nos activités seront ajoutés ici."
+  },
+  "DocumentsPage": {
+    "title": "Documents",
+    "h2": "Documents ressources"
+  },
+  "DocumentLibrary": {
+    "searchPlaceholder": "Rechercher des documents...",
+    "folders": "Dossiers",
+    "items": "articles",
+    "home": "Maison",
+    "files": "Fichiers",
+    "name": "Nom",
+    "dateModified": "Date de modification",
+    "size": "Taille",
+    "download": "Télécharger",
+    "noFiles": "Aucun fichier trouvé.",
+    "noFolders": "Aucun dossier trouvé correspondant à votre recherche.",
+    "allDocuments": "Tous les documents",
+    "searchResultsFor": "Résultats de la recherche pour",
+    "lastModified": "Dernière modification",
+    "noDocsFound": "Aucun document trouvé",
+    "noDocsMatching": "Nous n'avons trouvé aucun document correspondant",
+    "folderEmpty": "Ce dossier est vide",
+    "noDocsInFolder": "Il n'y a pas encore de documents dans ce dossier."
   }
 }

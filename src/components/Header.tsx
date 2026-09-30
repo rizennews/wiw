@@ -28,27 +28,7 @@ import { FaLinkedin, FaXTwitter, FaFacebook, FaMastodon, FaYoutube } from "react
 import { SiBluesky } from "react-icons/si";
 import { cn } from "@/lib/utils";
 
-// --- Data for Mega Menu ---
-
-const aboutItems = [
-  { title: "Women-In-WACREN Journey", href: "/about" },
-  { title: "Women-In-WACREN Network", href: "/programme" },
-  { title: "Activities", href: "/activities" },
-  { title: "Impact", href: "/impact" },
-];
-
-const resourceItems = [
-  { title: "Photos", href: "https://photos.wacren.net/index.php?/category/120" },
-  { title: "Videos", href: "https://video.wacren.net/channel/Women-In-WACREN/721046" },
-];
-
-const getInvolvedItems = [
-  { title: "Partnership and Collaboration Opportunities", href: "/partnership", isExternal: false },
-  { title: "Call for Facilitators", href: "https://indico.wacren.net", isExternal: true },
-  { title: "Call for Mentors", href: "https://indico.wacren.net", isExternal: true },
-  { title: "Contact Us", href: "/contact", isExternal: false },
-  { title: "Socials", href: "/socials", isExternal: false },
-];
+// Data for Mega Menu is defined inside the component to use translations.
 
 const languages = [
   { code: 'en', name: 'English', countryCode: 'GB' },
@@ -68,9 +48,24 @@ export function Header() {
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
   const pathname = usePathname();
 
-  const changeLanguage = (newLocale: string) => {
-    router.replace(pathname as any, { locale: newLocale });
-  };
+  const aboutItems = [
+    { title: t('megaMenu.about.journey'), href: "/about" },
+    { title: t('megaMenu.about.network'), href: "/programme" },
+    { title: t('megaMenu.about.impact'), href: "/impact" },
+  ];
+
+  const resourceItems = [
+    { title: t('megaMenu.resources.photos'), href: "https://photos.wacren.net/index.php?/category/120" },
+    { title: t('megaMenu.resources.videos'), href: "https://video.wacren.net/channel/Women-In-WACREN/721046" },
+  ];
+
+  const getInvolvedItems = [
+    { title: t('megaMenu.getInvolved.partnership'), href: "/partnership", isExternal: false },
+    { title: t('megaMenu.getInvolved.facilitators'), href: "https://indico.wacren.net", isExternal: true },
+    { title: t('megaMenu.getInvolved.mentors'), href: "https://indico.wacren.net", isExternal: true },
+    { title: t('megaMenu.getInvolved.contact'), href: "/contact", isExternal: false },
+    { title: t('megaMenu.getInvolved.socials'), href: "/socials", isExternal: false },
+  ];
 
   const navItemClass = "group inline-flex h-10 w-max items-center justify-center bg-transparent px-4 py-2 text-sm font-medium font-heading tracking-wide text-neutral-700 transition-colors hover:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=open]:text-primary";
 
@@ -87,7 +82,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2">
           <img 
             src="/Women%20in%20WACREN%20logo.png" 
-            alt="Women in WACREN" 
+            alt="Women-in-WACREN" 
             className="h-12 md:h-14 w-auto object-contain" 
             onError={(e) => {
               e.currentTarget.style.display = 'none';
@@ -105,7 +100,7 @@ export function Header() {
       <div className="hidden lg:flex flex-1 justify-center gap-2 items-center">
         
         <Link href="/" className={navItemClass}>
-          Home
+          {t('home')}
         </Link>
 
         {/* About Dropdown */}
@@ -122,7 +117,7 @@ export function Header() {
             onClick={() => setIsAboutOpen(!isAboutOpen)}
             aria-expanded={isAboutOpen}
           >
-            About
+            {t('about')}
           </button>
 
           {isAboutOpen && (
@@ -150,7 +145,7 @@ export function Header() {
             onClick={() => setIsResourcesOpen(!isResourcesOpen)}
             aria-expanded={isResourcesOpen}
           >
-            Resources
+            {t('resources')}
           </button>
 
           {isResourcesOpen && (
@@ -170,7 +165,7 @@ export function Header() {
         </div>
 
         <Link href="/blog" className={navItemClass}>
-          Blog & Updates
+          {t('blog')}
         </Link>
 
             <div 
@@ -185,7 +180,7 @@ export function Header() {
                 )}
                 aria-expanded={isMegaMenuOpen}
               >
-                Get Involved
+                {t('getInvolved')}
               </button>
 
               {isMegaMenuOpen && (
@@ -194,25 +189,25 @@ export function Header() {
                   <div className="grid grid-cols-[1.3fr_1fr_1fr_280px] gap-8 p-8">
                     {/* Column 1 */}
                     <div>
-                      <h4 className="mb-6 text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Opportunities</h4>
+                      <h4 className="mb-6 text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">{t('opportunities')}</h4>
                       <ul className="flex flex-col gap-2">
-                        <ListItem title="Partnership and Collaboration Opportunities" href="/partnership" />
-                        <ListItem title="Call for Facilitators" href="https://indico.wacren.net" target="_blank" />
-                        <ListItem title="Call for Mentors" href="https://indico.wacren.net" target="_blank" />
+                        <ListItem title={t('megaMenu.getInvolved.partnership')} href="/partnership" />
+                        <ListItem title={t('megaMenu.getInvolved.facilitators')} href="https://indico.wacren.net" target="_blank" />
+                        <ListItem title={t('megaMenu.getInvolved.mentors')} href="https://indico.wacren.net" target="_blank" />
                       </ul>
                     </div>
 
                     {/* Column 2 */}
                     <div>
-                      <h4 className="mb-6 text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Connect</h4>
+                      <h4 className="mb-6 text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">{t('connect')}</h4>
                       <ul className="flex flex-col gap-2">
-                        <ListItem title="Contact Us" href="/contact" />
+                        <ListItem title={t('megaMenu.getInvolved.contact')} href="/contact" />
                       </ul>
                     </div>
                     
                     {/* Column 3 */}
                     <div>
-                      <h4 className="mb-6 text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Socials</h4>
+                      <h4 className="mb-6 text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">{t('socials')}</h4>
                       <ul className="flex flex-col gap-2">
                         <ListItem title="LinkedIn" href="https://www.linkedin.com/company/west-and-central-african-research-and-education-network/" target="_blank" icon={<FaLinkedin className="h-5 w-5 text-[#0a66c2]" />} />
                         <ListItem title="X (Twitter)" href="https://twitter.com/wacren" target="_blank" icon={<FaXTwitter className="h-5 w-5 text-black dark:text-white" />} />
@@ -244,9 +239,10 @@ export function Header() {
         {/* Language Switcher */}
         <div className="hidden lg:flex items-center gap-4">
           {languages.map((l) => (
-            <button
+            <Link
               key={l.code}
-              onClick={() => changeLanguage(l.code)}
+              href={pathname as any}
+              locale={l.code}
               title={l.name}
               className={cn(
                 "flex items-center justify-center transition-opacity hover:opacity-70",
@@ -259,7 +255,7 @@ export function Header() {
                 style={{ width: '1.2em', height: '1.2em' }} 
                 title={l.name} 
               />
-            </button>
+            </Link>
           ))}
         </div>
 
@@ -309,19 +305,19 @@ export function Header() {
             <div className="flex flex-col gap-8 pl-4 border-l-2 border-muted py-2">
               
               <div className="flex flex-col gap-3">
-                <h4 className="text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Opportunities</h4>
-                <Link href="/partnership" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Partnership and Collaboration</Link>
-                <a href="https://indico.wacren.net" target="_blank" rel="noopener noreferrer" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Call for Facilitators</a>
-                <a href="https://indico.wacren.net" target="_blank" rel="noopener noreferrer" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Call for Mentors</a>
+                <h4 className="text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">{t('opportunities')}</h4>
+                <Link href="/partnership" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>{t('megaMenu.getInvolved.partnership')}</Link>
+                <a href="https://indico.wacren.net" target="_blank" rel="noopener noreferrer" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>{t('megaMenu.getInvolved.facilitators')}</a>
+                <a href="https://indico.wacren.net" target="_blank" rel="noopener noreferrer" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>{t('megaMenu.getInvolved.mentors')}</a>
               </div>
 
               <div className="flex flex-col gap-3">
-                <h4 className="text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Connect</h4>
-                <Link href="/contact" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
+                <h4 className="text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">{t('connect')}</h4>
+                <Link href="/contact" className="text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}>{t('megaMenu.getInvolved.contact')}</Link>
               </div>
 
               <div className="flex flex-col gap-3">
-                <h4 className="text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">Socials</h4>
+                <h4 className="text-[10px] font-bold tracking-[0.15em] text-muted-foreground uppercase font-sans">{t('socials')}</h4>
                 <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}><FaLinkedin className="text-[#0a66c2] h-5 w-5" /> LinkedIn</Link>
                 <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}><FaXTwitter className="text-black h-5 w-5" /> X (Twitter)</Link>
                 <Link href="/socials" className="flex items-center gap-3 text-[16px] font-medium text-foreground" onClick={() => setIsMobileMenuOpen(false)}><FaFacebook className="text-[#1877F2] h-5 w-5" /> Facebook</Link>
@@ -333,15 +329,14 @@ export function Header() {
           </div>
 
           <div className="mt-8 flex flex-col gap-4 border-t border-muted pt-8">
-            <span className="text-sm font-heading font-semibold text-muted-foreground">Language</span>
+            <span className="text-sm font-heading font-semibold text-muted-foreground">{t('language')}</span>
             <div className="flex items-center gap-6">
               {languages.map((l) => (
-                <button
+                <Link
                   key={l.code}
-                  onClick={() => {
-                    changeLanguage(l.code);
-                    setIsMobileMenuOpen(false);
-                  }}
+                  href={pathname as any}
+                  locale={l.code}
+                  onClick={() => setIsMobileMenuOpen(false)}
                   title={l.name}
                   className={cn(
                     "flex items-center gap-2 transition-opacity hover:opacity-70",
@@ -354,7 +349,7 @@ export function Header() {
                     style={{ width: '1.5em', height: '1.5em' }} 
                   />
                   <span className="font-medium text-foreground">{l.name}</span>
-                </button>
+                </Link>
               ))}
             </div>
           </div>

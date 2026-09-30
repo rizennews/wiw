@@ -1,4 +1,4 @@
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { ActionLink } from '@/components/ActionLink';
 import { VideoTestimonialCard } from '@/components/VideoTestimonialCard';
 import { ImpactCard } from '@/components/ImpactCard';
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 export default async function ImpactPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations('ImpactPage');
 
   return (
     <div className="w-full flex flex-col min-h-screen">
@@ -34,7 +35,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
 
         <div className="relative z-10 w-full max-w-[1000px] mx-auto px-4 md:px-8 text-center flex flex-col items-center">
           <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-[1.1]">
-            Impact
+            {t('heroTitle')}
           </h1>
         </div>
       </section>
@@ -43,11 +44,11 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
       <section className="w-full bg-white py-16 md:py-24 flex-1">
         <div className="w-full max-w-[1400px] mx-auto px-4 md:px-8">
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 mb-8">
-            Connecting women, building solutions.
+            {t('section1Title')}
           </h2>
           <div className="text-base md:text-lg text-slate-700 font-light leading-relaxed space-y-6">
             <p>
-              The Women-In-WACREN Network is where women connect, exchange knowledge and experience, access mentorship and learning, collaborate across disciplines, and develop solutions to challenges affecting their communities &mdash; beyond any single programme.
+              {t('section1Desc')}
             </p>
           </div>
 
@@ -55,30 +56,30 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mt-16">
             <ImpactCard 
               icon={Network}
-              title="Networking"
-              description="Meet women working in STEM across sixteen-plus countries and three language zones."
+              title={t('impactNetworkTitle')}
+              description={t('impactNetworkDesc')}
             />
             <ImpactCard 
               icon={Users}
-              title="Mentorship"
-              description="Be matched with a mentor, or mentor someone earlier in their career."
+              title={t('impactMentorTitle')}
+              description={t('impactMentorDesc')}
             />
             <ImpactCard 
               icon={BookOpen}
-              title="Peer learning"
-              description="Study groups, technical clinics and shared problem-solving between cohorts."
+              title={t('impactPeerTitle')}
+              description={t('impactPeerDesc')}
             />
             <ImpactCard 
               icon={Lightbulb}
-              title="Opportunities"
-              description="Early notice of calls, grants, fellowships and events across the network."
+              title={t('impactOppTitle')}
+              description={t('impactOppDesc')}
             />
           </div>
 
           {/* Call to Action Button */}
           <div className="mt-12 flex justify-start">
             <ActionLink href="#" variant="primary" icon={ArrowRight}>
-              Join the Women-In-WACREN Network
+              {t('joinButton')}
             </ActionLink>
           </div>
         </div>
@@ -88,7 +89,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
       <section className="w-full bg-slate-50 py-16 md:py-24">
         <div className="w-full max-w-[1400px] mx-auto px-4 md:px-8">
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 mb-12">
-            What participants did next.
+            {t('testimonialTitle')}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
@@ -96,7 +97,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             {/* Testimonial 1 */}
             <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                &ldquo;The WiW initiative not only <mark className="bg-pink-200/60 px-1 py-0.5 rounded-sm">built my capacity in quantitative analysis</mark> using Python but was also very inspiring - to have women who have accomplished great feats in the same room with you, teaching and sharing their experiences with you, is priceless!&rdquo;
+                {t.rich('test1', { mark: (chunks) => <mark className="bg-pink-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
               </p>
               <hr className="border-slate-900 mb-6" />
               <div className="flex items-center gap-4">
@@ -114,7 +115,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             {/* Testimonial 2 */}
             <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                &ldquo;Amazing experience &hellip; We set up a weather station. Despite the challenges, we configured the raspberry pi, <mark className="bg-emerald-200/60 px-1 py-0.5 rounded-sm">got the wind speed of our anemometer working</mark>.&rdquo;
+                {t.rich('test2', { mark: (chunks) => <mark className="bg-emerald-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
               </p>
               <hr className="border-slate-900 mb-6" />
               <div className="flex items-center gap-4">
@@ -129,7 +130,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             {/* Testimonial 3 */}
             <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                &ldquo;This is a third placeholder. It shows how the layout looks when filled out completely. It proves that the programme is <mark className="bg-blue-200/60 px-1 py-0.5 rounded-sm">highly effective and scalable</mark>.&rdquo;
+                {t.rich('test3', { mark: (chunks) => <mark className="bg-blue-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
               </p>
               <hr className="border-slate-900 mb-6" />
               <div className="flex items-center gap-4">
@@ -147,7 +148,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             {/* Testimonial 4 */}
             <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                &ldquo;Fourth placeholder. The community is incredibly supportive. I was able to <mark className="bg-yellow-200/60 px-1 py-0.5 rounded-sm">expand my network</mark> across multiple borders effortlessly.&rdquo;
+                {t.rich('test4', { mark: (chunks) => <mark className="bg-yellow-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
               </p>
               <hr className="border-slate-900 mb-6" />
               <div className="flex items-center gap-4">
@@ -162,7 +163,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             {/* Testimonial 5 */}
             <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                &ldquo;Fifth placeholder. Finding mentors who look like me and understand the context has been <mark className="bg-purple-200/60 px-1 py-0.5 rounded-sm">a total game changer</mark> for my career trajectory.&rdquo;
+                {t.rich('test5', { mark: (chunks) => <mark className="bg-purple-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
               </p>
               <hr className="border-slate-900 mb-6" />
               <div className="flex items-center gap-4">
@@ -180,7 +181,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             {/* Testimonial 6 */}
             <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
               <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                &ldquo;Sixth and final placeholder. The technical clinics alone provided insights that helped our institution <mark className="bg-orange-200/60 px-1 py-0.5 rounded-sm">secure critical funding</mark> for the year.&rdquo;
+                {t.rich('test6', { mark: (chunks) => <mark className="bg-orange-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
               </p>
               <hr className="border-slate-900 mb-6" />
               <div className="flex items-center gap-4">

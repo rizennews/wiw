@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Search, Folder, FileText, FileSpreadsheet, FileArchive, Download, ChevronRight, File, MoreVertical } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useTranslations } from 'next-intl';
 
 import { 
   DropdownMenu,
@@ -30,6 +31,7 @@ const FILES = [
 ];
 
 export function DocumentLibrary() {
+  const t = useTranslations('DocumentLibrary');
   const [searchQuery, setSearchQuery] = useState('');
   const [currentFolder, setCurrentFolder] = useState<string | null>(null);
 
@@ -57,7 +59,7 @@ export function DocumentLibrary() {
         </div>
         <input
           type="text"
-          placeholder="Search documents..."
+          placeholder={t('searchPlaceholder')}
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="w-full pl-12 pr-4 py-3 rounded-full bg-slate-100/80 border-transparent focus:bg-white focus:border-slate-300 focus:ring-0 outline-none transition-all duration-300 text-slate-700 text-sm font-medium"
@@ -71,7 +73,7 @@ export function DocumentLibrary() {
             onClick={() => setCurrentFolder(null)}
             className="hover:bg-slate-100 px-3 py-1 -ml-3 rounded-lg transition-colors"
           >
-            All Documents
+            {t('allDocuments')}
           </button>
           {folderData && (
             <>
@@ -85,14 +87,14 @@ export function DocumentLibrary() {
       {/* Search Header */}
       {searchQuery && (
         <div className="text-lg font-medium text-slate-800 mb-2">
-          Search results for "{searchQuery}"
+          {t('searchResultsFor')} "{searchQuery}"
         </div>
       )}
 
       {/* Folders Section */}
       {displayFolders.length > 0 && (
         <div className="mb-6">
-          <h3 className="text-sm font-medium text-slate-500 mb-4">Folders</h3>
+          <h3 className="text-sm font-medium text-slate-500 mb-4">{t('folders')}</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {displayFolders.map(folder => (
               <button
@@ -105,7 +107,7 @@ export function DocumentLibrary() {
                 </div>
                 <div className="flex flex-col">
                   <span className="font-medium text-slate-700 text-sm">{folder.name}</span>
-                  <span className="text-xs text-slate-400">{folder.itemCount} items</span>
+                  <span className="text-xs text-slate-400">{folder.itemCount} {t('items')}</span>
                 </div>
               </button>
             ))}
@@ -116,14 +118,14 @@ export function DocumentLibrary() {
       {/* Files Section */}
       {displayFiles.length > 0 ? (
         <div>
-          <h3 className="text-sm font-medium text-slate-500 mb-4">Files</h3>
+          <h3 className="text-sm font-medium text-slate-500 mb-4">{t('files')}</h3>
           
           <div className="w-full bg-white border border-slate-200 rounded-xl overflow-hidden">
             {/* Table Header */}
             <div className="grid grid-cols-[1fr_120px_100px_48px] gap-4 px-6 py-3 bg-slate-50 border-b border-slate-200 text-xs font-semibold text-slate-500 uppercase tracking-wider">
-              <div>Name</div>
-              <div className="hidden sm:block">Last Modified</div>
-              <div className="hidden sm:block">Size</div>
+              <div>{t('name')}</div>
+              <div className="hidden sm:block">{t('lastModified')}</div>
+              <div className="hidden sm:block">{t('size')}</div>
               <div></div>
             </div>
 
@@ -156,7 +158,7 @@ export function DocumentLibrary() {
                           <DropdownMenuItem className="cursor-pointer p-0">
                             <a href={file.url} download className="flex items-center w-full px-2 py-1.5 text-sm">
                               <Download className="w-4 h-4 mr-2" />
-                              Download
+                              {t('download')}
                             </a>
                           </DropdownMenuItem>
                         </DropdownMenuContent>
@@ -175,14 +177,14 @@ export function DocumentLibrary() {
           {searchQuery ? (
             <>
               <Search className="w-16 h-16 text-slate-200 mb-4" />
-              <h3 className="text-lg font-medium text-slate-700 mb-1">No documents found</h3>
-              <p className="text-slate-500 text-sm">We couldn't find any documents matching "{searchQuery}".</p>
+              <h3 className="text-lg font-medium text-slate-700 mb-1">{t('noDocsFound')}</h3>
+              <p className="text-slate-500 text-sm">{t('noDocsMatching')} "{searchQuery}".</p>
             </>
           ) : (
             <>
               <Folder className="w-16 h-16 text-slate-200 mb-4" />
-              <h3 className="text-lg font-medium text-slate-700 mb-1">This folder is empty</h3>
-              <p className="text-slate-500 text-sm">There are no documents in this folder yet.</p>
+              <h3 className="text-lg font-medium text-slate-700 mb-1">{t('folderEmpty')}</h3>
+              <p className="text-slate-500 text-sm">{t('noDocsInFolder')}</p>
             </>
           )}
         </div>

@@ -1,4 +1,4 @@
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { DocumentLibrary } from '@/components/DocumentLibrary';
 
 import { Metadata } from 'next';
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default async function DocumentsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations('DocumentsPage');
 
   return (
     <div className="w-full flex flex-col min-h-screen">
@@ -23,7 +24,7 @@ export default async function DocumentsPage({ params }: { params: Promise<{ loca
 
         <div className="relative z-10 w-full max-w-[1000px] mx-auto px-4 md:px-8 text-center flex flex-col items-center">
           <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-[1.1]">
-            Documents
+            {t('title')}
           </h1>
         </div>
       </section>
@@ -33,7 +34,7 @@ export default async function DocumentsPage({ params }: { params: Promise<{ loca
         <div className="w-full max-w-[1400px] mx-auto px-4 md:px-8">
           <div className="flex flex-col items-start w-full">
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 mb-8">
-              Resource Documents
+              {t('h2')}
             </h2>
             <DocumentLibrary />
           </div>

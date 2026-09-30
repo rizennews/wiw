@@ -4,22 +4,28 @@ import React, { useState } from 'react';
 import { Search } from 'lucide-react';
 import { Link } from '@/i18n/routing';
 import { getAllPostsSorted, type BlogPost } from '@/lib/blog-data';
+import { useTranslations } from 'next-intl';
 
-const CATEGORIES = ["All", "Community", "Research", "News", "Events"];
+const CATEGORIES_KEYS = ["All", "Community", "Research", "News", "Events"];
 
 export function BlogFeed() {
+  const t = useTranslations('BlogPage');
+  const tBlog = useTranslations('Blog');
   const [searchQuery, setSearchQuery] = useState("");
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategoryKey, setActiveCategoryKey] = useState("All");
   const [visibleCount, setVisibleCount] = useState(3);
 
   const sortedPosts = getAllPostsSorted();
 
   const filteredPosts = sortedPosts.filter((post: BlogPost) => {
+    const postTitle = tBlog.has(`${post.slug}.title`) ? tBlog(`${post.slug}.title`) : post.title;
+    const postExcerpt = tBlog.has(`${post.slug}.excerpt`) ? tBlog(`${post.slug}.excerpt`) : post.excerpt;
+
     const matchesSearch = 
-      post.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+      postTitle.toLowerCase().includes(searchQuery.toLowerCase()) || 
+      postExcerpt.toLowerCase().includes(searchQuery.toLowerCase());
     
-    const matchesCategory = activeCategory === "All" || post.category === activeCategory;
+    const matchesCategory = activeCategoryKey === "All" || post.category === activeCategoryKey;
 
     return matchesSearch && matchesCategory;
   });
@@ -29,7 +35,7 @@ export function BlogFeed() {
   // Reset visible count when filters change
   React.useEffect(() => {
     setVisibleCount(3);
-  }, [searchQuery, activeCategory]);
+  }, [searchQuery, activeCategoryKey]);
 
   return (
     <section className="w-full bg-white flex-1 flex flex-col">
@@ -39,19 +45,19 @@ export function BlogFeed() {
           
           {/* Category Tabs */}
           <div className="flex items-center overflow-x-auto hide-scrollbar border border-slate-200 rounded-sm bg-slate-50 w-max">
-            {CATEGORIES.map((category, index) => (
+            {CATEGORIES_KEYS.map((categoryKey, index) => (
               <button 
-                key={category}
-                onClick={() => setActiveCategory(category)}
+                key={categoryKey}
+                onClick={() => setActiveCategoryKey(categoryKey)}
                 className={`px-5 py-2 text-sm font-medium transition-colors shrink-0
-                  ${index !== CATEGORIES.length - 1 ? 'border-r border-slate-200' : ''}
-                  ${activeCategory === category 
+                  ${index !== CATEGORIES_KEYS.length - 1 ? 'border-r border-slate-200' : ''}
+                  ${activeCategoryKey === categoryKey 
                     ? 'text-slate-900 bg-white shadow-sm' 
                     : 'text-slate-500 hover:text-slate-900 bg-transparent'
                   }
                 `}
               >
-                {category}
+                {t(`categories.${categoryKey}`)}
               </button>
             ))}
           </div>
@@ -63,7 +69,7 @@ export function BlogFeed() {
             </div>
             <input
               type="text"
-              placeholder="Search articles"
+              placeholder={t('search')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-9 pr-4 py-2 border border-slate-200 bg-slate-50 hover:bg-white focus:bg-white focus:border-slate-300 outline-none transition-colors text-sm text-slate-700 placeholder:text-slate-400 rounded-sm"
@@ -104,11 +110,11 @@ export function BlogFeed() {
                 {/* Content */}
                 <div className="flex flex-col flex-1 p-6 md:p-8">
                   <h3 className="font-heading text-lg md:text-xl font-medium text-slate-900 mb-4 leading-snug">
-                    {post.title}
+                    {tBlog.has(`${post.slug}.title`) ? tBlog(`${post.slug}.title`) : post.title}
                   </h3>
                   
                   <p className="text-sm md:text-[15px] text-slate-500 font-light leading-relaxed mb-8 flex-1">
-                    {post.excerpt}
+                    {tBlog.has(`${post.slug}.excerpt`) ? tBlog(`${post.slug}.excerpt`) : post.excerpt}
                   </p>
                   
                   {/* Meta Footer */}
@@ -126,16 +132,16 @@ export function BlogFeed() {
           </div>
         ) : (
           <div className="flex flex-col items-center justify-center py-20 text-center border border-dashed border-slate-200 rounded-lg bg-slate-50">
-            <h3 className="text-lg font-medium text-slate-700 mb-2">No articles found</h3>
-            <p className="text-slate-500 text-sm mb-6">We couldn't find any articles matching your search.</p>
+            <h3 className="text-lg font-medium text-slate-700 mb-2">{t('noResults')}</h3>
+            <p className="text-slate-500 text-sm mb-6">{t('noResults')}</p>
             <button 
               onClick={() => {
                 setSearchQuery("");
-                setActiveCategory("All");
+                setActiveCategoryKey("All");
               }}
               className="px-6 py-2 border border-slate-200 bg-white text-slate-700 text-sm font-medium hover:bg-slate-50 transition-colors rounded-sm shadow-sm"
             >
-              Clear Filters
+              {t('clearFilters')}
             </button>
           </div>
         )}
@@ -147,7 +153,7 @@ export function BlogFeed() {
               onClick={() => setVisibleCount(prev => prev + 3)}
               className="px-6 py-2 border border-slate-200 bg-slate-50 text-slate-700 text-sm font-medium hover:bg-white hover:border-slate-300 transition-colors rounded-sm"
             >
-              Load More
+              {t('loadMore')}
             </button>
           </div>
         )}

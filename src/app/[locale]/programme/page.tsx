@@ -1,4 +1,5 @@
 import { ProgrammeTabs } from '@/components/ProgrammeTabs';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -6,7 +7,11 @@ export const metadata: Metadata = {
   description: 'Join the Women-in-WACREN Network. Explore our open calls, register for upcoming training programmes, and access our learning hub.',
 };
 
-export default function ProgrammePage() {
+export default async function ProgrammePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('ProgrammePage');
+
   return (
     <div className="flex flex-col w-full">
       <main className="flex-1 w-full flex flex-col">
@@ -20,7 +25,7 @@ export default function ProgrammePage() {
 
           <div className="relative z-10 w-full max-w-[1000px] mx-auto px-4 md:px-8 text-center flex flex-col items-center">
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-[1.1]">
-              Women-In-WACREN Network
+              {t('heroTitle')}
             </h1>
           </div>
         </section>
@@ -29,11 +34,11 @@ export default function ProgrammePage() {
         <section id="open-calls" className="w-full bg-white py-16 md:py-24">
           <div className="w-full max-w-[1400px] mx-auto px-4 md:px-8">
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 mb-8">
-              Hands-on, technical, and free to participants.
+              {t('title')}
             </h2>
             <div className="text-base md:text-lg text-slate-700 font-light leading-relaxed">
               <p>
-                WiW runs intensive practical training in the tools women actually need for research and technical careers — with materials kept open so anyone in the region can use them.
+                {t('desc')}
               </p>
             </div>
             

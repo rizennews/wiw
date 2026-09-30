@@ -6,28 +6,23 @@ import { cn } from "@/lib/utils";
 
 const timelineData = [
   {
-    year: "2018",
-    title: "The first workshop",
-    description: 'WACREN launches its first Women in WACREN event, "Physical Computing with Python", at the University of Lagos Entrepreneurship and Skill Development Centre. Thirty women from five countries take part, co-sponsored by Eko-Konnect, UNILAG and AfricaConnect2, with a ten-week online continuation.',
+    year: "2018"
   },
   {
-    year: "2019–2023",
-    title: "From workshop to programme",
-    description: "Training expands into basic programming, Git and DevOps, embedded systems and sensors, IoT, AI and open science — reaching more than 2,000 young women and building partnerships with NRENs, PyLadies and technical bodies across the region.",
+    year: "2019–2023"
   },
   {
-    year: "2024",
-    title: "Climate data, and a Francophone edition",
-    description: "Python for Weather and Climate Data Analysis runs in August, supported by AfricaConnect3, followed by a dedicated Francophone workshop — extending the programme's reach across language zones.",
+    year: "2024"
   },
   {
-    year: "2026",
-    title: "A community, not just a course",
-    description: "WiW establishes its Community of Practice and introduces the Climate Innovation Lab, moving from episodic training to a continuous platform for collaboration, mentorship and solution-building.",
+    year: "2026"
   }
 ];
 
+import { useTranslations } from 'next-intl';
+
 export function Timeline() {
+  const t = useTranslations('Timeline');
   const containerRef = useRef<HTMLDivElement>(null);
   
   const { scrollYProgress } = useScroll({
@@ -47,8 +42,8 @@ export function Timeline() {
         
         {/* Header */}
         <div className="text-center mb-20 flex flex-col items-center">
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">Our story</h2>
-          <p className="text-lg md:text-xl text-slate-700 font-light">Eight years of delivery.</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">{t('title')}</h2>
+          <p className="text-lg md:text-xl text-slate-700 font-light">{t('desc')}</p>
         </div>
 
         {/* Timeline Container */}
@@ -87,8 +82,12 @@ export function Timeline() {
                       className="py-4 group"
                     >
                       <span className="inline-block text-primary font-heading text-xl md:text-2xl font-bold mb-3">{item.year}</span>
-                      <h3 className="font-heading text-lg md:text-xl font-semibold text-slate-900 mb-4 leading-tight group-hover:text-primary transition-colors">{item.title}</h3>
-                      <p className="text-slate-700 font-light leading-relaxed text-base">{item.description}</p>
+                      <h3 className="font-heading text-lg md:text-xl font-semibold text-slate-900 mb-4 leading-tight group-hover:text-primary transition-colors">
+                        {t(`items.${index}.title`)}
+                      </h3>
+                      <p className="text-slate-700 font-light leading-relaxed text-base">
+                        {t(`items.${index}.description`)}
+                      </p>
                     </motion.div>
                   </div>
                 </div>

@@ -21,8 +21,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL('https://wiw.wacren.net'),
   title: {
-    template: '%s | Women in WACREN',
-    default: 'Women in WACREN - Empowering Women in STEM Across West & Central Africa',
+    template: '%s | Women-in-WACREN',
+    default: 'Women-in-WACREN - Empowering Women in STEM Across West & Central Africa',
   },
   description: "Women-in-WACREN connects, trains, and funds women in STEM across West and Central Africa. Turning students, researchers, and early-career professionals into tech leaders.",
   keywords: [
@@ -36,22 +36,22 @@ export const metadata: Metadata = {
     "Digital Innovation",
     "Women Empowerment",
     "WACREN",
-    "Women in WACREN"
+    "Women-in-WACREN"
   ],
   authors: [{ name: "WACREN" }],
   creator: "WACREN",
   publisher: "WACREN",
   openGraph: {
-    title: 'Women in WACREN - Empowering Women in STEM',
+    title: 'Women-in-WACREN - Empowering Women in STEM',
     description: 'Connecting, training, and funding women in STEM across West and Central Africa.',
     url: 'https://wiw.wacren.net',
-    siteName: 'Women in WACREN',
+    siteName: 'Women-in-WACREN',
     images: [
       {
         url: '/hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Women in WACREN - Building the scientific and digital future of West and Central Africa',
+        alt: 'Women-in-WACREN - Building the scientific and digital future of West and Central Africa',
       },
     ],
     locale: 'en_US',
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Women in WACREN - Empowering Women in STEM',
+    title: 'Women-in-WACREN - Empowering Women in STEM',
     description: 'Connecting, training, and funding women in STEM across West and Central Africa.',
     images: ['/hero.jpg'],
   },

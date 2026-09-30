@@ -39,11 +39,11 @@ export const POSTS: BlogPost[] = [
       <div class="mb-6 border border-slate-200 rounded-lg divide-y divide-slate-200 text-[16px]">
         <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
           <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Date</span>
-          <span class="text-slate-700">Thursday, 1 October 2026</span>
+          <span class="text-slate-700">Wednesday, 30 September 2026</span>
         </div>
         <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
           <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Time</span>
-          <span class="text-slate-700">13:00 &ndash; 14:00</span>
+          <span class="text-slate-700">13:00 UTC</span>
         </div>
         <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
           <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Format</span>
@@ -382,7 +382,7 @@ export const POSTS: BlogPost[] = [
     },
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        The West and Central African Research and Education Network (WACREN) demonstrated its commitment to opening windows of opportunities for women, historically underrepresented in STEM fields, as it launched its first Women in WACREN event under the theme “Physical Computing with Python.”
+        The West and Central African Research and Education Network (WACREN) demonstrated its commitment to opening windows of opportunities for women, historically underrepresented in STEM fields, as it launched its first Women-in-WACREN event under the theme “Physical Computing with Python.”
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         In addition to providing an opportunity for women to enhance programming skills, the conference forged strategic partnerships with women and organizations committed to addressing the underrepresentation of women in the field and served as a model for member NRENs.
@@ -453,8 +453,8 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: 'wiw-physical-computing-python-dakar',
-    title: 'Women in WACREN - Physical Computing with Python',
-    excerpt: 'This first “Women In WACREN” training and community event is held in collaboration with SenChix, UCAD, and the AfricaConnect2 project.',
+    title: 'Women-in-WACREN - Physical Computing with Python',
+    excerpt: 'This first “Women-in-WACREN” training and community event is held in collaboration with SenChix, UCAD, and the AfricaConnect2 project.',
     category: 'News',
     date: 'Oct 1, 2017',
     author: {
@@ -463,7 +463,7 @@ export const POSTS: BlogPost[] = [
     },
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        This first “Women In WACREN” training and community event is held in collaboration with <a href="http://www.senchix.sn" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">SenChix</a>, a women in technology group hosted by snRER, the <a href="https://www.ucad.sn/index.php?option=com_content&view=article&id=1523&Itemid=354" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Faculty of Science and Technology</a> of the Université Cheikh Anta Diop de Dakar (UCAD) and the <a href="https://www.africaconnect2.net/Pages/Home.aspx" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">AfricaConnect2</a> project.
+        This first “Women-in-WACREN” training and community event is held in collaboration with <a href="http://www.senchix.sn" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">SenChix</a>, a women in technology group hosted by snRER, the <a href="https://www.ucad.sn/index.php?option=com_content&view=article&id=1523&Itemid=354" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Faculty of Science and Technology</a> of the Université Cheikh Anta Diop de Dakar (UCAD) and the <a href="https://www.africaconnect2.net/Pages/Home.aspx" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">AfricaConnect2</a> project.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         Leveraging a broader promotion of maker culture and hackerspaces in NRENs, the event will kick off a program aimed at reducing current imbalances in gender participation. It will support female students and staff to improve STEM skills through experimentation with robots and electronics and learning to program these devices.
@@ -509,8 +509,8 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: 'wiw-physical-computing-python-lagos',
-    title: 'Women in WACREN - Physical Computing with Python - Lagos Edition',
-    excerpt: 'This “Women In WACREN” training and community event is held in collaboration with the Eko-Konnect Research and Education Initiative and UNILAG.',
+    title: 'Women-in-WACREN - Physical Computing with Python - Lagos Edition',
+    excerpt: 'This “Women-in-WACREN” training and community event is held in collaboration with the Eko-Konnect Research and Education Initiative and UNILAG.',
     category: 'News',
     date: 'Dec 19, 2017',
     author: {
@@ -519,7 +519,7 @@ export const POSTS: BlogPost[] = [
     },
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        This “Women In WACREN” training and community event is held in collaboration with the <a href="http://www.eko-konnect.org.ng" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Eko-Konnect Research and Education Initiative</a>, a cluster the Nigerian NREN (<a href="http://www.ngren.edu.ng" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">NgREN</a>), the Entrepreneurship & Skills Development Centre and Faculty of Engineering of the <a href="http://www.unilag.edu.ng" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">University of Lagos (UNILAG)</a>, and the <a href="http://www.africaconnect2.net" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">AfricaConnect2</a> project.
+        This “Women-in-WACREN” training and community event is held in collaboration with the <a href="http://www.eko-konnect.org.ng" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Eko-Konnect Research and Education Initiative</a>, a cluster the Nigerian NREN (<a href="http://www.ngren.edu.ng" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">NgREN</a>), the Entrepreneurship & Skills Development Centre and Faculty of Engineering of the <a href="http://www.unilag.edu.ng" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">University of Lagos (UNILAG)</a>, and the <a href="http://www.africaconnect2.net" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">AfricaConnect2</a> project.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         Leveraging a broader promotion of maker culture and hackerspaces in NRENs, the event is part of a program aimed at reducing current imbalances in gender participation. It will support female students and staff to improve STEM skills through experimentation with robots and electronics and learning to program these devices.
@@ -725,7 +725,7 @@ export const POSTS: BlogPost[] = [
     image: '/blog/Henritta-300x208.jpg',
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        When Henrietta Ampofo joined the Women in WACREN (WiW) 2024 cohort in Accra, Ghana, for the Python for Weather and Climate Data, she quickly stood out for her passion, curiosity, and active participation. The WiW initiative—designed to empower women in STEM across West and Central Africa—has inspired hundreds of women to push boundaries, and Henrietta has become one of its shining examples.
+        When Henrietta Ampofo joined the Women-in-WACREN (WiW) 2024 cohort in Accra, Ghana, for the Python for Weather and Climate Data, she quickly stood out for her passion, curiosity, and active participation. The WiW initiative—designed to empower women in STEM across West and Central Africa—has inspired hundreds of women to push boundaries, and Henrietta has become one of its shining examples.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         While her latest achievement is not directly a WiW project, it embodies the WiW spirit. Building on the confidence and impetus she gained through the program, Henrietta has created an innovative digital solution, <strong>Implementation Tracker</strong>, which is set to make a real impact in Ghana.
@@ -797,7 +797,7 @@ export const POSTS: BlogPost[] = [
 
       <h2 id="wacrens-impact" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Empowering Regional Innovators</h2>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        At WACREN, Rasmata’s story affirms the value of intentional investments in gender equity, practical capacity building, and regional collaboration. Through the Women in WACREN, <a href="https://video.wacren.net/channel/Women-In-WACREN/721046" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">WACREN continues to equip women</a> researchers and innovators with the tools, networks, and confidence to lead change in their fields and communities.
+        At WACREN, Rasmata’s story affirms the value of intentional investments in gender equity, practical capacity building, and regional collaboration. Through the Women-in-WACREN, <a href="https://video.wacren.net/channel/Women-In-WACREN/721046" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">WACREN continues to equip women</a> researchers and innovators with the tools, networks, and confidence to lead change in their fields and communities.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         Rasmata’s journey is a shining example of how regional research and education networks can drive innovation, inclusivity, and impact through women's empowerment.

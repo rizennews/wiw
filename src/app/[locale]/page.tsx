@@ -6,6 +6,7 @@ import { StatItem } from "@/components/StatItem";
 import { Countdown } from "@/components/Countdown";
 import { ActionLink } from "@/components/ActionLink";
 import { getAllPostsSorted } from "@/lib/blog-data";
+import { TestimonialMarquee } from "@/components/TestimonialMarquee";
 
 import { Metadata } from 'next';
 
@@ -13,7 +14,10 @@ export const metadata: Metadata = {
   description: 'Empowering women in STEM across West and Central Africa through education, training, and strategic partnerships.',
 };
 
+import { useTranslations } from 'next-intl';
+
 export default function Home() {
+  const t = useTranslations('Home');
   const latestPosts = getAllPostsSorted().slice(0, 3);
 
   return (
@@ -27,20 +31,20 @@ export default function Home() {
           {/* Left Column: Content */}
           <div className="flex flex-col gap-6 lg:pr-8 z-10">
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-white">
-              Women building the scientific and digital future of West and Central Africa.
+              {t('heroTitle')}
             </h1>
             
             <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-2xl">
-              Women-In-WACREN trains, connects and funds women in STEM across the region — turning students, researchers and early-career professionals into innovators, makers and technology leaders.
+              {t('heroDesc')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mt-2">
-              <ActionLink href="#" variant="inverted">
-                Join community of practice
+              <ActionLink href="/network" variant="inverted">
+                {t('heroCta')}
               </ActionLink>
               
-              <ActionLink href="#" variant="outline-inverted">
-                Partner with us
+              <ActionLink href="/partnership" variant="outline-inverted">
+                {t('heroSecondary')}
               </ActionLink>
             </div>
           </div>
@@ -69,19 +73,19 @@ export default function Home() {
               {/* Left Column: Text */}
               <div className="flex flex-col gap-6">
                 <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-slate-900">
-                  A regional response to the gender gap in STEM
+                  {t('missionTitle')}
                 </h2>
                 <div className="flex flex-col gap-4 text-base md:text-lg text-slate-700 leading-relaxed">
                   <p>
-                    Launched in 2018, Women-In-WACREN (WiW) is WACREN's initiative to address gender inequality and the under-representation of women in science, technology, engineering and mathematics across West and Central Africa.
+                    {t('missionDesc1')}
                   </p>
                   <p>
-                    We work through the region's National Research and Education Networks (NRENs), universities and research institutions — the same infrastructure that carries Africa's research data — to reach women where they already study and work.
+                    {t('missionDesc2')}
                   </p>
                 </div>
                 <div className="mt-4">
                   <ActionLink href="/about" icon={ArrowRight}>
-                  Learn more about our work
+                  {t('learnMore')}
                 </ActionLink>
                 </div>
               </div>
@@ -91,20 +95,20 @@ export default function Home() {
                 
                 <ImpactCard 
                   icon={Code}
-                  title="Train"
-                  description="Hands-on technical workshops in Python, physical computing, IoT, AI, open science and climate data analysis."
+                  title={t('impact1Title')}
+                  description={t('impact1Desc')}
                 />
 
                 <ImpactCard 
                   icon={Users}
-                  title="Connect"
-                  description="A regional Community of Practice for mentorship, peer learning and cross-border collaboration between programmes."
+                  title={t('impact2Title')}
+                  description={t('impact2Desc')}
                 />
 
                 <ImpactCard 
                   icon={Lightbulb}
-                  title="Innovate"
-                  description="Structured innovation labs where women build digital solutions to challenges in their own communities."
+                  title={t('impact3Title')}
+                  description={t('impact3Desc')}
                 />
 
               </div>
@@ -117,9 +121,9 @@ export default function Home() {
         <div className="w-full bg-primary text-white">
           <section className="w-full max-w-[1400px] mx-auto px-4 md:px-8 py-10 md:py-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-8 md:divide-x divide-white/20">
-              <StatItem value="2,000+" label="Women trained since 2018" className="md:pl-0 md:pr-8" />
-              <StatItem value="4" label="Countries reached" className="md:px-8" />
-              <StatItem value="20+" label="Workshops & bootcamps" className="md:px-8" />
+              <StatItem value="2,000+" label={t('stat1')} className="md:pl-0 md:pr-8" />
+              <StatItem value="4" label={t('stat2')} className="md:px-8" />
+              <StatItem value="20+" label={t('stat3')} className="md:px-8" />
             </div>
           </section>
         </div>
@@ -128,7 +132,7 @@ export default function Home() {
         <div className="w-full bg-white text-foreground">
           <section className="w-full max-w-[1400px] mx-auto px-4 md:px-8 py-10 md:py-16">
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight tracking-tight text-slate-900 mb-10">
-              Upcoming events
+              {t('eventsTitle')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               
@@ -153,24 +157,24 @@ export default function Home() {
                       href="/blog/wiw-webinar-mentorship-sponsorship-networks"
                       className="hover:text-primary transition-colors"
                     >
-                      WiW Webinar - Mentorship, Sponsorship and Networks: What Actually Move Women Forward in STEM?
+                      {t('event1Title')}
                     </Link>
                   </h3>
 
                   <p className="text-sm md:text-[15px] text-slate-500 font-light leading-relaxed mb-6 flex-1">
-                    This webinar will explore how mentorship, sponsorship and professional networks can help women in STEM gain visibility, access opportunities, build confidence and advance their careers.
+                    {t('event1Desc')}
                   </p>
 
                   {/* Date & Time */}
                   <div className="flex items-center gap-2 text-[13px] font-medium text-slate-600 mb-4">
                     <Calendar className="w-4 h-4 text-primary" />
-                    <span>Thursday, 1 October 2026 &middot; 13:00 &ndash; 14:00</span>
+                    <span>Wednesday, 30 September 2026 &middot; 13:00 UTC</span>
                   </div>
 
                   {/* Meta Footer */}
                   <div className="mt-auto flex items-center justify-between text-[13px] font-medium pt-2">
                     <span className="text-primary tracking-wide">
-                      [Webinar]
+                      {t('event1Tag')}
                     </span>
                     <a
                       href="https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg"
@@ -178,7 +182,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="text-primary inline-flex items-center gap-1.5 hover:underline"
                     >
-                      Register
+                      {t('register')}
                       <ArrowRight className="w-4 h-4" />
                     </a>
                   </div>
@@ -202,17 +206,23 @@ export default function Home() {
                 {/* Content */}
                 <div className="flex flex-col flex-1 p-6 md:p-8">
                   <h3 className="font-heading text-lg md:text-xl font-medium text-slate-900 mb-4 leading-snug">
-                    Climate Innovation Lab 2026
+                    {t('event2Title')}
                   </h3>
 
-                  <p className="text-sm md:text-[15px] text-slate-500 font-light leading-relaxed mb-8 flex-1">
-                    Teams of women move from problem identification to working prototype, with mentorship throughout — building digital solutions to climate challenges in the region.
+                  <p className="text-sm md:text-[15px] text-slate-500 font-light leading-relaxed mb-6 flex-1">
+                    {t('event2Desc')}
                   </p>
+
+                  {/* Date & Time & Location */}
+                  <div className="flex items-start gap-2 text-[13px] font-medium text-slate-600 mb-4">
+                    <Calendar className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                    <span className="leading-snug">12-15 October 2026 &middot; 09:00 &ndash; 17:00 UTC<br/>National Open University of Nigeria (NOUN), Abuja, Nigeria</span>
+                  </div>
 
                   {/* Meta Footer */}
                   <div className="mt-auto flex items-center justify-between text-[13px] font-medium pt-2">
                     <span className="text-primary tracking-wide">
-                      [Innovation Lab]
+                      {t('event2Tag')}
                     </span>
                     <a
                       href="https://indico.wacren.net/event/279/"
@@ -220,7 +230,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="text-primary inline-flex items-center gap-1.5 hover:underline"
                     >
-                      Register
+                      {t('register')}
                       <ArrowRight className="w-4 h-4" />
                     </a>
                   </div>
@@ -231,20 +241,36 @@ export default function Home() {
           </section>
         </div>
 
+        {/* Testimonials Section */}
+        <div className="w-full bg-slate-50 text-foreground">
+          <section className="w-full max-w-[1400px] mx-auto px-4 md:px-8 py-10 md:py-16">
+            <div className="flex flex-col items-center text-center mb-12">
+              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight tracking-tight text-slate-900 mb-4">
+                {t('testimonialsTitle')}
+              </h2>
+              <p className="text-base text-slate-700 font-light max-w-4xl">
+                {t('testimonialsDesc')}
+              </p>
+            </div>
+            
+            <TestimonialMarquee />
+          </section>
+        </div>
+
         {/* Blog / News Section */}
         <div className="w-full bg-white text-foreground">
           <section className="w-full max-w-[1400px] mx-auto px-4 md:px-8 pt-4 md:pt-8 pb-10 md:pb-16">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
               <div className="flex flex-col gap-3">
                 <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight tracking-tight text-slate-900">
-                  Insights & News
+                  {t('newsTitle')}
                 </h2>
                 <p className="text-base text-slate-700 font-light max-w-2xl">
-                  Stories from the ground, upcoming events, and updates from the WiW community across West and Central Africa.
+                  {t('newsDesc')}
                 </p>
               </div>
               <ActionLink href="/blog" variant="secondary" className="w-max md:px-6 md:py-3">
-                View all stories
+                {t('viewAll')}
               </ActionLink>
             </div>
 
@@ -275,11 +301,11 @@ export default function Home() {
                   {/* Content */}
                   <div className="flex flex-col flex-1 p-6 md:p-8">
                     <h3 className="font-heading text-lg md:text-xl font-medium text-slate-900 mb-4 leading-snug">
-                      {post.title}
+                      {t.has(`posts.${post.slug}.title`) ? t(`posts.${post.slug}.title`) : post.title}
                     </h3>
                     
                     <p className="text-sm md:text-[15px] text-slate-500 font-light leading-relaxed mb-8 flex-1">
-                      {post.excerpt}
+                      {t.has(`posts.${post.slug}.excerpt`) ? t(`posts.${post.slug}.excerpt`) : post.excerpt}
                     </p>
                     
                     {/* Meta Footer */}

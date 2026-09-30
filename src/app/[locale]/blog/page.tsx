@@ -8,9 +8,12 @@ export const metadata: Metadata = {
   description: 'Read the latest news, updates, and community stories from the Women-in-WACREN network.',
 };
 
+import { getTranslations } from 'next-intl/server';
+
 export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations('BlogPage');
 
   return (
     <div className="w-full flex flex-col min-h-screen">
@@ -21,10 +24,10 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
 
         <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 md:px-8 text-center flex flex-col items-center">
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-[1.1] mb-6">
-            Blog & Updates
+            {t('title')}
           </h1>
           <p className="text-lg md:text-xl text-white/80 font-light max-w-2xl">
-            Stories, insights, and announcements from the Women in WACREN community.
+            {t('description')}
           </p>
         </div>
       </section>
