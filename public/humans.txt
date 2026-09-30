@@ -12,5 +12,5 @@
 
 /* ATTRIBUTION NOTE */
   Padmore Aning crafted and engineered this website platform.
-  The eduID.africa identity federation network itself is governed
-  and operated by WACREN, UbuntuNet Alliance, and ASREN.
+  The Women-in-WACREN programme is supported by the European Union
+  through the AfricaConnect project and managed by WACREN.
