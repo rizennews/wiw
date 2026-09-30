@@ -6,7 +6,6 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { DeveloperFootprint } from "@/components/DeveloperFootprint";
 import "../globals.css";
 
 const outfit = Outfit({
@@ -99,7 +98,6 @@ export default async function RootLayout({
     >
       <body className="min-h-full flex flex-col font-sans">
         <NextIntlClientProvider messages={messages}>
-          <DeveloperFootprint />
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

@@ -1,0 +1,16 @@
+/* TEAM */
+  Developer: Padmore Aning
+  Contact: hello [at] padmoreaning.com
+  Portfolio: https://padmoreaning.com/
+
+/* SITE */
+  Last update: 2026/09/30
+  Standards: HTML5, CSS3, ES6
+  Components: Next.js, React, Tailwind CSS
+  Software: VS Code
+  Language: English, French, Portuguese
+
+/* ATTRIBUTION NOTE */
+  Padmore Aning crafted and engineered this website platform.
+  The eduID.africa identity federation network itself is governed
+  and operated by WACREN, UbuntuNet Alliance, and ASREN.
