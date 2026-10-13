@@ -1,12 +1,24 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { ArrowRight } from 'lucide-react';
 import { NetworkForm } from './NetworkForm';
+import { buildPageMetadata } from '@/lib/site-config';
 
-export const metadata: Metadata = {
-  title: 'Join the WiW Network',
-  description: 'Join the Women-in-WACREN Network to connect, exchange knowledge, and access mentorship.',
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'NetworkPage' });
+
+  return buildPageMetadata({
+    locale,
+    path: '/network',
+    title: 'Join the WiW Network',
+    description: t('description') || 'Join the Women-In-WACREN Network to connect, exchange knowledge, and access mentorship.',
+    image: '/og-image.png',
+  });
+}
 
 export default async function NetworkPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

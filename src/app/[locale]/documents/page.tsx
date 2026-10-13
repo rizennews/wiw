@@ -1,12 +1,24 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { DocumentLibrary } from '@/components/DocumentLibrary';
+import type { Metadata } from 'next';
+import { buildPageMetadata } from '@/lib/site-config';
 
-import { Metadata } from 'next';
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'DocumentsPage' });
 
-export const metadata: Metadata = {
-  title: 'Document Library',
-  description: 'Access official publications, reports, strategic plans, and resources from Women-in-WACREN.',
-};
+  return buildPageMetadata({
+    locale,
+    path: '/documents',
+    title: t('title') || 'Document Library',
+    description: t('description') || 'Access official publications, reports, strategic plans, and resources from Women-In-WACREN.',
+    image: '/og-image.png',
+  });
+}
 
 export default async function DocumentsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

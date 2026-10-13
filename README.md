@@ -1,4 +1,4 @@
-# Women in WACREN
+# Women In WACREN
 
 Women building the scientific and digital future of West and Central Africa.
 

@@ -15,14 +15,9 @@ import { useTranslations } from 'next-intl';
 
 export function TableOfContents({ toc }: TableOfContentsProps) {
   const t = useTranslations('TableOfContents');
-  const [activeId, setActiveId] = useState<string>('');
+  const [activeId, setActiveId] = useState<string>(() => toc[0]?.id || '');
 
   useEffect(() => {
-    // Set initial active id if none is set
-    if (toc.length > 0 && !activeId) {
-      setActiveId(toc[0].id);
-    }
-
     const observer = new IntersectionObserver(
       (entries) => {
         // Find the first intersecting entry

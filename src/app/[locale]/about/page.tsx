@@ -1,19 +1,46 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { Timeline } from '@/components/Timeline';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
+import { buildPageMetadata, getBreadcrumbSchema } from '@/lib/site-config';
 
-export const metadata: Metadata = {
-  title: 'About Us',
-  description: 'Learn about the Women-in-WACREN journey, our mission to close the gender gap in STEM, and our track record of empowering over 2000 women.',
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'AboutPage' });
+
+  return buildPageMetadata({
+    locale,
+    path: '/about',
+    title: 'About Us',
+    description: t('section1P1') ? t('section1P1').slice(0, 160) : 'Learn about the Women-In-WACREN journey, our mission to close the gender gap in STEM, and our track record of empowering over 2,000 women.',
+    image: '/og-image.png',
+  });
+}
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('AboutPage');
 
+  const breadcrumbs = getBreadcrumbSchema(
+    [
+      { name: 'Home', path: '' },
+      { name: 'About Us', path: '/about' },
+    ],
+    locale
+  );
+
   return (
     <div className="w-full flex flex-col min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbs),
+        }}
+      />
       {/* Short Hero Section (Matching Homepage Style, No Image) */}
       <section className="relative w-full bg-primary pt-32 pb-12 md:pt-40 md:pb-16 overflow-hidden">
         

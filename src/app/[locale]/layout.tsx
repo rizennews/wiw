@@ -19,63 +19,66 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://wiw.wacren.net'),
-  title: {
-    template: '%s | Women-in-WACREN',
-    default: 'Women-in-WACREN - Empowering Women in STEM Across West & Central Africa',
-  },
-  description: "Women-in-WACREN connects, trains, and funds women in STEM across West and Central Africa. Turning students, researchers, and early-career professionals into tech leaders.",
-  keywords: [
-    "Women in STEM",
-    "WACREN",
-    "Technology Africa",
-    "Women in Tech",
-    "STEM Education",
-    "West Africa Tech",
-    "Central Africa Tech",
-    "Digital Innovation",
-    "Women Empowerment",
-    "WACREN",
-    "Women-in-WACREN"
-  ],
-  authors: [{ name: "WACREN" }],
-  creator: "WACREN",
-  publisher: "WACREN",
-  openGraph: {
-    title: 'Women-in-WACREN - Empowering Women in STEM',
-    description: 'Connecting, training, and funding women in STEM across West and Central Africa.',
-    url: 'https://wiw.wacren.net',
-    siteName: 'Women-in-WACREN',
-    images: [
-      {
-        url: '/hero.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Women-in-WACREN - Building the scientific and digital future of West and Central Africa',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Women-in-WACREN - Empowering Women in STEM',
-    description: 'Connecting, training, and funding women in STEM across West and Central Africa.',
-    images: ['/hero.jpg'],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+import { siteConfig, getOrganizationSchema, getWebSiteSchema, getLanguageAlternates, getOgLocale } from "@/lib/site-config";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const alternates = getLanguageAlternates('/', locale);
+
+  return {
+    metadataBase: new URL(siteConfig.baseUrl),
+    title: {
+      template: '%s | Women-In-WACREN',
+      default: 'Women-In-WACREN - Empowering Women in STEM Across West & Central Africa',
+    },
+    description: siteConfig.description,
+    keywords: [...siteConfig.keywords],
+    authors: [{ name: "WACREN", url: siteConfig.links.wacren }],
+    creator: "WACREN",
+    publisher: "WACREN",
+    alternates,
+    openGraph: {
+      title: 'Women-In-WACREN - Empowering Women in STEM Across West & Central Africa',
+      description: siteConfig.description,
+      url: alternates.canonical,
+      siteName: siteConfig.name,
+      images: [
+        {
+          url: '/og-image.png',
+          width: 1200,
+          height: 630,
+          type: 'image/png',
+          alt: 'Women-In-WACREN - Empowering Women in STEM Across West & Central Africa',
+        },
+      ],
+      locale: getOgLocale(locale),
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Women-In-WACREN - Empowering Women in STEM Across West & Central Africa',
+      description: siteConfig.description,
+      images: ['/og-image.png'],
+      site: siteConfig.links.twitterHandle,
+      creator: siteConfig.links.twitterHandle,
+    },
+    robots: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
-  },
-};
+  };
+}
 
 export default async function RootLayout({
   children,
@@ -86,11 +89,13 @@ export default async function RootLayout({
 }>) {
   const { locale } = await params;
 
-  if (!routing.locales.includes(locale as any)) {
+  if (!(routing.locales as readonly string[]).includes(locale)) {
     notFound();
   }
 
   const messages = await getMessages();
+  const organizationSchema = getOrganizationSchema();
+  const websiteSchema = getWebSiteSchema();
 
   return (
     <html
@@ -98,6 +103,20 @@ export default async function RootLayout({
       className={`${plusJakartaSans.variable} ${outfit.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
           <DeveloperFootprint />

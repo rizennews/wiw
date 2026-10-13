@@ -4,7 +4,9 @@ import { VideoTestimonialCard } from '@/components/VideoTestimonialCard';
 import { ImpactCard } from '@/components/ImpactCard';
 import { Network, Users, BookOpen, Lightbulb, ArrowRight } from 'lucide-react';
 
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import { buildPageMetadata, getBreadcrumbSchema } from '@/lib/site-config';
 
 const videoTestimonials = [
   { entryId: '0_u8fr9jbw', wid: '0_54uwc9cw', name: 'Rose Gohoue', label: 'WiW Benin', title: 'Rose Gohoue - WiW Benin' },
@@ -14,10 +16,22 @@ const videoTestimonials = [
   { entryId: '0_b01xci0p', wid: '0_13ku5lrj', name: 'Matilda Owusu', label: 'WiW Ghana', title: 'Women-In-WACREN 2024 - Interview with Matilda Owusu (Ghana)' },
 ];
 
-export const metadata: Metadata = {
-  title: 'Our Impact',
-  description: 'Explore the real-world impact of the Women-in-WACREN programme through data, success stories, and our growing network.',
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'ImpactPage' });
+
+  return buildPageMetadata({
+    locale,
+    path: '/impact',
+    title: 'Our Impact',
+    description: t('heroDesc') || 'Explore the real-world impact of the Women-In-WACREN programme through data, success stories, and our growing network.',
+    image: '/og-image.png',
+  });
+}
 
 export default async function ImpactPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -101,7 +115,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               </p>
               <hr className="border-slate-900 mb-6" />
               <div className="flex items-center gap-4">
-                <img src="/impact/Henrietta Ampofo.jpg" alt="Henrietta Ampofo" className="w-10 h-10 rounded-full object-cover shrink-0" />
+                <Image src="/impact/Henrietta Ampofo.jpg" alt="Henrietta Ampofo" width={40} height={40} className="w-10 h-10 rounded-full object-cover shrink-0" />
                 <div className="flex flex-col">
                   <h4 className="font-semibold text-slate-900 text-sm">Henrietta Ampofo</h4>
                   <span className="text-xs text-slate-500">Ghana</span>
@@ -119,7 +133,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               </p>
               <hr className="border-slate-900 mb-6" />
               <div className="flex items-center gap-4">
-                <img src="/impact/Eletta Adeola.jpg" alt="Eletta Adeola" className="w-10 h-10 rounded-full object-cover shrink-0" />
+                <Image src="/impact/Eletta Adeola.jpg" alt="Eletta Adeola" width={40} height={40} className="w-10 h-10 rounded-full object-cover shrink-0" />
                 <div className="flex flex-col">
                   <h4 className="font-semibold text-slate-900 text-sm">Eletta Adeola</h4>
                   <span className="text-xs text-slate-500">Nigeria</span>
@@ -127,71 +141,11 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               </div>
             </div>
 
-            {/* Testimonial 3 */}
-            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
-              <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                {t.rich('test3', { mark: (chunks) => <mark className="bg-blue-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
-              </p>
-              <hr className="border-slate-900 mb-6" />
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">EF</div>
-                <div className="flex flex-col">
-                  <h4 className="font-semibold text-slate-900 text-sm">Another Participant</h4>
-                  <span className="text-xs text-slate-500">Role &middot; Country</span>
-                </div>
-              </div>
-            </div>
-
             {/* Video Testimonial 2: Zeinabou Bagayoko (WiW Mali) */}
             <VideoTestimonialCard video={videoTestimonials[1]} index={1} />
 
-            {/* Testimonial 4 */}
-            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
-              <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                {t.rich('test4', { mark: (chunks) => <mark className="bg-yellow-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
-              </p>
-              <hr className="border-slate-900 mb-6" />
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">GH</div>
-                <div className="flex flex-col">
-                  <h4 className="font-semibold text-slate-900 text-sm">Community Member</h4>
-                  <span className="text-xs text-slate-500">Institution &middot; Country</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 5 */}
-            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
-              <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                {t.rich('test5', { mark: (chunks) => <mark className="bg-purple-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
-              </p>
-              <hr className="border-slate-900 mb-6" />
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">IJ</div>
-                <div className="flex flex-col">
-                  <h4 className="font-semibold text-slate-900 text-sm">Participant name</h4>
-                  <span className="text-xs text-slate-500">Role &middot; Country</span>
-                </div>
-              </div>
-            </div>
-
             {/* Video Testimonial 3: Rasmata Simpore (WiW Burkina Faso) */}
             <VideoTestimonialCard video={videoTestimonials[2]} index={2} />
-
-            {/* Testimonial 6 */}
-            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
-              <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                {t.rich('test6', { mark: (chunks) => <mark className="bg-orange-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
-              </p>
-              <hr className="border-slate-900 mb-6" />
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">KL</div>
-                <div className="flex flex-col">
-                  <h4 className="font-semibold text-slate-900 text-sm">Partner name</h4>
-                  <span className="text-xs text-slate-500">Institution &middot; Country</span>
-                </div>
-              </div>
-            </div>
 
             {/* Video Testimonial 4: Attiogbe Afi (WiW Togo) */}
             <VideoTestimonialCard video={videoTestimonials[3]} index={3} />

@@ -1,10 +1,12 @@
 "use client";
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { Search } from 'lucide-react';
 import { Link } from '@/i18n/routing';
 import { getAllPostsSorted, type BlogPost } from '@/lib/blog-data';
 import { useTranslations } from 'next-intl';
+import { DefaultPlaceholderImage } from '@/components/EventDefaultImage';
 
 const CATEGORIES_KEYS = ["All", "Community", "Research", "News", "Events"];
 
@@ -14,6 +16,14 @@ export function BlogFeed() {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategoryKey, setActiveCategoryKey] = useState("All");
   const [visibleCount, setVisibleCount] = useState(3);
+  const [prevFilterKey, setPrevFilterKey] = useState(`${searchQuery}-${activeCategoryKey}`);
+
+  // Reset visible count during render when filters change
+  const currentFilterKey = `${searchQuery}-${activeCategoryKey}`;
+  if (prevFilterKey !== currentFilterKey) {
+    setPrevFilterKey(currentFilterKey);
+    setVisibleCount(3);
+  }
 
   const sortedPosts = getAllPostsSorted();
 
@@ -31,11 +41,6 @@ export function BlogFeed() {
   });
 
   const displayPosts = filteredPosts.slice(0, visibleCount);
-
-  // Reset visible count when filters change
-  React.useEffect(() => {
-    setVisibleCount(3);
-  }, [searchQuery, activeCategoryKey]);
 
   return (
     <section className="w-full bg-white flex-1 flex flex-col">
@@ -87,23 +92,21 @@ export function BlogFeed() {
             {displayPosts.map((post) => (
               <Link 
                 key={post.slug}
-                href={`/blog/${post.slug}` as any}
+                href={`/blog/${post.slug}`}
                 className="group flex flex-col bg-[#fafafa] border border-slate-200 overflow-hidden hover:border-slate-300 transition-colors h-full rounded-sm"
               >
                 {/* Image */}
                 <div className="relative h-[220px] w-full border-b border-slate-200 overflow-hidden bg-white">
                   {post.image ? (
-                    <img 
+                    <Image 
                       src={post.image} 
                       alt={post.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02] opacity-90 group-hover:opacity-100"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-[1.02] opacity-90 group-hover:opacity-100"
                     />
                   ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-slate-50 transition-transform duration-700 group-hover:scale-[1.02]">
-                      <span className="font-serif text-2xl font-bold text-slate-300 tracking-wider uppercase">
-                        WOMEN-IN-WACREN
-                      </span>
-                    </div>
+                    <DefaultPlaceholderImage variant="card" />
                   )}
                 </div>
                 

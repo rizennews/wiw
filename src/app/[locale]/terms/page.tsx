@@ -1,10 +1,23 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { buildPageMetadata } from '@/lib/site-config';
 
-export const metadata: Metadata = {
-  title: 'Terms of Use',
-  description: 'Terms of Use for the Women-in-WACREN website.',
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'TermsPage' });
+
+  return buildPageMetadata({
+    locale,
+    path: '/terms',
+    title: t('title') || 'Terms of Use',
+    description: 'Terms of Use for the Women-In-WACREN website and community portals.',
+    image: '/og-image.png',
+  });
+}
 
 export default async function TermsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

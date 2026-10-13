@@ -1,13 +1,25 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 import { useTranslations } from 'next-intl';
+
+interface TestimonialItem {
+  quoteStart: string;
+  highlight: string;
+  quoteEnd: string;
+  name: string;
+  country: string;
+  image?: string;
+  initials?: string;
+  markColor: string;
+}
 
 export function TestimonialMarquee() {
   const t = useTranslations('TestimonialMarquee');
   
-  const testimonials = [
+  const testimonials: TestimonialItem[] = [
     {
       quoteStart: t('t1_quoteStart'),
       highlight: t('t1_highlight'),
@@ -32,26 +44,8 @@ export function TestimonialMarquee() {
       quoteEnd: t('t3_quoteEnd'),
       name: "Rasmata Simpore",
       country: "Burkina Faso",
-      initials: "RS",
+      image: "/impact/Rasmata Simpore.jpg",
       markColor: "bg-blue-200/60"
-    },
-    {
-      quoteStart: t('t4_quoteStart'),
-      highlight: t('t4_highlight'),
-      quoteEnd: t('t4_quoteEnd'),
-      name: "Partner name",
-      country: "Institution \u00b7 Country",
-      initials: "KL",
-      markColor: "bg-orange-200/60"
-    },
-    {
-      quoteStart: t('t5_quoteStart'),
-      highlight: t('t5_highlight'),
-      quoteEnd: t('t5_quoteEnd'),
-      name: "Participant name",
-      country: "Role \u00b7 Country",
-      initials: "IJ",
-      markColor: "bg-purple-200/60"
     }
   ];
 
@@ -64,7 +58,7 @@ export function TestimonialMarquee() {
       }}
     >
       <div className="flex w-max animate-marquee hover:play-state-paused gap-6 pr-6">
-        {[...testimonials, ...testimonials].map((t, i) => (
+        {[...testimonials, ...testimonials, ...testimonials, ...testimonials].map((t, i) => (
           <div key={i} className="flex flex-col p-8 bg-white rounded-sm border border-slate-900 w-[350px] md:w-[450px] shrink-0">
             <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1 whitespace-pre-wrap">
               &ldquo;{t.quoteStart}<mark className={`${t.markColor} px-1 py-0.5 rounded-sm`}>{t.highlight}</mark>{t.quoteEnd}&rdquo;
@@ -72,7 +66,7 @@ export function TestimonialMarquee() {
             <hr className="border-slate-900 mb-6" />
             <div className="flex items-center gap-4">
               {t.image ? (
-                <img src={t.image} alt={t.name} className="w-10 h-10 rounded-full object-cover shrink-0" />
+                <Image src={t.image} alt={t.name} width={40} height={40} className="w-10 h-10 rounded-full object-cover shrink-0" />
               ) : (
                 <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">
                   {t.initials}

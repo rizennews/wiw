@@ -15,6 +15,459 @@ export interface BlogPost {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: 'women-in-wacren-climate-innovation-lab-2026',
+    title: 'Women-In-WACREN Climate Innovation Lab 2026',
+    excerpt: 'Women-In-WACREN (WiW) is hosting the Climate Innovation Lab 2026, a structured innovation programme combining a virtual network of women in STEM, an intensive in-person Climate Innovation Lab in Abuja, and a post-lab mentorship programme.',
+    category: 'Events',
+    date: 'Oct 12, 2026',
+    author: {
+      name: 'Padmore Aning',
+      avatar: '/authors/PAD.png',
+    },
+    image: '/blog/WIW-Climate Innovation Lab.jpg',
+    content: `
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Women-In-WACREN (WiW) is hosting the <strong>Climate Innovation Lab 2026</strong>, a structured innovation programme that combines a virtual network of women in STEM, an intensive in-person Climate Innovation Lab, and a post-lab mentorship programme.
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        The programme aims to strengthen the capacity of women in STEM across West and Central Africa to collaboratively design and develop innovative digital solutions that address climate change adaptation and mitigation challenges within their communities and institutions.
+      </p>
+
+      <h2 id="details" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Event details</h2>
+      <div class="mb-6 border border-slate-200 rounded-lg divide-y divide-slate-200 text-[16px]">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Date</span>
+          <span class="text-slate-700">12 October 2026 &ndash; 15 October 2026</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Time</span>
+          <span class="text-slate-700">08:30 &ndash; 17:00 (Africa/Accra)</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Location</span>
+          <span class="text-slate-700">Abuja, Nigeria &middot; Host: National Open University of Nigeria (NOUN)</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Sponsors</span>
+          <span class="text-slate-700">Nigerian Research and Education Network (NgREN)</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Organiser</span>
+          <span class="text-slate-700">Women-In-WACREN (WiW), WACREN</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Contact</span>
+          <span class="text-slate-700">W-i-W Coordinator (<a href="mailto:wiw@wacren.net" class="text-primary hover:underline">wiw@wacren.net</a> &middot; +233 501100457)</span>
+        </div>
+      </div>
+
+      <h2 id="day1" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Monday 12 October: Understand the Problem</h2>
+      <div class="mb-6 overflow-x-auto border border-slate-200 rounded-lg">
+        <table class="w-full text-left border-collapse text-[15px]">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200 whitespace-nowrap">Time</th>
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200">Session</th>
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200">Speaker / Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">08:30 &ndash; 09:00</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Registration &amp; Networking</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Participants and mentors assemble (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">WACREN / WiW Team</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">09:00 &ndash; 09:30</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Welcome &amp; Innovation Lab Briefing</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Welcome from Host (NOUN), Sponsors (NgREN), and plans for the 4-day program (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Abigail Essel
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">09:30 &ndash; 10:15</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Climate Challenges &amp; People</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Introduce the climate-resilience challenges and the people/institutions affected (45m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Prof. Amos Kabo-Bah (AfriGEO)
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">10:15 &ndash; 10:45</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">From Problems to Solutions</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Practical introduction to human-centred design, users, value propositions and assumptions (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Dr Vivian Chinwe Nnamdi
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+            <tr class="align-top bg-slate-50/50">
+              <td class="px-5 py-3 border-b border-slate-100 text-slate-500 whitespace-nowrap font-mono text-[13px]">10:45 &ndash; 11:15</td>
+              <td class="px-5 py-3 border-b border-slate-100 font-medium text-slate-700" colspan="2">Tea Break (30m)</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">11:15 &ndash; 12:45</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Team Lab 1: Understand the Problem</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Teams examine their assigned challenge, identify target users, needs/pain points, existing approaches and underlying assumptions (1h 30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Multidisciplinary Teams &amp; Facilitators</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">12:45 &ndash; 13:30</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Problem Review with Mentors</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Each team presents its problem statement and receives challenge/feedback before designing the solution (45m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Mentors &amp; Teams</td>
+            </tr>
+            <tr class="align-top bg-slate-50/50">
+              <td class="px-5 py-3 border-b border-slate-100 text-slate-500 whitespace-nowrap font-mono text-[13px]">13:30 &ndash; 14:30</td>
+              <td class="px-5 py-3 border-b border-slate-100 font-medium text-slate-700" colspan="2">Lunch Break (1h)</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">14:30 &ndash; 15:00</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">From Ideas to Testable Prototypes</span>
+                <span class="block text-slate-600 text-[14px] mt-1">What constitutes a prototype; choosing what needs to be demonstrated rather than building everything (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Mr Joshua Opoku Agyemang (IoT Network Hub Africa)
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">15:00 &ndash; 16:30</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Team Lab 2: Define the Solution</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Define intervention, value proposition, key user journey, critical assumptions and prototype scope (1h 30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Multidisciplinary Teams</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">16:30 &ndash; 17:00</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Day 1 Checkpoint</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Output: validated/refined problem statement + target users + proposed intervention + critical assumptions + prototype scope (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Abigail Essel
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="day2" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Tuesday 13 October: Build Sprint &amp; Prototype</h2>
+      <div class="mb-6 overflow-x-auto border border-slate-200 rounded-lg">
+        <table class="w-full text-left border-collapse text-[15px]">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200 whitespace-nowrap">Time</th>
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200">Session</th>
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200">Speaker / Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">09:00 &ndash; 09:45</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Team Build Plans</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Teams present what they intend to demonstrate by the end of the day (45m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Teams &amp; Mentors</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">09:45 &ndash; 10:15</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Technology Clinic</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Just-in-time introduction to relevant tools, data, AI, APIs, low/no-code, web/mobile etc. based on actual team needs (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Technical Specialists</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">10:15 &ndash; 10:45</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Build Sprint 1</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Develop core user journey / proof of concept (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Multidisciplinary Teams</td>
+            </tr>
+            <tr class="align-top bg-slate-50/50">
+              <td class="px-5 py-3 border-b border-slate-100 text-slate-500 whitespace-nowrap font-mono text-[13px]">10:45 &ndash; 11:15</td>
+              <td class="px-5 py-3 border-b border-slate-100 font-medium text-slate-700" colspan="2">Tea Break (30m)</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">11:15 &ndash; 13:30</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Build Sprint 2</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Build the critical functionality or simulation needed to test the idea (2h 15m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Multidisciplinary Teams</td>
+            </tr>
+            <tr class="align-top bg-slate-50/50">
+              <td class="px-5 py-3 border-b border-slate-100 text-slate-500 whitespace-nowrap font-mono text-[13px]">13:30 &ndash; 14:30</td>
+              <td class="px-5 py-3 border-b border-slate-100 font-medium text-slate-700" colspan="2">Lunch Break (1h)</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">14:30 &ndash; 16:00</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Build Sprint 3</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Integrate data/content, complete prototype flow and prepare demonstration (1h 30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Multidisciplinary Teams</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">16:00 &ndash; 16:30</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Mentor Prototype Review</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Mentors test whether the prototype actually demonstrates the team's central proposition (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Mentors &amp; Teams</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">16:30 &ndash; 17:00</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Day 2 Checkpoint</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Output: testable prototype + defined assumptions/questions for user testing (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Amina Ramallan (WACREN)
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="day3" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Wednesday 14 October: Testing &amp; Refinement</h2>
+      <div class="mb-6 overflow-x-auto border border-slate-200 rounded-lg">
+        <table class="w-full text-left border-collapse text-[15px]">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200 whitespace-nowrap">Time</th>
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200">Session</th>
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200">Speaker / Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">09:00 &ndash; 09:30</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">How to Test an Idea</span>
+                <span class="block text-slate-600 text-[14px] mt-1">What constitutes useful evidence; testing assumptions rather than asking whether people "like" the prototype (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Ms Chineme Esor
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">09:30 &ndash; 10:45</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">User Testing Round 1</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Intended users/domain representatives interact with prototypes; teams observe and collect structured feedback (1h 15m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Ms Zainab Usman
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+            <tr class="align-top bg-slate-50/50">
+              <td class="px-5 py-3 border-b border-slate-100 text-slate-500 whitespace-nowrap font-mono text-[13px]">10:45 &ndash; 11:15</td>
+              <td class="px-5 py-3 border-b border-slate-100 font-medium text-slate-700" colspan="2">Tea Break (30m)</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">11:15 &ndash; 12:00</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Team Lab: What Did We Learn?</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Analyse feedback: confirmed assumptions, rejected assumptions, unexpected findings (45m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Multidisciplinary Teams</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">12:00 &ndash; 13:00</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Refinement Sprint 1</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Prioritise and implement the most important changes (1h)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Multidisciplinary Teams</td>
+            </tr>
+            <tr class="align-top bg-slate-50/50">
+              <td class="px-5 py-3 border-b border-slate-100 text-slate-500 whitespace-nowrap font-mono text-[13px]">13:00 &ndash; 14:00</td>
+              <td class="px-5 py-3 border-b border-slate-100 font-medium text-slate-700" colspan="2">Lunch Break (1h)</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">14:00 &ndash; 15:15</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Refinement Sprint 2</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Improve prototype and test critical changes (1h 15m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Multidisciplinary Teams</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">15:15 &ndash; 15:45</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Demo &amp; Evidence Preparation</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Teams prepare problem &rarr; evidence &rarr; solution &rarr; prototype &rarr; learning &rarr; next-step story (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Teams</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">15:45 &ndash; 16:30</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">From Prototype to Pilot</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Teams share their 6-month detailed step-by-step plan (introducing the transition from 4-day prototype to 6-month development/pilot) (45m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Teams &amp; Mentors</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">16:30 &ndash; 17:00</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Day 3 Readiness Review</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Output: refined prototype + user evidence + lessons + initial 6-month development hypothesis (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Amina Ramallan (WACREN)
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="day4" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Thursday 15 October: Community Day &amp; Demonstrations</h2>
+      <div class="mb-6 overflow-x-auto border border-slate-200 rounded-lg">
+        <table class="w-full text-left border-collapse text-[15px]">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200 whitespace-nowrap">Time</th>
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200">Session</th>
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200">Speaker / Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">09:30 &ndash; 10:00</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Registration &amp; Networking</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Community members, partners and guests arrive (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Guests &amp; Community</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">10:00 &ndash; 10:20</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Women in WACREN Community Day Opening</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Welcome address and expectations for the day (20m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Abigail Essel
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">10:20 &ndash; 10:40</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Keynote: Women, Technology &amp; Climate Resilience</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Wider context and inspiration (20m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Keynote Speaker</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">10:40 &ndash; 11:40</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Team Prototype Demonstrations</span>
+                <span class="block text-slate-600 text-[14px] mt-1">6 teams &times; 12 minutes: problem, users, evidence, prototype demonstration, what they learned, what they need to prove next (1h)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">All 6 Innovation Teams</td>
+            </tr>
+            <tr class="align-top bg-slate-50/50">
+              <td class="px-5 py-3 border-b border-slate-100 text-slate-500 whitespace-nowrap font-mono text-[13px]">11:40 &ndash; 12:10</td>
+              <td class="px-5 py-3 border-b border-slate-100 font-medium text-slate-700" colspan="2">Tea Break (30m)</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">12:10 &ndash; 12:40</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Expert &amp; Mentor Reflections</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Structured feedback: desirability, feasibility, potential impact and key unanswered questions (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Panel of Experts &amp; Mentors</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">12:40 &ndash; 13:10</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Partner &amp; Community Spotlights</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Relevant communities and organisations; focus on resources and opportunities that could help teams (30m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Partners &amp; Community Leads</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">13:10 &ndash; 14:00</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Panel: From the Lab to the Boardroom &mdash; Building a Leadership Path in STEM</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Connecting innovation activity with women's leadership and professional development (50m)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Invited Women STEM Leaders</td>
+            </tr>
+            <tr class="align-top bg-slate-50/50">
+              <td class="px-5 py-3 border-b border-slate-100 text-slate-500 whitespace-nowrap font-mono text-[13px]">14:00 &ndash; 15:00</td>
+              <td class="px-5 py-3 border-b border-slate-100 font-medium text-slate-700" colspan="2">Lunch &amp; Networking (1h)</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">15:00 &ndash; 16:00</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Community Conversation</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Experiences, connections, country perspectives and opportunities for collaboration (1h)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">Open Floor &amp; Participants</td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">16:00 &ndash; 17:00</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Commitments &amp; Closing</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Teams state what they will take forward; mentor/partner acknowledgements and closing remarks (1h)</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Abigail Essel
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="register" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Registration &amp; Contact</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700 font-medium">
+        Apply or register for the event: <a href="https://indico.wacren.net/event/279/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">https://indico.wacren.net/event/279/</a>
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        For inquiries, contact the W-i-W Coordinator at <a href="mailto:wiw@wacren.net" class="text-primary hover:underline">wiw@wacren.net</a> or call <a href="tel:+233501100457" class="text-primary hover:underline">+233 501100457</a>.
+      </p>
+    `,
+    toc: [
+      { id: 'details', title: 'Event Details', active: false },
+      { id: 'day1', title: 'Monday 12 October: Day 1', active: false },
+      { id: 'day2', title: 'Tuesday 13 October: Day 2', active: false },
+      { id: 'day3', title: 'Wednesday 14 October: Day 3', active: false },
+      { id: 'day4', title: 'Thursday 15 October: Day 4', active: false },
+      { id: 'register', title: 'Registration & Contact', active: false },
+    ]
+  },
+  {
     slug: 'wiw-webinar-mentorship-sponsorship-networks',
     title: 'Mentorship, Sponsorship and Networks: What Actually Move Women Forward in STEM?',
     excerpt: 'This WiW webinar explores the practical differences between mentorship, sponsorship and networking — and how each can contribute to the growth of women in STEM.',
@@ -51,7 +504,7 @@ export const POSTS: BlogPost[] = [
         </div>
         <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
           <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Organiser</span>
-          <span class="text-slate-700">Women-in-WACREN (WiW), WACREN</span>
+          <span class="text-slate-700">Women-In-WACREN (WiW), WACREN</span>
         </div>
       </div>
 
@@ -165,7 +618,7 @@ export const POSTS: BlogPost[] = [
   {
     slug: 'wiw-call-for-facilitators-2026',
     title: 'Women-In-WACREN Call for Facilitators',
-    excerpt: 'Women-in-WACREN is seeking volunteer facilitators for the Climate Innovation Lab 2026 to guide multidisciplinary teams in building digital climate solutions.',
+    excerpt: 'Women-In-WACREN is seeking volunteer facilitators for the Climate Innovation Lab 2026 to guide multidisciplinary teams in building digital climate solutions.',
     category: 'News',
     date: 'Aug 25, 2026',
     author: {
@@ -175,7 +628,7 @@ export const POSTS: BlogPost[] = [
     image: '/blog/call-for-facilitators copy 2.jpg',
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        Women-in-WACREN is seeking volunteer facilitators (men & women) for the Climate Innovation Lab 2026, scheduled for October 12–15. This four-day intensive program brings together multidisciplinary teams to design and build digital solutions addressing climate challenges across West and Central Africa.
+        Women-In-WACREN is seeking volunteer facilitators (men & women) for the Climate Innovation Lab 2026, scheduled for October 12–15. This four-day intensive program brings together multidisciplinary teams to design and build digital solutions addressing climate challenges across West and Central Africa.
       </p>
 
       <h2 id="expertise" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Expertise we need</h2>
@@ -241,7 +694,7 @@ export const POSTS: BlogPost[] = [
   {
     slug: 'wiw-call-for-mentors-2026',
     title: 'Women-In-WACREN Call for Mentors',
-    excerpt: 'Women-in-WACREN is looking for mentors (men & women) to volunteer to support teams in the Climate Innovation Lab 2026 as they build digital solutions to climate challenges.',
+    excerpt: 'Women-In-WACREN is looking for mentors (men & women) to volunteer to support teams in the Climate Innovation Lab 2026 as they build digital solutions to climate challenges.',
     category: 'News',
     date: 'Aug 25, 2026',
     author: {
@@ -251,7 +704,7 @@ export const POSTS: BlogPost[] = [
     image: '/blog/call-for-MENTORS copy.jpg',
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        Women-in-WACREN is looking for mentors (men & women) to volunteer to support teams in the Climate Innovation Lab 2026 as they build and refine digital solutions to climate challenges in West and Central Africa.
+        Women-In-WACREN is looking for mentors (men & women) to volunteer to support teams in the Climate Innovation Lab 2026 as they build and refine digital solutions to climate challenges in West and Central Africa.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         Mentors contribute during the Lab itself and/or through the six-month post-Lab Community of Practice and Solution Mentorship programme.
@@ -323,8 +776,8 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: 'call-for-volunteers-2020',
-    title: 'Call for Volunteers - Women-in-WACREN',
-    excerpt: 'WACREN is seeking collaborators from the NREN community for the implementation of its Women-in-WACREN program.',
+    title: 'Call for Volunteers - Women-In-WACREN',
+    excerpt: 'WACREN is seeking collaborators from the NREN community for the implementation of its Women-In-WACREN program.',
     category: 'Community',
     date: 'Aug 31, 2020',
     author: {
@@ -334,7 +787,7 @@ export const POSTS: BlogPost[] = [
     image: '/blog/Women-in-Tech.jpg',
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        WACREN is seeking collaborators from the NREN community for the implementation of its Women-in-WACREN program.
+        WACREN is seeking collaborators from the NREN community for the implementation of its Women-In-WACREN program.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         The initiative has developed a community of women in African NRENs promoting STEM (Science, Technology, Engineering and Mathematics) curricula and showcasing the opportunities with diversity and inclusion.
@@ -382,7 +835,7 @@ export const POSTS: BlogPost[] = [
     },
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        The West and Central African Research and Education Network (WACREN) demonstrated its commitment to opening windows of opportunities for women, historically underrepresented in STEM fields, as it launched its first Women-in-WACREN event under the theme “Physical Computing with Python.”
+        The West and Central African Research and Education Network (WACREN) demonstrated its commitment to opening windows of opportunities for women, historically underrepresented in STEM fields, as it launched its first Women-In-WACREN event under the theme “Physical Computing with Python.”
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         In addition to providing an opportunity for women to enhance programming skills, the conference forged strategic partnerships with women and organizations committed to addressing the underrepresentation of women in the field and served as a model for member NRENs.
@@ -443,7 +896,7 @@ export const POSTS: BlogPost[] = [
         More than 2,000 young women in Western Africa have received a jump-start for pursuing a career in science, technology, engineering and math (STEM) by joining courses and workshops provided by the regional research and education network WACREN.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        The program, known as Women-in-WACREN, was initiated in 2018. The regional network launched a five-day workshop offering knowledge and experience on basic programming (Python), application of Git and DevOps and introduction to embedded systems (Raspberry Pi) and sensors.
+        The program, known as Women-In-WACREN, was initiated in 2018. The regional network launched a five-day workshop offering knowledge and experience on basic programming (Python), application of Git and DevOps and introduction to embedded systems (Raspberry Pi) and sensors.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700 font-bold">
         Read <a href="https://www.inthefieldstories.net/empowering-women-in-western-africa/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">more here</a>.
@@ -453,80 +906,133 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: 'wiw-physical-computing-python-dakar',
-    title: 'Women-in-WACREN - Physical Computing with Python',
-    excerpt: 'This first “Women-in-WACREN” training and community event is held in collaboration with SenChix, UCAD, and the AfricaConnect2 project.',
-    category: 'News',
-    date: 'Oct 1, 2017',
+    title: 'Women-In-WACREN - Physical Computing with Python',
+    excerpt: 'This first training workshop and community event “Women-In-WACREN” is organised in collaboration with SenChix, snRER, UCAD, and the AfricaConnect2 project.',
+    category: 'Events',
+    date: 'Nov 20, 2017',
     author: {
       name: 'Padmore Aning',
       avatar: '/authors/PAD.png',
     },
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        This first “Women-in-WACREN” training and community event is held in collaboration with <a href="http://www.senchix.sn" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">SenChix</a>, a women in technology group hosted by snRER, the <a href="https://www.ucad.sn/index.php?option=com_content&view=article&id=1523&Itemid=354" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Faculty of Science and Technology</a> of the Université Cheikh Anta Diop de Dakar (UCAD) and the <a href="https://www.africaconnect2.net/Pages/Home.aspx" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">AfricaConnect2</a> project.
+        This first training workshop and community event “Women in WACREN” is organised in collaboration with <a href="http://www.senchix.sn/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">SenChix</a>, an association of women working in the field of technology, in collaboration with <a href="http://snrer.edu.sn/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">snRER</a>, the Faculty of Science and Technology of Cheikh Anta Diop University of Dakar (<a href="https://www.ucad.sn/index.php?option=com_content&view=article&id=1523&Itemid=354" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">UCAD</a>) and the <a href="https://www.africaconnect2.net/Pages/Home.aspx" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">AfricaConnect2</a> project.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        Leveraging a broader promotion of maker culture and hackerspaces in NRENs, the event will kick off a program aimed at reducing current imbalances in gender participation. It will support female students and staff to improve STEM skills through experimentation with robots and electronics and learning to program these devices.
+        Building on a broader culture of action and hacker spaces within the National Networks of Education and Research (NREN), the event will launch a program to address current imbalances by increasing women's participation. It will support female students and professionals in enhancing their STEM (science, technology, engineering, and mathematics) skills through hands-on experimentation with robots and electronics, teaching them how to program these devices.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        The participants wind down at the end of the 5-day training workshop in the Senchix community day, a networking opportunity open to faculty and guests from other women tech hubs with representation from government and industry.
-      </p>
-
-      <h2 id="workshop-goal" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Workshop Goal</h2>
-      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        Teach Python in a series of practical hands-on exercises that introduce the fundamentals of physical computing with the Raspberry Pi, GPIO breadboard and sensors.
+        The participants will conclude their 5-day training workshop with a <a href="https://indico.wacren.net/event/56/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">community day organized by Senchix</a>, a networking opportunity open to faculty and guests from other women's technical centers, with participation from government institutions and businesses.
       </p>
 
-      <h2 id="audience" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Targeted Audience</h2>
+      <h2 id="details" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Event details</h2>
+      <div class="mb-6 border border-slate-200 rounded-lg divide-y divide-slate-200 text-[16px]">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Date</span>
+          <span class="text-slate-700">20 November 2017 &ndash; 24 November 2017</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Time</span>
+          <span class="text-slate-700">09:00 &ndash; 18:00 (Africa/Dakar)</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Location</span>
+          <span class="text-slate-700">Cheikh Anta Diop University of Dakar (UCAD), Dakar, Senegal</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Chairpersons</span>
+          <span class="text-slate-700">Fanta Bouba, Ismaila DIOUF, Ousmane Wilane</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Collaborators</span>
+          <span class="text-slate-700">SenChix, snRER, UCAD, AfricaConnect2</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Event Link</span>
+          <span class="text-slate-700"><a href="https://indico.wacren.net/event/55/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">https://indico.wacren.net/event/55/</a></span>
+        </div>
+      </div>
+
+      <h2 id="workshop-goal" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Workshop Objective</h2>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        Female students and staff in computing and engineering or from other disciplines with good computer skills and interest in intelligent environments. A programming background and knowledge of Linux or other UNIX operating system is useful but not required.
+        To teach Python through a series of hands-on exercises presenting the fundamentals of object-oriented computing using the Raspberry Pi, breadboards, and sensors.
       </p>
 
-      <h2 id="outcomes" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Expected Outcomes</h2>
+      <h2 id="audience" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Target Audience</h2>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        Over time, participants will be able to work on their own or in small teams to develop electronic or robotic projects at varying levels of complexity to solve problems.
+        Students and employees in the fields of computer science and engineering, or from other disciplines, but with good computer skills and an interest in smart environments. Programming skills and knowledge of Linux or another UNIX-like operating system are helpful but not required.
       </p>
 
-      <h2 id="logistics" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Language & Logistics</h2>
+      <h2 id="outcomes" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Expected Results</h2>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        Conducted in French with bilingual trainers.
+        Gradually, participants will be able to work alone or in small teams to develop electronic or robotic projects with different levels of complexity to solve problems.
+      </p>
+
+      <h2 id="logistics" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Language &amp; Logistics</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Conducted in French with bilingual instructors.
       </p>
       <ul class="list-disc pl-5 mb-6 text-[17px] leading-relaxed text-slate-700 space-y-2">
-        <li>Lunches and coffee breaks will be provided for all participants for the duration of the workshop.</li>
-        <li>Selected international participants who are not able to get full or partial sponsorship from their organisations to attend the workshop may be supported for travel and/or accommodation, subject to availability of resources.</li>
+        <li>Lunches and coffee breaks will be provided to all participants throughout the duration of the workshop.</li>
+        <li>Selected international participants who are unable to obtain full or partial funding from their institutions to participate in the workshop may be supported with travel and/or accommodation, subject to the availability of resources.</li>
       </ul>
 
       <p class="mb-6 text-[17px] leading-relaxed font-semibold text-slate-900">
-        Register at <a href="https://indico.wacren.net/event/55/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">https://indico.wacren.net/event/55/</a> - The deadline for application is 25 October 2017.
+        The registration deadline was 25 October 2017 at <a href="https://indico.wacren.net/event/55/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">https://indico.wacren.net/event/55/</a>
       </p>
     `,
     toc: [
-      { id: 'workshop-goal', title: 'Workshop Goal', active: false },
-      { id: 'audience', title: 'Targeted Audience', active: false },
-      { id: 'outcomes', title: 'Expected Outcomes', active: false },
+      { id: 'details', title: 'Event Details', active: false },
+      { id: 'workshop-goal', title: 'Workshop Objective', active: false },
+      { id: 'audience', title: 'Target Audience', active: false },
+      { id: 'outcomes', title: 'Expected Results', active: false },
       { id: 'logistics', title: 'Language & Logistics', active: false },
     ]
   },
   {
     slug: 'wiw-physical-computing-python-lagos',
-    title: 'Women-in-WACREN - Physical Computing with Python - Lagos Edition',
-    excerpt: 'This “Women-in-WACREN” training and community event is held in collaboration with the Eko-Konnect Research and Education Initiative and UNILAG.',
-    category: 'News',
-    date: 'Dec 19, 2017',
+    title: 'Women-In-WACREN - Physical Computing with Python',
+    excerpt: 'This is a “Women-In-WACREN” training and community event held in collaboration with Eko-Konnect, NgREN, University of Lagos (UNILAG), and the AfricaConnect2 project.',
+    category: 'Events',
+    date: 'Jan 22, 2018',
     author: {
       name: 'Padmore Aning',
       avatar: '/authors/PAD.png',
     },
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        This “Women-in-WACREN” training and community event is held in collaboration with the <a href="http://www.eko-konnect.org.ng" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Eko-Konnect Research and Education Initiative</a>, a cluster the Nigerian NREN (<a href="http://www.ngren.edu.ng" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">NgREN</a>), the Entrepreneurship & Skills Development Centre and Faculty of Engineering of the <a href="http://www.unilag.edu.ng" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">University of Lagos (UNILAG)</a>, and the <a href="http://www.africaconnect2.net" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">AfricaConnect2</a> project.
+        This is a “Women-In-WACREN” training and community event held in collaboration with the <a href="http://www.eko-konnect.org.ng/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Eko-Konnect Research and Education Initiative</a>, a cluster of the Nigerian NREN (<a href="http://www.ngren.edu.ng/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">NgREN</a>), the Entrepreneurship &amp; Skills Development Centre and Faculty of Engineering of the <a href="http://www.unilag.edu.ng/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">University of Lagos (UNILAG)</a>, and the <a href="http://www.africaconnect2.net/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">AfricaConnect2</a> project.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        Leveraging a broader promotion of maker culture and hackerspaces in NRENs, the event is part of a program aimed at reducing current imbalances in gender participation. It will support female students and staff to improve STEM skills through experimentation with robots and electronics and learning to program these devices.
+        Leveraging a broader promotion of maker culture and hackerspaces in NRENs, the event will kick off a program aimed at reducing current imbalances in gender participation. It will support female students and staff to improve STEM skills through experimentation with robots and electronics and learning to program these devices.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         The participants wind down at the end of the 5-day training workshop in the "ICT for Girls" community day, a networking opportunity open to faculty and guests from other women tech hubs with representation from government and industry.
       </p>
+
+      <h2 id="details" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Event details</h2>
+      <div class="mb-6 border border-slate-200 rounded-lg divide-y divide-slate-200 text-[16px]">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Date</span>
+          <span class="text-slate-700">22 January 2018 &ndash; 26 January 2018</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Time</span>
+          <span class="text-slate-700">08:00 &ndash; 18:00 (Africa/Lagos)</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Location</span>
+          <span class="text-slate-700">Entrepreneurship &amp; Skills Development Centre, University of Lagos (UNILAG), Nigeria</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Collaborators</span>
+          <span class="text-slate-700">Eko-Konnect, NgREN, UNILAG, AfricaConnect2</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Event Link</span>
+          <span class="text-slate-700"><a href="https://indico.wacren.net/event/61/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">https://indico.wacren.net/event/61/</a></span>
+        </div>
+      </div>
 
       <h2 id="workshop-goal" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Workshop Goal</h2>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
@@ -543,7 +1049,7 @@ export const POSTS: BlogPost[] = [
         Over time, participants will be able to work on their own or in small teams to develop electronic or robotic projects at varying levels of complexity to solve problems.
       </p>
 
-      <h2 id="logistics" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Language & Logistics</h2>
+      <h2 id="logistics" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Language &amp; Logistics</h2>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         Conducted in English with bilingual trainers.
       </p>
@@ -553,10 +1059,11 @@ export const POSTS: BlogPost[] = [
       </ul>
 
       <p class="mb-6 text-[17px] leading-relaxed font-semibold text-slate-900">
-        Deadline for application is 10 January 2018 at <a href="https://indico.wacren.net/event/61/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">https://indico.wacren.net/event/61/</a>
+        Deadline for application was 10 January 2018 at <a href="https://indico.wacren.net/event/61/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">https://indico.wacren.net/event/61/</a>
       </p>
     `,
     toc: [
+      { id: 'details', title: 'Event Details', active: false },
       { id: 'workshop-goal', title: 'Workshop Goal', active: false },
       { id: 'audience', title: 'Targeted Audience', active: false },
       { id: 'outcomes', title: 'Expected Outcomes', active: false },
@@ -565,7 +1072,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: 'wiw-python-workshop-2024',
-    title: 'Women-in-WACREN 2024 - Python for Weather and Climate Data Analysis',
+    title: 'Women-In-WACREN 2024 - Python for Weather and Climate Data Analysis',
     excerpt: 'The WiW 2024 Event will focus on training in Python for weather and climate data analysis. Apply now!',
     category: 'Events',
     date: 'Jul 19, 2024',
@@ -576,7 +1083,7 @@ export const POSTS: BlogPost[] = [
     image: '/blog/1MAIN-DESIGN_WiW_WACREN-artwork.jpg',
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        The <a href="https://wacren.net/en/programmes/women-in-wacren/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Women-in-WACREN (WiW)</a> programme is WACREN’s initiative to address gender inequality and the under-representation of women in the Science, Technology, Engineering, and Mathematics (STEM) fields. Launched in 2018, WiW aims to educate, equip, and empower women with the skills and confidence needed to excel in male-dominated STEM careers. Over the years, WiW has inspired and transformed over 2000 young women into innovators, makers, and tech entrepreneurs within the WACREN region and beyond.
+        The <a href="https://wacren.net/en/programmes/women-in-wacren/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Women-In-WACREN (WiW)</a> programme is WACREN’s initiative to address gender inequality and the under-representation of women in the Science, Technology, Engineering, and Mathematics (STEM) fields. Launched in 2018, WiW aims to educate, equip, and empower women with the skills and confidence needed to excel in male-dominated STEM careers. Over the years, WiW has inspired and transformed over 2000 young women into innovators, makers, and tech entrepreneurs within the WACREN region and beyond.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         The WiW 2024 Event will focus on training in Python for weather and climate data analysis. This workshop presents a unique opportunity for women to gain hands-on experience and enhance their technical skills in this critical area. Participants will engage in a series of intensive, practical sessions designed to provide a deep understanding of Python programming and its applications in weather and climate data analysis. Experts in the field will facilitate the workshop, allowing participants to learn from and network with leading professionals and peers.
@@ -622,7 +1129,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: 'wiw-francophone-workshop-2024',
-    title: 'Women-in-WACREN Francophone Workshop',
+    title: 'Women-In-WACREN Francophone Workshop',
     excerpt: 'The WiW 2024 Francophone event will focus on practically using the Python programme for weather and climate data analysis. Apply now!',
     category: 'Events',
     date: 'Oct 25, 2024',
@@ -633,7 +1140,7 @@ export const POSTS: BlogPost[] = [
     image: '/blog/06AC407A-F040-4BC1-9019-53B75D801BDF.jpg',
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        The <a href="https://wacren.net/en/programmes/women-in-wacren/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Women-in-WACREN (WiW)</a> programme is WACREN’s initiative to address gender inequality and the under-representation of women in the Science, Technology, Engineering, and Mathematics (STEM) fields. Launched in 2018, WiW aims to educate, equip, and empower women with the skills and confidence needed to excel in male-dominated STEM careers. Over the years, WiW has inspired and transformed over 2000 young women into innovators, makers, and tech entrepreneurs within the WACREN region and beyond.
+        The <a href="https://wacren.net/en/programmes/women-in-wacren/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Women-In-WACREN (WiW)</a> programme is WACREN’s initiative to address gender inequality and the under-representation of women in the Science, Technology, Engineering, and Mathematics (STEM) fields. Launched in 2018, WiW aims to educate, equip, and empower women with the skills and confidence needed to excel in male-dominated STEM careers. Over the years, WiW has inspired and transformed over 2000 young women into innovators, makers, and tech entrepreneurs within the WACREN region and beyond.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         The WiW 2024 Francophone event will focus on practically using the Python programme for weather and climate data analysis. This workshop presents a unique opportunity for women to gain hands-on experience and enhance their technical skills in this critical area. Participants will engage in intensive, practical sessions designed to provide a deep understanding of Python programming and its applications in weather and climate data analysis. Experts in the field will facilitate the workshop, allowing participants to learn from and network with leading professionals and peers.
@@ -679,8 +1186,8 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: 'wiw-network-climate-innovation-lab-launch',
-    title: "Women-in-WACREN to launch a new forum and a lab to enhance women's contribution to climate innovation in Africa",
-    excerpt: 'Join us for the virtual launch of the Women-in-WACREN Network and the introduction of the Climate Innovation Lab 2026 on August 25, 2026.',
+    title: "Women-In-WACREN to launch a new forum and a lab to enhance women's contribution to climate innovation in Africa",
+    excerpt: 'Join us for the virtual launch of the Women-In-WACREN Network and the introduction of the Climate Innovation Lab 2026 on August 25, 2026.',
     category: 'Events',
     date: 'Aug 18, 2026',
     author: {
@@ -690,7 +1197,7 @@ export const POSTS: BlogPost[] = [
     image: '/blog/WIW-Network-poster.jpg',
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        Building on the legacy of previous Women-in-WACREN (WiW) initiatives, WACREN is pleased to announce the next major milestone for women's inclusion in regional climate science and innovation: the Women-in-WACREN Network.
+        Building on the legacy of previous Women-In-WACREN (WiW) initiatives, WACREN is pleased to announce the next major milestone for women's inclusion in regional climate science and innovation: the Women-In-WACREN Network.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         The WiW Network online launch scheduled for August 25, 2026, will focus on the theme: "Connecting Women and Building Solutions". This vibrant network builds on past milestones, creating a sustainable regional platform where women in STEM, research, and technology can connect, exchange knowledge, and access long-term mentorship. Whether members are students, early-career researchers, or tech entrepreneurs, this forum is designed to bridge disciplinary boundaries and accelerate collective impact across West and Central Africa.
@@ -725,7 +1232,7 @@ export const POSTS: BlogPost[] = [
     image: '/blog/Henritta-300x208.jpg',
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        When Henrietta Ampofo joined the Women-in-WACREN (WiW) 2024 cohort in Accra, Ghana, for the Python for Weather and Climate Data, she quickly stood out for her passion, curiosity, and active participation. The WiW initiative—designed to empower women in STEM across West and Central Africa—has inspired hundreds of women to push boundaries, and Henrietta has become one of its shining examples.
+        When Henrietta Ampofo joined the Women-In-WACREN (WiW) 2024 cohort in Accra, Ghana, for the Python for Weather and Climate Data, she quickly stood out for her passion, curiosity, and active participation. The WiW initiative—designed to empower women in STEM across West and Central Africa—has inspired hundreds of women to push boundaries, and Henrietta has become one of its shining examples.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         While her latest achievement is not directly a WiW project, it embodies the WiW spirit. Building on the confidence and impetus she gained through the program, Henrietta has created an innovative digital solution, <strong>Implementation Tracker</strong>, which is set to make a real impact in Ghana.
@@ -778,7 +1285,7 @@ export const POSTS: BlogPost[] = [
     image: '/blog/Rasmata-300x180.png',
     content: `
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        WACREN is proud to spotlight the remarkable achievement of Rasmata Simporé, a young researcher from Burkina Faso, whose innovation is set to transform the way urban waste is managed in her country. Her waste management innovation, the Trash App, was inspired and shaped in part by her participation in the <a href="https://indico.wacren.net/event/236/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Women-in-WACREN (WiW) workshop</a> held in Abidjan, Côte d'Ivoire, in 2024.
+        WACREN is proud to spotlight the remarkable achievement of Rasmata Simporé, a young researcher from Burkina Faso, whose innovation is set to transform the way urban waste is managed in her country. Her waste management innovation, the Trash App, was inspired and shaped in part by her participation in the <a href="https://indico.wacren.net/event/236/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Women-In-WACREN (WiW) workshop</a> held in Abidjan, Côte d'Ivoire, in 2024.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         Rasmata Simporé, then a student at the Doctoral School of Computer Science Applied to Climate Change at Joseph KI-ZERBO University, attended the workshop with a passion for developing solutions that address both environmental and public health challenges. Inspired by real-world examples and mentorship, Rasmata began developing an intelligent waste collection system that integrates mobile, web, and IoT technologies to improve waste management and sanitation in Ouagadougou and beyond.
@@ -797,7 +1304,7 @@ export const POSTS: BlogPost[] = [
 
       <h2 id="wacrens-impact" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Empowering Regional Innovators</h2>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
-        At WACREN, Rasmata’s story affirms the value of intentional investments in gender equity, practical capacity building, and regional collaboration. Through the Women-in-WACREN, <a href="https://video.wacren.net/channel/Women-In-WACREN/721046" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">WACREN continues to equip women</a> researchers and innovators with the tools, networks, and confidence to lead change in their fields and communities.
+        At WACREN, Rasmata’s story affirms the value of intentional investments in gender equity, practical capacity building, and regional collaboration. Through the Women-In-WACREN, <a href="https://video.wacren.net/channel/Women-In-WACREN/721046" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">WACREN continues to equip women</a> researchers and innovators with the tools, networks, and confidence to lead change in their fields and communities.
       </p>
       <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
         Rasmata’s journey is a shining example of how regional research and education networks can drive innovation, inclusivity, and impact through women's empowerment.

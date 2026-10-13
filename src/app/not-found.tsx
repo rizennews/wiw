@@ -37,7 +37,7 @@ export default function GlobalNotFound() {
         
         {/* Description */}
         <p className="text-slate-600 font-light text-base md:text-lg mb-10 leading-relaxed">
-          That link isn't available. Head home to continue exploring the Women-in-WACREN network, programmes, and impact.
+          That link isn't available. Head home to continue exploring the Women-In-WACREN network, programmes, and impact.
         </p>
         
         {/* Button */}

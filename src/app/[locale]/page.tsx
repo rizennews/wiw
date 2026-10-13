@@ -3,16 +3,31 @@ import { Link } from "@/i18n/routing";
 import { Code, Users, Lightbulb, ArrowRight, Calendar } from "lucide-react";
 import { ImpactCard } from "@/components/ImpactCard";
 import { StatItem } from "@/components/StatItem";
-import { Countdown } from "@/components/Countdown";
 import { ActionLink } from "@/components/ActionLink";
 import { getAllPostsSorted } from "@/lib/blog-data";
 import { TestimonialMarquee } from "@/components/TestimonialMarquee";
+import { DefaultPlaceholderImage } from "@/components/EventDefaultImage";
 
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+import { buildPageMetadata } from '@/lib/site-config';
 
-export const metadata: Metadata = {
-  description: 'Empowering women in STEM across West and Central Africa through education, training, and strategic partnerships.',
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Home' });
+
+  return buildPageMetadata({
+    locale,
+    path: '/',
+    title: 'Women-In-WACREN - Empowering Women in STEM Across West & Central Africa',
+    description: t('heroDesc'),
+    image: '/og-image.png',
+  });
+}
 
 import { useTranslations } from 'next-intl';
 
@@ -136,13 +151,68 @@ export default function Home() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               
-              {/* Card 1: WiW Webinar */}
+              {/* Card 1: Climate Innovation Lab */}
+              <div className="group flex flex-col bg-[#fafafa] border border-slate-200 overflow-hidden hover:border-slate-300 transition-colors h-full rounded-sm">
+                {/* Image */}
+                <div className="w-full border-b border-slate-200 overflow-hidden bg-white">
+                  <Link href="/blog/women-in-wacren-climate-innovation-lab-2026" className="block overflow-hidden">
+                    <Image
+                      src="/blog/WIW-Climate Innovation Lab.jpg"
+                      alt="Women-In-WACREN Climate Innovation Lab 2026"
+                      width={1920}
+                      height={1080}
+                      className="w-full h-auto opacity-90 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </Link>
+                </div>
+
+                {/* Content */}
+                <div className="flex flex-col flex-1 p-6 md:p-8">
+                  <h3 className="font-heading text-lg md:text-xl font-medium text-slate-900 mb-4 leading-snug">
+                    <Link
+                      href="/blog/women-in-wacren-climate-innovation-lab-2026"
+                      className="hover:text-primary transition-colors"
+                    >
+                      {t('event2Title')}
+                    </Link>
+                  </h3>
+
+                  <p className="text-sm md:text-[15px] text-slate-500 font-light leading-relaxed mb-6 flex-1">
+                    {t('event2Desc')}
+                  </p>
+
+                  {/* Date & Time & Location */}
+                  <div className="flex items-start gap-2 text-[13px] font-medium text-slate-600 mb-4">
+                    <Calendar className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                    <span className="leading-snug">12–15 October 2026 &middot; 08:30 &ndash; 17:00 Africa/Accra<br/>National Open University of Nigeria (NOUN), Abuja</span>
+                  </div>
+
+                  {/* Meta Footer */}
+                  <div className="mt-auto flex items-center justify-between text-[13px] font-medium pt-2">
+                    <span className="text-primary tracking-wide">
+                      {t('event2Tag')}
+                    </span>
+                    <a
+                      href="https://indico.wacren.net/event/279/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary inline-flex items-center gap-1.5 hover:underline"
+                    >
+                      {t('register')}
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 2: WiW Webinar */}
               <div className="group flex flex-col bg-[#fafafa] border border-slate-200 overflow-hidden hover:border-slate-300 transition-colors h-full rounded-sm">
                 {/* Image */}
                 <div className="w-full border-b border-slate-200 overflow-hidden bg-white">
                   <Image
                     src="/wiw_fire side chat .jpg"
-                    alt="Women-in-WACREN fire side chat"
+                    alt="Women-In-WACREN fire side chat"
                     width={1920}
                     height={1080}
                     className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-500"
@@ -178,54 +248,6 @@ export default function Home() {
                     </span>
                     <a
                       href="https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary inline-flex items-center gap-1.5 hover:underline"
-                    >
-                      {t('register')}
-                      <ArrowRight className="w-4 h-4" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* Card 2: Climate Innovation Lab */}
-              <div className="group flex flex-col bg-[#fafafa] border border-slate-200 overflow-hidden hover:border-slate-300 transition-colors h-full rounded-sm">
-                {/* Image */}
-                <div className="w-full border-b border-slate-200 overflow-hidden bg-white">
-                  <Image
-                    src="/call-for-applications-final copy.jpg"
-                    alt="Climate Innovation Lab 2026 call for applications"
-                    width={1920}
-                    height={1080}
-                    className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-500"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="flex flex-col flex-1 p-6 md:p-8">
-                  <h3 className="font-heading text-lg md:text-xl font-medium text-slate-900 mb-4 leading-snug">
-                    {t('event2Title')}
-                  </h3>
-
-                  <p className="text-sm md:text-[15px] text-slate-500 font-light leading-relaxed mb-6 flex-1">
-                    {t('event2Desc')}
-                  </p>
-
-                  {/* Date & Time & Location */}
-                  <div className="flex items-start gap-2 text-[13px] font-medium text-slate-600 mb-4">
-                    <Calendar className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                    <span className="leading-snug">12-15 October 2026 &middot; 09:00 &ndash; 17:00 UTC<br/>National Open University of Nigeria (NOUN), Abuja, Nigeria</span>
-                  </div>
-
-                  {/* Meta Footer */}
-                  <div className="mt-auto flex items-center justify-between text-[13px] font-medium pt-2">
-                    <span className="text-primary tracking-wide">
-                      {t('event2Tag')}
-                    </span>
-                    <a
-                      href="https://indico.wacren.net/event/279/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary inline-flex items-center gap-1.5 hover:underline"
@@ -278,23 +300,21 @@ export default function Home() {
               {latestPosts.map((post) => (
                 <Link 
                   key={post.slug}
-                  href={`/blog/${post.slug}` as any}
+                  href={`/blog/${post.slug}`}
                   className="group flex flex-col bg-[#fafafa] border border-slate-200 overflow-hidden hover:border-slate-300 transition-colors h-full rounded-sm"
                 >
                   {/* Image */}
                   <div className="relative h-[220px] w-full border-b border-slate-200 overflow-hidden bg-white">
                     {post.image ? (
-                      <img 
+                      <Image 
                         src={post.image} 
                         alt={post.title}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02] opacity-90 group-hover:opacity-100"
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-[1.02] opacity-90 group-hover:opacity-100"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                     ) : (
-                      <div className="w-full h-full flex items-center justify-center bg-slate-50 transition-transform duration-700 group-hover:scale-[1.02]">
-                        <span className="font-serif text-2xl font-bold text-slate-300 tracking-wider uppercase">
-                          WOMEN-IN-WACREN
-                        </span>
-                      </div>
+                      <DefaultPlaceholderImage variant="card" />
                     )}
                   </div>
                   

@@ -42,10 +42,6 @@ export default function ContactPage() {
           
           {/* Left Column: Form */}
           <div className="lg:col-span-7 flex flex-col">
-            <h2 className="text-xl md:text-2xl text-slate-800 font-light leading-relaxed mb-8">
-              {t('formTitle')}
-            </h2>
-            
             <form className="flex flex-col gap-6" action={handleAction}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
@@ -77,38 +73,13 @@ export default function ContactPage() {
               </div>
 
               <div className="flex flex-col gap-2">
-                <label htmlFor="role" className="text-sm font-semibold text-slate-900 uppercase tracking-wide">
-                  {t('roleLabel')}
-                </label>
-                <div className="relative">
-                  <select 
-                    id="role"
-                    name="role"
-                    defaultValue=""
-                    required
-                    className="w-full border border-slate-300 rounded-xl px-4 py-3 text-slate-900 appearance-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all bg-white"
-                  >
-                    <option value="" disabled>{t('roleSelect')}</option>
-                    <option value="funder">{t('roleFunder')}</option>
-                    <option value="host">{t('roleHost')}</option>
-                    <option value="mentor">{t('roleMentor')}</option>
-                    <option value="participant">{t('roleParticipant')}</option>
-                    <option value="media">{t('roleMedia')}</option>
-                  </select>
-                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
-                    <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-2">
                 <label htmlFor="message" className="text-sm font-semibold text-slate-900 uppercase tracking-wide">
                   {t('messageLabel')}
                 </label>
                 <textarea 
                   id="message"
                   name="message"
-                  rows={5}
+                  rows={6}
                   required
                   className="w-full border border-slate-300 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
                   placeholder={t('messagePlaceholder')}
@@ -133,7 +104,7 @@ export default function ContactPage() {
             </form>
           </div>
 
-          {/* Right Column: Contact Info & Newsletter */}
+          {/* Right Column: Contact Info */}
           <div className="lg:col-span-5 flex flex-col gap-12 mt-12 lg:mt-0 lg:pl-8">
             
             {/* Office Info */}
@@ -161,30 +132,6 @@ export default function ContactPage() {
                   </a>
                 </li>
               </ul>
-            </div>
-
-            {/* Newsletter */}
-            <div className="flex flex-col p-8 md:p-10 bg-primary/5 rounded-3xl border border-primary/10">
-              <h3 className="font-heading text-xl md:text-2xl font-semibold text-slate-900 mb-4">
-                {t('newsletterTitle')}
-              </h3>
-              <p className="text-slate-700 font-light leading-relaxed mb-6">
-                {t('newsletterDesc')}
-              </p>
-              
-              <form className="flex flex-col gap-4" onSubmit={(e) => e.preventDefault()}>
-                <input 
-                  type="email" 
-                  placeholder={t('emailAddressPlaceholder')}
-                  className="w-full border border-slate-300 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all bg-white"
-                />
-                <button 
-                  type="submit"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-slate-900 text-white font-semibold rounded-full hover:bg-slate-800 transition-colors duration-300"
-                >
-                  {t('subscribeButton')}
-                </button>
-              </form>
             </div>
 
           </div>

@@ -1,11 +1,23 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import type { Metadata } from 'next';
+import { buildPageMetadata } from '@/lib/site-config';
 
-import { Metadata } from 'next';
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'ActivitiesPage' });
 
-export const metadata: Metadata = {
-  title: 'Activities',
-  description: 'Discover the latest activities, workshops, and events hosted by the Women-in-WACREN community.',
-};
+  return buildPageMetadata({
+    locale,
+    path: '/activities',
+    title: t('title') || 'Activities',
+    description: t('p') || 'Discover the latest activities, workshops, and events hosted by the Women-In-WACREN community.',
+    image: '/og-image.png',
+  });
+}
 
 export default async function ActivitiesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

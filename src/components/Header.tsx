@@ -82,7 +82,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2">
           <img 
             src="/Women%20in%20WACREN%20logo.png" 
-            alt="Women-in-WACREN" 
+            alt="Women-In-WACREN" 
             className="h-12 md:h-14 w-auto object-contain" 
             onError={(e) => {
               e.currentTarget.style.display = 'none';

@@ -2,13 +2,25 @@ import React from 'react';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { ActionLink } from "@/components/ActionLink";
 import { ArrowRight } from "lucide-react";
+import type { Metadata } from 'next';
+import { buildPageMetadata } from '@/lib/site-config';
 
-import { Metadata } from 'next';
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'PartnershipPage' });
 
-export const metadata: Metadata = {
-  title: 'Partnership Opportunities',
-  description: 'Partner with Women-in-WACREN to scale our impact. Explore opportunities to fund cohorts, host workshops, or volunteer as a mentor.',
-};
+  return buildPageMetadata({
+    locale,
+    path: '/partnership',
+    title: 'Partnership Opportunities',
+    description: t('heroSubtitle') || 'Partner with Women-In-WACREN to scale our impact. Explore opportunities to fund cohorts, host workshops, or volunteer as a mentor.',
+    image: '/og-image.png',
+  });
+}
 
 export default async function PartnershipPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

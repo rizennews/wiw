@@ -41,7 +41,7 @@ export function DeveloperFootprint() {
         "  Contact:    hello@padmoreaning.com" + nl + nl +
         "  [ATTRIBUTION NOTE]" + nl +
         "  Padmore Aning crafted and engineered this website platform." + nl +
-        "  The Women-in-WACREN programme is supported by the European Union" + nl +
+        "  The Women-In-WACREN programme is supported by the European Union" + nl +
         "  through the AfricaConnect project and managed by WACREN." + nl,
         "display: block; color: #94A3B8; font-family: monospace; font-size: 11px; line-height: 1.6; white-space: pre;"
       );

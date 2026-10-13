@@ -1,10 +1,23 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { buildPageMetadata } from '@/lib/site-config';
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy',
-  description: 'Privacy Policy for the Women-in-WACREN website.',
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'PrivacyPolicyPage' });
+
+  return buildPageMetadata({
+    locale,
+    path: '/privacy-policy',
+    title: t('title') || 'Privacy Policy',
+    description: 'Privacy Policy and data protection terms for the Women-In-WACREN platform.',
+    image: '/og-image.png',
+  });
+}
 
 export default async function PrivacyPolicyPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

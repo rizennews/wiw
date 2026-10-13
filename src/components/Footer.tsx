@@ -1,6 +1,6 @@
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
-import { FaLinkedin, FaXTwitter, FaFacebook, FaMastodon } from "react-icons/fa6";
+import { FaLinkedin, FaXTwitter, FaFacebook, FaMastodon, FaEnvelope } from "react-icons/fa6";
 import { SiBluesky } from "react-icons/si";
 import { useTranslations } from "next-intl";
 
@@ -16,7 +16,7 @@ export function Footer() {
             <div className="relative w-32 md:w-40 mb-6 block">
               <Image 
                 src="/Women in WACREN logo.png" 
-                alt="Women-in-WACREN" 
+                alt="Women-In-WACREN" 
                 width={300}
                 height={300}
                 className="w-full h-auto object-contain" 
@@ -43,6 +43,9 @@ export function Footer() {
               <a href="https://mastodon.social/@WACREN" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="Mastodon">
                 <FaMastodon className="w-5 h-5" />
               </a>
+              <a href="mailto:wiw@wacren.net" className="text-white/60 hover:text-white transition-colors" aria-label="Email">
+                <FaEnvelope className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
@@ -50,10 +53,10 @@ export function Footer() {
           <div className="lg:col-span-3 flex flex-col items-start lg:pl-8">
             <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-white/60 mb-4">{t('explore')}</h4>
             <ul className="flex flex-col gap-3">
-              <li><Link href={"/about" as any} className="text-white/90 hover:text-white transition-colors duration-200">{t('about')}</Link></li>
-              <li><Link href={"/programme" as any} className="text-white/90 hover:text-white transition-colors duration-200">{t('programmes')}</Link></li>
-              <li><Link href={"/impact" as any} className="text-white/90 hover:text-white transition-colors duration-200">{t('communityImpact')}</Link></li>
-              <li><Link href={"/partnership" as any} className="text-white/90 hover:text-white transition-colors duration-200">{t('getInvolved')}</Link></li>
+              <li><Link href="/about" className="text-white/90 hover:text-white transition-colors duration-200">{t('about')}</Link></li>
+              <li><Link href="/programme" className="text-white/90 hover:text-white transition-colors duration-200">{t('programmes')}</Link></li>
+              <li><Link href="/impact" className="text-white/90 hover:text-white transition-colors duration-200">{t('communityImpact')}</Link></li>
+              <li><Link href="/partnership" className="text-white/90 hover:text-white transition-colors duration-200">{t('getInvolved')}</Link></li>
             </ul>
           </div>
 
@@ -95,10 +98,10 @@ export function Footer() {
         </div>
 
         <div className="mt-6 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between text-sm text-white/60">
-          <p>&copy; {new Date().getFullYear()} Women-in-WACREN. {t('allRightsReserved')}</p>
+          <p>&copy; {new Date().getFullYear()} Women-In-WACREN. {t('allRightsReserved')}</p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <Link href={"/privacy-policy" as any} className="hover:text-white transition-colors">{t('privacyPolicy')}</Link>
-            <Link href={"/terms" as any} className="hover:text-white transition-colors">{t('termsOfService')}</Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">{t('privacyPolicy')}</Link>
+            <Link href="/terms" className="hover:text-white transition-colors">{t('termsOfService')}</Link>
           </div>
         </div>
 

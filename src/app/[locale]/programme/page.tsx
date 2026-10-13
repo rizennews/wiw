@@ -1,19 +1,46 @@
 import { ProgrammeTabs } from '@/components/ProgrammeTabs';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
+import { buildPageMetadata, getBreadcrumbSchema } from '@/lib/site-config';
 
-export const metadata: Metadata = {
-  title: 'Programme & Network',
-  description: 'Join the Women-in-WACREN Network. Explore our open calls, register for upcoming training programmes, and access our learning hub.',
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'ProgrammePage' });
+
+  return buildPageMetadata({
+    locale,
+    path: '/programme',
+    title: 'Programme & Network',
+    description: t('heroDesc') || 'Explore Women-In-WACREN training programmes, workshops, open calls, and community network initiatives.',
+    image: '/og-image.png',
+  });
+}
 
 export default async function ProgrammePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('ProgrammePage');
 
+  const breadcrumbs = getBreadcrumbSchema(
+    [
+      { name: 'Home', path: '' },
+      { name: 'Programme', path: '/programme' },
+    ],
+    locale
+  );
+
   return (
     <div className="flex flex-col w-full">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbs),
+        }}
+      />
       <main className="flex-1 w-full flex flex-col">
         
         {/* Short Hero Section (Matching Homepage Style, No Image) */}
