@@ -15,7 +15,7 @@ export async function generateMetadata({
     locale,
     path: '/programme',
     title: 'Programme & Network',
-    description: t('heroDesc') || 'Explore Women-In-WACREN training programmes, workshops, open calls, and community network initiatives.',
+    description: t.has('desc') ? t('desc') : 'Explore Women-In-WACREN training programmes, workshops, open calls, and community network initiatives.',
     image: '/og-image.png',
   });
 }

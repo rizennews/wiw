@@ -17,7 +17,7 @@ export async function generateMetadata({
     locale,
     path: '/partnership',
     title: 'Partnership Opportunities',
-    description: t('heroSubtitle') || 'Partner with Women-In-WACREN to scale our impact. Explore opportunities to fund cohorts, host workshops, or volunteer as a mentor.',
+    description: t.has('heroDesc') ? t('heroDesc') : 'Partner with Women-In-WACREN to scale our impact. Explore opportunities to fund cohorts, host workshops, or volunteer as a mentor.',
     image: '/og-image.png',
   });
 }
@@ -93,9 +93,12 @@ export default async function PartnershipPage({ params }: { params: Promise<{ lo
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-8 font-light">
                 {t('card3Desc')}
               </p>
-              <div className="mt-auto">
-                <ActionLink href="https://indico.wacren.net" variant="secondary" icon={ArrowRight}>
-                  {t('card3Btn')}
+              <div className="mt-auto flex flex-col sm:flex-row flex-wrap gap-2.5 w-full">
+                <ActionLink href="https://indico.wacren.net/event/283/" variant="primary" icon={ArrowRight} className="text-[13px] px-4 py-2.5">
+                  {t('card3BtnMentor')}
+                </ActionLink>
+                <ActionLink href="https://indico.wacren.net/event/282/" variant="secondary" icon={ArrowRight} className="text-[13px] px-4 py-2.5">
+                  {t('card3BtnTrainer')}
                 </ActionLink>
               </div>
             </div>
