@@ -1,19 +1,23 @@
 "use client";
 
-import React, { useState, useTransition } from 'react';
+import React, { useState, useTransition, useRef } from 'react';
 import { ArrowRight, Mail, MapPin, Phone, CheckCircle2, AlertCircle } from 'lucide-react';
 import { submitContactForm } from '@/app/actions/contact';
 import { useTranslations } from 'next-intl';
+import { HoneypotFields } from '@/components/HoneypotFields';
+import { HCaptchaField, type HCaptchaFieldHandle } from '@/components/HCaptchaField';
 
 export default function ContactPage() {
   const t = useTranslations('ContactPage');
   const [isPending, startTransition] = useTransition();
   const [status, setStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
+  const captchaRef = useRef<HCaptchaFieldHandle>(null);
 
   async function handleAction(formData: FormData) {
     setStatus({ type: null, message: '' });
     startTransition(async () => {
       const result = await submitContactForm(formData);
+      captchaRef.current?.reset();
       if (result.success) {
         setStatus({ type: 'success', message: t('successMessage') });
       } else {
@@ -43,6 +47,9 @@ export default function ContactPage() {
           {/* Left Column: Form */}
           <div className="lg:col-span-7 flex flex-col">
             <form className="flex flex-col gap-6" action={handleAction}>
+              {/* Invisible Honeypot */}
+              <HoneypotFields />
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
                   <label htmlFor="name" className="text-sm font-semibold text-slate-900 uppercase tracking-wide">
@@ -85,6 +92,9 @@ export default function ContactPage() {
                   placeholder={t('messagePlaceholder')}
                 />
               </div>
+
+              {/* hCaptcha Verification */}
+              <HCaptchaField ref={captchaRef} />
 
               <button 
                 type="submit"

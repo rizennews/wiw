@@ -1,8 +1,22 @@
 "use server";
 
 import nodemailer from "nodemailer";
+import { validateHoneypot, verifyHCaptcha } from "@/lib/bot-protection";
 
 export async function submitNetworkForm(formData: FormData) {
+  // 1. Honeypot Bot Validation
+  const honeypotResult = validateHoneypot(formData);
+  if (honeypotResult.isBot) {
+    return { success: false, error: honeypotResult.error || "Security verification failed." };
+  }
+
+  // 2. hCaptcha Verification
+  const captchaToken = formData.get("h-captcha-response") as string;
+  const captchaResult = await verifyHCaptcha(captchaToken);
+  if (!captchaResult.success) {
+    return { success: false, error: captchaResult.error || "Please complete the security check." };
+  }
+
   const name = formData.get("name") as string;
   const email = formData.get("email") as string;
   const institution = formData.get("institution") as string;

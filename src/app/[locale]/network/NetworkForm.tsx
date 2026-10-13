@@ -1,19 +1,23 @@
 "use client";
 
-import React, { useState, useTransition } from 'react';
+import React, { useState, useTransition, useRef } from 'react';
 import { ArrowRight, CheckCircle2, AlertCircle } from 'lucide-react';
 import { submitNetworkForm } from '@/app/actions/network';
 import { useTranslations } from 'next-intl';
+import { HoneypotFields } from '@/components/HoneypotFields';
+import { HCaptchaField, type HCaptchaFieldHandle } from '@/components/HCaptchaField';
 
 export function NetworkForm() {
   const t = useTranslations('NetworkPage');
   const [isPending, startTransition] = useTransition();
   const [status, setStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
+  const captchaRef = useRef<HCaptchaFieldHandle>(null);
 
   async function handleAction(formData: FormData) {
     setStatus({ type: null, message: '' });
     startTransition(async () => {
       const result = await submitNetworkForm(formData);
+      captchaRef.current?.reset();
       if (result.success) {
         setStatus({ type: 'success', message: t('successMessage') });
       } else {
@@ -24,6 +28,9 @@ export function NetworkForm() {
 
   return (
     <form className="flex flex-col gap-6" action={handleAction}>
+      {/* Invisible Honeypot */}
+      <HoneypotFields />
+
       <div className="flex flex-col gap-2">
         <label htmlFor="name" className="text-sm font-semibold text-slate-900 uppercase tracking-wide">
           {t('nameLabel')}
@@ -65,6 +72,9 @@ export function NetworkForm() {
           placeholder={t('institutionPlaceholder')}
         />
       </div>
+
+      {/* hCaptcha Verification */}
+      <HCaptchaField ref={captchaRef} />
 
       <button 
         type="submit"
