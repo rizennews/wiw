@@ -103,7 +103,13 @@
     "t2_quoteEnd": ".",
     "t3_quoteStart": "Avant de rejoindre l'initiative WiW, j'avais du mal à trouver des mentors féminins dans mon domaine. Grâce à la Communauté de Pratique, je n'ai pas seulement trouvé des mentors, j'ai aussi ",
     "t3_highlight": "noué des amitiés durables",
-    "t3_quoteEnd": " qui propulsent ma carrière."
+    "t3_quoteEnd": " qui propulsent ma carrière.",
+    "t4_quoteStart": "Les activités pratiques et l'apprentissage interactif ont élargi ma perspective et ",
+    "t4_highlight": "renforcé ma confiance pour penser de manière créative",
+    "t4_quoteEnd": " et transformer des idées en solutions concrètes. J'ai eu le privilège de collaborer avec des innovatrices dynamiques pour concevoir des solutions climatiques réalisables et durables.",
+    "t5_quoteStart": "Ce programme m'a montré comment la technologie et les données climatiques peuvent relever des défis environnementaux concrets. Je repars ",
+    "t5_highlight": "inspirée, plus confiante et prête à mettre en pratique ce que j'ai appris",
+    "t5_quoteEnd": " pour faire une différence positive dans nos communautés."
   },
   "ProgrammeTabs": {
     "tabOpenNow": "En cours",
@@ -352,7 +358,14 @@
     "test1": "“L'initiative WiW a non seulement <mark>renforcé mes capacités en analyse quantitative</mark> à l'aide de Python, mais a également été très inspirante. Avoir des femmes qui ont accompli de grandes choses dans la même pièce que vous, qui vous enseignent et partagent leurs expériences avec vous, n'a pas de prix !”",
     "test1Mark": "renforcé mes capacités en analyse quantitative",
     "test2": "“Expérience incroyable … Nous avons installé une station météorologique. Malgré les défis, nous avons configuré le raspberry pi, <mark>fait fonctionner la vitesse du vent de notre anémomètre</mark>.”",
-    "test2Mark": "La vitesse du vent de notre anémomètre fonctionne"
+    "test2Mark": "La vitesse du vent de notre anémomètre fonctionne",
+    "test3": "“J'ai vécu une expérience inspirante et transformatrice au Laboratoire d'Innovation Climatique WiWACREN. Le programme a mis en lumière les défis climatiques, et les activités pratiques ont élargi ma perspective et <mark>renforcé ma confiance pour penser de manière créative et transformer des idées en solutions concrètes</mark>. J'ai eu le privilège de réfléchir avec des innovatrices dynamiques pour concevoir des solutions réalisables, accessibles et durables.”",
+    "test3Mark": "renforcé ma confiance pour penser de manière créative et transformer des idées en solutions concrètes",
+    "test3Full": "Je suis le Pr Gloria Otunola de l'Université Ouverte Nationale du Nigéria (NOUN) !\n\nJ'ai vécu une expérience inspirante, enrichissante et transformatrice au Laboratoire d'Innovation Climatique WiWACREN. L'atelier a mis en évidence les problématiques liées au changement climatique et les défis associés, en particulier ceux auxquels sont confrontées les femmes.\n\nIl a également offert de précieuses opportunités d'explorer de nouvelles idées, de développer des compétences créatives de résolution de problèmes climatiques, de collaborer entre régions et de découvrir comment l'innovation et la technologie peuvent relever des défis concrets du monde réel. J'ai eu le privilège d'échanger et de collaborer avec des femmes innovatrices au sein de deux groupes d'innovation dynamiques. Nos solutions étaient remarquables, faisables, économiques, accessibles et durables.\n\nLes activités pratiques et l'environnement d'apprentissage interactif ont élargi ma perspective et renforcé ma confiance pour penser de manière créative et transformer des idées en solutions concrètes. Dans l'ensemble, ce fut une expérience profondément enrichissante d'échanger avec d'autres chercheuses et de partager nos visions.",
+    "test4": "“Les quatre derniers jours au Laboratoire d'Innovation Climatique ont été une expérience formidable d'apprentissage et de travail d'équipe. Venant de la santé environnementale et de la toxicologie, ce programme m'a montré comment <mark>la technologie, les données climatiques et les solutions communautaires peuvent relever des défis réels</mark> — notamment la solution d'alerte précoce aux inondations conçue par notre équipe pour les communautés vulnérables en Gambie. Je repars inspirée, plus confiante et prête à faire une différence positive.”",
+    "test4Mark": "la technologie, les données climatiques et les solutions communautaires peuvent relever des défis réels",
+    "test4Full": "Bonjour, je m'appelle Dr Eudora Obioma Nwanaforo, et je viens du Nigéria.\n\nJe suis ravie d'avoir participé au Laboratoire d'Innovation Climatique Women-in-WACREN 2026. Les quatre derniers jours ont été une expérience extraordinaire remplie d'apprentissage, de travail en équipe et d'innovation.\n\nIssue d'un parcours en santé environnementale et toxicologie, ce programme m'a montré comment la technologie, les données climatiques et les solutions portées par les communautés peuvent aider à résoudre de véritables défis environnementaux.\n\nUn moment fort a été de travailler avec une équipe formidable pour développer une solution communautaire d'alerte précoce aux inondations conçue pour aider les communautés vulnérables en Gambie à recevoir des alertes opportunes et accessibles.\n\nAu-delà des connaissances techniques, j'ai acquis de précieux enseignements sur le travail d'équipe, la résolution créative de problèmes et la transformation des idées en solutions concrètes. Je repars de ce programme inspirée, plus confiante et prête à mettre en pratique ce que j'ai appris pour faire une différence positive dans nos communautés. Mes sincères remerciements vont à Women-in-WACREN, au WACREN, à nos facilitateurs, mentors, organisateurs et collègues participantes pour cette opportunité exceptionnelle. Merci !",
+    "readFull": "Lire le témoignage complet"
   },
   "PartnershipPage": {
     "heroTitle": "Partenariat et collaboration",

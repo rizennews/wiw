@@ -46,6 +46,24 @@ export function TestimonialMarquee() {
       country: "Burkina Faso",
       image: "/impact/Rasmata Simpore.jpg",
       markColor: "bg-blue-200/60"
+    },
+    {
+      quoteStart: t('t4_quoteStart'),
+      highlight: t('t4_highlight'),
+      quoteEnd: t('t4_quoteEnd'),
+      name: "Prof. Gloria Otunola",
+      country: "Nigeria",
+      initials: "GO",
+      markColor: "bg-amber-200/60"
+    },
+    {
+      quoteStart: t('t5_quoteStart'),
+      highlight: t('t5_highlight'),
+      quoteEnd: t('t5_quoteEnd'),
+      name: "Dr Eudora Obioma Nwanaforo",
+      country: "Nigeria",
+      initials: "EN",
+      markColor: "bg-purple-200/60"
     }
   ];
 
@@ -58,7 +76,7 @@ export function TestimonialMarquee() {
       }}
     >
       <div className="flex w-max animate-marquee hover:play-state-paused gap-6 pr-6">
-        {[...testimonials, ...testimonials, ...testimonials, ...testimonials].map((t, i) => (
+        {[...testimonials, ...testimonials].map((t, i) => (
           <div key={i} className="flex flex-col p-8 bg-white rounded-sm border border-slate-900 w-[350px] md:w-[450px] shrink-0">
             <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1 whitespace-pre-wrap">
               &ldquo;{t.quoteStart}<mark className={`${t.markColor} px-1 py-0.5 rounded-sm`}>{t.highlight}</mark>{t.quoteEnd}&rdquo;
@@ -86,7 +104,7 @@ export function TestimonialMarquee() {
           100% { transform: translateX(-50%); }
         }
         .animate-marquee {
-          animation: marquee 40s linear infinite;
+          animation: marquee 50s linear infinite;
         }
         .hover\\:play-state-paused:hover {
           animation-play-state: paused;

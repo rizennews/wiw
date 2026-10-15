@@ -103,7 +103,13 @@
     "t2_quoteEnd": ".",
     "t3_quoteStart": "Before joining the WiW initiative, I struggled to find female mentors in my field. Through the Community of Practice, I have not only found mentors but also ",
     "t3_highlight": "built lifelong friendships",
-    "t3_quoteEnd": " that propel my career forward."
+    "t3_quoteEnd": " that propel my career forward.",
+    "t4_quoteStart": "The hands-on activities and interactive learning broadened my perspective and ",
+    "t4_highlight": "strengthened my confidence to think creatively",
+    "t4_quoteEnd": " and turn ideas into practical solutions. I was privileged to collaborate with vibrant women innovators to develop feasible, sustainable climate solutions.",
+    "t5_quoteStart": "This programme showed me how technology and climate data can address real environmental challenges. I’m leaving ",
+    "t5_highlight": "inspired, more confident, and ready to put what I’ve learned into practice",
+    "t5_quoteEnd": " to make a positive difference in our communities."
   },
   "ProgrammeTabs": {
     "tabOpenNow": "Ongoing",
@@ -352,7 +358,14 @@
     "test1": "“The WiW initiative not only <mark>built my capacity in quantitative analysis</mark> using Python but was also very inspiring - to have women who have accomplished great feats in the same room with you, teaching and sharing their experiences with you, is priceless!”",
     "test1Mark": "built my capacity in quantitative analysis",
     "test2": "“Amazing experience … We set up a weather station. Despite the challenges, we configured the raspberry pi, <mark>got the wind speed of our anemometer working</mark>.”",
-    "test2Mark": "got the wind speed of our anemometer working"
+    "test2Mark": "got the wind speed of our anemometer working",
+    "test3": "“I experienced an inspiring, transformative time at the WiWACREN Climate Innovation Lab. The workshop brought to the fore issues associated with climate change, and the hands-on activities broadened my perspective and <mark>strengthened my confidence to think creatively and turn ideas into practical solutions</mark>. I was privileged to brainstorm with vibrant women innovators to develop feasible, accessible and sustainable solutions.”",
+    "test3Mark": "strengthened my confidence to think creatively and turn ideas into practical solutions",
+    "test3Full": "I experienced an inspiring, engaging, transformative time at the WiWACREN Climate Innovation Lab. The workshop brought to the fore issues associated with climate change and the attendant challenges, especially those faced by Women.\n\nIt also provided valuable opportunities to explore new ideas, develop creative climate problem-solving skills, collaborate across regions and discover how innovation and technology can address real-world challenges. I was privileged to rub minds/brainstorm with women innovators in two excellent, vibrant innovation groups at this session. Our solutions to the problem were top-notch, feasible, low-cost, accessible and sustainable.\n\nThe hands-on activities and interactive learning environment broadened my perspective and strengthened my confidence to think creatively and turn ideas into practical solutions. Overall, it was an enriching experience to relate with other women in research and share perspectives.",
+    "test4": "“The past four days at the Climate Innovation Lab have been an amazing experience filled with learning, teamwork, and innovation. Coming from Environmental Health and Toxicology, this programme showed me how <mark>technology, climate data, and community-driven solutions can address real environmental challenges</mark> — like our team's flood early-warning alert for vulnerable communities in Gambia. I’m leaving inspired, confident, and ready to make a positive difference.”",
+    "test4Mark": "technology, climate data, and community-driven solutions can address real environmental challenges",
+    "test4Full": "I’m delighted to have participated in the 2026 Women-in-WACREN Climate Innovation Lab. The past four days have been an amazing experience filled with learning, teamwork, and innovation.\n\nComing from a background in Environmental Health Science and Toxicology, this programme has shown me how technology, climate data, and community-driven solutions can help address real environmental challenges.\n\nOne highlight was working with an incredible team to develop a community-based flood early-warning solution designed to help vulnerable communities in Gambia receive timely, accessible flood alerts.\n\nBeyond the technical knowledge, I’ve gained valuable insights into teamwork, creative problem-solving, and turning ideas into practical solutions.\n\nI’m leaving this programme inspired, more confident, and ready to put what I’ve learned into practice to make a positive difference in our communities. My sincere appreciation goes to Women-in-WACREN, WACREN, our facilitators, mentors, organisers, and fellow participants for this wonderful opportunity. Thank you!",
+    "readFull": "Read full testimonial"
   },
   "PartnershipPage": {
     "heroTitle": "Partnership and Collaboration",

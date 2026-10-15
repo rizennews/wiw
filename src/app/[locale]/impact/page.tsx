@@ -38,8 +38,22 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
   setRequestLocale(locale);
   const t = await getTranslations('ImpactPage');
 
+  const breadcrumbs = getBreadcrumbSchema(
+    [
+      { name: 'Home', path: '' },
+      { name: 'Impact', path: '/impact' },
+    ],
+    locale
+  );
+
   return (
     <div className="w-full flex flex-col min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbs),
+        }}
+      />
       {/* Short Hero Section (Matching Homepage Style, No Image) */}
       <section className="relative w-full bg-primary pt-32 pb-12 md:pt-40 md:pb-16 overflow-hidden">
         
@@ -144,8 +158,64 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             {/* Video Testimonial 2: Zeinabou Bagayoko (WiW Mali) */}
             <VideoTestimonialCard video={videoTestimonials[1]} index={1} />
 
+            {/* Testimonial 3: Prof. Gloria Otunola (NOUN, Nigeria) */}
+            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
+              <span className="text-[11px] font-semibold tracking-wider uppercase text-primary mb-3">
+                WiW 2026 Climate Innovation Lab
+              </span>
+              <p className="text-lg text-slate-900 leading-relaxed mb-4 flex-1">
+                {t.rich('test3', { mark: (chunks) => <mark className="bg-amber-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              </p>
+              <details className="mb-6 group">
+                <summary className="cursor-pointer font-medium text-primary hover:underline text-xs flex items-center gap-1 select-none py-1">
+                  {t('readFull')}
+                </summary>
+                <div className="mt-3 text-slate-700 text-sm leading-relaxed space-y-3 pt-3 border-t border-slate-200 whitespace-pre-line">
+                  {t('test3Full')}
+                </div>
+              </details>
+              <hr className="border-slate-900 mb-6" />
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">
+                  GO
+                </div>
+                <div className="flex flex-col">
+                  <h4 className="font-semibold text-slate-900 text-sm">Prof. Gloria Otunola</h4>
+                  <span className="text-xs text-slate-500">Nigeria &middot; NOUN</span>
+                </div>
+              </div>
+            </div>
+
             {/* Video Testimonial 3: Rasmata Simpore (WiW Burkina Faso) */}
             <VideoTestimonialCard video={videoTestimonials[2]} index={2} />
+
+            {/* Testimonial 4: Dr Eudora Obioma Nwanaforo (Nigeria) */}
+            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
+              <span className="text-[11px] font-semibold tracking-wider uppercase text-primary mb-3">
+                WiW 2026 Climate Innovation Lab
+              </span>
+              <p className="text-lg text-slate-900 leading-relaxed mb-4 flex-1">
+                {t.rich('test4', { mark: (chunks) => <mark className="bg-purple-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              </p>
+              <details className="mb-6 group">
+                <summary className="cursor-pointer font-medium text-primary hover:underline text-xs flex items-center gap-1 select-none py-1">
+                  {t('readFull')}
+                </summary>
+                <div className="mt-3 text-slate-700 text-sm leading-relaxed space-y-3 pt-3 border-t border-slate-200 whitespace-pre-line">
+                  {t('test4Full')}
+                </div>
+              </details>
+              <hr className="border-slate-900 mb-6" />
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">
+                  EN
+                </div>
+                <div className="flex flex-col">
+                  <h4 className="font-semibold text-slate-900 text-sm">Dr Eudora Obioma Nwanaforo</h4>
+                  <span className="text-xs text-slate-500">Nigeria</span>
+                </div>
+              </div>
+            </div>
 
             {/* Video Testimonial 4: Attiogbe Afi (WiW Togo) */}
             <VideoTestimonialCard video={videoTestimonials[3]} index={3} />
