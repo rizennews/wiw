@@ -86,33 +86,33 @@ export function TestimonialCard({
       {/* Modal */}
       {isOpen && fullText && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-8 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200 overflow-y-auto"
           onClick={() => setIsOpen(false)}
           role="dialog"
           aria-modal="true"
         >
           <div 
-            className="relative bg-white rounded-sm border border-slate-900 w-full max-w-2xl max-h-[85vh] flex flex-col p-6 sm:p-8 md:p-10 shadow-2xl animate-in zoom-in-95 duration-200"
+            className="relative bg-white rounded-sm border border-slate-900 w-full max-w-4xl p-6 sm:p-10 md:p-12 shadow-2xl animate-in zoom-in-95 duration-200 my-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
             <button
               type="button"
               onClick={() => setIsOpen(false)}
-              className="absolute top-5 right-5 p-2 rounded-full text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition-colors cursor-pointer"
+              className="absolute top-6 right-6 p-2 rounded-full text-slate-400 hover:text-slate-900 hover:bg-slate-100 transition-colors cursor-pointer"
               aria-label={closeText}
             >
-              <X className="w-5 h-5" />
+              <X className="w-6 h-6" />
             </button>
 
             {/* Author info at top */}
-            <div className="flex items-center gap-4 mb-6 pr-8">
+            <div className="flex items-center gap-4 mb-6 pr-12">
               {image ? (
                 <Image
                   src={image}
                   alt={name}
-                  width={48}
-                  height={48}
+                  width={52}
+                  height={52}
                   className="w-12 h-12 rounded-full object-cover shrink-0"
                 />
               ) : (
@@ -121,26 +121,26 @@ export function TestimonialCard({
                 </div>
               )}
               <div className="flex flex-col">
-                <h3 className="font-heading font-semibold text-slate-900 text-lg leading-snug">{name}</h3>
-                <span className="text-xs text-slate-500">{country}</span>
+                <h3 className="font-heading font-semibold text-slate-900 text-xl leading-snug">{name}</h3>
+                <span className="text-sm text-slate-500">{country}</span>
               </div>
             </div>
 
             <hr className="border-slate-200 mb-6" />
 
-            {/* Content */}
-            <div className="overflow-y-auto pr-2 space-y-4 text-slate-700 text-base md:text-[17px] leading-relaxed flex-1">
+            {/* Content - wide and no inner scroll container */}
+            <div className="space-y-4 text-slate-700 text-base md:text-[17px] leading-relaxed">
               {fullText.split("\n\n").map((para, i) => (
                 <p key={i}>{para}</p>
               ))}
             </div>
 
             {/* Footer */}
-            <div className="mt-6 pt-4 border-t border-slate-200 flex justify-end">
+            <div className="mt-8 pt-4 border-t border-slate-200 flex justify-end">
               <button
                 type="button"
                 onClick={() => setIsOpen(false)}
-                className="px-5 py-2 text-sm font-medium bg-slate-900 text-white rounded-sm hover:bg-slate-800 transition-colors cursor-pointer"
+                className="px-6 py-2.5 text-sm font-semibold bg-slate-900 text-white rounded-sm hover:bg-slate-800 transition-colors cursor-pointer"
               >
                 {closeText}
               </button>
