@@ -1,11 +1,11 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { ActionLink } from '@/components/ActionLink';
 import { VideoTestimonialCard } from '@/components/VideoTestimonialCard';
+import { TestimonialCard } from '@/components/TestimonialCard';
 import { ImpactCard } from '@/components/ImpactCard';
 import { Network, Users, BookOpen, Lightbulb, ArrowRight } from 'lucide-react';
 
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import { buildPageMetadata, getBreadcrumbSchema } from '@/lib/site-config';
 
 const videoTestimonials = [
@@ -123,99 +123,51 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             
             {/* Testimonial 1 */}
-            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
-              <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                {t.rich('test1', { mark: (chunks) => <mark className="bg-pink-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
-              </p>
-              <hr className="border-slate-900 mb-6" />
-              <div className="flex items-center gap-4">
-                <Image src="/impact/Henrietta Ampofo.jpg" alt="Henrietta Ampofo" width={40} height={40} className="w-10 h-10 rounded-full object-cover shrink-0" />
-                <div className="flex flex-col">
-                  <h4 className="font-semibold text-slate-900 text-sm">Henrietta Ampofo</h4>
-                  <span className="text-xs text-slate-500">Ghana</span>
-                </div>
-              </div>
-            </div>
+            <TestimonialCard
+              quote={t.rich('test1', { mark: (chunks) => <mark className="bg-pink-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              name="Henrietta Ampofo"
+              country="Ghana"
+              image="/impact/Henrietta Ampofo.jpg"
+            />
 
             {/* Video Testimonial 1: Rose Gohoue (WiW Benin) */}
             <VideoTestimonialCard video={videoTestimonials[0]} index={0} />
 
             {/* Testimonial 2 */}
-            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
-              <p className="text-lg text-slate-900 leading-relaxed mb-8 flex-1">
-                {t.rich('test2', { mark: (chunks) => <mark className="bg-emerald-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
-              </p>
-              <hr className="border-slate-900 mb-6" />
-              <div className="flex items-center gap-4">
-                <Image src="/impact/Eletta Adeola.jpg" alt="Eletta Adeola" width={40} height={40} className="w-10 h-10 rounded-full object-cover shrink-0" />
-                <div className="flex flex-col">
-                  <h4 className="font-semibold text-slate-900 text-sm">Eletta Adeola</h4>
-                  <span className="text-xs text-slate-500">Nigeria</span>
-                </div>
-              </div>
-            </div>
+            <TestimonialCard
+              quote={t.rich('test2', { mark: (chunks) => <mark className="bg-emerald-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              name="Eletta Adeola"
+              country="Nigeria"
+              image="/impact/Eletta Adeola.jpg"
+            />
 
             {/* Video Testimonial 2: Zeinabou Bagayoko (WiW Mali) */}
             <VideoTestimonialCard video={videoTestimonials[1]} index={1} />
 
             {/* Testimonial 3: Prof. Gloria Otunola (NOUN, Nigeria) */}
-            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
-              <span className="text-[11px] font-semibold tracking-wider uppercase text-primary mb-3">
-                WiW 2026 Climate Innovation Lab
-              </span>
-              <p className="text-lg text-slate-900 leading-relaxed mb-4 flex-1">
-                {t.rich('test3', { mark: (chunks) => <mark className="bg-amber-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
-              </p>
-              <details className="mb-6 group">
-                <summary className="cursor-pointer font-medium text-primary hover:underline text-xs flex items-center gap-1 select-none py-1">
-                  {t('readFull')}
-                </summary>
-                <div className="mt-3 text-slate-700 text-sm leading-relaxed space-y-3 pt-3 border-t border-slate-200 whitespace-pre-line">
-                  {t('test3Full')}
-                </div>
-              </details>
-              <hr className="border-slate-900 mb-6" />
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">
-                  GO
-                </div>
-                <div className="flex flex-col">
-                  <h4 className="font-semibold text-slate-900 text-sm">Prof. Gloria Otunola</h4>
-                  <span className="text-xs text-slate-500">Nigeria &middot; NOUN</span>
-                </div>
-              </div>
-            </div>
+            <TestimonialCard
+              quote={t.rich('test3', { mark: (chunks) => <mark className="bg-amber-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              fullText={t('test3Full')}
+              name="Prof. Gloria Otunola"
+              country="Nigeria · NOUN"
+              initials="GO"
+              readMoreText={t('readMore')}
+              closeText={t('close')}
+            />
 
             {/* Video Testimonial 3: Rasmata Simpore (WiW Burkina Faso) */}
             <VideoTestimonialCard video={videoTestimonials[2]} index={2} />
 
             {/* Testimonial 4: Dr Eudora Obioma Nwanaforo (Nigeria) */}
-            <div className="flex flex-col p-8 bg-white rounded-sm border border-slate-900">
-              <span className="text-[11px] font-semibold tracking-wider uppercase text-primary mb-3">
-                WiW 2026 Climate Innovation Lab
-              </span>
-              <p className="text-lg text-slate-900 leading-relaxed mb-4 flex-1">
-                {t.rich('test4', { mark: (chunks) => <mark className="bg-purple-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
-              </p>
-              <details className="mb-6 group">
-                <summary className="cursor-pointer font-medium text-primary hover:underline text-xs flex items-center gap-1 select-none py-1">
-                  {t('readFull')}
-                </summary>
-                <div className="mt-3 text-slate-700 text-sm leading-relaxed space-y-3 pt-3 border-t border-slate-200 whitespace-pre-line">
-                  {t('test4Full')}
-                </div>
-              </details>
-              <hr className="border-slate-900 mb-6" />
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">
-                  EN
-                </div>
-                <div className="flex flex-col">
-                  <h4 className="font-semibold text-slate-900 text-sm">Dr Eudora Obioma Nwanaforo</h4>
-                  <span className="text-xs text-slate-500">Nigeria</span>
-                </div>
-              </div>
-            </div>
+            <TestimonialCard
+              quote={t.rich('test4', { mark: (chunks) => <mark className="bg-purple-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              fullText={t('test4Full')}
+              name="Dr Eudora Obioma Nwanaforo"
+              country="Nigeria"
+              initials="EN"
+              readMoreText={t('readMore')}
+              closeText={t('close')}
+            />
 
             {/* Video Testimonial 4: Attiogbe Afi (WiW Togo) */}
             <VideoTestimonialCard video={videoTestimonials[3]} index={3} />
