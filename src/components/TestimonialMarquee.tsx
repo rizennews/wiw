@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 import { useTranslations } from 'next-intl';
@@ -18,6 +18,7 @@ interface TestimonialItem {
 
 export function TestimonialMarquee() {
   const t = useTranslations('TestimonialMarquee');
+  const [failedImages, setFailedImages] = useState<Record<string, boolean>>({});
   
   const testimonials: TestimonialItem[] = [
     {
@@ -51,8 +52,9 @@ export function TestimonialMarquee() {
       quoteStart: t('t4_quoteStart'),
       highlight: t('t4_highlight'),
       quoteEnd: t('t4_quoteEnd'),
-      name: "Prof. Gloria Otunola",
+      name: "Prof Gloria Otunola",
       country: "Nigeria",
+      image: "/impact/Prof Gloria Otunola.jpg",
       initials: "GO",
       markColor: "bg-amber-200/60"
     },
@@ -62,6 +64,7 @@ export function TestimonialMarquee() {
       quoteEnd: t('t5_quoteEnd'),
       name: "Dr Eudora Obioma Nwanaforo",
       country: "Nigeria",
+      image: "/impact/Eudora Obioma Nwanaforo.jpg",
       initials: "EN",
       markColor: "bg-purple-200/60"
     }
@@ -83,11 +86,18 @@ export function TestimonialMarquee() {
             </p>
             <hr className="border-slate-900 mb-6" />
             <div className="flex items-center gap-4">
-              {t.image ? (
-                <Image src={t.image} alt={t.name} width={40} height={40} className="w-10 h-10 rounded-full object-cover shrink-0" />
+              {t.image && !failedImages[t.name] ? (
+                <Image
+                  src={t.image}
+                  alt={t.name}
+                  width={40}
+                  height={40}
+                  className="w-10 h-10 rounded-full object-cover shrink-0"
+                  onError={() => setFailedImages((prev) => ({ ...prev, [t.name]: true }))}
+                />
               ) : (
                 <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-wide shrink-0">
-                  {t.initials}
+                  {t.initials || t.name.split(" ").map((p) => p[0]).join("").slice(0, 2)}
                 </div>
               )}
               <div className="flex flex-col">

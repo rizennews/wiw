@@ -2,6 +2,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { ActionLink } from '@/components/ActionLink';
 import { VideoTestimonialCard } from '@/components/VideoTestimonialCard';
 import { TestimonialCard } from '@/components/TestimonialCard';
+import { TestimonialsGrid } from '@/components/TestimonialsGrid';
 import { ImpactCard } from '@/components/ImpactCard';
 import { Network, Users, BookOpen, Lightbulb, ArrowRight } from 'lucide-react';
 
@@ -9,11 +10,11 @@ import type { Metadata } from 'next';
 import { buildPageMetadata, getBreadcrumbSchema } from '@/lib/site-config';
 
 const videoTestimonials = [
-  { entryId: '0_u8fr9jbw', wid: '0_54uwc9cw', name: 'Rose Gohoue', label: 'WiW Benin', title: 'Rose Gohoue - WiW Benin' },
-  { entryId: '0_qovxjw3y', wid: '0_cufk7vpv', name: 'Zeinabou Bagayoko', label: 'WiW Mali', title: 'Zeinabou Bagayoko - WiW Mali' },
-  { entryId: '0_gnyqxfyt', wid: '0_ialpi6fq', name: 'Rasmata Simpore', label: 'WiW Burkina Faso', title: 'Rasmata Simpore - WiW Burkina Faso' },
-  { entryId: '0_x2j4oe0b', wid: '0_9h7q1yj1', name: 'Attiogbe Afi', label: 'WiW Togo', title: 'Attiogbe Afi - WiW Togo' },
-  { entryId: '0_b01xci0p', wid: '0_13ku5lrj', name: 'Matilda Owusu', label: 'WiW Ghana', title: 'Women-In-WACREN 2024 - Interview with Matilda Owusu (Ghana)' },
+  { entryId: '0_u8fr9jbw', wid: '0_54uwc9cw', name: 'Rose Gohoue', label: 'Benin', title: 'Rose Gohoue - Benin' },
+  { entryId: '0_qovxjw3y', wid: '0_cufk7vpv', name: 'Zeinabou Bagayoko', label: 'Mali', title: 'Zeinabou Bagayoko - Mali' },
+  { entryId: '0_gnyqxfyt', wid: '0_ialpi6fq', name: 'Rasmata Simpore', label: 'Burkina Faso', title: 'Rasmata Simpore - Burkina Faso' },
+  { entryId: '0_x2j4oe0b', wid: '0_9h7q1yj1', name: 'Attiogbe Afi', label: 'Togo', title: 'Attiogbe Afi - Togo' },
+  { entryId: '0_b01xci0p', wid: '0_13ku5lrj', name: 'Matilda Owusu', label: 'Ghana', title: 'Women-In-WACREN 2024 - Interview with Matilda Owusu (Ghana)' },
 ];
 
 export async function generateMetadata({
@@ -56,7 +57,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
       />
       {/* Short Hero Section (Matching Homepage Style, No Image) */}
       <section className="relative w-full bg-primary pt-32 pb-12 md:pt-40 md:pb-16 overflow-hidden">
-        
+
         {/* Subtle abstract glow effects to replace the image */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-[100px] translate-x-1/2 -translate-y-1/2 pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-white/5 rounded-full blur-[100px] -translate-x-1/3 translate-y-1/3 pointer-events-none" />
@@ -82,22 +83,22 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
 
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mt-16">
-            <ImpactCard 
+            <ImpactCard
               icon={Network}
               title={t('impactNetworkTitle')}
               description={t('impactNetworkDesc')}
             />
-            <ImpactCard 
+            <ImpactCard
               icon={Users}
               title={t('impactMentorTitle')}
               description={t('impactMentorDesc')}
             />
-            <ImpactCard 
+            <ImpactCard
               icon={BookOpen}
               title={t('impactPeerTitle')}
               description={t('impactPeerDesc')}
             />
-            <ImpactCard 
+            <ImpactCard
               icon={Lightbulb}
               title={t('impactOppTitle')}
               description={t('impactOppDesc')}
@@ -120,8 +121,13 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             {t('testimonialTitle')}
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-            
+          <TestimonialsGrid
+            initialCount={6}
+            stepCount={3}
+            loadMoreText={t('loadMore')}
+            showLessText={t('showLess')}
+          >
+
             {/* Testimonial 1 */}
             <TestimonialCard
               quote={t.rich('test1', { mark: (chunks) => <mark className="bg-pink-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
@@ -144,12 +150,13 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             {/* Video Testimonial 2: Zeinabou Bagayoko (WiW Mali) */}
             <VideoTestimonialCard video={videoTestimonials[1]} index={1} />
 
-            {/* Testimonial 3: Prof. Gloria Otunola (NOUN, Nigeria) */}
+            {/* Testimonial 3: Prof Gloria Otunola (Nigeria) */}
             <TestimonialCard
               quote={t.rich('test3', { mark: (chunks) => <mark className="bg-amber-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
               fullText={t('test3Full')}
-              name="Prof. Gloria Otunola"
-              country="Nigeria · NOUN"
+              name="Prof Gloria Otunola"
+              country="Nigeria"
+              image="/impact/Prof Gloria Otunola.jpg"
               initials="GO"
               readMoreText={t('readMore')}
               closeText={t('close')}
@@ -164,6 +171,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               fullText={t('test4Full')}
               name="Dr Eudora Obioma Nwanaforo"
               country="Nigeria"
+              image="/impact/Eudora Obioma Nwanaforo.jpg"
               initials="EN"
               readMoreText={t('readMore')}
               closeText={t('close')}
@@ -172,10 +180,118 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
             {/* Video Testimonial 4: Attiogbe Afi (WiW Togo) */}
             <VideoTestimonialCard video={videoTestimonials[3]} index={3} />
 
+            {/* Testimonial 5: Dr. LARE Babénoun (Togo) */}
+            <TestimonialCard
+              quote={t.rich('test5', { mark: (chunks) => <mark className="bg-blue-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              name="Dr. LARE Babénoun"
+              country="Togo"
+              image="/impact/Dr. LARE Babenoun.jpg"
+              initials="LB"
+            />
+
             {/* Video Testimonial 5: Matilda Owusu (WiW Ghana) */}
             <VideoTestimonialCard video={videoTestimonials[4]} index={4} />
 
-          </div>
+            {/* Testimonial 6: Monsia Epse Sahouan Sandrine (Côte d’Ivoire) */}
+            <TestimonialCard
+              quote={t.rich('test6', { mark: (chunks) => <mark className="bg-rose-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              name="Monsia Epse Sahouan Sandrine"
+              country="Côte d’Ivoire"
+              image="/impact/Monsia Epse Sahouan Sandrine.jpeg"
+              initials="MS"
+            />
+
+            {/* Testimonial 7: Sokhna Mbaye (Senegal) */}
+            <TestimonialCard
+              quote={t.rich('test7', { mark: (chunks) => <mark className="bg-teal-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              name="Sokhna Mbaye"
+              country="Senegal"
+              image="/impact/Sokhna Mbaye.jpeg"
+              initials="SM"
+            />
+
+            {/* Testimonial 8: Dr. Timite Nakouana (Côte d'Ivoire) */}
+            <TestimonialCard
+              quote={t.rich('test8', { mark: (chunks) => <mark className="bg-indigo-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              name="Dr. Timite Nakouana"
+              country="Côte d'Ivoire"
+              image="/impact/Timite Nakouana.jpg"
+              initials="TN"
+            />
+
+            {/* Testimonial 9: Vivian Chinwe Nnamdi (Nigeria) */}
+            <TestimonialCard
+              quote={t.rich('test9', { mark: (chunks) => <mark className="bg-orange-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              name="Vivian Chinwe Nnamdi"
+              country="Nigeria"
+              image="/impact/Vivian Chinwe Nnamdi.jpg"
+              initials="VN"
+            />
+
+            {/* Testimonial 10: Falilatou Bako (Niger) */}
+            <TestimonialCard
+              quote={t.rich('test10', { mark: (chunks) => <mark className="bg-cyan-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              name="Falilatou Bako"
+              country="Niger"
+              image="/impact/Falilatou_Bako_Ousmane.jpg"
+              initials="FB"
+            />
+
+            {/* Testimonial 11: Omotolani Sonaike (Nigeria) */}
+            <TestimonialCard
+              quote={t.rich('test11', { mark: (chunks) => <mark className="bg-pink-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              name="Omotolani Sonaike"
+              country="Nigeria"
+              image="/impact/Omotolani Sonaike.jpg"
+              initials="OS"
+            />
+
+            {/* Testimonial 12: Kezia Agyemang-Saahene (Ghana) */}
+            <TestimonialCard
+              quote={t.rich('test12', { mark: (chunks) => <mark className="bg-emerald-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              name="Kezia Agyemang-Saahene"
+              country="Ghana"
+              image="/impact/Kezia Agyemang-Saahene.jpeg"
+              initials="KA"
+            />
+
+            {/* Testimonial 13: Dr. Sylvia Adipah, Dr. Perpetual Zaazie and Ms. Sarah Elikplim Siabi (Ghana) */}
+            <TestimonialCard
+              quote={t.rich('test13', { mark: (chunks) => <mark className="bg-amber-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              name="Dr. Sylvia Adipah, Dr. Perpetual Zaazie and Ms. Sarah Elikplim Siabi"
+              country="Ghana"
+              image="/impact/DR. SYLVIA ADIPAH, DR. PERPETUAL ZAAZIE AND MS. SARAH ELIKPLIM SIABI.png"
+              initials="SZ"
+            />
+
+            {/* Testimonial 14: Dr EBA Samuelle Bernice (Côte d’Ivoire) */}
+            <TestimonialCard
+              quote={t.rich('test14', { mark: (chunks) => <mark className="bg-purple-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              name="Dr EBA Samuelle Bernice"
+              country="Côte d’Ivoire"
+              image="/impact/Bernice Eba.jpeg"
+              initials="EB"
+            />
+
+            {/* Testimonial 15: Fatou Bin Jatta (Gambia) */}
+            <TestimonialCard
+              quote={t.rich('test15', { mark: (chunks) => <mark className="bg-blue-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              name="Fatou Bin Jatta"
+              country="Gambia"
+              image="/impact/Fatou Bin Jatta.png"
+              initials="FJ"
+            />
+
+            {/* Testimonial 16: Ginette Azandeme Hounmalo (Benin) */}
+            <TestimonialCard
+              quote={t.rich('test16', { mark: (chunks) => <mark className="bg-teal-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
+              name="Ginette Azandeme Hounmalo"
+              country="Benin"
+              image="/impact/Ginette AZANDEME HOUNMALO.jpg"
+              initials="GH"
+            />
+
+          </TestimonialsGrid>
         </div>
       </section>
 
