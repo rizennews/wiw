@@ -25,48 +25,61 @@ export function TestimonialMarquee() {
       quoteStart: t('t1_quoteStart'),
       highlight: t('t1_highlight'),
       quoteEnd: t('t1_quoteEnd'),
-      name: "Henrietta Ampofo",
+      name: "Dr. Sylvia Adipah, Dr. Perpetual Zaazie and Ms. Sarah Elikplim Siabi",
       country: "Ghana",
-      image: "/impact/Henrietta Ampofo.jpg",
-      markColor: "bg-pink-200/60"
+      image: "/impact/DR. SYLVIA ADIPAH, DR. PERPETUAL ZAAZIE AND MS. SARAH ELIKPLIM SIABI.png",
+      initials: "SZ",
+      markColor: "bg-amber-200/60"
     },
     {
       quoteStart: t('t2_quoteStart'),
       highlight: t('t2_highlight'),
       quoteEnd: t('t2_quoteEnd'),
-      name: "Eletta Adeola",
+      name: "Prof Gloria Otunola",
       country: "Nigeria",
-      image: "/impact/Eletta Adeola.jpg",
-      markColor: "bg-emerald-200/60"
+      image: "/impact/Prof Gloria Otunola.jpg",
+      initials: "GO",
+      markColor: "bg-pink-200/60"
     },
     {
       quoteStart: t('t3_quoteStart'),
       highlight: t('t3_highlight'),
       quoteEnd: t('t3_quoteEnd'),
-      name: "Rasmata Simpore",
-      country: "Burkina Faso",
-      image: "/impact/Rasmata Simpore.jpg",
-      markColor: "bg-blue-200/60"
-    },
-    {
-      quoteStart: t('t4_quoteStart'),
-      highlight: t('t4_highlight'),
-      quoteEnd: t('t4_quoteEnd'),
-      name: "Prof Gloria Otunola",
-      country: "Nigeria",
-      image: "/impact/Prof Gloria Otunola.jpg",
-      initials: "GO",
-      markColor: "bg-amber-200/60"
-    },
-    {
-      quoteStart: t('t5_quoteStart'),
-      highlight: t('t5_highlight'),
-      quoteEnd: t('t5_quoteEnd'),
       name: "Dr Eudora Obioma Nwanaforo",
       country: "Nigeria",
       image: "/impact/Eudora Obioma Nwanaforo.jpg",
       initials: "EN",
       markColor: "bg-purple-200/60"
+    },
+    {
+      quoteStart: t('t4_quoteStart'),
+      highlight: t('t4_highlight'),
+      quoteEnd: t('t4_quoteEnd'),
+      name: "Dr. LARE Babénoun",
+      country: "Togo",
+      image: "/impact/Dr. LARE Babenoun.jpg",
+      initials: "LB",
+      markColor: "bg-blue-200/60"
+    },
+    {
+      quoteStart: t('t5_quoteStart'),
+      highlight: t('t5_highlight'),
+      quoteEnd: t('t5_quoteEnd'),
+      name: "Monsia Epse Sahouan Sandrine",
+      country: "Côte d’Ivoire",
+      image: "/impact/Monsia Epse Sahouan Sandrine.jpeg",
+      initials: "MS",
+      markColor: "bg-rose-200/60"
+    },
+    {
+      quoteStart: t('t6_quoteStart'),
+      highlight: t('t6_highlight'),
+      quoteEnd: t('t6_quoteEnd'),
+      name: "Sokhna Mbaye",
+      country: "Senegal",
+      image: "/impact/Sokhna Mbaye.jpeg",
+      initials: "SM",
+      markColor: "bg-teal-200/60"
     }
   ];
 
