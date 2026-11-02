@@ -182,6 +182,9 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               initials="SM"
             />
 
+            {/* Lower section: Remaining testimonials mixed with video testimonials across left, middle, and right columns */}
+
+            {/* Row 3: Text, Text, Video (Right) */}
             {/* New Testimonial 7: Dr. Timite Nakouana (Côte d'Ivoire) */}
             <TestimonialCard
               quote={t.rich('test8', { mark: (chunks) => <mark className="bg-indigo-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
@@ -199,6 +202,13 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               image="/impact/Vivian Chinwe Nnamdi.jpg"
               initials="VN"
             />
+
+            {/* Video Testimonial 1: Rose Gohoue (Benin) */}
+            <VideoTestimonialCard video={videoTestimonials[0]} index={0} />
+
+            {/* Row 4: Video (Left), Text, Text */}
+            {/* Video Testimonial 2: Zeinabou Bagayoko (Mali) */}
+            <VideoTestimonialCard video={videoTestimonials[1]} index={1} />
 
             {/* New Testimonial 9: Falilatou Bako (Niger) */}
             <TestimonialCard
@@ -218,6 +228,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               initials="OS"
             />
 
+            {/* Row 5: Text, Video (Middle), Text */}
             {/* New Testimonial 11: Kezia Agyemang-Saahene (Ghana) */}
             <TestimonialCard
               quote={t.rich('test12', { mark: (chunks) => <mark className="bg-emerald-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
@@ -226,6 +237,9 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               image="/impact/Kezia Agyemang-Saahene.jpeg"
               initials="KA"
             />
+
+            {/* Video Testimonial 3: Rasmata Simpore (Burkina Faso) */}
+            <VideoTestimonialCard video={videoTestimonials[2]} index={2} />
 
             {/* New Testimonial 12: Dr EBA Samuelle Bernice (Côte d’Ivoire) */}
             <TestimonialCard
@@ -236,6 +250,7 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               initials="EB"
             />
 
+            {/* Row 6: Text, Text, Video (Right) */}
             {/* New Testimonial 13: Fatou Bin Jatta (Gambia) */}
             <TestimonialCard
               quote={t.rich('test15', { mark: (chunks) => <mark className="bg-blue-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
@@ -254,7 +269,14 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               initials="GH"
             />
 
-            {/* Previous Text & Video Testimonials */}
+            {/* Video Testimonial 4: Attiogbe Afi (Togo) */}
+            <VideoTestimonialCard video={videoTestimonials[3]} index={3} />
+
+            {/* Row 7: Video (Left), Text, Text */}
+            {/* Video Testimonial 5: Matilda Owusu (Ghana) */}
+            <VideoTestimonialCard video={videoTestimonials[4]} index={4} />
+
+            {/* Old Text Testimonial 1: Henrietta Ampofo */}
             <TestimonialCard
               quote={t.rich('test1', { mark: (chunks) => <mark className="bg-pink-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
               name="Henrietta Ampofo"
@@ -262,22 +284,13 @@ export default async function ImpactPage({ params }: { params: Promise<{ locale:
               image="/impact/Henrietta Ampofo.jpg"
             />
 
-            <VideoTestimonialCard video={videoTestimonials[0]} index={0} />
-
+            {/* Old Text Testimonial 2: Eletta Adeola */}
             <TestimonialCard
               quote={t.rich('test2', { mark: (chunks) => <mark className="bg-emerald-200/60 px-1 py-0.5 rounded-sm">{chunks}</mark> })}
               name="Eletta Adeola"
               country="Nigeria"
               image="/impact/Eletta Adeola.jpg"
             />
-
-            <VideoTestimonialCard video={videoTestimonials[1]} index={1} />
-
-            <VideoTestimonialCard video={videoTestimonials[2]} index={2} />
-
-            <VideoTestimonialCard video={videoTestimonials[3]} index={3} />
-
-            <VideoTestimonialCard video={videoTestimonials[4]} index={4} />
 
           </TestimonialsGrid>
         </div>
