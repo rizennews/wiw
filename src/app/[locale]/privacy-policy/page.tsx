@@ -15,7 +15,7 @@ export async function generateMetadata({
     path: '/privacy-policy',
     title: t('title') || 'Privacy Policy',
     description: 'Privacy Policy and data protection terms for the Women-In-WACREN platform.',
-    image: '/og-image.png',
+    image: '/HERO.jpg',
   });
 }
 

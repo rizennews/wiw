@@ -15,7 +15,7 @@ export async function generateMetadata({
     path: '/activities',
     title: t('title') || 'Activities',
     description: t('p') || 'Discover the latest activities, workshops, and events hosted by the Women-In-WACREN community.',
-    image: '/og-image.png',
+    image: '/HERO.jpg',
   });
 }
 

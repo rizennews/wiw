@@ -7,8 +7,8 @@ export const siteConfig = {
   title: 'Women-In-WACREN - Empowering Women in STEM Across West & Central Africa',
   description:
     'Women-In-WACREN connects, trains, and funds women in STEM across West and Central Africa. Turning students, researchers, and early-career professionals into tech leaders and innovators.',
-  defaultOgImage: 'https://womeninwacren.wacren.net/og-image.png',
-  defaultOgImageJpg: 'https://womeninwacren.wacren.net/og-image.jpg',
+  defaultOgImage: 'https://womeninwacren.wacren.net/HERO.jpg',
+  defaultOgImageJpg: 'https://womeninwacren.wacren.net/HERO.jpg',
   logoUrl: 'https://womeninwacren.wacren.net/Women%20in%20WACREN%20logo.png',
   email: 'wiw@wacren.net',
   locales: ['en', 'fr', 'pt'] as const,

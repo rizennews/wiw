@@ -16,7 +16,7 @@ export async function generateMetadata({
     path: '/about',
     title: 'About Us',
     description: t('section1P1') ? t('section1P1').slice(0, 160) : 'Learn about the Women-In-WACREN journey, our mission to close the gender gap in STEM, and our track record of empowering over 2,000 women.',
-    image: '/og-image.png',
+    image: '/HERO.jpg',
   });
 }
 

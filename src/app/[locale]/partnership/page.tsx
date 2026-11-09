@@ -18,7 +18,7 @@ export async function generateMetadata({
     path: '/partnership',
     title: 'Partnership Opportunities',
     description: t.has('heroDesc') ? t('heroDesc') : 'Partner with Women-In-WACREN to scale our impact. Explore opportunities to fund cohorts, host workshops, or volunteer as a mentor.',
-    image: '/og-image.png',
+    image: '/HERO.jpg',
   });
 }
 

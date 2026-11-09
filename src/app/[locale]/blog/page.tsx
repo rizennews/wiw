@@ -16,7 +16,7 @@ export async function generateMetadata({
     path: '/blog',
     title: t('title') || 'Blog & Updates',
     description: t('description') || 'Read the latest news, updates, and community stories from the Women-In-WACREN network.',
-    image: '/og-image.png',
+    image: '/HERO.jpg',
   });
 }
 

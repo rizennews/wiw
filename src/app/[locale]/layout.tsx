@@ -48,10 +48,10 @@ export async function generateMetadata({
       siteName: siteConfig.name,
       images: [
         {
-          url: '/og-image.png',
+          url: '/HERO.jpg',
           width: 1200,
           height: 630,
-          type: 'image/png',
+          type: 'image/jpeg',
           alt: 'Women-In-WACREN - Empowering Women in STEM Across West & Central Africa',
         },
       ],
@@ -62,7 +62,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: 'Women-In-WACREN - Empowering Women in STEM Across West & Central Africa',
       description: siteConfig.description,
-      images: ['/og-image.png'],
+      images: ['/HERO.jpg'],
       site: siteConfig.links.twitterHandle,
       creator: siteConfig.links.twitterHandle,
     },

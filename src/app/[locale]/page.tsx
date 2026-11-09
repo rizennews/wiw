@@ -25,7 +25,7 @@ export async function generateMetadata({
     path: '/',
     title: 'Women-In-WACREN - Empowering Women in STEM Across West & Central Africa',
     description: t('heroDesc'),
-    image: '/og-image.png',
+    image: '/HERO.jpg',
   });
 }
 

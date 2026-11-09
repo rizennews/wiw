@@ -16,7 +16,7 @@ export async function generateMetadata({
     path: '/documents',
     title: t.has('title') ? t('title') : 'Document Library',
     description: t.has('description') ? t('description') : 'Access official publications, reports, strategic plans, and resources from Women-In-WACREN.',
-    image: '/og-image.png',
+    image: '/HERO.jpg',
   });
 }
 

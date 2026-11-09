@@ -15,7 +15,7 @@ export async function generateMetadata({
     path: '/terms',
     title: t('title') || 'Terms of Use',
     description: 'Terms of Use for the Women-In-WACREN website and community portals.',
-    image: '/og-image.png',
+    image: '/HERO.jpg',
   });
 }
 

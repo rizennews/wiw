@@ -16,7 +16,7 @@ export async function generateMetadata({
     path: '/network',
     title: 'Join the WiW Network',
     description: t('description') || 'Join the Women-In-WACREN Network to connect, exchange knowledge, and access mentorship.',
-    image: '/og-image.png',
+    image: '/HERO.jpg',
   });
 }
 

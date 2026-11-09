@@ -15,7 +15,7 @@ export async function generateMetadata({
     path: '/contact',
     title: 'Contact Us',
     description: 'Get in touch with the Women-In-WACREN Secretariat (wiw@wacren.net). Reach out for partnerships, programmes, questions, or media inquiries.',
-    image: '/og-image.png',
+    image: '/HERO.jpg',
   });
 }
 

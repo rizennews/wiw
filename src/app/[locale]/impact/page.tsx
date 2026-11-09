@@ -30,7 +30,7 @@ export async function generateMetadata({
     path: '/impact',
     title: t.has('heroTitle') ? t('heroTitle') : 'Our Impact',
     description: t.has('section1Desc') ? t('section1Desc') : 'Explore the real-world impact of the Women-In-WACREN programme through data, success stories, and our growing network.',
-    image: '/og-image.png',
+    image: '/HERO.jpg',
   });
 }
 
