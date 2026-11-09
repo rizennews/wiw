@@ -54,13 +54,16 @@
     "stat4Label": "Axé sur la communauté",
     "eventsTitle": "Événements",
     "eventsDesc": "Rejoignez nos derniers ateliers, webinaires et laboratoires d'innovation conçus pour les femmes dans les STEM.",
-    "event1Title": "Mentorat, parrainage et réseaux : qu'est-ce qui fait vraiment avancer les femmes dans les STEM ?",
-    "event1Desc": "Ce webinaire explorera comment le mentorat, le parrainage et les réseaux professionnels peuvent aider les femmes dans les STEM à gagner en visibilité, accéder à des opportunités, renforcer leur confiance et faire avancer leur carrière.",
+    "event1Title": "De l'idée à l'impact : pitcher des idées avec confiance",
+    "event1Desc": "Techniques pratiques pour présenter des innovations climatiques aux partenaires, bailleurs et utilisateurs, formuler clairement les problèmes et réussir son pitch.",
     "event1Tag": "[Webinaire]",
     "register": "S'inscrire",
     "event2Title": "Women-In-WACREN Climate Innovation Lab 2026",
     "event2Desc": "Un programme d'innovation structuré combinant un réseau virtuel de femmes dans les STEM, un atelier intensif en présentiel de 4 jours à Abuja et un mentorat post-laboratoire pour concevoir des solutions numériques au climat.",
     "event2Tag": "[Laboratoire d'Innovation]",
+    "event3Title": "Sécuriser les données climatiques : protéger l'information au cœur des décisions climatiques",
+    "event3Desc": "Explorez la relation entre l'intégrité des données climatiques et la cybersécurité, notamment la protection des données, le partage sécurisé, les ransomwares et la protection des infrastructures de recherche.",
+    "event3Tag": "[Webinaire]",
     "newsTitle": "Aperçus et Actualités",
     "newsDesc": "Histoires de terrain, événements à venir et mises à jour de la communauté WiW à travers l'Afrique de l'Ouest et Centrale.",
     "viewAll": "Voir toutes les histoires",
@@ -80,6 +83,14 @@
     "testimonialsTitle": "Voix de Women-In-WACREN",
     "testimonialsDesc": "Écoutez les chercheuses, innovatrices et leaders qui ont participé à nos programmes.",
     "posts": {
+      "wiw-webinar-pitching-ideas-with-confidence": {
+        "title": "De l'idée à l'impact : pitcher des idées avec confiance",
+        "excerpt": "Développer une idée innovante est une étape clé, mais savoir communiquer efficacement est tout aussi essentiel."
+      },
+      "wiw-webinar-securing-climate-data": {
+        "title": "Sécuriser les données climatiques : protéger l'information au cœur des décisions climatiques",
+        "excerpt": "L'action climatique dépend des informations numériques. Si ces données sont compromises, peut-on encore avoir confiance dans les décisions climatiques ?"
+      },
       "wiw-webinar-mentorship-sponsorship-networks": {
         "title": "Mentorat, parrainage et réseaux : qu'est-ce qui fait vraiment avancer les femmes dans les STEM ?",
         "excerpt": "Ce webinaire WiW explore les différences pratiques entre le mentorat, le parrainage et le réseautage — et comment chacun peut contribuer à la croissance des femmes dans les STEM."
@@ -159,6 +170,26 @@
     "clearFilters": "Effacer les filtres"
   },
   "Blog": {
+    "wiw-webinar-pitching-ideas-with-confidence": {
+      "title": "De l'idée à l'impact : pitcher des idées avec confiance",
+      "excerpt": "Développer une idée innovante est une étape clé, mais savoir communiquer efficacement est tout aussi essentiel. Les innovatrices doivent expliquer le problème, la solution, le public cible et l'impact attendu.",
+      "toc": {
+        "explore": "Ce que le webinaire explorera",
+        "details": "Détails de l'événement",
+        "agenda": "Ordre du jour",
+        "register": "S'inscrire"
+      }
+    },
+    "wiw-webinar-securing-climate-data": {
+      "title": "Sécuriser les données climatiques : protéger l'information au cœur des décisions climatiques",
+      "excerpt": "L'action climatique dépend des informations numériques. Si ces données sont compromises, peut-on encore avoir confiance dans les décisions climatiques ? Ce webinaire explore l'intégrité des données climatiques et la cybersécurité.",
+      "toc": {
+        "explore": "Ce que le webinaire explorera",
+        "details": "Détails de l'événement",
+        "agenda": "Ordre du jour",
+        "register": "S'inscrire"
+      }
+    },
     "wiw-webinar-mentorship-sponsorship-networks": {
       "title": "Mentorat, parrainage et réseaux : qu'est-ce qui fait réellement progresser les femmes dans les STEM ?",
       "excerpt": "Ce webinaire WiW explore les différences pratiques entre le mentorat, le parrainage et le réseautage – et comment chacun peut contribuer à la croissance des femmes dans les STEM.",

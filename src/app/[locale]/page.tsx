@@ -151,14 +151,14 @@ export default function Home() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               
-              {/* Card 1: Climate Innovation Lab */}
+              {/* Card 1: WiW Pitching Ideas Webinar */}
               <div className="group flex flex-col bg-[#fafafa] border border-slate-200 overflow-hidden hover:border-slate-300 transition-colors h-full rounded-sm">
                 {/* Image */}
                 <div className="w-full border-b border-slate-200 overflow-hidden bg-white">
-                  <Link href="/blog/women-in-wacren-climate-innovation-lab-2026" className="block overflow-hidden">
+                  <Link href="/blog/wiw-webinar-pitching-ideas-with-confidence" className="block overflow-hidden">
                     <Image
-                      src="/blog/WIW-Climate Innovation Lab.jpg"
-                      alt="Women-In-WACREN Climate Innovation Lab 2026"
+                      src="/wiw-webinar-from-idea-to-impact-pitching-ideas-with-confidence.jpg"
+                      alt="Women-In-WACREN Webinar: From Idea to Impact: Pitching Ideas with Confidence"
                       width={1920}
                       height={1080}
                       className="w-full h-auto opacity-90 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
@@ -171,60 +171,7 @@ export default function Home() {
                 <div className="flex flex-col flex-1 p-6 md:p-8">
                   <h3 className="font-heading text-lg md:text-xl font-medium text-slate-900 mb-4 leading-snug">
                     <Link
-                      href="/blog/women-in-wacren-climate-innovation-lab-2026"
-                      className="hover:text-primary transition-colors"
-                    >
-                      {t('event2Title')}
-                    </Link>
-                  </h3>
-
-                  <p className="text-sm md:text-[15px] text-slate-500 font-light leading-relaxed mb-6 flex-1">
-                    {t('event2Desc')}
-                  </p>
-
-                  {/* Date & Time & Location */}
-                  <div className="flex items-start gap-2 text-[13px] font-medium text-slate-600 mb-4">
-                    <Calendar className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                    <span className="leading-snug">12–15 October 2026 &middot; 08:30 &ndash; 17:00 Africa/Accra<br/>National Open University of Nigeria (NOUN), Abuja</span>
-                  </div>
-
-                  {/* Meta Footer */}
-                  <div className="mt-auto flex items-center justify-between text-[13px] font-medium pt-2">
-                    <span className="text-primary tracking-wide">
-                      {t('event2Tag')}
-                    </span>
-                    <a
-                      href="https://indico.wacren.net/event/279/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary inline-flex items-center gap-1.5 hover:underline"
-                    >
-                      {t('register')}
-                      <ArrowRight className="w-4 h-4" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* Card 2: WiW Webinar */}
-              <div className="group flex flex-col bg-[#fafafa] border border-slate-200 overflow-hidden hover:border-slate-300 transition-colors h-full rounded-sm">
-                {/* Image */}
-                <div className="w-full border-b border-slate-200 overflow-hidden bg-white">
-                  <Image
-                    src="/wiw_fire side chat .jpg"
-                    alt="Women-In-WACREN fire side chat"
-                    width={1920}
-                    height={1080}
-                    className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-500"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="flex flex-col flex-1 p-6 md:p-8">
-                  <h3 className="font-heading text-lg md:text-xl font-medium text-slate-900 mb-4 leading-snug">
-                    <Link
-                      href="/blog/wiw-webinar-mentorship-sponsorship-networks"
+                      href="/blog/wiw-webinar-pitching-ideas-with-confidence"
                       className="hover:text-primary transition-colors"
                     >
                       {t('event1Title')}
@@ -238,7 +185,7 @@ export default function Home() {
                   {/* Date & Time */}
                   <div className="flex items-center gap-2 text-[13px] font-medium text-slate-600 mb-4">
                     <Calendar className="w-4 h-4 text-primary" />
-                    <span>Wednesday, 30 September 2026 &middot; 13:00 UTC</span>
+                    <span>Monday, 23 November 2026 &middot; 13:00 UTC</span>
                   </div>
 
                   {/* Meta Footer */}
@@ -247,7 +194,62 @@ export default function Home() {
                       {t('event1Tag')}
                     </span>
                     <a
-                      href="https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg"
+                      href="https://wacren.zoom.us/webinar/register/WN_jBJrZB7-QOKJ7r2ozl_veA#/registration"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary inline-flex items-center gap-1.5 hover:underline"
+                    >
+                      {t('register')}
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 2: WiW Securing Climate Data Webinar */}
+              <div className="group flex flex-col bg-[#fafafa] border border-slate-200 overflow-hidden hover:border-slate-300 transition-colors h-full rounded-sm">
+                {/* Image */}
+                <div className="w-full border-b border-slate-200 overflow-hidden bg-white">
+                  <Link href="/blog/wiw-webinar-securing-climate-data" className="block overflow-hidden">
+                    <Image
+                      src="/wiw-webinar-securing-climate-data.jpg"
+                      alt="Women-In-WACREN Webinar: Securing Climate Data: Protecting the Information Behind Climate Decisions"
+                      width={1920}
+                      height={1080}
+                      className="w-full h-auto opacity-90 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </Link>
+                </div>
+
+                {/* Content */}
+                <div className="flex flex-col flex-1 p-6 md:p-8">
+                  <h3 className="font-heading text-lg md:text-xl font-medium text-slate-900 mb-4 leading-snug">
+                    <Link
+                      href="/blog/wiw-webinar-securing-climate-data"
+                      className="hover:text-primary transition-colors"
+                    >
+                      {t('event3Title')}
+                    </Link>
+                  </h3>
+
+                  <p className="text-sm md:text-[15px] text-slate-500 font-light leading-relaxed mb-6 flex-1">
+                    {t('event3Desc')}
+                  </p>
+
+                  {/* Date & Time */}
+                  <div className="flex items-center gap-2 text-[13px] font-medium text-slate-600 mb-4">
+                    <Calendar className="w-4 h-4 text-primary" />
+                    <span>Friday, 30 October 2026 &middot; 13:00 UTC</span>
+                  </div>
+
+                  {/* Meta Footer */}
+                  <div className="mt-auto flex items-center justify-between text-[13px] font-medium pt-2">
+                    <span className="text-primary tracking-wide">
+                      {t('event3Tag')}
+                    </span>
+                    <a
+                      href="https://wacren.zoom.us/webinar/register/WN_horw7VJ8QPeUc7MrjGvrkg"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary inline-flex items-center gap-1.5 hover:underline"

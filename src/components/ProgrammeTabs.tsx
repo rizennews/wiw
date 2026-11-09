@@ -10,57 +10,76 @@ import { useTranslations } from 'next-intl';
 export function ProgrammeTabs() {
   const t = useTranslations('ProgrammeTabs');
   const tHome = useTranslations('Home');
-  const TABS = [t('tabOpenNow'), t('tabPastWorkshops')];
+  const TABS = [
+    { id: 'ongoing' as const, label: t('tabOpenNow') },
+    { id: 'past' as const, label: t('tabPastWorkshops') },
+  ];
 
   const ONGOING_DATA = [
-    {
-      badge: tHome('event2Tag'),
-      title: tHome('event2Title'),
-      description: tHome('event2Desc'),
-      metadata: "12–15 October 2026 • Abuja, Nigeria",
-      buttonText: t('btnApply'),
-      href: "https://indico.wacren.net/event/279/",
-      isPast: false,
-    },
     {
       badge: tHome('event1Tag'),
       title: tHome('event1Title'),
       description: tHome('event1Desc'),
-      metadata: "30 September 2026 • 13:00 UTC • Virtual",
+      metadata: "23 November 2026 • 13:00 UTC • Virtual",
       buttonText: tHome('register'),
-      href: "https://wacren.zoom.us/webinar/register/WN_x5OIWhkETjOQNlL_x2kPIg",
-      isPast: true,
+      href: "https://wacren.zoom.us/webinar/register/WN_jBJrZB7-QOKJ7r2ozl_veA#/registration",
+      isPast: false,
     }
   ];
 
   const PAST_WORKSHOPS_DATA = [
     {
-      badge: t('badge2024'),
-      title: t('titleAccra'),
-      description: t('descAccra'),
-      href: "https://indico.wacren.net/event/207/"
+      badge: tHome('event3Tag'),
+      title: tHome('event3Title'),
+      description: tHome('event3Desc'),
+      metadata: "30 October 2026 • 13:00 UTC • Virtual",
+      href: "/blog/wiw-webinar-securing-climate-data"
+    },
+    {
+      badge: tHome('event2Tag'),
+      title: tHome('event2Title'),
+      description: tHome('event2Desc'),
+      metadata: "12–15 October 2026 • Abuja, Nigeria",
+      href: "/blog/women-in-wacren-climate-innovation-lab-2026"
+    },
+    {
+      badge: "[Webinar 2026]",
+      title: "Mentorship, Sponsorship and Networks: What Actually Move Women Forward in STEM?",
+      description: "This WiW webinar explores the practical differences between mentorship, sponsorship and networking — and how each can contribute to the growth of women in STEM.",
+      metadata: "30 September 2026 • 13:00 UTC • Virtual",
+      href: "/blog/wiw-webinar-mentorship-sponsorship-networks"
     },
     {
       badge: t('badge2024'),
       title: t('titleAbidjan'),
       description: t('descAbidjan'),
+      metadata: "21–25 October 2024 • Abidjan, Côte d'Ivoire",
       href: "https://indico.wacren.net/event/236/"
+    },
+    {
+      badge: t('badge2024'),
+      title: t('titleAccra'),
+      description: t('descAccra'),
+      metadata: "15–19 July 2024 • Accra, Ghana",
+      href: "https://indico.wacren.net/event/207/"
     },
     {
       badge: t('badge2018'),
       title: t('titleLagos'),
       description: t('descLagos'),
+      metadata: "2018 • Lagos, Nigeria",
       href: "https://indico.wacren.net/event/61/"
     },
     {
       badge: t('badge2017'),
       title: t('titleDakar'),
       description: t('descDakar'),
+      metadata: "2017 • Dakar, Senegal",
       href: "https://indico.wacren.net/event/55/"
     }
   ];
 
-  const [activeTab, setActiveTab] = useState(TABS[0]);
+  const [activeTab, setActiveTab] = useState<'ongoing' | 'past'>('ongoing');
 
   return (
     <div className="w-full flex flex-col items-center">
@@ -69,21 +88,21 @@ export function ProgrammeTabs() {
       <div className="flex p-1.5 bg-slate-100 rounded-full mb-12 w-fit max-w-full overflow-x-auto no-scrollbar border border-slate-200/50">
         {TABS.map((tab) => (
           <button
-            key={tab}
-            onClick={() => setActiveTab(tab)}
+            key={tab.id}
+            onClick={() => setActiveTab(tab.id)}
             className={cn(
               "relative px-6 py-3 rounded-full text-sm font-semibold transition-colors duration-300 whitespace-nowrap outline-none",
-              activeTab === tab ? "text-primary" : "text-slate-600 hover:text-slate-900"
+              activeTab === tab.id ? "text-primary" : "text-slate-600 hover:text-slate-900"
             )}
           >
-            {activeTab === tab && (
+            {activeTab === tab.id && (
               <motion.div
                 layoutId="active-tab-pill"
                 className="absolute inset-0 bg-white rounded-full shadow-sm"
                 transition={{ type: "spring", duration: 0.6, bounce: 0.2 }}
               />
             )}
-            <span className="relative z-10">{tab}</span>
+            <span className="relative z-10">{tab.label}</span>
           </button>
         ))}
       </div>
@@ -91,14 +110,14 @@ export function ProgrammeTabs() {
       {/* Tab Content Area */}
       <div className="w-full min-h-[400px]">
         <AnimatePresence mode="wait">
-          {activeTab === t('tabOpenNow') && (
+          {activeTab === 'ongoing' && (
             <motion.div
               key="ongoing"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
-              className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 w-full"
+              className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 w-full"
             >
               {ONGOING_DATA.map((item, idx) => {
                 const isPast = !!item.isPast;
@@ -162,7 +181,7 @@ export function ProgrammeTabs() {
             </motion.div>
           )}
 
-          {activeTab === t('tabPastWorkshops') && (
+          {activeTab === 'past' && (
             <motion.div
               key="past-workshops"
               initial={{ opacity: 0, y: 10 }}
@@ -186,12 +205,17 @@ export function ProgrammeTabs() {
                     {item.description}
                   </p>
                   
-                  <div className="mt-auto pt-4 border-t border-slate-200/80 w-full flex items-center justify-between">
+                  <div className="mt-auto pt-4 border-t border-slate-200/80 w-full flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    {item.metadata && (
+                      <p className="text-[12px] font-medium text-slate-500 uppercase tracking-wide leading-snug">
+                        {item.metadata}
+                      </p>
+                    )}
                     <ActionLink 
                       href={item.href} 
                       variant="secondary" 
                       icon={ArrowRight} 
-                      className="text-[13px] px-4 py-2"
+                      className="text-[13px] px-4 py-2 shrink-0"
                     >
                       {t('readMore')}
                     </ActionLink>

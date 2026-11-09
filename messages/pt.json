@@ -54,13 +54,16 @@
     "stat4Label": "Movido pela Comunidade",
     "eventsTitle": "Eventos",
     "eventsDesc": "Participe de nossos mais recentes workshops, webinars e laboratórios de inovação projetados para mulheres em STEM.",
-    "event1Title": "Mentoria, Patrocínio e Redes: O que realmente move as mulheres para frente em STEM?",
-    "event1Desc": "Este webinar explorará como mentoria, patrocínio e redes profissionais podem ajudar mulheres em STEM a ganhar visibilidade, acessar oportunidades, construir confiança e avançar em suas carreiras.",
+    "event1Title": "Da Ideia ao Impacto: Apresentando Ideias com Confiança",
+    "event1Desc": "Técnicas práticas para apresentar inovações climáticas a parceiros, financiadores e utilizadores, comunicar o problema com clareza e entregar pitches com confiança.",
     "event1Tag": "[Webinar]",
     "register": "Registrar",
     "event2Title": "Women-In-WACREN Climate Innovation Lab 2026",
     "event2Desc": "Um programa estruturado de inovação combinando uma rede virtual de mulheres em STEM, um laboratório presencial intensivo de 4 dias em Abuja e mentoria pós-laboratório para desenvolver soluções digitais para o clima.",
     "event2Tag": "[Laboratório de Inovação]",
+    "event3Title": "Protegendo Dados Climáticos: Segurança da Informação por Trás das Decisões Climáticas",
+    "event3Desc": "Explore a relação entre a integridade dos dados climáticos e a segurança cibernética, incluindo proteção de dados, compartilhamento seguro, ransomware e proteção da infraestrutura de pesquisa.",
+    "event3Tag": "[Webinar]",
     "newsTitle": "Insights e Notícias",
     "newsDesc": "Histórias do campo, próximos eventos e atualizações da comunidade WiW em toda a África Ocidental e Central.",
     "viewAll": "Ver todas as histórias",
@@ -80,6 +83,14 @@
     "testimonialsTitle": "Vozes da Women-In-WACREN",
     "testimonialsDesc": "Ouça as pesquisadoras, inovadoras e líderes que participaram de nossos programas.",
     "posts": {
+      "wiw-webinar-pitching-ideas-with-confidence": {
+        "title": "Da Ideia ao Impacto: Apresentando Ideias com Confiança",
+        "excerpt": "Desenvolver uma ideia inovadora é um passo importante, mas comunicar essa ideia eficazmente é igualmente crucial."
+      },
+      "wiw-webinar-securing-climate-data": {
+        "title": "Protegendo Dados Climáticos: Segurança da Informação por Trás das Decisões Climáticas",
+        "excerpt": "A ação climática depende de informações digitais. Se os dados forem comprometidos, podemos confiar nas decisões climáticas?"
+      },
       "wiw-webinar-mentorship-sponsorship-networks": {
         "title": "Mentoria, Patrocínio e Redes: O que realmente move as mulheres para frente em STEM?",
         "excerpt": "Este webinar da WiW explora as diferenças práticas entre mentoria, patrocínio e networking — e como cada um pode contribuir para o crescimento das mulheres em STEM."
@@ -159,6 +170,26 @@
     "clearFilters": "Limpar Filtros"
   },
   "Blog": {
+    "wiw-webinar-pitching-ideas-with-confidence": {
+      "title": "Da Ideia ao Impacto: Apresentando Ideias com Confiança",
+      "excerpt": "Desenvolver uma ideia inovadora é um passo importante, mas comunicar essa ideia eficazmente é igualmente crucial. As inovadoras precisam explicar o problema, a solução, os beneficiários e o impacto esperado.",
+      "toc": {
+        "explore": "O que o webinar irá explorar",
+        "details": "Detalhes do evento",
+        "agenda": "Agenda",
+        "register": "Registrar"
+      }
+    },
+    "wiw-webinar-securing-climate-data": {
+      "title": "Protegendo Dados Climáticos: Segurança da Informação por Trás das Decisões Climáticas",
+      "excerpt": "A ação climática depende de informações digitais. Se os dados forem comprometidos, podemos confiar nas decisões climáticas? Este webinar explora a integridade dos dados climáticos e a segurança cibernética.",
+      "toc": {
+        "explore": "O que o webinar irá explorar",
+        "details": "Detalhes do evento",
+        "agenda": "Agenda",
+        "register": "Registrar"
+      }
+    },
     "wiw-webinar-mentorship-sponsorship-networks": {
       "title": "Mentoria, patrocínio e redes: o que realmente faz as mulheres avançarem em STEM?",
       "excerpt": "Este webinar WiW explora as diferenças práticas entre mentoria, patrocínio e networking – e como cada um pode contribuir para o crescimento das mulheres em STEM.",

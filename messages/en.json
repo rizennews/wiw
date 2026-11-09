@@ -54,13 +54,16 @@
     "stat4Label": "Community Driven",
     "eventsTitle": "Events",
     "eventsDesc": "Join our latest workshops, webinars, and innovation labs designed for women in STEM.",
-    "event1Title": "Mentorship, Sponsorship and Networks: What Actually Move Women Forward in STEM?",
-    "event1Desc": "This webinar will explore how mentorship, sponsorship and professional networks can help women in STEM gain visibility, access opportunities, build confidence and advance their careers.",
+    "event1Title": "From Idea to Impact: Pitching Ideas with Confidence",
+    "event1Desc": "Practical techniques to apply when presenting climate innovations to partners, funders, users, and stakeholders, communicating problem statements clearly and delivering pitches with confidence.",
     "event1Tag": "[Webinar]",
     "register": "Register",
     "event2Title": "Women-In-WACREN Climate Innovation Lab 2026",
     "event2Desc": "A structured innovation programme combining a virtual network of women in STEM, an intensive 4-day in-person lab in Abuja, and post-lab mentorship to collaboratively design digital climate solutions.",
     "event2Tag": "[Innovation Lab]",
+    "event3Title": "Securing Climate Data: Protecting the Information Behind Climate Decisions",
+    "event3Desc": "Explore the relationship between climate data integrity and cybersecurity, including data protection, secure sharing, ransomware, and the protection of research infrastructure.",
+    "event3Tag": "[Webinar]",
     "newsTitle": "Insights & News",
     "newsDesc": "Stories from the ground, upcoming events, and updates from the WiW community across West and Central Africa.",
     "viewAll": "View all stories",
@@ -80,6 +83,14 @@
     "testimonialsTitle": "Voices of Women-In-WACREN",
     "testimonialsDesc": "Hear from the researchers, innovators, and leaders who have participated in our programmes.",
     "posts": {
+      "wiw-webinar-pitching-ideas-with-confidence": {
+        "title": "From Idea to Impact: Pitching Ideas with Confidence",
+        "excerpt": "Developing an innovative idea is an important step towards solving a problem, but being able to communicate that idea effectively is equally important."
+      },
+      "wiw-webinar-securing-climate-data": {
+        "title": "Securing Climate Data: Protecting the Information Behind Climate Decisions",
+        "excerpt": "Climate action increasingly depends on digital information. If climate data is compromised, can climate decisions still be trusted?"
+      },
       "wiw-webinar-mentorship-sponsorship-networks": {
         "title": "Mentorship, Sponsorship and Networks: What Actually Move Women Forward in STEM?",
         "excerpt": "This WiW webinar explores the practical differences between mentorship, sponsorship and networking — and how each can contribute to the growth of women in STEM."
@@ -159,6 +170,26 @@
     "clearFilters": "Clear Filters"
   },
   "Blog": {
+    "wiw-webinar-pitching-ideas-with-confidence": {
+      "title": "From Idea to Impact: Pitching Ideas with Confidence",
+      "excerpt": "Developing an innovative idea is an important step towards solving a problem, but being able to communicate that idea effectively is equally important. Innovators need to explain the problem they are addressing, how their solution works, who it benefits, and why it deserves attention or support.",
+      "toc": {
+        "explore": "What the webinar will explore",
+        "details": "Event details",
+        "agenda": "Agenda",
+        "register": "Register"
+      }
+    },
+    "wiw-webinar-securing-climate-data": {
+      "title": "Securing Climate Data: Protecting the Information Behind Climate Decisions",
+      "excerpt": "Climate action increasingly depends on digital information. If climate data is compromised, can climate decisions still be trusted? This webinar explores the intersection of climate data integrity and cybersecurity.",
+      "toc": {
+        "explore": "What the webinar will explore",
+        "details": "Event details",
+        "agenda": "Agenda",
+        "register": "Register"
+      }
+    },
     "wiw-webinar-mentorship-sponsorship-networks": {
       "title": "Mentorship, Sponsorship and Networks: What Actually Move Women Forward in STEM?",
       "excerpt": "This WiW webinar explores the practical differences between mentorship, sponsorship and networking — and how each can contribute to the growth of women in STEM.",

@@ -15,6 +15,291 @@ export interface BlogPost {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: 'wiw-webinar-pitching-ideas-with-confidence',
+    title: 'From Idea to Impact: Pitching Ideas with Confidence',
+    excerpt: 'Developing an innovative idea is an important step towards solving a problem, but being able to communicate that idea effectively is equally important. Innovators need to explain the problem they are addressing, how their solution works, who it benefits, and why it deserves attention or support.',
+    category: 'Events',
+    date: 'Nov 23, 2026',
+    author: {
+      name: 'Padmore Aning',
+      avatar: '/authors/PAD.png',
+    },
+    image: '/wiw-webinar-from-idea-to-impact-pitching-ideas-with-confidence.jpg',
+    content: `
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Developing an innovative idea is an important step towards solving a problem, but being able to communicate that idea effectively is equally important. Innovators need to explain the problem they are addressing, how their solution works, who it benefits, and why it deserves attention or support.
+      </p>
+
+      <h2 id="explore" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">What the webinar will explore</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        The session will focus on practical techniques participants can apply when presenting their climate innovations to potential partners, funders, users, and other stakeholders. The session will also explain pitching and why it matters to innovators, help participants communicate the problem, build confidence in presenting ideas and provide practical guidance on improving and delivering a pitch.
+      </p>
+
+      <h2 id="details" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Event details</h2>
+      <div class="mb-6 border border-slate-200 rounded-lg divide-y divide-slate-200 text-[16px]">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Date</span>
+          <span class="text-slate-700">Monday, 23 November 2026</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Time</span>
+          <span class="text-slate-700">13:00 UTC (1:00 PM UTC)</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Format</span>
+          <span class="text-slate-700">Online webinar (Zoom)</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Organiser</span>
+          <span class="text-slate-700">Women-in-WACREN (WiW)</span>
+        </div>
+      </div>
+
+      <h2 id="agenda" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Agenda</h2>
+      <div class="mb-6 overflow-x-auto border border-slate-200 rounded-lg">
+        <table class="w-full text-left border-collapse text-[15px]">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200 whitespace-nowrap">Time</th>
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200">Session</th>
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200">Speaker</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">00:00 &ndash; 00:05 (0&ndash;5 min)</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Welcome and Introduction</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Welcome participants and introduction to the session</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Amina Ramallan (WACREN)
+                <span class="block text-slate-500 text-[13px] mt-1">Convener</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">00:05 &ndash; 00:25 (5&ndash;25 min)</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Understanding Pitching</span>
+                <ul class="list-disc pl-5 mt-2 text-slate-600 text-[14px] space-y-1">
+                  <li>Purpose, and when it is needed</li>
+                  <li>Structuring the pitch: problem, solution, target users, communicating value, and expected impact</li>
+                </ul>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Yazid S. Mikail
+                <span class="block text-slate-500 text-[13px] mt-1">Founder, Nest Africa AI Innovation Lab, Nigeria</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">00:25 &ndash; 00:45 (25&ndash;45 min)</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Delivering Your Pitch and Winning Support</span>
+                <ul class="list-disc pl-5 mt-2 text-slate-600 text-[14px] space-y-1">
+                  <li>Pitch delivery, storytelling, audience engagement</li>
+                  <li>Handling questions, objections, and feedback: understanding what potential supporters look for</li>
+                </ul>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Dr Akouyo Yvette GBEDEVI
+                <span class="block text-slate-500 text-[13px] mt-1">Head, IT Department at ESGIS-Togo</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">00:45 &ndash; 00:55 (45&ndash;55 min)</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Q&amp;A</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Questions and answers with the speakers</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Amina Ramallan (WACREN)
+                <span class="block text-slate-500 text-[13px] mt-1">Convener</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">00:55 &ndash; 01:00 (55&ndash;60 min)</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Key Takeaways and Closing</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Closing remarks and next steps</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Amina Ramallan (WACREN)
+                <span class="block text-slate-500 text-[13px] mt-1">Convener</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="register" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Register</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700 font-medium">
+        Register to attend this webinar: <a href="https://wacren.zoom.us/webinar/register/WN_jBJrZB7-QOKJ7r2ozl_veA#/registration" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">https://wacren.zoom.us/webinar/register/WN_jBJrZB7-QOKJ7r2ozl_veA#/registration</a>
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        For questions, contact the WiW Anglophone Coordinator at <a href="mailto:wiw@wacren.net" class="text-primary hover:underline">wiw@wacren.net</a>.
+      </p>
+    `,
+    toc: [
+      { id: 'explore', title: 'What the webinar will explore', active: false },
+      { id: 'details', title: 'Event details', active: false },
+      { id: 'agenda', title: 'Agenda', active: false },
+      { id: 'register', title: 'Register', active: false },
+    ]
+  },
+  {
+    slug: 'wiw-webinar-securing-climate-data',
+    title: 'Securing Climate Data: Protecting the Information Behind Climate Decisions',
+    excerpt: 'Climate action increasingly depends on digital information. If climate data is compromised, can climate decisions still be trusted? This webinar explores the intersection of climate data integrity and cybersecurity.',
+    category: 'Events',
+    date: 'Oct 30, 2026',
+    author: {
+      name: 'Padmore Aning',
+      avatar: '/authors/PAD.png',
+    },
+    image: '/wiw-webinar-securing-climate-data.jpg',
+    content: `
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        Climate action increasingly depends on digital information. Weather observations, satellite imagery, hydrological measurements, climate models, agricultural data, environmental databases and research repositories are used to understand risks and make decisions. This creates an important but often overlooked question: if climate data is compromised, can climate decisions still be trusted?
+      </p>
+
+      <h2 id="explore" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">What the webinar will explore</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        The session will explore the relationship between climate data integrity and cybersecurity, including data protection, access control, authentication, secure data sharing, manipulation of datasets, ransomware, system availability and the protection of research infrastructure.
+      </p>
+
+      <h2 id="details" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Event details</h2>
+      <div class="mb-6 border border-slate-200 rounded-lg divide-y divide-slate-200 text-[16px]">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Date</span>
+          <span class="text-slate-700">Friday, 30 October 2026</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Time</span>
+          <span class="text-slate-700">13:00 UTC (1:00 PM UTC)</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Format</span>
+          <span class="text-slate-700">Online webinar (Zoom)</span>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-5 py-4">
+          <span class="font-semibold text-slate-900 sm:w-32 shrink-0">Organiser</span>
+          <span class="text-slate-700">Women-in-WACREN (WiW)</span>
+        </div>
+      </div>
+
+      <h2 id="agenda" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Agenda</h2>
+      <div class="mb-6 overflow-x-auto border border-slate-200 rounded-lg">
+        <table class="w-full text-left border-collapse text-[15px]">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200 whitespace-nowrap">Time</th>
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200">Session</th>
+              <th class="px-5 py-3 font-semibold text-slate-900 border-b border-slate-200">Speaker</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">00:00 &ndash; 00:05 (0&ndash;5 min)</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Welcome and Introduction</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Welcome participants and introduction to the session</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Zainab Usman
+                <span class="block text-slate-500 text-[13px] mt-1">Mentor, WiW &middot; Moderator</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">00:05 &ndash; 00:10 (5&ndash;10 min)</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Why Climate Data Matters</span>
+                <span class="block text-slate-600 text-[14px] mt-1">The essential role of digital climate information in decision making</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Zainab Usman
+                <span class="block text-slate-500 text-[13px] mt-1">Mentor, WiW &middot; Moderator</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">00:10 &ndash; 00:40 (10&ndash;40 min)</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Panel Discussion: Protecting the Information Behind Climate Decisions</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Two-speaker panel discussion; Moderator framing: where climate data flows and where vulnerabilities can emerge</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                <div class="space-y-2">
+                  <div>
+                    <span class="font-medium text-slate-900">Dr. Sylvia Adipah</span>
+                    <span class="block text-slate-500 text-[13px]">Research Fellow, University of Energy and Natural Resources (UENR), Ghana</span>
+                  </div>
+                  <div>
+                    <span class="font-medium text-slate-900">Dr. Vivian Chinwe Nnamdi</span>
+                    <span class="block text-slate-500 text-[13px]">Lecturer &amp; Acting HOD Cybersecurity, Margaret Lawrence University, Nigeria</span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">00:40 &ndash; 00:55 (40&ndash;55 min)</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Audience Q&amp;A</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Interactive question and answer session with the audience</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Zainab Usman
+                <span class="block text-slate-500 text-[13px] mt-1">Mentor, WiW &middot; Moderator</span>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">00:55 &ndash; 00:57 (55&ndash;57 min)</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Key Takeaways and Practical Actions</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Actionable takeaways for protecting climate data infrastructure</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                <div class="space-y-2">
+                  <div>
+                    <span class="font-medium text-slate-900">Dr. Sylvia Adipah</span>
+                    <span class="block text-slate-500 text-[13px]">UENR, Ghana</span>
+                  </div>
+                  <div>
+                    <span class="font-medium text-slate-900">Dr. Vivian Chinwe Nnamdi</span>
+                    <span class="block text-slate-500 text-[13px]">Margaret Lawrence University, Nigeria</span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-600 whitespace-nowrap font-mono text-[13px]">00:57 &ndash; 01:00 (57&ndash;60 min)</td>
+              <td class="px-5 py-4 border-b border-slate-100">
+                <span class="block font-semibold text-slate-900">Closing &amp; Women-In-WACREN Opportunities</span>
+                <span class="block text-slate-600 text-[14px] mt-1">Closing remarks and upcoming opportunities in the WiW network</span>
+              </td>
+              <td class="px-5 py-4 border-b border-slate-100 text-slate-700">
+                Amina Ramallan (WACREN)
+                <span class="block text-slate-500 text-[13px] mt-1">Speaker</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="register" class="text-2xl font-semibold text-slate-900 mt-12 mb-4">Register</h2>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700 font-medium">
+        Register to attend this webinar: <a href="https://wacren.zoom.us/webinar/register/WN_horw7VJ8QPeUc7MrjGvrkg" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">https://wacren.zoom.us/webinar/register/WN_horw7VJ8QPeUc7MrjGvrkg</a>
+      </p>
+      <p class="mb-6 text-[17px] leading-relaxed text-slate-700">
+        For questions, contact the WiW Anglophone Coordinator at <a href="mailto:wiw@wacren.net" class="text-primary hover:underline">wiw@wacren.net</a>.
+      </p>
+    `,
+    toc: [
+      { id: 'explore', title: 'What the webinar will explore', active: false },
+      { id: 'details', title: 'Event details', active: false },
+      { id: 'agenda', title: 'Agenda', active: false },
+      { id: 'register', title: 'Register', active: false },
+    ]
+  },
+  {
     slug: 'women-in-wacren-climate-innovation-lab-2026',
     title: 'Women-In-WACREN Climate Innovation Lab 2026',
     excerpt: 'Women-In-WACREN (WiW) is hosting the Climate Innovation Lab 2026, a structured innovation programme combining a virtual network of women in STEM, an intensive in-person Climate Innovation Lab in Abuja, and a post-lab mentorship programme.',
